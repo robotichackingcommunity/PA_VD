@@ -6,7 +6,7 @@ FaultLine is an open, community-driven vulnerability database focused on **Physi
 
 **FaultLine is not a mirror of NVD.** It takes CVEs sourced from NVD, ZDI, vendor PSIRT advisories, GitHub Security Advisories, and CISA ICS advisories, and re-processes each one with domain-specific enrichment — turning a plain vulnerability advisory into actionable intelligence for robots, AMRs, humanoids, service robots, drones, industrial robots, and AV AI stacks. The approach mirrors what VicOne has already done for automotive with **AutoVulnDB**: take a generic CVE and translate it into "how does this actually get exploited on this class of physical system, and what happens in the real world when it does."
 
-🔍 **[Browse the Vulnerability Explorer](https://physicalaivulnerabilitydatabase.github.io/PA_VD/)** — search and filter by domain, vendor, and severity across the full dataset.
+🔍 **[Browse the Vulnerability Explorer](https://robotichackingcommunity.com/vuln-db.html)** — search and filter by domain, vendor, and severity across the full dataset.
 
 Sponsored by [VicOne Inc.](https://vicone.com)
 
@@ -115,7 +115,7 @@ A few concrete ways to work FaultLine into an existing process, derived from the
 
 - Broader zero-day and recently-disclosed advisory enrichment across all Physical AI domains.
 - Coverage of AI-model-specific attack classes: adversarial examples against perception models, training-data/model poisoning, and backdoors in Vision-Language-Action (VLA) foundation models used for robot control.
-- Continued index/site sync improvements for the [Vulnerability Explorer](https://physicalaivulnerabilitydatabase.github.io/PA_VD/).
+- Continued index/site sync improvements for the [Vulnerability Explorer](https://robotichackingcommunity.com/vuln-db.html).
 
 ## Repository Structure
 
@@ -131,7 +131,7 @@ FaultLine/
 ## Getting Started
 
 ```bash
-git clone git@github.com:PhysicalAIVulnerabilityDatabase/PA_VD.git
+git clone git@github.com:robotichackingcommunity/PA_VD.git
 cd PA_VD
 
 # Rebuild index.json after adding/editing records in CVE-json/
