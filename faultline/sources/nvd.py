@@ -93,7 +93,7 @@ def keyword_search(term: str, since_iso: str | None = None, until_iso: str | Non
     if since_iso:
         params["lastModStartDate"] = since_iso
         params["lastModEndDate"] = until_iso or since_iso
-    yield from iter_window(params)
+    yield from iter_window(params, cache_ttl=None if since_iso else 6 * 3600)
 
 
 def modified_window(since_iso: str, until_iso: str) -> Iterator[dict[str, Any]]:

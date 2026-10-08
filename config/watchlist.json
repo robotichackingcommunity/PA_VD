@@ -7,7 +7,7 @@
   "terms": [
     {
       "label": "ROS 2 / ROS",
-      "pattern": "\\bROS ?2\\b|robot operating system|\\brclcpp\\b|\\brclpy\\b|\\bros2cli\\b|\\bros_comm\\b|\\broscpp\\b|\\brospy\\b|\\bros-(humble|jazzy|iron|rolling|noetic|foxy|galactic|kilted)\\b|\\bros (humble|jazzy|iron|rolling|noetic|foxy|galactic|kilted)\\b|\\bnav2\\b|navigation2|\\bmoveit2?\\b|slam_toolbox|\\bros_control\\b|\\bros2_control\\b|\\brosbag2?\\b|\\bmicro-?ros\\b|\\brmw_\\w+",
+      "pattern": "\\bROS ?2\\b|robot operating system|\\brclcpp\\b|\\brclpy\\b|\\bros2cli\\b|\\bros_comm\\b|\\broscpp\\b|\\brospy\\b|\\bros-(humble|jazzy|iron|rolling|noetic|foxy|galactic|kilted)\\b|\\bros (humble|jazzy|iron|rolling|noetic|foxy|galactic|kilted)\\b|\\bnav2\\b|navigation2|\\bmoveit ?2\\b|\\bmoveit (ros|motion planning|servo|task constructor)\\b|\\bros-planning/moveit\\b|slam_toolbox|\\bros_control\\b|\\bros2_control\\b|\\brosbag2?\\b|\\bmicro-?ros\\b|\\brmw_\\w+",
       "weight": 7,
       "domains": [
         "Robot Operating Systems & Middleware"
@@ -20,7 +20,7 @@
         "Robot Operating System",
         "ros2",
         "nav2",
-        "moveit"
+        "MoveIt ROS"
       ]
     },
     {
@@ -45,7 +45,7 @@
     },
     {
       "label": "Robotics simulation",
-      "pattern": "\\bgazebo\\b|\\bignition gazebo\\b|\\bwebots\\b|\\bisaac sim\\b|\\bisaac lab\\b|\\bisaac ros\\b|\\bmujoco\\b|\\bcarla simulator\\b|\\bairsim\\b|\\bomniverse\\b|\\bopenusd\\b",
+      "pattern": "\\bgazebo\\b|\\bignition gazebo\\b|\\bwebots\\b|\\bisaac sim\\b|\\bisaac lab\\b|\\bisaac ros\\b|\\bmujoco\\b|\\bcarla simulator\\b|\\bairsim\\b|\\bnvidia omniverse\\b|\\bomniverse (launcher|nucleus|kit|cache|enterprise|audio2face|usd)\\b|\\bopenusd\\b",
       "weight": 5,
       "domains": [
         "Robot Operating Systems & Middleware",
@@ -138,7 +138,7 @@
     },
     {
       "label": "Humanoid / legged",
-      "pattern": "\\bhumanoid\\b|\\bquadruped\\b|\\blegged robot\\b|\\bbipedal\\b|\\bunitree\\b|\\bboston dynamics\\b|\\bspot robot\\b|\\batlas robot\\b|\\bagility robotics\\b|\\bdigit robot\\b|\\bfigure ai\\b|\\bfigure 0[12]\\b|\\boptimus robot\\b|\\btesla optimus\\b|\\b1x technologies\\b|\\bneo gamma\\b|\\bapptronik\\b|\\bapollo humanoid\\b|\\bsanctuary ai\\b|\\bfourier intelligence\\b|\\bfourier gr-?1\\b|\\bubtech\\b|\\bwalker s\\b|\\bagibot\\b|\\bxpeng iron\\b|\\bpollen robotics\\b|\\breachy\\b|\\bghost robotics\\b|\\banybotics\\b|\\banymal\\b|\\bdeep robotics\\b|\\bengineai\\b|\\bbooster robotics\\b|\\bmit cheetah\\b|\\bgo1\\b|\\bgo2\\b|\\bb2-?w\\b|\\bg1 edu\\b|\\bh1-?2\\b",
+      "pattern": "\\bhumanoid\\b|\\bquadruped\\b|\\blegged robot\\b|\\bbipedal\\b|\\bunitree\\b|\\bboston dynamics\\b|\\bspot robot\\b|\\batlas robot\\b|\\bagility robotics\\b|\\bdigit robot\\b|\\bfigure ai\\b|\\bfigure 0[12]\\b|\\boptimus robot\\b|\\btesla optimus\\b|\\b1x technologies\\b|\\bneo gamma\\b|\\bapptronik\\b|\\bapollo humanoid\\b|\\bsanctuary ai\\b|\\bfourier intelligence\\b|\\bfourier gr-?1\\b|\\bubtech\\b|\\bwalker s\\b|\\bagibot\\b|\\bxpeng iron\\b|\\bpollen robotics\\b|\\breachy\\b|\\bghost robotics\\b|\\banybotics\\b|\\banymal\\b|\\bdeep robotics\\b|\\bengineai\\b|\\bbooster robotics\\b|\\bmit cheetah\\b|\\bunitree go ?[12]\\b|\\bb2-?w\\b|\\bg1 edu\\b|\\bunitree h1\\b",
       "weight": 7,
       "domains": [
         "Humanoid Robot"
@@ -203,7 +203,7 @@
     },
     {
       "label": "AMR / AGV / logistics robots",
-      "pattern": "\\bautonomous mobile robots?\\b|\\bamrs?\\b|\\bagvs?\\b|automated guided vehicle|\\bmobile industrial robots\\b|\\bmir ?(100|200|250|500|600|1000|1200|1350)\\b|\\bmir fleet\\b|\\botto motors\\b|\\botto ?(100|600|750|1500)\\b|\\bclearpath\\b|\\bhusky\\b|\\bjackal\\b|\\bturtlebot\\b|\\blocus robotics\\b|\\bgeek\\+\\b|\\bgeekplus\\b|\\bfetch robotics\\b|\\b6 river\\b|\\bbrightpick\\b|\\bhai robotics\\b|\\bexotec\\b|\\bautostore\\b|\\bsymbotic\\b|\\bseegrid\\b|\\bvecna robotics\\b|\\bagilox\\b|\\bbluebotics\\b|\\bomron ld\\b|\\bkivnon\\b|\\bsafelog\\b|\\bfleet manage(r|ment)\\b|\\brobot fleet\\b|\\bwarehouse robots?\\b|\\bdelivery robots?\\b|\\bsidewalk robot\\b|\\bstarship technologies\\b|\\bserve robotics\\b|\\bcoco robotics\\b|\\bnavigation controller\\b|\\banc navigation\\b|\\brobot navigation\\b|\\bslam\\b|\\blidar\\b|\\bpath planning\\b|\\bmotion planning\\b|\\bobstacle avoidance\\b",
+      "pattern": "\\bautonomous mobile robots?\\b|\\bagvs?\\b|automated guided vehicle|\\bmobile industrial robots\\b|\\bmir ?(100|200|250|500|600|1000|1200|1350)\\b|\\bmir fleet\\b|\\botto motors\\b|\\botto ?(100|600|750|1500)\\b|\\bclearpath robotics\\b|\\bclearpath (husky|jackal|warthog|dingo|ridgeback)\\b|\\bhusky (ugv|robot|a200|a300)\\b|\\bjackal (ugv|robot|j100)\\b|\\bturtlebot\\b|\\blocus robotics\\b|\\bgeek\\+\\b|\\bgeekplus\\b|\\bfetch robotics\\b|\\b6 river\\b|\\bbrightpick\\b|\\bhai robotics\\b|\\bexotec\\b|\\bautostore\\b|\\bsymbotic\\b|\\bseegrid\\b|\\bvecna robotics\\b|\\bagilox\\b|\\bbluebotics\\b|\\bomron ld\\b|\\bkivnon\\b|\\bsafelog\\b|\\bfleet manage(r|ment)\\b|\\brobot fleet\\b|\\bwarehouse robots?\\b|\\bdelivery robots?\\b|\\bsidewalk robot\\b|\\bstarship technologies\\b|\\bserve robotics\\b|\\bcoco robotics\\b|\\bnavigation controller\\b|\\banc navigation\\b|\\brobot navigation\\b|\\bslam\\b|\\blidar\\b|\\bpath planning\\b|\\bmotion planning\\b|\\bobstacle avoidance\\b",
       "weight": 5,
       "domains": [
         "Mobile Robot & AMR"
@@ -213,15 +213,14 @@
       ],
       "nvd_keywords": [
         "autonomous mobile robot",
-        "AMR",
         "AGV",
         "Mobile Industrial Robots",
         "OTTO Motors",
-        "Clearpath",
         "robot fleet",
         "warehouse robot",
         "delivery robot",
-        "lidar"
+        "lidar",
+        "Clearpath Robotics"
       ]
     },
     {
@@ -253,7 +252,7 @@
     },
     {
       "label": "Autonomous vehicle AI",
-      "pattern": "\\bautonomous (vehicle|driving|car|truck|shuttle)s?\\b|\\bself-?driving\\b|\\bautoware\\b|\\bbaidu apollo\\b|\\bapollo auto\\b|\\bopenpilot\\b|\\bcomma\\.ai\\b|\\bcomma three\\b|\\badas\\b|\\badvanced driver.assistance\\b|\\bnvidia drive\\b|\\bdrive os\\b|\\bdriveos\\b|\\bdrive agx\\b|\\bdrive orin\\b|\\bdrive thor\\b|\\bwaymo\\b|\\bcruise av\\b|\\bzoox\\b|\\bmobileye\\b|\\baurora driver\\b|\\bpony\\.ai\\b|\\bwerider\\b|\\btier iv\\b|\\brobotaxi\\b|\\bteleoperat(ion|ed) vehicle\\b|\\bperception stack\\b|\\bsensor fusion\\b|\\bv2x\\b",
+      "pattern": "\\bautonomous (vehicle|driving|car|truck|shuttle)s?\\b|\\bself-?driving\\b|\\bautoware\\b|\\bbaidu apollo\\b|\\bapollo auto\\b|\\bopenpilot\\b|\\bcomma\\.ai\\b|\\bcomma three\\b|\\badvanced driver.assistance\\b|\\bnvidia drive\\b|\\bdrive os\\b|\\bdriveos\\b|\\bdrive agx\\b|\\bdrive orin\\b|\\bdrive thor\\b|\\bwaymo\\b|\\bcruise av\\b|\\bzoox\\b|\\bmobileye\\b|\\baurora driver\\b|\\bpony\\.ai\\b|\\bwerider\\b|\\btier iv\\b|\\brobotaxi\\b|\\bteleoperat(ion|ed) vehicle\\b|\\bperception stack\\b|\\bsensor fusion\\b|\\bv2x\\b",
       "weight": 5,
       "domains": [
         "Autonomous Vehicle AI"
@@ -272,8 +271,20 @@
       ]
     },
     {
+      "label": "ADAS (weak)",
+      "pattern": "\\bADAS\\b(?=[^.]{0,120}(vehicle|driv|car|automotive|lane|brak))",
+      "weight": 3,
+      "domains": [
+        "Autonomous Vehicle AI"
+      ],
+      "layers": [
+        "Robot OS / Development Tools"
+      ],
+      "nvd_keywords": []
+    },
+    {
       "label": "NVIDIA edge AI platforms",
-      "pattern": "\\bjetson\\b|\\bjetpack\\b|\\bjetson linux\\b|\\bl4t\\b|\\bigx orin\\b|\\bigx\\b|\\bagx orin\\b|\\borin nano\\b|\\borin nx\\b|\\bagx thor\\b|\\bjetson thor\\b|\\bholoscan\\b|\\bdeepstream\\b|\\bisaac gr00t\\b|\\bgr00t\\b|\\bcosmos (world|foundation)\\b|\\bnvidia cosmos\\b|\\bmetropolis\\b|\\briva\\b|\\bnvidia nim\\b|\\bnim microservice\\b|\\bnemoclaw\\b|\\bopenshell\\b|\\bnvidia nemo\\b|\\bnemo framework\\b|\\bnemo guardrails\\b|\\bnvidia agent intelligence toolkit\\b|\\bnvidia aiq\\b|\\bnvidia fleet command\\b|\\bnvidia tao\\b|\\bcuda-x\\b|\\btegra\\b",
+      "pattern": "\\bjetson\\b|\\bnvidia jetpack\\b|\\bjetpack (sdk|\\d)|\\bjetson linux\\b|\\bl4t\\b|\\bigx orin\\b|\\bigx\\b|\\bagx orin\\b|\\borin nano\\b|\\borin nx\\b|\\bagx thor\\b|\\bjetson thor\\b|\\bholoscan\\b|\\bdeepstream\\b|\\bisaac gr00t\\b|\\bgr00t\\b|\\bcosmos (world|foundation)\\b|\\bnvidia cosmos\\b|\\bmetropolis\\b|\\briva\\b|\\bnvidia nim\\b|\\bnim microservice\\b|\\bnemoclaw\\b|\\bopenshell\\b|\\bnvidia agent intelligence toolkit\\b|\\bnvidia aiq\\b|\\bnvidia fleet command\\b|\\bnvidia tao\\b|\\bcuda-x\\b|\\btegra\\b",
       "weight": 6,
       "domains": [
         "Cross-Domain Components",
@@ -291,13 +302,12 @@
         "NVIDIA NIM",
         "NemoClaw",
         "OpenShell",
-        "NVIDIA NeMo",
         "GR00T"
       ]
     },
     {
       "label": "AI inference serving",
-      "pattern": "\\btriton inference server\\b|\\btritonserver\\b|\\btensorrt\\b|\\btensorrt-?llm\\b|\\bvllm\\b|\\bsglang\\b|\\bllama\\.cpp\\b|\\bllama-cpp-python\\b|\\bollama\\b|\\bonnx ?runtime\\b|\\bonnxruntime\\b|\\bopenvino\\b|\\btorchserve\\b|\\btensorflow serving\\b|\\btf serving\\b|\\btflite\\b|\\btensorflow lite\\b|\\blitert\\b|\\bexecutorch\\b|\\bapache tvm\\b|\\bray serve\\b|\\bkserve\\b|\\bseldon core\\b|\\bbentoml\\b|\\btext-generation-inference\\b|\\blmdeploy\\b|\\bxinference\\b|\\blocalai\\b|\\bgpustack\\b|\\binference server\\b|\\binference engine\\b|\\binference proxy\\b|\\bmodel serving\\b|\\bmodel server\\b|\\bsafetensors\\b|\\bgguf\\b|\\btorch\\.load\\b|\\bmodel deserialization\\b|\\bmodel (file|loading|loader|repository)\\b",
+      "pattern": "\\btriton inference server\\b|\\btritonserver\\b|\\btensorrt\\b|\\btensorrt-?llm\\b|\\bvllm\\b|\\bsglang\\b|\\bllama\\.cpp\\b|\\bllama-cpp-python\\b|\\bollama\\b|\\bonnx ?runtime\\b|\\bonnxruntime\\b|\\bopenvino\\b|\\btorchserve\\b|\\btensorflow serving\\b|\\btf serving\\b|\\bexecutorch\\b|\\bapache tvm\\b|\\bray serve\\b|\\bkserve\\b|\\bseldon core\\b|\\bbentoml\\b|\\btext-generation-inference\\b|\\blmdeploy\\b|\\bxinference\\b|\\blocalai\\b|\\bgpustack\\b|\\binference server\\b|\\binference engine\\b|\\binference proxy\\b",
       "weight": 6,
       "domains": [
         "Physical AI Infrastructure",
@@ -317,10 +327,22 @@
         "OpenVINO",
         "TorchServe",
         "TensorFlow Serving",
-        "inference server",
-        "model serving",
-        "safetensors",
-        "GGUF"
+        "inference server"
+      ]
+    },
+    {
+      "label": "Generic model loading / serving",
+      "pattern": "\\btflite\\b|\\btensorflow lite\\b|\\blitert\\b|\\bmodel serving\\b|\\bmodel server\\b|\\bsafetensors\\b|\\bgguf\\b|\\btorch\\.load\\b|\\bmodel deserialization\\b|\\bmodel (file|loading|loader|repository|checkpoint)\\b|\\bmalicious(ly crafted)? model\\b|\\bcrafted model\\b",
+      "weight": 2,
+      "domains": [
+        "Physical AI Infrastructure"
+      ],
+      "layers": [
+        "AI/ML Runtime / Inference"
+      ],
+      "nvd_keywords": [
+        "model loading",
+        "model serving"
       ]
     },
     {
@@ -344,7 +366,7 @@
     },
     {
       "label": "ML training / MLOps",
-      "pattern": "\\bmlflow\\b|\\bkubeflow\\b|\\bray\\b.*\\banyscale\\b|\\bray dashboard\\b|\\bray cluster\\b|\\bray-project\\b|\\bweights ?& ?biases\\b|\\bwandb\\b|\\bclearml\\b|\\bdvc\\b|\\bmetaflow\\b|\\bzenml\\b|\\bprefect\\b|\\bairflow\\b|\\bhugging ?face\\b|\\btransformers\\b|\\bdiffusers\\b|\\bdatasets\\b.*hugging|\\bhub cache\\b|\\bmodel registry\\b|\\bmodel hub\\b|\\bjupyter\\b|\\bjupyterlab\\b|\\blabel studio\\b|\\bcvat\\b|\\broboflow\\b|\\bnvidia tao\\b|\\bisaac lab\\b|\\bopenpi\\b|\\blerobot\\b|\\bhuggingface lerobot\\b|\\bvla model\\b|\\bvision-language-action\\b|\\bimitation learning\\b|\\breinforcement learning\\b|\\bstable-?baselines\\b|\\bgymnasium\\b|\\bopenai gym\\b|\\btraining pipeline\\b|\\bmodel poisoning\\b|\\bdata poisoning\\b|\\bbackdoor(ed)? model\\b|\\bmodel supply chain\\b|\\bpickle\\b.*\\bmodel\\b",
+      "pattern": "\\bnvidia nemo\\b|\\bnemo framework\\b|\\bnemo guardrails\\b|\\bmlflow\\b|\\bkubeflow\\b|\\bray\\b.*\\banyscale\\b|\\bray dashboard\\b|\\bray cluster\\b|\\bray-project\\b|\\bweights ?& ?biases\\b|\\bwandb\\b|\\bclearml\\b|\\bdvc\\b|\\bmetaflow\\b|\\bzenml\\b|\\bprefect\\b|\\bairflow\\b|\\bhugging ?face\\b|\\btransformers\\b|\\bdiffusers\\b|\\bdatasets\\b.*hugging|\\bhub cache\\b|\\bmodel registry\\b|\\bmodel hub\\b|\\bjupyter\\b|\\bjupyterlab\\b|\\blabel studio\\b|\\bcvat\\b|\\broboflow\\b|\\bnvidia tao\\b|\\bisaac lab\\b|\\bopenpi\\b|\\blerobot\\b|\\bhuggingface lerobot\\b|\\bvla model\\b|\\bvision-language-action\\b|\\bimitation learning\\b|\\breinforcement learning\\b|\\bstable-?baselines\\b|\\bgymnasium\\b|\\bopenai gym\\b|\\btraining pipeline\\b|\\bmodel poisoning\\b|\\bdata poisoning\\b|\\bbackdoor(ed)? model\\b|\\bmodel supply chain\\b|\\bpickle\\b.*\\bmodel\\b",
       "weight": 4,
       "domains": [
         "Physical AI Infrastructure"
@@ -361,7 +383,8 @@
         "transformers",
         "LeRobot",
         "model registry",
-        "training pipeline"
+        "training pipeline",
+        "NVIDIA NeMo"
       ]
     },
     {
@@ -517,6 +540,41 @@
       "label": "Generic 'imu' word collisions",
       "pattern": "\\bsimulat",
       "weight": 0
+    },
+    {
+      "label": "US Robotics (modems)",
+      "pattern": "\\bu\\.?s\\.? robotics\\b|\\busrobotics\\b|\\b3com\\b",
+      "weight": -8
+    },
+    {
+      "label": "WordPress Jetpack",
+      "pattern": "\\bjetpack plugin\\b|\\bjetpack\\b[^.]{0,60}\\bwordpress\\b|\\bwordpress\\b[^.]{0,60}\\bjetpack\\b",
+      "weight": -8
+    },
+    {
+      "label": "AMR audio codec / unrelated AMR",
+      "pattern": "\\bamr(-wb|-nb)?\\b[^.]{0,30}(codec|audio|decoder|ffmpeg|libav|vlc)|\\bamr talkbox\\b",
+      "weight": -6
+    },
+    {
+      "label": "Unisys ClearPath",
+      "pattern": "\\bclearpath (mcp|forward|os ?2200|libra|dorado)\\b|\\bunisys\\b",
+      "weight": -8
+    },
+    {
+      "label": "PRiSE adAS",
+      "pattern": "\\bprise adas\\b",
+      "weight": -8
+    },
+    {
+      "label": "Generic ML research frameworks (not serving)",
+      "pattern": "\\bludwig\\b|\\badversarial robustness toolbox\\b|\\bmamba\\b|\\bgpt_academic\\b|\\bgpt academic\\b",
+      "weight": -2
+    },
+    {
+      "label": "Progress MOVEit (file transfer)",
+      "pattern": "\\bmoveit (transfer|automation|cloud|gateway|dmz|central)\\b|\\bprogress moveit\\b|\\bipswitch\\b",
+      "weight": -10
     }
   ]
 }

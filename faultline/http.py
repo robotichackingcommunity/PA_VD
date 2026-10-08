@@ -7,6 +7,7 @@ import json
 import logging
 import os
 import sys
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -27,21 +28,30 @@ class RateLimiter:
     def __init__(self, calls: int, period: float):
         self.calls, self.period = calls, period
         self._stamps: list[float] = []
+        self._lock = threading.Lock()
 
     def wait(self) -> None:
-        now = time.monotonic()
-        self._stamps = [t for t in self._stamps if now - t < self.period]
-        if len(self._stamps) >= self.calls:
-            sleep_for = self.period - (now - self._stamps[0]) + 0.05
-            if sleep_for > 0:
-                time.sleep(sleep_for)
-        self._stamps.append(time.monotonic())
+        while True:
+            with self._lock:
+                now = time.monotonic()
+                self._stamps = [t for t in self._stamps if now - t < self.period]
+                if len(self._stamps) < self.calls:
+                    self._stamps.append(now)
+                    return
+                sleep_for = self.period - (now - self._stamps[0]) + 0.05
+            time.sleep(max(sleep_for, 0.01))
 
 
 _LIMITERS: dict[str, RateLimiter] = {}
+_LIMITERS_LOCK = threading.Lock()
 
 
 def limiter_for(host: str) -> RateLimiter:
+    with _LIMITERS_LOCK:
+        return _limiter_for(host)
+
+
+def _limiter_for(host: str) -> RateLimiter:
     if host not in _LIMITERS:
         if host.endswith("nvd.nist.gov"):
             keyed = bool(os.environ.get("NVD_API_KEY"))

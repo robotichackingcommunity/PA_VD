@@ -33,3 +33,16 @@ def save_state(state: dict, root: Path | None = None) -> None:
     tmp = p.with_suffix(".tmp")
     tmp.write_text(json.dumps(state, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     os.replace(tmp, p)
+
+
+def update_state(mutate, root: Path | None = None) -> dict:
+    """Load the freshest state from disk, apply `mutate(state)`, save.
+
+    Several pipeline steps (refresh, discover) may run concurrently; each one
+    must only write its own keys on top of what is currently on disk instead of
+    saving a stale in-memory copy.
+    """
+    state = load_state(root)
+    mutate(state)
+    save_state(state, root)
+    return state

@@ -13,7 +13,7 @@ from typing import Any
 from .records import iter_record_files, load_json, save_record
 from .sources import ghsa, mitre, nvd
 from .sources.facts import merge_facts, pick_cvss
-from .state import load_state, now_iso, save_state
+from .state import load_state, now_iso, update_state
 from .taxonomy import severity_for_score
 
 log = logging.getLogger("faultline.refresh")
@@ -160,7 +160,8 @@ def refresh_all(max_age_days: int = 7, limit: int | None = None, only: set[str] 
             save_record(new)
             stats["updated"] += 1
             log.info("%s: %d field(s) updated: %s", cve_id, len(changes), "; ".join(changes[:4]))
-        recs_state[cve_id] = {"refreshed_at": now_iso(), "sources": facts.get("sources", [])}
-        save_state(state)
+        entry = {"refreshed_at": now_iso(), "sources": facts.get("sources", [])}
+        recs_state[cve_id] = entry
+        update_state(lambda st: st.setdefault("records", {}).__setitem__(cve_id, entry))
     log.info("refresh done: %s", stats)
     return stats

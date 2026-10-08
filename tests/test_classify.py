@@ -56,3 +56,21 @@ class ClassifyTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CollisionTests(unittest.TestCase):
+    def test_moveit_transfer_is_not_ros(self):
+        r = classify(facts(None, "Progress MOVEit Transfer before 2023.0.1 allows SQL injection in the web application."))
+        self.assertEqual(r["decision"], "rejected", r)
+
+    def test_moveit_ros_is_accepted(self):
+        r = classify(facts(None, "MoveIt 2 motion planning framework for ROS 2 allows arbitrary code execution via crafted planning scene messages."))
+        self.assertEqual(r["decision"], "accept", r)
+
+    def test_wordpress_jetpack_rejected(self):
+        r = classify(facts(None, "The Jetpack plugin before 3.4.3 for WordPress has XSS via add_query_arg()."))
+        self.assertEqual(r["decision"], "rejected", r)
+
+    def test_us_robotics_rejected(self):
+        r = classify(facts(None, "The U.S. Robotics USR808054 wireless access point allows remote attackers to cause a denial of service."))
+        self.assertEqual(r["decision"], "rejected", r)

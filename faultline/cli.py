@@ -59,6 +59,12 @@ def cmd_discover(args) -> int:
     return 0
 
 
+def cmd_rescore(args) -> int:
+    from .discover import rescore
+    print(json.dumps(rescore(), indent=2))
+    return 0
+
+
 def cmd_enrich(args) -> int:
     from .enrich import enrich_pending
     stats = enrich_pending(max_records=args.max, model=args.model, dry_run=args.dry_run, ids=args.cve)
@@ -127,6 +133,9 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--backfill", action="store_true", help="also run watchlist keyword searches without a date window")
     p.add_argument("--no-nvd-window", action="store_true", help="skip the full NVD modified-window scan")
     p.set_defaults(fn=cmd_discover)
+
+    p = sub.add_parser("rescore", help="re-classify queued candidates after editing config/watchlist.json (no network)")
+    p.set_defaults(fn=cmd_rescore)
 
     p = sub.add_parser("enrich", help="generate full records for queued candidates with Claude")
     p.add_argument("--max", type=int, default=20)

@@ -6,6 +6,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Iterable
@@ -14,7 +15,7 @@ from .classify import classify, nvd_backfill_keywords
 from .records import load_all, repo_root
 from .sources import cvelist, ghsa, mitre, nvd
 from .sources.facts import merge_facts
-from .state import load_state, now_iso, save_state
+from .state import load_state, now_iso, update_state
 
 log = logging.getLogger("faultline.discover")
 
@@ -60,13 +61,13 @@ def _candidate_entry(facts: dict[str, Any], verdict: dict[str, Any], origin: str
         "proposed_domains": verdict["proposed_domains"],
         "proposed_layers": verdict["proposed_layers"],
         "title": facts.get("title"),
-        "description": (facts.get("description") or "")[:600 if verdict["decision"] != "rejected" else 200],
+        "description": (facts.get("description") or "")[:{"accept": 600, "review": 240}.get(verdict["decision"], 160)],
         "published": facts.get("published"),
         "last_modified": facts.get("last_modified"),
         "vuln_status": facts.get("vuln_status"),
         "cvss": facts.get("cvss")[:2] if facts.get("cvss") else [],
-        "affected": facts.get("affected")[:6] if facts.get("affected") else [],
-        "references": (facts.get("references") or [])[:8],
+        "affected": (facts.get("affected") or [])[:6 if verdict["decision"] == "accept" else 2],
+        "references": (facts.get("references") or [])[:8 if verdict["decision"] == "accept" else 2],
         "origin": origin,
         "seen_at": now_iso(),
     }
@@ -190,13 +191,13 @@ def discover(days: int | None = None, backfill_terms: bool = False, nvd_window: 
     new_ids = [cid for cid, _ in ids if cid not in triage.known and triage.previously_seen(cid) is None]
     fetched = 0
     log.info("cvelist delta: %d new id(s) since %s, %d not yet seen", len(ids), since.date(), len(new_ids))
-    for i, cid in enumerate(new_ids, 1):
-        facts = mitre.fetch(cid, cache_ttl=24 * 3600)
-        if facts:
-            fetched += 1
-            triage.consider(facts, "cvelist-delta")
-        if i % 100 == 0:
-            log.info("cvelist delta: %d/%d fetched, accept=%d review=%d", i, len(new_ids), triage.stats["accept"], triage.stats["review"])
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        for i, facts in enumerate(pool.map(lambda c: mitre.fetch(c, cache_ttl=24 * 3600), new_ids), 1):
+            if facts:
+                fetched += 1
+                triage.consider(facts, "cvelist-delta")
+            if i % 200 == 0:
+                log.info("cvelist delta: %d/%d fetched, accept=%d review=%d", i, len(new_ids), triage.stats["accept"], triage.stats["review"])
     report["sources"]["cvelist"] = {"since": _iso(since), "new_ids": len(ids), "fetched": fetched}
     disc["cvelist_until"] = now_iso()
 
@@ -226,8 +227,43 @@ def discover(days: int | None = None, backfill_terms: bool = False, nvd_window: 
     triage.save()
     report["triage"] = triage.stats
     report["queues"] = {k: len(v) for k, v in triage.queues.items()}
-    state.setdefault("runs", []).append({"at": now_iso(), "kind": "discover", "report": report})
-    state["runs"] = state["runs"][-50:]
-    save_state(state)
+
+    def _commit(st: dict) -> None:
+        st.setdefault("discovery", {}).update(disc)
+        st.setdefault("runs", []).append({"at": now_iso(), "kind": "discover", "report": report})
+        st["runs"] = st["runs"][-50:]
+
+    update_state(_commit)
     log.info("discover done: %s", json.dumps(report["triage"]))
     return report
+
+
+def rescore(queues: tuple[str, ...] = ("accept", "review")) -> dict[str, Any]:
+    """Re-classify queued candidates from their stored text after a watchlist
+    change.  Cheap (no network); entries move between queues as needed.  Rejected
+    entries keep only a short excerpt, so they are not rescored here — a full
+    `discover --backfill` re-run re-evaluates them."""
+    triage = Triage()
+    moved = {"accept": 0, "review": 0, "rejected": 0}
+    items = [(k, cid, e) for k in queues for cid, e in list(triage.queues[k].items())]
+    for k, cid, e in items:
+        if e.get("manual"):
+            continue
+        facts = {
+            "cve_id": cid, "title": e.get("title"), "description": e.get("description"),
+            "affected": e.get("affected") or [], "cpes": [], "references": e.get("references") or [],
+            "vuln_status": e.get("vuln_status"),
+        }
+        verdict = classify(facts)
+        if verdict["decision"] != k:
+            moved[verdict["decision"]] += 1
+        for q in QUEUE_FILES:
+            triage.queues[q].pop(cid, None)
+        entry = _candidate_entry(facts, verdict, e.get("origin", "rescore"))
+        entry["seen_at"] = e.get("seen_at", entry["seen_at"])
+        entry["cvss"] = e.get("cvss", [])
+        entry["published"] = e.get("published")
+        entry["last_modified"] = e.get("last_modified")
+        triage.queues[verdict["decision"]][cid] = entry
+    triage.save()
+    return {"moved_to": moved, "queues": {k: len(v) for k, v in triage.queues.items()}}
