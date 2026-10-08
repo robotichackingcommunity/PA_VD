@@ -5,47 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FaultLine : Physical AI Vulnerability Database Explorer</title>
   <style>
-    :root { --primary: #2563eb; }
-    body { font-family: system-ui, sans-serif; margin:0; background:#f8fafc; }
-    header { background:white; padding:1.5rem; border-bottom:1px solid #ddd; }
+    :root { --primary: #2563eb; --muted:#64748b; --border:#e2e8f0; }
+    body { font-family: system-ui, sans-serif; margin:0; background:#f8fafc; color:#0f172a; }
+    header { background:white; padding:1.25rem 1.5rem; border-bottom:1px solid #ddd; }
+    header h1 { margin:0 0 .5rem 0; font-size:1.5rem; }
+    .stats { display:flex; flex-wrap:wrap; gap:10px; font-size:.9rem; color:var(--muted); }
+    .stats span { background:#f1f5f9; padding:4px 10px; border-radius:999px; }
+    .stats b { color:#0f172a; }
     .container { display:flex; max-width:1400px; margin:20px auto; padding:0 20px; gap:20px; }
-    .sidebar { width:360px; background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:20px; position:sticky; top:20px; height:fit-content; }
-    .main { flex:1; }
-    .search-box { width:100%; padding:12px; border:2px solid #e2e8f0; border-radius:8px; font-size:1rem; margin-bottom:15px; }
+    .sidebar { width:360px; flex-shrink:0; background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:20px; position:sticky; top:20px; height:fit-content; max-height:calc(100vh - 40px); overflow-y:auto; }
+    .main { flex:1; min-width:0; }
+    .search-box { width:100%; box-sizing:border-box; padding:12px; border:2px solid var(--border); border-radius:8px; font-size:1rem; margin-bottom:15px; }
     .filter-group { margin-bottom:22px; }
-    .filter-group h3 { margin:0 0 10px 0; color:#334155; font-size:1.05rem; }
+    .filter-group h3 { margin:0 0 8px 0; color:#334155; font-size:1rem; }
     .checkbox-group { max-height:200px; overflow-y:auto; padding-right:8px; }
-    .checkbox-group label { display:block; padding:6px 8px; border-radius:6px; cursor:pointer; }
+    .checkbox-group label { display:flex; justify-content:space-between; gap:8px; padding:5px 8px; border-radius:6px; cursor:pointer; font-size:.92rem; }
     .checkbox-group label:hover { background:#f1f5f9; }
+    .checkbox-group .n { color:var(--muted); font-variant-numeric:tabular-nums; }
     .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:18px; }
-    .cve-card { background:white; border:1px solid #e2e8f0; border-radius:12px; padding:18px; transition:all 0.2s; cursor:pointer; }
-    .cve-card:hover { transform:translateY(-4px); box-shadow:0 10px 20px rgba(0,0,0,0.1); }
+    .cve-card { background:white; border:1px solid var(--border); border-radius:12px; padding:18px; transition:all 0.2s; cursor:pointer; display:flex; flex-direction:column; gap:8px; }
+    .cve-card:hover { transform:translateY(-3px); box-shadow:0 10px 20px rgba(0,0,0,0.1); }
+    .cve-card p { margin:0; line-height:1.35; }
+    .chips { display:flex; flex-wrap:wrap; gap:6px; font-size:.78rem; }
+    .chip { background:#eef2ff; color:#3730a3; padding:2px 8px; border-radius:999px; }
+    .chip.layer { background:#ecfdf5; color:#065f46; }
+    .chip.auto { background:#fff7ed; color:#9a3412; }
+    .sev { padding:4px 12px; border-radius:999px; font-size:.85rem; font-weight:600; }
+    .sev-CRITICAL { background:#fee2e2; color:#991b1b; } .sev-HIGH { background:#ffedd5; color:#9a3412; }
+    .sev-MEDIUM { background:#fef9c3; color:#854d0e; } .sev-LOW { background:#dcfce7; color:#166534; } .sev-UNKNOWN { background:#f1f5f9; color:#475569; }
     .highlight { background:#fef3c7; padding:1px 4px; border-radius:3px; }
     .modal { display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.7); align-items:center; justify-content:center; }
     .modal-content { background:white; padding:25px; border-radius:12px; width:90%; max-width:900px; max-height:90vh; overflow-y:auto; box-shadow:0 10px 30px rgba(0,0,0,0.3); }
     .close { float:right; font-size:28px; cursor:pointer; }
-    .sponsor { position:fixed; bottom:15px; right:20px; font-size:0.85rem; color:#64748b; background:white; padding:6px 12px; border-radius:20px; box-shadow:0 2px 8px rgba(0,0,0,0.1); z-index:999; }
+    .sponsor { position:fixed; bottom:15px; right:20px; font-size:0.85rem; color:var(--muted); background:white; padding:6px 12px; border-radius:20px; box-shadow:0 2px 8px rgba(0,0,0,0.1); z-index:999; }
+    button { cursor:pointer; }
+    @media (max-width: 900px) { .container { flex-direction:column; } .sidebar { width:auto; position:static; max-height:none; } }
   </style>
 </head>
 <body>
-  <header><h1>FaultLine : Physical AI Vulnerability Database Explorer</h1></header>
+  <header>
+    <h1>FaultLine : Physical AI Vulnerability Database Explorer</h1>
+    <div class="stats" id="stats-strip"></div>
+  </header>
   <div class="container">
     <aside class="sidebar">
-      <h2>🔍 Search & Filter</h2>
-      <input type="text" id="keyword" class="search-box" placeholder="CVE ID, Title, Vendor..." onkeyup="debouncedSearch()">
+      <h2 style="margin-top:0">🔍 Search &amp; Filter</h2>
+      <input type="text" id="keyword" class="search-box" placeholder="CVE ID, title, vendor, product, tag…" onkeyup="debouncedSearch()">
 
       <div class="filter-group"><h3>Physical AI Domain</h3><div id="domain-filters" class="checkbox-group"></div></div>
-      <div class="filter-group"><h3>Vendor</h3><div id="vendor-filters" class="checkbox-group"></div></div>
+      <div class="filter-group"><h3>Technical Layer</h3><div id="layer-filters" class="checkbox-group"></div></div>
       <div class="filter-group"><h3>Severity</h3><div id="severity-filters" class="checkbox-group"></div></div>
+      <div class="filter-group"><h3>Vendor</h3><div id="vendor-filters" class="checkbox-group"></div></div>
+      <div class="filter-group"><h3>Enrichment</h3><div id="enrich-filters" class="checkbox-group"></div></div>
 
-      <button onclick="resetFilters()" style="width:100%;padding:12px;margin-top:10px;">Reset All</button>
+      <button onclick="resetFilters()" style="width:100%;padding:12px;margin-top:4px;">Reset All</button>
     </aside>
 
     <div class="main">
       <div style="background:white;padding:20px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);">
-        <div style="display:flex;justify-content:space-between;margin-bottom:16px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px;">
           <strong>Found <span id="result-count">0</span> vulnerabilities</strong>
           <div>
+            <select id="sort" onchange="applyFilters()">
+              <option value="published">Newest first</option>
+              <option value="score">Highest CVSS first</option>
+              <option value="cve">CVE ID</option>
+            </select>
             <button onclick="exportJSON()">Export JSON</button>
             <button onclick="exportCSV()">Export CSV</button>
           </div>
@@ -59,60 +84,86 @@
     <div class="modal-content">
       <span class="close" onclick="closeModal()">×</span>
       <h2 id="modal-title"></h2>
-      <pre id="modal-content" style="background:#f8fafc;padding:20px;border-radius:8px;overflow:auto;max-height:70vh;font-size:0.9rem;"></pre>
+      <pre id="modal-content" style="background:#f8fafc;padding:20px;border-radius:8px;overflow:auto;max-height:70vh;font-size:0.85rem;white-space:pre-wrap;"></pre>
     </div>
   </div>
 
-  <div class="sponsor">Sponsored by <a href="https://vicone.com" target="_blank">VicOne Inc.</a></div>
+  <div class="sponsor">Sponsored by <a href="https://vicone.com" target="_blank" rel="noopener">VicOne Inc.</a></div>
 
   <script>
     let allMetadata = [];
     let currentResults = [];
     let timeout;
+    const SEV_ORDER = ["CRITICAL", "HIGH", "MEDIUM", "LOW", "NONE", "UNKNOWN"];
 
     function debouncedSearch() { clearTimeout(timeout); timeout = setTimeout(applyFilters, 180); }
+    function esc(s) { return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 
     async function loadIndex() {
       try {
         const res = await fetch(`index.json?v=${Date.now()}`);
         allMetadata = await res.json();
+        allMetadata.forEach(i => { i.severity = i.severity || 'UNKNOWN'; i.layers = i.layers || []; i.domains = i.domains || []; i.vendors = i.vendors || []; i.enrichment = i.enrichment || 'curated'; });
+        renderStats();
         renderFilters();
         applyFilters();
-      } catch(e) { console.error(e); }
+      } catch(e) { console.error(e); document.getElementById('results-grid').innerHTML = '<p style="padding:40px;color:#b91c1c">Failed to load index.json</p>'; }
+    }
+
+    function count(values) { const m = new Map(); values.forEach(v => m.set(v, (m.get(v) || 0) + 1)); return m; }
+
+    function renderStats() {
+      const sev = count(allMetadata.map(i => i.severity));
+      const auto = allMetadata.filter(i => i.enrichment !== 'curated' && i.reviewed === false).length;
+      const latest = allMetadata.map(i => i.last_modified || i.published || '').sort().pop();
+      document.getElementById('stats-strip').innerHTML =
+        `<span><b>${allMetadata.length}</b> records</span>` +
+        SEV_ORDER.filter(s => sev.get(s)).map(s => `<span><b>${sev.get(s)}</b> ${s.toLowerCase()}</span>`).join('') +
+        (auto ? `<span><b>${auto}</b> auto-enriched awaiting review</span>` : '') +
+        (latest ? `<span>latest update <b>${esc(latest)}</b></span>` : '');
+    }
+
+    function filterHTML(id, counts, order) {
+      const keys = order ? order.filter(k => counts.has(k)) : [...counts.keys()].sort((a, b) => counts.get(b) - counts.get(a) || a.localeCompare(b));
+      return keys.map(k => `<label><span><input type="checkbox" value="${esc(k)}" onchange="applyFilters()"> ${esc(k)}</span><span class="n">${counts.get(k)}</span></label>`).join('');
     }
 
     function renderFilters() {
-      const domains = [...new Set(allMetadata.flatMap(i => i.domains || []))].sort();
-      document.getElementById("domain-filters").innerHTML = domains.map(d => `<label><input type="checkbox" value="${d}" onchange="applyFilters()"> ${d}</label>`).join('');
-
-      const vendors = [...new Set(allMetadata.flatMap(i => i.vendors || []))].sort();
-      document.getElementById("vendor-filters").innerHTML = vendors.map(v => `<label><input type="checkbox" value="${v}" onchange="applyFilters()"> ${v}</label>`).join('');
-
-      const severities = [...new Set(allMetadata.map(i => i.severity).filter(Boolean))].sort();
-      document.getElementById("severity-filters").innerHTML = severities.map(s => `<label><input type="checkbox" value="${s}" onchange="applyFilters()"> ${s}</label>`).join('');
+      document.getElementById("domain-filters").innerHTML = filterHTML('domain', count(allMetadata.flatMap(i => i.domains)));
+      document.getElementById("layer-filters").innerHTML = filterHTML('layer', count(allMetadata.flatMap(i => i.layers)));
+      document.getElementById("severity-filters").innerHTML = filterHTML('severity', count(allMetadata.map(i => i.severity)), SEV_ORDER);
+      document.getElementById("vendor-filters").innerHTML = filterHTML('vendor', count(allMetadata.flatMap(i => i.vendors)));
+      document.getElementById("enrich-filters").innerHTML = filterHTML('enrich', count(allMetadata.map(i => i.enrichment)));
     }
 
-    function getSelectedValues(id) {
-      return Array.from(document.querySelectorAll(`#${id} input:checked`)).map(el => el.value);
-    }
+    function getSelectedValues(id) { return Array.from(document.querySelectorAll(`#${id} input:checked`)).map(el => el.value); }
 
     function applyFilters() {
       const keyword = document.getElementById("keyword").value.toLowerCase().trim();
       const selDomains = getSelectedValues("domain-filters");
+      const selLayers = getSelectedValues("layer-filters");
       const selVendors = getSelectedValues("vendor-filters");
       const selSeverities = getSelectedValues("severity-filters");
+      const selEnrich = getSelectedValues("enrich-filters");
+      const sort = document.getElementById("sort").value;
 
       const filtered = allMetadata.filter(item => {
         if (keyword) {
-          const text = `${item.cve_id||''} ${item.title||''} ${(item.domains||[]).join(' ')} ${(item.vendors||[]).join(' ')} ${(item.tags||[]).join(' ')} ${item.severity||''}`.toLowerCase();
+          const text = `${item.cve_id||''} ${item.title||''} ${item.domains.join(' ')} ${item.layers.join(' ')} ${item.vendors.join(' ')} ${(item.products||[]).join(' ')} ${(item.tags||[]).join(' ')} ${item.cwe||''} ${item.severity}`.toLowerCase();
           if (!text.includes(keyword)) return false;
         }
-        if (selDomains.length && !selDomains.some(d => (item.domains||[]).includes(d))) return false;
-        if (selVendors.length && !selVendors.some(v => (item.vendors||[]).includes(v))) return false;
+        if (selDomains.length && !selDomains.some(d => item.domains.includes(d))) return false;
+        if (selLayers.length && !selLayers.some(l => item.layers.includes(l))) return false;
+        if (selVendors.length && !selVendors.some(v => item.vendors.includes(v))) return false;
         if (selSeverities.length && !selSeverities.includes(item.severity)) return false;
+        if (selEnrich.length && !selEnrich.includes(item.enrichment)) return false;
         return true;
       });
-
+      filtered.sort((a, b) => {
+        if (sort === 'score') return (b.score || 0) - (a.score || 0) || (b.published||'').localeCompare(a.published||'');
+        if (sort === 'cve') return b.cve_id.localeCompare(a.cve_id, undefined, {numeric: true});
+        return (b.published||'').localeCompare(a.published||'') || b.cve_id.localeCompare(a.cve_id, undefined, {numeric: true});
+      });
       currentResults = filtered;
       document.getElementById("result-count").textContent = filtered.length;
       renderResults(filtered);
@@ -121,13 +172,17 @@
     function renderResults(items) {
       const keyword = document.getElementById("keyword").value.toLowerCase().trim();
       const html = items.map(item => {
-        let title = item.title || '';
-        if (keyword) title = title.replace(new RegExp(`(${keyword})`, 'gi'), '<span class="highlight">$1</span>');
-        const fileName = item.file_name || `${item.cve_id}.pavt.json`;
-        return `<div class="cve-card" onclick="showDetail('${item.cve_id}', '${fileName}')">
-          <div style="font-weight:bold;color:#2563eb">${item.cve_id}</div>
+        let title = esc(item.title || '');
+        if (keyword) title = title.replace(new RegExp(`(${keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi'), '<span class="highlight">$1</span>');
+        const fileName = item.file_name || `${item.cve_id}.pavd.json`;
+        return `<div class="cve-card" onclick="showDetail('${esc(item.cve_id)}', '${esc(fileName)}')">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
+            <span style="font-weight:bold;color:#2563eb">${esc(item.cve_id)}</span>
+            <span class="sev sev-${item.severity}">${item.severity} ${item.score ?? ''}</span>
+          </div>
           <p>${title}</p>
-          <div><span style="background:#fee2e2;color:#b91c1c;padding:4px 12px;border-radius:999px;font-size:0.85rem;">${item.severity || 'UNKNOWN'} ${item.score || ''}</span></div>
+          <div class="chips">${item.domains.map(d => `<span class="chip">${esc(d)}</span>`).join('')}${item.layers.map(l => `<span class="chip layer">${esc(l)}</span>`).join('')}${item.enrichment !== 'curated' && item.reviewed === false ? '<span class="chip auto">auto · unreviewed</span>' : ''}</div>
+          <div style="font-size:.8rem;color:var(--muted)">${esc(item.vendors.join(', '))}${item.published ? ' · ' + esc(item.published) : ''}${item.cwe ? ' · ' + esc(item.cwe) : ''}</div>
         </div>`;
       }).join('');
       document.getElementById("results-grid").innerHTML = html || '<p style="padding:80px;text-align:center;color:#888;">No matching vulnerabilities found</p>';
@@ -149,19 +204,19 @@
     function closeModal() { document.getElementById("detail-modal").style.display = "none"; }
     function resetFilters() { document.getElementById("keyword").value = ""; document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false); applyFilters(); }
 
-     function exportJSON() {
+    function exportJSON() {
       if (currentResults.length === 0) return alert("No data to export");
-      const str = JSON.stringify(currentResults, null, 2);
-      downloadFile(str, `pavt_export_${new Date().toISOString().slice(0,10)}.json`, 'application/json');
+      downloadFile(JSON.stringify(currentResults, null, 2), `faultline_export_${new Date().toISOString().slice(0,10)}.json`, 'application/json');
     }
 
     function exportCSV() {
       if (currentResults.length === 0) return alert("No data to export");
-      let csv = "CVE ID,Title,Score,Severity,Domains,Vendors,Tags\n";
+      const q = v => `"${String(v ?? '').replace(/"/g, '""')}"`;
+      let csv = "CVE ID,Title,Published,Score,Severity,CWE,Domains,Technical Layers,Vendors,Products,Tags\n";
       currentResults.forEach(i => {
-        csv += `"${i.cve_id}","${(i.title||'').replace(/"/g,'""')}","${i.score||''}","${i.severity||''}","${(i.domains||[]).join('; ')}","${(i.vendors||[]).join('; ')}","${(i.tags||[]).join('; ')}"\n`;
+        csv += [i.cve_id, i.title, i.published, i.score, i.severity, i.cwe, i.domains.join('; '), i.layers.join('; '), i.vendors.join('; '), (i.products||[]).join('; '), (i.tags||[]).join('; ')].map(q).join(',') + "\n";
       });
-      downloadFile(csv, `pavt_export_${new Date().toISOString().slice(0,10)}.csv`, 'text/csv');
+      downloadFile(csv, `faultline_export_${new Date().toISOString().slice(0,10)}.csv`, 'text/csv');
     }
 
     function downloadFile(content, filename, type) {

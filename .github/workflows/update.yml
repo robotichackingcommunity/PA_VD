@@ -1,0 +1,72 @@
+name: FaultLine nightly sync
+
+on:
+  schedule:
+    - cron: "17 3 * * *"      # 03:17 UTC daily
+  workflow_dispatch:
+    inputs:
+      max_enrich:
+        description: "Max candidates to auto-enrich this run (0 disables)"
+        default: "20"
+      days:
+        description: "Discovery look-back window in days (blank = since last run)"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: faultline-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 170
+    env:
+      HAS_ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_API_KEY != '' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Restore HTTP cache
+        uses: actions/cache@v4
+        with:
+          path: data/cache
+          key: faultline-http-cache-${{ github.run_id }}
+          restore-keys: faultline-http-cache-
+
+      - name: Install Claude Code CLI (optional enrichment)
+        if: env.HAS_ANTHROPIC_KEY == 'true'
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Run pipeline and push
+        env:
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FAULTLINE_ENRICH: ${{ env.HAS_ANTHROPIC_KEY == 'true' && '1' || '0' }}
+          GIT_AUTHOR_NAME: faultline-bot
+          GIT_AUTHOR_EMAIL: faultline-bot@users.noreply.github.com
+        run: |
+          git config user.name  "$GIT_AUTHOR_NAME"
+          git config user.email "$GIT_AUTHOR_EMAIL"
+          EXTRA=""
+          if [ -n "${{ github.event.inputs.max_enrich }}" ]; then EXTRA="$EXTRA --max-enrich ${{ github.event.inputs.max_enrich }}"; fi
+          if [ -n "${{ github.event.inputs.days }}" ]; then EXTRA="$EXTRA --days ${{ github.event.inputs.days }}"; fi
+          ./update.sh $EXTRA
+
+      - name: Upload review queues
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: faultline-queues
+          path: |
+            data/queue/*.json
+            data/state.json
+          if-no-files-found: ignore

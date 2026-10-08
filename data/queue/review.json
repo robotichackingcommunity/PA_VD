@@ -1,0 +1,3039 @@
+{
+  "CVE-2026-101329": {
+    "cve_id": "CVE-2026-101329",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to improper access control.",
+    "published": "2026-10-06",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 6.5,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:03Z"
+  },
+  "CVE-2026-101331": {
+    "cve_id": "CVE-2026-101331",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to insufficiently protected credentials.",
+    "published": "2026-10-06",
+    "last_modified": "2026-10-07",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.7,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:04Z"
+  },
+  "CVE-2026-103360": {
+    "cve_id": "CVE-2026-103360",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to improper limitation of a pathname to a restricted directory.",
+    "published": "2026-10-06",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 8.1,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:05Z"
+  },
+  "CVE-2026-104334": {
+    "cve_id": "CVE-2026-104334",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to improper control of code generation.",
+    "published": "2026-10-06",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 9.8,
+        "severity": "CRITICAL",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:06Z"
+  },
+  "CVE-2026-104335": {
+    "cve_id": "CVE-2026-104335",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper access control.",
+    "published": "2026-10-06",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 8.8,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:24Z"
+  },
+  "CVE-2026-104634": {
+    "cve_id": "CVE-2026-104634",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "MCP client"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "beam_mcp: JSON boolean and null tool arguments reach dispatch as strings",
+    "description": "Incorrect Type Conversion or Cast vulnerability in BeamMCP.Server in ScriptKittyOS beam_mcp allows an MCP client's JSON true, false and null tool arguments to reach the host's dispatch function as the strings \"true\", \"false\" and \"nil\". After BeamMCP.Schema.validate/2 accepted a value as a boolean, normalize_arguments/2 passed every argument through to_json_value/1, whose atom clause converts true, false and nil to strings. A string is truthy in Elixir, so a host that tests a boolean argument, for example if args.dry_run, takes the opposite branch for false, and a guard such as confirm: false r",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "4.0",
+        "score": 2.3,
+        "severity": "LOW",
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "source": "EEF",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "ScriptKittyOS",
+        "product": "beam_mcp",
+        "versions": [
+          "0.1.0 < 0.10.1"
+        ],
+        "platforms": []
+      },
+      {
+        "vendor": "ScriptKittyOS",
+        "product": "beam_mcp",
+        "versions": [
+          "083838eb8e17fe5f6fcaf761bdbe203110288b0b < 289dbdbad641943b29a3b8d1eb36506cc8cec10a"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://github.com/ScriptKittyOS/beam_mcp/security/advisories/GHSA-wv7p-j6qh-3hj4",
+      "https://cna.erlef.org/cves/CVE-2026-104634.html",
+      "https://osv.dev/vulnerability/EEF-CVE-2026-104634",
+      "https://github.com/ScriptKittyOS/beam_mcp/commit/083838eb8e17fe5f6fcaf761bdbe203110288b0b",
+      "https://github.com/ScriptKittyOS/beam_mcp/commit/289dbdbad641943b29a3b8d1eb36506cc8cec10a"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:05:18Z"
+  },
+  "CVE-2026-107269": {
+    "cve_id": "CVE-2026-107269",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "agentic"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Gophish through 0.12.1 Username Enumeration via POST /login Timing Discrepancy",
+    "description": "Gophish through 0.12.1 contains a timing discrepancy vulnerability in AdminServer.Login that allows unauthenticated attackers to enumerate valid usernames by measuring login response times. Attackers can submit candidate usernames to POST /login and detect bcrypt comparison delays for existing accounts, narrowing targets for password guessing or credential stuffing.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-07",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "4.0",
+        "score": 6.3,
+        "severity": "MEDIUM",
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
+        "source": "VulnCheck",
+        "type": "mitre-cna"
+      },
+      {
+        "version": "3.1",
+        "score": 3.7,
+        "severity": "LOW",
+        "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+        "source": "VulnCheck",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "gophish",
+        "product": "gophish",
+        "versions": [
+          "0 <= 0.12.1"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://blog.ostorlab.co/gophish-0121-manual-review-agentic-deep-scan.html",
+      "https://github.com/gophish/gophish/blob/b1648f0759c6d57ac989157c55d8b47c40254fe6/controllers/route.go#L375-L390",
+      "https://github.com/gophish/gophish",
+      "https://www.vulncheck.com/advisories/gophish-through-0.12.1-username-enumeration-via-post-login-timing-discrepancy"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:10:39Z"
+  },
+  "CVE-2026-107270": {
+    "cve_id": "CVE-2026-107270",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "agentic"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Gophish through 0.12.1 Object Takeover via Client-Supplied ID on API Create Endpoints",
+    "description": "Gophish through 0.12.1 contains an insecure direct object reference vulnerability that allows authenticated users to take over other users' groups, templates, landing pages and sending profiles. Attackers can supply another user's sequential id in POST requests to /api/groups/, /api/templates/, /api/pages/ or /api/smtp/ to overwrite and reassign objects, locking out owners and exposing victims' recipient lists.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-07",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "4.0",
+        "score": 7.1,
+        "severity": "HIGH",
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N",
+        "source": "VulnCheck",
+        "type": "mitre-cna"
+      },
+      {
+        "version": "3.1",
+        "score": 7.1,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N",
+        "source": "VulnCheck",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "gophish",
+        "product": "gophish",
+        "versions": [
+          "0 <= 0.12.1"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://blog.ostorlab.co/gophish-0121-manual-review-agentic-deep-scan.html",
+      "https://github.com/gophish/gophish/blob/b1648f0759c6d57ac989157c55d8b47c40254fe6/controllers/api/group.go#L28-L43",
+      "https://github.com/gophish/gophish/blob/b1648f0759c6d57ac989157c55d8b47c40254fe6/models/group.go#L194-L200",
+      "https://github.com/gophish/gophish",
+      "https://www.vulncheck.com/advisories/gophish-through-0.12.1-object-takeover-via-client-supplied-id-on-api-create-endpoints"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:10:17Z"
+  },
+  "CVE-2026-107271": {
+    "cve_id": "CVE-2026-107271",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "agentic"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Gophish through 0.12.1 Login Rate Limit Bypass via X-Forwarded-For Spoofing",
+    "description": "Gophish through 0.12.1 contains a rate limit bypass vulnerability that allows unauthenticated attackers to evade /login throttling by spoofing X-Forwarded-For or X-Real-IP headers. Attackers can send a different forwarded address per request so the limiter keyed on rewritten RemoteAddr never triggers, enabling unlimited password guessing and credential stuffing.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-07",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "4.0",
+        "score": 6.9,
+        "severity": "MEDIUM",
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
+        "source": "VulnCheck",
+        "type": "mitre-cna"
+      },
+      {
+        "version": "3.1",
+        "score": 5.3,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+        "source": "VulnCheck",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "gophish",
+        "product": "gophish",
+        "versions": [
+          "0 <= 0.12.1"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://blog.ostorlab.co/gophish-0121-manual-review-agentic-deep-scan.html",
+      "https://github.com/gophish/gophish/blob/b1648f0759c6d57ac989157c55d8b47c40254fe6/controllers/route.go#L168",
+      "https://github.com/gophish/gophish/blob/b1648f0759c6d57ac989157c55d8b47c40254fe6/middleware/ratelimit/ratelimit.go#L132-L136",
+      "https://github.com/gophish/gophish",
+      "https://www.vulncheck.com/advisories/gophish-through-0.12.1-login-rate-limit-bypass-via-x-forwarded-for-spoofing"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:10:18Z"
+  },
+  "CVE-2026-107272": {
+    "cve_id": "CVE-2026-107272",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "agentic"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Gophish through 0.12.1 XSS via Unescaped SMTP Server Error Messages",
+    "description": "Gophish through 0.12.1 contains stored and reflected cross-site scripting vulnerabilities that allow attackers to inject script by returning malicious SMTP server error messages. Attackers controlling or intercepting a sending profile's SMTP server can execute script when administrators view campaign results or send test emails, stealing API keys.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-07",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "4.0",
+        "score": 2.3,
+        "severity": "LOW",
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N",
+        "source": "VulnCheck",
+        "type": "mitre-cna"
+      },
+      {
+        "version": "3.1",
+        "score": 4.7,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N",
+        "source": "VulnCheck",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "gophish",
+        "product": "gophish",
+        "versions": [
+          "0 <= 0.12.1"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://blog.ostorlab.co/gophish-0121-manual-review-agentic-deep-scan.html",
+      "https://github.com/gophish/gophish/blob/b1648f0759c6d57ac989157c55d8b47c40254fe6/static/js/src/app/campaign_results.js#L422-L427",
+      "https://github.com/gophish/gophish/blob/b1648f0759c6d57ac989157c55d8b47c40254fe6/static/js/src/app/campaigns.js#L110-L113",
+      "https://github.com/gophish/gophish",
+      "https://www.vulncheck.com/advisories/gophish-through-0.12.1-xss-via-unescaped-smtp-server-error-messages"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:10:19Z"
+  },
+  "CVE-2026-107273": {
+    "cve_id": "CVE-2026-107273",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "agentic"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Gophish 0.11.0 through 0.12.1 SSRF via POST /api/import/site",
+    "description": "Gophish 0.11.0 through 0.12.1 contains a server-side request forgery vulnerability that allows authenticated low-privileged users to reach loopback and private hosts via POST /api/import/site. Attackers can submit internal URLs, which the default dialer deny list does not block, to read service responses and enumerate internal hosts and ports through error messages.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-07",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "4.0",
+        "score": 5.3,
+        "severity": "MEDIUM",
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
+        "source": "VulnCheck",
+        "type": "mitre-cna"
+      },
+      {
+        "version": "3.1",
+        "score": 4.3,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+        "source": "VulnCheck",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "gophish",
+        "product": "gophish",
+        "versions": [
+          "0.11.0 <= 0.12.1"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://blog.ostorlab.co/gophish-0121-manual-review-agentic-deep-scan.html",
+      "https://github.com/gophish/gophish/blob/b1648f0759c6d57ac989157c55d8b47c40254fe6/dialer/dialer.go#L82-L86",
+      "https://github.com/gophish/gophish/blob/b1648f0759c6d57ac989157c55d8b47c40254fe6/controllers/api/import.go#L102-L125",
+      "https://github.com/gophish/gophish",
+      "https://www.vulncheck.com/advisories/gophish-0.11.0-through-0.12.1-ssrf-via-post-api-import-site"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:10:20Z"
+  },
+  "CVE-2026-61427": {
+    "cve_id": "CVE-2026-61427",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "MCP client"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "PraisonAI: MCP HTTP-stream transport is unauthenticated by default, exposing tool enumeration and an unvalidated tool-call surface",
+    "description": "## Summary\n\nPraisonAI's MCP HTTP-stream server authenticates requests only when an API key is configured; the CLI defaults `--api-key` to `None`, so `praisonai mcp serve --transport http-stream` exposes the full MCP surface unauthenticated. A request with no `Authorization` (and no `Origin`) can `initialize` and `tools/list` (~50 tools), and the dispatcher forwards tool-call arguments to handlers without validating them against the advertised `inputSchema`. Runtime-confirmed for unauthenticated `initialize`/`tools/list` and the dispatcher schema-bypass. This is **not** an RCE/file-read in 4.6.",
+    "published": "2026-07-15",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.3,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+        "source": "github",
+        "type": "ghsa"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "pip",
+        "product": "praisonai",
+        "versions": [
+          "<= 4.6.77"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-hc5v-gxvj-58wh",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-61427",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-62178",
+      "https://www.vulncheck.com/advisories/praisonai-before-authentication-bypass-via-http-stream",
+      "https://github.com/advisories/GHSA-hc5v-gxvj-58wh"
+    ],
+    "origin": "ghsa",
+    "seen_at": "2026-10-08T22:13:55Z"
+  },
+  "CVE-2026-61434": {
+    "cve_id": "CVE-2026-61434",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "prompt injection"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "PraisonAI: Shell command allowlist bypass via find -exec built-in action",
+    "description": "### Summary\n\nThe shell command execution hardening introduced in PraisonAI npm 1.7.2 / Python 4.6.58 to fix GHSA-5jv7-2mjm-h6qj (utility-tools shell chaining) and GHSA-vjv9-7m7j-h833 (SandboxExecutor chaining) can be bypassed via `find`'s built-in `-exec` action.\n\nThe fix blocks shell metacharacters (`` ;|&`><$()${} ``) and uses `spawn()` with `shell: false`. However, `find` remains in the safe command allowlist, and its `-exec ... {} +` action executes commands without shell metacharacters — the `+` batch terminator replaces the blocked `;` terminator. The same gap exists in 4 parallel implem",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 8.8,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "source": "github",
+        "type": "ghsa"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "pip",
+        "product": "praisonai",
+        "versions": [
+          "<= 4.6.77"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-cv3g-hj65-pcfh",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-61434",
+      "https://www.vulncheck.com/advisories/praisonai-before-allowlist-bypass-via-find-exec",
+      "https://github.com/advisories/GHSA-cv3g-hj65-pcfh"
+    ],
+    "origin": "ghsa",
+    "seen_at": "2026-10-08T22:13:55Z"
+  },
+  "CVE-2026-61445": {
+    "cve_id": "CVE-2026-61445",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "prompt injection"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "PraisonAI: AICoder Arbitrary File Write and Command Execution via LLM Tool Calls",
+    "description": "### Summary\nThe `AICoder` UI component exposes `write_to_file` and `execute_command` tools to the LLM with no path validation and no command sanitization. An attacker can achieve arbitrary file write to any location on the filesystem (including `/root/.ssh/authorized_keys`, `/etc/crontab`) and arbitrary command execution through prompt injection in the chat interface. Docker containers run as root, maximizing impact.\n\n### Details\n\n#### Path Traversal in write_to_file\n\n`src/praisonai/praisonai/ui/components/aicoder.py` (lines 122-131):\n\n```python\nasync def write_to_file(self, file_path, content",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 9.9,
+        "severity": "CRITICAL",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+        "source": "github",
+        "type": "ghsa"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "pip",
+        "product": "praisonai",
+        "versions": [
+          "<= 4.6.77"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-9mp3-24cc-77mg",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-61445",
+      "https://www.vulncheck.com/advisories/praisonai-before-arbitrary-file-write-and-command-execution",
+      "https://github.com/advisories/GHSA-9mp3-24cc-77mg"
+    ],
+    "origin": "ghsa",
+    "seen_at": "2026-10-08T22:13:55Z"
+  },
+  "CVE-2026-76286": {
+    "cve_id": "CVE-2026-76286",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "MCP Server"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Server-Side Request Forgery (SSRF) through Custom API Tools in Splunk MCP Server",
+    "description": "In Splunk MCP Server versions below 1.2.1, Splunk MCP Server could send the Splunk platform authentication token of a user who runs a custom Application Programming Interface (API) tool to the URL configured for that tool. If another user controls that URL, they could capture the token and use it to access data and perform actions as the user who ran the tool. Successful exploitation requires a user who holds a role that contains the mcp_tool_execute capability to run a custom API tool configured by another user. For more information see Configure the Splunk MCP Server (https://help.splunk.com",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 5.3,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:L/A:L",
+        "source": "cisco",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Splunk",
+        "product": "Splunk MCP Server",
+        "versions": [
+          "1.2 < 1.2.1"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://advisory.splunk.com/advisories/SVD-2026-1004"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:08:53Z"
+  },
+  "CVE-2026-88257": {
+    "cve_id": "CVE-2026-88257",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "MCP client"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "beam_mcp: nested tool argument constraints advertised but not enforced",
+    "description": "Improper Input Validation vulnerability in BeamMCP.Schema in ScriptKittyOS beam_mcp allows an MCP client to reach a tool's dispatch function with arguments that violate the input schema the server advertised. BeamMCP.Schema.validate/2 checked type, required, additionalProperties, enum and numeric bounds on the top-level arguments object only. Constraints inside nested objects and on array items (items, minItems, maxItems, minLength, maxLength, pattern, nested required, enum and additionalProperties: false) were advertised by tools/list and never checked at tools/call or prompts/get, and keywor",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "4.0",
+        "score": 5.3,
+        "severity": "MEDIUM",
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "source": "EEF",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "ScriptKittyOS",
+        "product": "beam_mcp",
+        "versions": [
+          "0.1.0 < 0.10.1"
+        ],
+        "platforms": []
+      },
+      {
+        "vendor": "ScriptKittyOS",
+        "product": "beam_mcp",
+        "versions": [
+          "083838eb8e17fe5f6fcaf761bdbe203110288b0b < 289dbdbad641943b29a3b8d1eb36506cc8cec10a"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://github.com/ScriptKittyOS/beam_mcp/security/advisories/GHSA-mrg2-4747-fmpw",
+      "https://cna.erlef.org/cves/CVE-2026-88257.html",
+      "https://osv.dev/vulnerability/EEF-CVE-2026-88257",
+      "https://github.com/ScriptKittyOS/beam_mcp/commit/083838eb8e17fe5f6fcaf761bdbe203110288b0b",
+      "https://github.com/ScriptKittyOS/beam_mcp/commit/289dbdbad641943b29a3b8d1eb36506cc8cec10a"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:05:23Z"
+  },
+  "CVE-2026-88962": {
+    "cve_id": "CVE-2026-88962",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper control of code generation.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 8.8,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:07Z"
+  },
+  "CVE-2026-93443": {
+    "cve_id": "CVE-2026-93443",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in code.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.5,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:08Z"
+  },
+  "CVE-2026-93445": {
+    "cve_id": "CVE-2026-93445",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper control of generation of code.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 8.1,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:08Z"
+  },
+  "CVE-2026-93447": {
+    "cve_id": "CVE-2026-93447",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow an attacker with access to the server secret and Redis write access to submit a malicious serialized cache value. When the value was retrieved, deserialization could have executed attacker-controlled code with the privileges of the service process.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.5,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:09Z"
+  },
+  "CVE-2026-93448": {
+    "cve_id": "CVE-2026-93448",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to improper limitation of a pathname to a restricted directory.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-07",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 6.5,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:10Z"
+  },
+  "CVE-2026-93449": {
+    "cve_id": "CVE-2026-93449",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper control of code generation.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 8.5,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:11Z"
+  },
+  "CVE-2026-93674": {
+    "cve_id": "CVE-2026-93674",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 9.8,
+        "severity": "CRITICAL",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:12Z"
+  },
+  "CVE-2026-93675": {
+    "cve_id": "CVE-2026-93675",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to an expected dependency confusion.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 8.8,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:13Z"
+  },
+  "CVE-2026-93677": {
+    "cve_id": "CVE-2026-93677",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to exposure of sensitive information to an unauthorized actor.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-07",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.7,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:14Z"
+  },
+  "CVE-2026-93678": {
+    "cve_id": "CVE-2026-93678",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to improper authorization.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-07",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.6,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:15Z"
+  },
+  "CVE-2026-93679": {
+    "cve_id": "CVE-2026-93679",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to cause a denial of service due to uncontrolled resource consumption during ZIP file extraction.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-07",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 4.3,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:15Z"
+  },
+  "CVE-2026-97655": {
+    "cve_id": "CVE-2026-97655",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to an incomplete blocklist in the code security scanner.",
+    "published": "2026-10-06",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 8.8,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:16Z"
+  },
+  "CVE-2026-97671": {
+    "cve_id": "CVE-2026-97671",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to a path traversal vulnerability.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-07",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 6.5,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:17Z"
+  },
+  "CVE-2026-97673": {
+    "cve_id": "CVE-2026-97673",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper input validation.",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 8.8,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:18Z"
+  },
+  "CVE-2026-97674": {
+    "cve_id": "CVE-2026-97674",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary OS commands due to improper neutralization of special elements used in an OS command ('Code Injection'), aka improper control of code generation.",
+    "published": "2026-10-06",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 8.1,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:19Z"
+  },
+  "CVE-2026-97676": {
+    "cve_id": "CVE-2026-97676",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in code, resulting in a sandbox escape.",
+    "published": "2026-10-06",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 8.8,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:20Z"
+  },
+  "CVE-2026-97678": {
+    "cve_id": "CVE-2026-97678",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper input validation.",
+    "published": "2026-10-06",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 8.8,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:21Z"
+  },
+  "CVE-2026-97679": {
+    "cve_id": "CVE-2026-97679",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command ('Code Injection') related to improper input validation.",
+    "published": "2026-10-06",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 8.8,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:22Z"
+  },
+  "CVE-2026-97680": {
+    "cve_id": "CVE-2026-97680",
+    "score": 4,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Embodied / agentic AI frameworks",
+        "weight": 4,
+        "sample": "Langflow"
+      }
+    ],
+    "proposed_domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "title": "Langflow OSS is affected by multiple vulnerabilities",
+    "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information or inject malicious data due to improper access control in the vertex result caching subsystem.",
+    "published": "2026-10-06",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 8.3,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+        "source": "ibm",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS",
+        "versions": [
+          "1.0.0 <= 1.12.2"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://www.ibm.com/support/pages/node/7290694"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:13:23Z"
+  },
+  "CVE-2026-103010": {
+    "cve_id": "CVE-2026-103010",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Heap-based Buffer Overflow in hMailServer",
+    "description": "Heap-based buffer overflow in the legacy Blowfish decryption routine (BlowFishEncryptor::DecryptFromString) in Progressive Robot hMailServer 6.0.0 through 6.3.3 on Windows allows a local interactive user with no hMailServer credentials to write bytes of their choosing past the end of a 255-byte heap buffer in the hMailServer service process, which runs as LocalSystem by default. The user does this by passing a long hexadecimal string to the COM method Utilities.BlowfishDecrypt, which checked no authentication. The routine converted hexadecimal input of any length into a fixed 255-byte buffer b",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.8,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.0.0 < 6.3.4"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/commit/135a1908ff820ed587d5f180f98c53bd010d8931",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.4",
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/49"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:26Z"
+  },
+  "CVE-2026-103011": {
+    "cve_id": "CVE-2026-103011",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Heap-based Buffer Overflow in hMailServer",
+    "description": "Heap-based buffer overflow in the legacy Blowfish encryption routine (BlowFishEncryptor::Encode, called by EncryptToString) in Progressive Robot hMailServer 6.0.0 through 6.3.5 allows an authenticated mailbox user to cause a denial of service (service crash), and possibly other unspecified impact. In 6.3.4 and 6.3.5, where the self-service REST API is enabled (it is off by default), the user does this remotely by adding a fetch account whose password is 129 to 247 characters long and not a multiple of 8, and then requesting their personal data export (GET /api/v1/me/export.zip), which encrypts",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 6.5,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.0.0 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/49",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:27Z"
+  },
+  "CVE-2026-103647": {
+    "cve_id": "CVE-2026-103647",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') in hMailServer",
+    "description": "Cross-site scripting in the webmail of Progressive Robot hMailServer 6.3.2 through 6.3.5 allows a remote attacker who can send a user an encrypted message to run script in the webmail's origin with that user's session. When the webmail decrypted an S/MIME message (from 6.3.2) or an OpenPGP message (from 6.3.4) in the browser, it offered each decrypted attachment as a blob URL of the media type the message declared for it. A click saved the file, but if the user opened the attachment in a new tab, a part declared as text/html was rendered as a document of the webmail's origin and its script cou",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 8.0,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:N",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.3.2 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/52",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:28Z"
+  },
+  "CVE-2026-103649": {
+    "cve_id": "CVE-2026-103649",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Synchronous Access of Remote Resource without Timeout in hMailServer",
+    "description": "Missing network timeouts in the Linux builds of Progressive Robot hMailServer 6.3.0 through 6.3.5 allow a remote attacker to hold server threads indefinitely and so stop outbound mail delivery (denial of service). The server set its socket timeouts in the form Windows takes, which Linux refuses, and its HTTPS clients read without a deadline, so a peer that accepts a connection and then sends nothing held the waiting thread for as long as the connection stayed open. The MTA-STS policy fetch, enabled by default, is made during outbound delivery to mta-sts., so anyone who can make the server deli",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.5,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.3.0 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/53",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:28Z"
+  },
+  "CVE-2026-104658": {
+    "cve_id": "CVE-2026-104658",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Reliance on Untrusted Inputs in a Security Decision in hMailServer",
+    "description": "The Linux live-update apply helper (hmailserver-update) of Progressive Robot hMailServer 6.3.4 and 6.3.5 runs as root on a request file written by the unprivileged hmailserver service account, and took from that request the program used to verify an AppImage update's signature and the systemd unit to stop before reading the service account's files. An attacker who already runs code as the hmailserver service account, for example through another flaw in the mail server, can therefore have arbitrary code executed as root, on any Linux installation where the live update's path unit is active - th",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.8,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.3.4 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/58",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:29Z"
+  },
+  "CVE-2026-104659": {
+    "cve_id": "CVE-2026-104659",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Origin Validation Error in hMailServer",
+    "description": "Missing Host header validation and missing throttling of failed administrator sign-ins in the REST API listener of Progressive Robot hMailServer 6.0.0 through 6.3.5 allow a remote attacker to brute-force the server administrator's password through the administrator's own browser by DNS rebinding. The listener, which is off by default and bound to the loopback when enabled, answered requests whatever their Host header named, and a failed sign-in with the administrator's password from the loopback was neither auto-banned nor delayed. A web page whose host name the attacker rebinds to 127.0.0.1, ",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.5,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.0.0 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/57",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:30Z"
+  },
+  "CVE-2026-104660": {
+    "cve_id": "CVE-2026-104660",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Missing Authorization in hMailServer",
+    "description": "Missing authorization on COM objects in Progressive Robot hMailServer 6.0.0 through 6.3.5 (Windows only) lets a local interactive user with no hMailServer credential read and write arbitrary files as the service account and queue mail as any sender. The service registers its COM classes with no DCOM access or launch permission and calls CoInitializeSecurity with no security descriptor, so any user logged on at the console or over Remote Desktop can activate the classes in the running service; a hMailServer.Message, its Attachments and Attachment, and a hMailServer.FetchAccount created this way",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.8,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.0.0 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/59",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:31Z"
+  },
+  "CVE-2026-104704": {
+    "cve_id": "CVE-2026-104704",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Cleartext Transmission of Sensitive Information in hMailServer",
+    "description": "Progressive Robot hMailServer 6.0.0 through 6.3.5 does not enforce TLS for outbound SMTP delivery to a mail exchanger whose DNSSEC-validated TLSA records contain no DANE-EE (usage 3) record, contrary to RFC 7672 section 2.2. The server used only DANE-EE records and treated a validated TLSA record set consisting of DANE-TA (usage 2) or otherwise unusable records as if no records were published, so delivery to such a host fell back to opportunistic TLS. An attacker with an active position on the network path between the server and the recipient's mail exchanger can suppress or break the STARTTLS",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.4,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.0.0 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/61",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:32Z"
+  },
+  "CVE-2026-105192": {
+    "cve_id": "CVE-2026-105192",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "ML / vision libraries",
+        "weight": 3,
+        "sample": "pickle"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components",
+      "Physical AI Infrastructure"
+    ],
+    "proposed_layers": [
+      "AI/ML Runtime / Inference"
+    ],
+    "title": "LMCache Unauthenticated RCE in multiprocess mode via pickle deserialization",
+    "description": "LMCache multiprocess mode, also called distributed mode, opens an unauthenticated ZeroMQ ROUTER so worker processes can register and share KV cache blocks. Messages on that socket are msgpack. Extension code 1 is passed to DeviceIPCWrapper.Deserialize, which calls pickle.loads, while the server is still decoding request arguments and before the handler runs. A single unauthenticated ZMQ DEALER message to the transport port (default 5555) therefore executes code as the user the LMCache process runs as. Official container images run that process as root. The transport binds to localhost unless t",
+    "published": "2026-10-07",
+    "last_modified": "2026-10-07",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 9.8,
+        "severity": "CRITICAL",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "source": "JFROG",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "LMCache",
+        "product": "LMCache",
+        "versions": [
+          "0.3.9 <= *"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://github.com/LMCache/LMCache",
+      "https://pypi.org/project/lmcache/",
+      "https://github.com/LMCache/LMCache/blob/v0.5.5/lmcache/v1/platform/base/ipc_wrapper.py",
+      "https://github.com/LMCache/LMCache/blob/v0.3.9/lmcache/v1/multiprocess/custom_types.py"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:11:52Z"
+  },
+  "CVE-2026-107572": {
+    "cve_id": "CVE-2026-107572",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Inefficient Regular Expression Complexity in hMailServer",
+    "description": "Inefficient complexity in the Sieve filter evaluation of Progressive Robot hMailServer 6.2.24 through 6.3.5 allows an authenticated account holder to make the mail services unavailable with their own filter. A ':matches' pattern was matched by a backtracking descent whose time grew with the matched value's length raised to the number of wildcards, so a pattern such as '*a*a*a*b' over 800 characters took 44 seconds; and 'deleteheader' erased the fields it removed one at a time, so removing many fields of one name over a message's header cost O(N^2) (80,000 fields took 18.8 seconds). Sieve filte",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 6.5,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.2.24 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/75",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:11Z"
+  },
+  "CVE-2026-107573": {
+    "cve_id": "CVE-2026-107573",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Incorrect Default Permissions in hMailServer",
+    "description": "Incorrect default permissions in the Windows installer of Progressive Robot hMailServer 6.0.0 through 6.3.5 allow a local authenticated user to read the mail server's data. The installer created the data, log, temp, database and event folders and the hMailServer.INI configuration file with the permissions inherited from the installation folder, by default under Program Files, which give the local Users group read access. Any user who can sign in to the computer could read every stored message, the logs, the built-in database with the accounts' password hashes whenever the service is stopped, a",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.8,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.0.0 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/77",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:12Z"
+  },
+  "CVE-2026-107574": {
+    "cve_id": "CVE-2026-107574",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Inefficient Algorithmic Complexity in hMailServer",
+    "description": "Inefficient algorithmic complexity in the JSON reader of Progressive Robot hMailServer allows a remote unauthenticated attacker to make the mail services unavailable. Reading a JSON object kept the first of each duplicated member name by searching the members already read, so an object of N distinct member names cost O(N^2): 1 MB took 8.9 seconds and 4 MB took 300 seconds against the affected code. A remote attacker reaches the reader without an account by mailing a crafted TLS-RPT report (up to 16 MB after decompression) to a hosted domain's published report mailbox, which is read on a delive",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.5,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.2.28 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/76",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:23Z"
+  },
+  "CVE-2026-107575": {
+    "cve_id": "CVE-2026-107575",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Inefficient Algorithmic Complexity in hMailServer",
+    "description": "Inefficient algorithmic complexity in the SPF macro expansion of Progressive Robot hMailServer 6.3.4 and 6.3.5 allows a remote unauthenticated attacker to consume worker-thread time by publishing a crafted SPF record. RFC 7208 section 7.1 requires a name too long to look up to lose whole labels from the left; the server did this by removing one label at a time and copying the rest of the name each time, so the work grew with the square of the expansion. An attacker who publishes an SPF record for a domain they control, with a mechanism whose domain-spec expands through macros to a name far lon",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 5.3,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.3.4 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/74",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:13Z"
+  },
+  "CVE-2026-107576": {
+    "cve_id": "CVE-2026-107576",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Inefficient Algorithmic Complexity in hMailServer",
+    "description": "Inefficient algorithmic complexity in the inbound DKIM and ARC signature verification of Progressive Robot hMailServer 6.0.0 through 6.3.5 allows a remote unauthenticated attacker to make the mail services unavailable by sending a message. Building the canonical header and choosing the header fields named in a signature's h= tag took time growing with the square of the message's header: the 'simple' canonicalisation prepended each continuation line of a folded field to the lines already gathered, and both canonicalisations searched the gathered fields from the bottom for each h= name and erase",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.5,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.0.0 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/73",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:14Z"
+  },
+  "CVE-2026-107577": {
+    "cve_id": "CVE-2026-107577",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Loop with Unreachable Exit Condition ('Infinite Loop') in hMailServer",
+    "description": "Inefficient algorithmic complexity and a non-terminating loop in the MIME processing of received messages in Progressive Robot hMailServer 6.0.0 through 6.3.5 allow a remote unauthenticated attacker to make the mail services unavailable by sending a message. Removing a MIME header parameter whose value is empty and directly followed by a semicolon (for example a Content-Disposition with 'filename=a.bat; filename=;') entered a loop that never terminates, holding a worker thread at full load until the server is restarted; this is reached when the attachment blocker renames a blocked attachment o",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.5,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.0.0 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/72",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:15Z"
+  },
+  "CVE-2026-107578": {
+    "cve_id": "CVE-2026-107578",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Improper Link Resolution Before File Access ('Link Following') in hMailServer",
+    "description": "Improper link resolution and external control of file paths in the administrative command-line operations of hMailServer.exe in Progressive Robot hMailServer 6.3.4 and 6.3.5 allow a local attacker who already runs code as the low-privilege service account to escalate privilege. On Windows, operations run with administrator rights by the installer, DBSetup, the Control Panel or an administrator wrote log entries and crash records into the log folder, created, deleted and changed the permissions of the self-signed certificate and private key in the data folder, and rewrote message files in the d",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 6.7,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.3.4 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/71",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:15Z"
+  },
+  "CVE-2026-107579": {
+    "cve_id": "CVE-2026-107579",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Inefficient Algorithmic Complexity in hMailServer",
+    "description": "Inefficient algorithmic complexity in the bounce and complaint processing of Progressive Robot hMailServer 6.3.4 and 6.3.5 allows a remote unauthenticated attacker to stop mail delivery by sending messages, when bounce processing or complaint processing is enabled or a mailing list is managed by the server (none is by default). The readers of incoming delivery status notifications (RFC 3464) and abuse feedback reports (RFC 5965) removed the blank lines at the start of the returned headers part two bytes at a time, copying the rest of the part each time, so their work grew with the square of th",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.5,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.3.4 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/70",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:16Z"
+  },
+  "CVE-2026-107580": {
+    "cve_id": "CVE-2026-107580",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Inefficient Algorithmic Complexity in hMailServer",
+    "description": "Inefficient algorithmic complexity in the decoding of message header fields in Progressive Robot hMailServer 6.0.0 through 6.3.5 allows a remote unauthenticated attacker to make the IMAP, SMTP and POP3 services, or the webmail, unavailable by sending a message. The server unfolded a decoded header value by finding each line break from the end of the value and removing it, moving the rest of the value each time, so its work grew with the square of the number of line breaks, and an RFC 2047 encoded word may decode to any number of them. A received message whose Subject or other header field hold",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 6.5,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.0.0 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/69",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:17Z"
+  },
+  "CVE-2026-107581": {
+    "cve_id": "CVE-2026-107581",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Inefficient Algorithmic Complexity in hMailServer",
+    "description": "Progressive Robot hMailServer 6.0.0 through 6.3.5 processes several IMAP commands from a signed-in account in time quadratic in the command's length or in the number of elements it names, and can be made to hold memory out of proportion to a command. The FETCH data-item parser normalised a BODY[] section with a case-insensitive string replacement that copied the whole item per occurrence and split the item list by repeatedly copying the remainder of the command; the server's case-insensitive search compared a needle afresh at every position, so a long SEARCH TEXT key over a message cost the pr",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 6.5,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.0.0 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/68",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:18Z"
+  },
+  "CVE-2026-107582": {
+    "cve_id": "CVE-2026-107582",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Inefficient Algorithmic Complexity in hMailServer",
+    "description": "Inefficient algorithmic complexity in the REST API (6.3.3 through 6.3.5) and the IMAP PREVIEW response (6.2.22 through 6.3.5) of Progressive Robot hMailServer allows a remote unauthenticated attacker to make the webmail, the administration console and the REST API unavailable by sending a message. To show a snippet of each message in a folder's message list, the server decoded the character entity references of a message that has an HTML part and no text part with a string replacement whose work grew with the square of their number. A received HTML-only message holding a very large number of e",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 6.5,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.2.22-pre1 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/67",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:19Z"
+  },
+  "CVE-2026-107583": {
+    "cve_id": "CVE-2026-107583",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Inefficient Algorithmic Complexity in hMailServer",
+    "description": "Inefficient algorithmic complexity in the webmail's message view of the REST API in Progressive Robot hMailServer 6.3.2 through 6.3.5 allows a remote unauthenticated attacker to make the webmail, the administration console and the REST API unavailable by sending a message. The route that renders a received message's HTML replaced each reference to an embedded image in place, with work that grew with the square of the number of references, and wrote the image out for every reference while counting it against its size limit only once. A message whose HTML refers to one small embedded image a ver",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 6.5,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.3.2 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/65",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:19Z"
+  },
+  "CVE-2026-107584": {
+    "cve_id": "CVE-2026-107584",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Not Failing Securely ('Failing Open') in hMailServer",
+    "description": "Progressive Robot hMailServer 6.0.0 through 6.3.5 fails open when applying DANE (RFC 7672) to outbound SMTP delivery. The server's validating DNSSEC resolver treated a TLSA or MX lookup that did not complete (no answer, SERVFAIL, a malformed reply), an answer without the requested records and without an NSEC/NSEC3 proof of their absence, and an answer whose records carried no applicable RRSIG as if the recipient domain were unsigned, and from 6.2.19 it also delivered to mail exchangers taken from an unvalidated MX lookup that the DNSSEC-validated MX record set did not name. An attacker who can",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 7.4,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.0.0 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/64",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:20Z"
+  },
+  "CVE-2026-107585": {
+    "cve_id": "CVE-2026-107585",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Allocation of Resources Without Limits or Throttling in hMailServer",
+    "description": "Uncontrolled eviction in the pending sign-in tables of the REST API in Progressive Robot hMailServer 6.3.4 and 6.3.5 allows a remote unauthenticated attacker to make other users' OpenID Connect, SAML and passkey sign-ins fail. The routes that start a single sign-on and hand out a passkey sign-in challenge are reached without authentication and stored pending state in bounded tables that dropped their oldest entry when full, whoever had started it. An attacker who starts sign-ins a few times a second (about a hundred a second for passkeys) pushes every other user's pending sign-in out of the ta",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 5.3,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.3.4 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/63",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:04:32Z"
+  },
+  "CVE-2026-107586": {
+    "cve_id": "CVE-2026-107586",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Allocation of Resources Without Limits or Throttling in hMailServer",
+    "description": "Uncontrolled eviction in the browser session table of the REST API in Progressive Robot hMailServer 6.2.28 through 6.3.5 allows a remote authenticated user to end other users' sessions. The table of browser sessions, shared by every account, the server administrator and support sessions, dropped its least recently used session whenever it was full, whoever it belonged to, and placed no limit on how many sessions one account could hold. A user who repeatedly signs in with their own mailbox password can therefore keep the table full and sign out every webmail and administration session that is i",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 4.3,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.2.28 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/62",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:04:33Z"
+  },
+  "CVE-2026-107587": {
+    "cve_id": "CVE-2026-107587",
+    "score": 3,
+    "decision": "review",
+    "matched": [
+      {
+        "rule": "Robot-specific terms",
+        "weight": 3,
+        "sample": "Robot"
+      }
+    ],
+    "proposed_domains": [
+      "Cross-Domain Components"
+    ],
+    "proposed_layers": [
+      "Hardware / Firmware"
+    ],
+    "title": "Improper Certificate Validation in hMailServer",
+    "description": "Improper certificate validation in the webmail of Progressive Robot hMailServer 6.3.2 through 6.3.5 allows a remote unauthenticated attacker to have S/MIME-encrypted mail that the account later sends to another correspondent also encrypted to the attacker's key. When its recipient opened a signed message, the webmail kept the signer's certificate for encrypting replies whether or not the server found its chain trusted, under the first e-mail address the certificate listed rather than the message's From address, and beside any certificate already held for that address. Encrypted mail later sent",
+    "published": "2026-10-08",
+    "last_modified": "2026-10-08",
+    "vuln_status": null,
+    "cvss": [
+      {
+        "version": "3.1",
+        "score": 5.9,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:L/A:N",
+        "source": "GitLab",
+        "type": "mitre-cna"
+      }
+    ],
+    "affected": [
+      {
+        "vendor": "Progressive Robot Ltd",
+        "product": "hMailServer",
+        "versions": [
+          "6.3.2 < 6.3.6"
+        ],
+        "platforms": []
+      }
+    ],
+    "references": [
+      "https://gitlab.com/hmailserver/hmailserver/-/work_items/66",
+      "https://gitlab.com/hmailserver/hmailserver/-/releases/v6.3.6"
+    ],
+    "origin": "cvelist-delta",
+    "seen_at": "2026-10-08T22:06:21Z"
+  }
+}

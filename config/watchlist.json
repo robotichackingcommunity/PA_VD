@@ -1,0 +1,522 @@
+{
+  "_comment": "Keyword rules for discovering Physical-AI-relevant CVEs. 'pattern' is a case-insensitive regex matched against title+description+affected vendor/product+CPE. Weights add up; score >= accept -> pending enrichment, >= review -> human review queue, else rejected. 'nvd_keywords' are phrases used for NVD keywordSearch backfill.",
+  "thresholds": {
+    "accept": 6,
+    "review": 3
+  },
+  "terms": [
+    {
+      "label": "ROS 2 / ROS",
+      "pattern": "\\bROS ?2\\b|robot operating system|\\brclcpp\\b|\\brclpy\\b|\\bros2cli\\b|\\bros_comm\\b|\\broscpp\\b|\\brospy\\b|\\bros-(humble|jazzy|iron|rolling|noetic|foxy|galactic|kilted)\\b|\\bros (humble|jazzy|iron|rolling|noetic|foxy|galactic|kilted)\\b|\\bnav2\\b|navigation2|\\bmoveit2?\\b|slam_toolbox|\\bros_control\\b|\\bros2_control\\b|\\brosbag2?\\b|\\bmicro-?ros\\b|\\brmw_\\w+",
+      "weight": 7,
+      "domains": [
+        "Robot Operating Systems & Middleware"
+      ],
+      "layers": [
+        "Robot OS / Development Tools"
+      ],
+      "nvd_keywords": [
+        "ROS 2",
+        "Robot Operating System",
+        "ros2",
+        "nav2",
+        "moveit"
+      ]
+    },
+    {
+      "label": "DDS middleware",
+      "pattern": "\\bfast-?dds\\b|\\bfast-?rtps\\b|cyclone ?dds|\\bopendds\\b|\\brti connext\\b|connext dds|\\bdds security\\b|data distribution service|\\brtps\\b|\\bzenoh\\b|\\beclipse iceoryx\\b|\\biceoryx\\b",
+      "weight": 7,
+      "domains": [
+        "Robot Operating Systems & Middleware"
+      ],
+      "layers": [
+        "Middleware / Communication Layer"
+      ],
+      "nvd_keywords": [
+        "Fast DDS",
+        "Cyclone DDS",
+        "OpenDDS",
+        "RTI Connext",
+        "Data Distribution Service",
+        "zenoh",
+        "iceoryx"
+      ]
+    },
+    {
+      "label": "Robotics simulation",
+      "pattern": "\\bgazebo\\b|\\bignition gazebo\\b|\\bwebots\\b|\\bisaac sim\\b|\\bisaac lab\\b|\\bisaac ros\\b|\\bmujoco\\b|\\bcarla simulator\\b|\\bairsim\\b|\\bomniverse\\b|\\bopenusd\\b",
+      "weight": 5,
+      "domains": [
+        "Robot Operating Systems & Middleware",
+        "Physical AI Infrastructure"
+      ],
+      "layers": [
+        "Robot OS / Development Tools"
+      ],
+      "nvd_keywords": [
+        "Gazebo",
+        "Isaac Sim",
+        "Omniverse",
+        "Webots",
+        "MuJoCo"
+      ]
+    },
+    {
+      "label": "MOOS-IvP",
+      "pattern": "\\bmoos-?ivp\\b|\\bmoosdb\\b|\\bpshare\\b|essential-moos|\\bcore-moos\\b",
+      "weight": 7,
+      "domains": [
+        "Robot Operating Systems & Middleware",
+        "Mobile Robot & AMR"
+      ],
+      "layers": [
+        "Middleware / Communication Layer"
+      ],
+      "nvd_keywords": [
+        "MOOS-IvP",
+        "MOOS"
+      ]
+    },
+    {
+      "label": "Flight stack",
+      "pattern": "\\bpx4\\b|\\bardupilot\\b|\\barducopter\\b|\\barduplane\\b|\\bardurover\\b|\\bmavlink\\b|\\bmavproxy\\b|\\bmavsdk\\b|\\bqgroundcontrol\\b|\\bmission planner\\b|\\bbetaflight\\b|\\binav\\b|\\bpaparazzi uav\\b|\\bpixhawk\\b|\\bflight controller\\b|\\bflight control\\b|\\bautopilot firmware\\b|\\bfmt-firmware\\b|\\bauterion\\b|\\bdronecode\\b|\\bugcs\\b|ground control station|\\bcube ?pilot\\b|\\bardusub\\b",
+      "weight": 7,
+      "domains": [
+        "Drone & Aerial Robotics"
+      ],
+      "layers": [
+        "Hardware / Firmware"
+      ],
+      "nvd_keywords": [
+        "PX4",
+        "ArduPilot",
+        "MAVLink",
+        "QGroundControl",
+        "Mission Planner",
+        "Betaflight",
+        "Pixhawk",
+        "ground control station",
+        "autopilot"
+      ]
+    },
+    {
+      "label": "Drone / UAV",
+      "pattern": "\\bdrones?\\b|\\buavs?\\b|\\buas\\b|unmanned aerial|unmanned aircraft|\\bquadcopter\\b|\\bmulticopter\\b|\\bmultirotor\\b|\\bremote id\\b|\\bcounter-?uas\\b|\\bno-?fly zone\\b|\\bgeo-?fenc",
+      "weight": 4,
+      "domains": [
+        "Drone & Aerial Robotics"
+      ],
+      "layers": [
+        "Hardware / Firmware"
+      ],
+      "nvd_keywords": [
+        "drone",
+        "UAV",
+        "unmanned aerial",
+        "quadcopter"
+      ]
+    },
+    {
+      "label": "Drone vendors",
+      "pattern": "\\bdji\\b|\\bda-jiang\\b|\\bautel robotics\\b|\\bautel evo\\b|\\bparrot anafi\\b|\\bparrot drone\\b|\\bskydio\\b|\\byuneec\\b|\\bholy ?stone\\b|\\bsjrc\\b|\\bhubsan\\b|\\bpotensic\\b|\\bwingtra\\b|\\bsensefly\\b|\\bquantum systems\\b|\\bteal drones\\b|\\bzipline\\b|\\bwing aviation\\b|\\bdelair\\b|\\bageagle\\b|\\bebee\\b|\\bflir sui\\b|\\bteledyne flir\\b|\\bblack hornet\\b|\\bparrot sa\\b|\\bxag\\b|\\bebee x\\b",
+      "weight": 6,
+      "domains": [
+        "Drone & Aerial Robotics"
+      ],
+      "layers": [
+        "Hardware / Firmware"
+      ],
+      "nvd_keywords": [
+        "DJI",
+        "Autel Robotics",
+        "Parrot ANAFI",
+        "Skydio",
+        "Yuneec",
+        "Teledyne FLIR"
+      ]
+    },
+    {
+      "label": "Humanoid / legged",
+      "pattern": "\\bhumanoid\\b|\\bquadruped\\b|\\blegged robot\\b|\\bbipedal\\b|\\bunitree\\b|\\bboston dynamics\\b|\\bspot robot\\b|\\batlas robot\\b|\\bagility robotics\\b|\\bdigit robot\\b|\\bfigure ai\\b|\\bfigure 0[12]\\b|\\boptimus robot\\b|\\btesla optimus\\b|\\b1x technologies\\b|\\bneo gamma\\b|\\bapptronik\\b|\\bapollo humanoid\\b|\\bsanctuary ai\\b|\\bfourier intelligence\\b|\\bfourier gr-?1\\b|\\bubtech\\b|\\bwalker s\\b|\\bagibot\\b|\\bxpeng iron\\b|\\bpollen robotics\\b|\\breachy\\b|\\bghost robotics\\b|\\banybotics\\b|\\banymal\\b|\\bdeep robotics\\b|\\bengineai\\b|\\bbooster robotics\\b|\\bmit cheetah\\b|\\bgo1\\b|\\bgo2\\b|\\bb2-?w\\b|\\bg1 edu\\b|\\bh1-?2\\b",
+      "weight": 7,
+      "domains": [
+        "Humanoid Robot"
+      ],
+      "layers": [
+        "Hardware / Firmware"
+      ],
+      "nvd_keywords": [
+        "humanoid",
+        "quadruped",
+        "Unitree",
+        "Boston Dynamics",
+        "Agility Robotics",
+        "Pollen Robotics",
+        "Ghost Robotics",
+        "ANYbotics",
+        "UBTECH"
+      ]
+    },
+    {
+      "label": "Industrial robot vendors",
+      "pattern": "\\babb robotics\\b|\\babb irc5\\b|\\bomnicore\\b|\\brobotstudio\\b|\\brobotware\\b|\\bkuka\\b|\\bkr c4\\b|\\bkrc4\\b|\\bkrc5\\b|\\bsunrise\\.os\\b|\\bfanuc\\b|\\byaskawa\\b|\\bmotoman\\b|\\bmotoplus\\b|\\bkawasaki robot\\b|\\bdenso robot\\b|\\bdenso wave\\b|\\bmelfa\\b|\\bst(ä|a)ubli\\b|\\bcomau\\b|\\bnachi\\b|\\bepson robot\\b|\\bepson rc\\+\\b|\\buniversal robots\\b|\\bpolyscope\\b|\\bur ?(3|5|10|16|20|30)e?\\b|\\burcap\\b|\\bdoosan robotics\\b|\\btechman robot\\b|\\btm ?robot\\b|\\bfranka\\b|\\bpanda robot\\b|\\bomron tm\\b|\\bhanwha robotics\\b|\\brainbow robotics\\b|\\bneuromeka\\b|\\bjaka\\b|\\baubo\\b|\\belite robots?\\b|\\bdobot\\b|\\bufactory\\b|\\bxarm\\b|\\bmecademic\\b|\\bkinova\\b|\\bkassow\\b|\\bcobots?\\b|\\bcollaborative robot\\b|\\bindustrial robot\\b|\\brobot controller\\b|\\brobot arm\\b|\\bmanipulator arm\\b|\\bteach pendant\\b|\\bsiemens simatic robot\\b|\\brobot integrator\\b",
+      "weight": 6,
+      "domains": [
+        "Industrial Robot"
+      ],
+      "layers": [
+        "Hardware / Firmware"
+      ],
+      "nvd_keywords": [
+        "ABB Robotics",
+        "RobotWare",
+        "KUKA",
+        "FANUC",
+        "Yaskawa",
+        "Universal Robots",
+        "Techman Robot",
+        "Doosan Robotics",
+        "Franka",
+        "cobot",
+        "industrial robot",
+        "robot controller",
+        "teach pendant"
+      ]
+    },
+    {
+      "label": "Industrial automation (robot context)",
+      "pattern": "\\bsafety plc\\b|\\bsafety controller\\b|\\bsafety laser scanner\\b|\\bsick ag\\b|\\bsick sensor\\b|\\bpilz\\b|\\bsafety relay\\b|\\bflexi soft\\b|\\bmicroscan3\\b|\\bnanoscan3\\b|\\bsafety light curtain\\b",
+      "weight": 4,
+      "domains": [
+        "Industrial Robot",
+        "Cross-Domain Components"
+      ],
+      "layers": [
+        "Hardware / Firmware"
+      ],
+      "nvd_keywords": [
+        "SICK",
+        "safety laser scanner",
+        "safety controller"
+      ]
+    },
+    {
+      "label": "AMR / AGV / logistics robots",
+      "pattern": "\\bautonomous mobile robots?\\b|\\bamrs?\\b|\\bagvs?\\b|automated guided vehicle|\\bmobile industrial robots\\b|\\bmir ?(100|200|250|500|600|1000|1200|1350)\\b|\\bmir fleet\\b|\\botto motors\\b|\\botto ?(100|600|750|1500)\\b|\\bclearpath\\b|\\bhusky\\b|\\bjackal\\b|\\bturtlebot\\b|\\blocus robotics\\b|\\bgeek\\+\\b|\\bgeekplus\\b|\\bfetch robotics\\b|\\b6 river\\b|\\bbrightpick\\b|\\bhai robotics\\b|\\bexotec\\b|\\bautostore\\b|\\bsymbotic\\b|\\bseegrid\\b|\\bvecna robotics\\b|\\bagilox\\b|\\bbluebotics\\b|\\bomron ld\\b|\\bkivnon\\b|\\bsafelog\\b|\\bfleet manage(r|ment)\\b|\\brobot fleet\\b|\\bwarehouse robots?\\b|\\bdelivery robots?\\b|\\bsidewalk robot\\b|\\bstarship technologies\\b|\\bserve robotics\\b|\\bcoco robotics\\b|\\bnavigation controller\\b|\\banc navigation\\b|\\brobot navigation\\b|\\bslam\\b|\\blidar\\b|\\bpath planning\\b|\\bmotion planning\\b|\\bobstacle avoidance\\b",
+      "weight": 5,
+      "domains": [
+        "Mobile Robot & AMR"
+      ],
+      "layers": [
+        "Hardware / Firmware"
+      ],
+      "nvd_keywords": [
+        "autonomous mobile robot",
+        "AMR",
+        "AGV",
+        "Mobile Industrial Robots",
+        "OTTO Motors",
+        "Clearpath",
+        "robot fleet",
+        "warehouse robot",
+        "delivery robot",
+        "lidar"
+      ]
+    },
+    {
+      "label": "Service / consumer robots",
+      "pattern": "\\brobot(ic)? vacuum\\b|\\brobovac\\b|\\bvacuum robot\\b|\\becovacs\\b|\\bdeebot\\b|\\broborock\\b|\\birobot\\b|\\broomba\\b|\\bbraava\\b|\\bdreame\\b|\\bnarwal\\b|\\beufy\\b|\\bxiaomi (robot|vacuum|mi robot)\\b|\\bmi robot vacuum\\b|\\bneato\\b|\\bshark (robot|ai)\\b|\\bsamsung jet ?bot\\b|\\blg hom-?bot\\b|\\bsegway navimow\\b|\\bnavimow\\b|\\bhusqvarna automower\\b|\\bautomower\\b|\\bworx landroid\\b|\\blandroid\\b|\\byarbo\\b|\\bmammotion\\b|\\bluba\\b|\\bgardena sileno\\b|\\bal-ko robolinho\\b|\\brobot(ic)? (lawn)?mower\\b|\\brobotic lawn\\b|\\bpool robot\\b|\\bpool cleaner robot\\b|\\baiper\\b|\\bbeatbot\\b|\\bwindow cleaning robot\\b|\\bcompanion robot\\b|\\bsocial robot\\b|\\bservice robot\\b|\\bpudu\\b|\\bbellabot\\b|\\bkeenon\\b|\\bbear robotics\\b|\\bservi robot\\b|\\btemi robot\\b|\\bsoftbank robotics\\b|\\bpepper robot\\b|\\bnao robot\\b|\\blovot\\b|\\bvector robot\\b|\\banki\\b|\\bdigital dream labs\\b|\\bmoxie robot\\b|\\bemo robot\\b|\\bloona\\b|\\baibo\\b|\\bpetoi\\b|\\bwhill\\b|\\bpowered wheelchair\\b|\\bexoskeleton\\b|\\bsurgical robot\\b|\\bda vinci\\b|\\bintuitive surgical\\b|\\brobotic surgery\\b|\\btelepresence robot\\b|\\bdouble robotics\\b|\\bohmnilabs\\b|\\bdisinfection robot\\b|\\buvd robot\\b|\\bhospital robot\\b|\\bcleaning robot\\b|\\bavidbots\\b|\\bbrain corp\\b|\\brobot toy\\b|\\btoy robot\\b|\\beducational robot\\b|\\bsphero\\b|\\bmakeblock\\b|\\bdji robomaster\\b|\\bthymio\\b|\\bbioloid\\b|\\brobotis\\b|\\bdynamixel\\b|\\bopencat\\b|\\bbittle\\b",
+      "weight": 6,
+      "domains": [
+        "Service & Companion Robot"
+      ],
+      "layers": [
+        "Hardware / Firmware"
+      ],
+      "nvd_keywords": [
+        "robot vacuum",
+        "ECOVACS",
+        "Roborock",
+        "iRobot",
+        "Dreame",
+        "robotic lawn mower",
+        "Yarbo",
+        "Segway Navimow",
+        "service robot",
+        "companion robot",
+        "Pudu",
+        "Keenon",
+        "surgical robot",
+        "telepresence robot"
+      ]
+    },
+    {
+      "label": "Autonomous vehicle AI",
+      "pattern": "\\bautonomous (vehicle|driving|car|truck|shuttle)s?\\b|\\bself-?driving\\b|\\bautoware\\b|\\bbaidu apollo\\b|\\bapollo auto\\b|\\bopenpilot\\b|\\bcomma\\.ai\\b|\\bcomma three\\b|\\badas\\b|\\badvanced driver.assistance\\b|\\bnvidia drive\\b|\\bdrive os\\b|\\bdriveos\\b|\\bdrive agx\\b|\\bdrive orin\\b|\\bdrive thor\\b|\\bwaymo\\b|\\bcruise av\\b|\\bzoox\\b|\\bmobileye\\b|\\baurora driver\\b|\\bpony\\.ai\\b|\\bwerider\\b|\\btier iv\\b|\\brobotaxi\\b|\\bteleoperat(ion|ed) vehicle\\b|\\bperception stack\\b|\\bsensor fusion\\b|\\bv2x\\b",
+      "weight": 5,
+      "domains": [
+        "Autonomous Vehicle AI"
+      ],
+      "layers": [
+        "Robot OS / Development Tools"
+      ],
+      "nvd_keywords": [
+        "autonomous vehicle",
+        "autonomous driving",
+        "Autoware",
+        "Apollo Auto",
+        "openpilot",
+        "ADAS",
+        "NVIDIA DRIVE"
+      ]
+    },
+    {
+      "label": "NVIDIA edge AI platforms",
+      "pattern": "\\bjetson\\b|\\bjetpack\\b|\\bjetson linux\\b|\\bl4t\\b|\\bigx orin\\b|\\bigx\\b|\\bagx orin\\b|\\borin nano\\b|\\borin nx\\b|\\bagx thor\\b|\\bjetson thor\\b|\\bholoscan\\b|\\bdeepstream\\b|\\bisaac gr00t\\b|\\bgr00t\\b|\\bcosmos (world|foundation)\\b|\\bnvidia cosmos\\b|\\bmetropolis\\b|\\briva\\b|\\bnvidia nim\\b|\\bnim microservice\\b|\\bnemoclaw\\b|\\bopenshell\\b|\\bnvidia nemo\\b|\\bnemo framework\\b|\\bnemo guardrails\\b|\\bnvidia agent intelligence toolkit\\b|\\bnvidia aiq\\b|\\bnvidia fleet command\\b|\\bnvidia tao\\b|\\bcuda-x\\b|\\btegra\\b",
+      "weight": 6,
+      "domains": [
+        "Cross-Domain Components",
+        "Physical AI Infrastructure"
+      ],
+      "layers": [
+        "Hardware / Firmware"
+      ],
+      "nvd_keywords": [
+        "Jetson",
+        "JetPack",
+        "IGX Orin",
+        "Holoscan",
+        "DeepStream",
+        "NVIDIA NIM",
+        "NemoClaw",
+        "OpenShell",
+        "NVIDIA NeMo",
+        "GR00T"
+      ]
+    },
+    {
+      "label": "AI inference serving",
+      "pattern": "\\btriton inference server\\b|\\btritonserver\\b|\\btensorrt\\b|\\btensorrt-?llm\\b|\\bvllm\\b|\\bsglang\\b|\\bllama\\.cpp\\b|\\bllama-cpp-python\\b|\\bollama\\b|\\bonnx ?runtime\\b|\\bonnxruntime\\b|\\bopenvino\\b|\\btorchserve\\b|\\btensorflow serving\\b|\\btf serving\\b|\\btflite\\b|\\btensorflow lite\\b|\\blitert\\b|\\bexecutorch\\b|\\bapache tvm\\b|\\bray serve\\b|\\bkserve\\b|\\bseldon core\\b|\\bbentoml\\b|\\btext-generation-inference\\b|\\blmdeploy\\b|\\bxinference\\b|\\blocalai\\b|\\bgpustack\\b|\\binference server\\b|\\binference engine\\b|\\binference proxy\\b|\\bmodel serving\\b|\\bmodel server\\b|\\bsafetensors\\b|\\bgguf\\b|\\btorch\\.load\\b|\\bmodel deserialization\\b|\\bmodel (file|loading|loader|repository)\\b",
+      "weight": 6,
+      "domains": [
+        "Physical AI Infrastructure",
+        "Cross-Domain Components"
+      ],
+      "layers": [
+        "AI/ML Runtime / Inference"
+      ],
+      "nvd_keywords": [
+        "Triton Inference Server",
+        "TensorRT",
+        "vLLM",
+        "SGLang",
+        "llama.cpp",
+        "Ollama",
+        "ONNX Runtime",
+        "OpenVINO",
+        "TorchServe",
+        "TensorFlow Serving",
+        "inference server",
+        "model serving",
+        "safetensors",
+        "GGUF"
+      ]
+    },
+    {
+      "label": "ML / vision libraries",
+      "pattern": "\\bpytorch\\b|\\btorch\\b|\\btensorflow\\b|\\bkeras\\b|\\bjax\\b|\\bpaddlepaddle\\b|\\bmindspore\\b|\\bncnn\\b|\\bmnn\\b|\\bopencv\\b|\\bopencv-?python\\b|\\bultralytics\\b|\\byolo(v\\d+)?\\b|\\bdetectron2?\\b|\\bmmdetection\\b|\\bopenmmlab\\b|\\bmediapipe\\b|\\bdlib\\b|\\bopen3d\\b|\\bpoint cloud library\\b|\\bonnx\\b|\\bkeras model\\b|\\bh5 model\\b|\\bonnx model\\b|\\bpickle\\b",
+      "weight": 3,
+      "domains": [
+        "Cross-Domain Components",
+        "Physical AI Infrastructure"
+      ],
+      "layers": [
+        "AI/ML Runtime / Inference"
+      ],
+      "nvd_keywords": [
+        "PyTorch",
+        "TensorFlow",
+        "OpenCV",
+        "Ultralytics",
+        "Keras"
+      ]
+    },
+    {
+      "label": "ML training / MLOps",
+      "pattern": "\\bmlflow\\b|\\bkubeflow\\b|\\bray\\b.*\\banyscale\\b|\\bray dashboard\\b|\\bray cluster\\b|\\bray-project\\b|\\bweights ?& ?biases\\b|\\bwandb\\b|\\bclearml\\b|\\bdvc\\b|\\bmetaflow\\b|\\bzenml\\b|\\bprefect\\b|\\bairflow\\b|\\bhugging ?face\\b|\\btransformers\\b|\\bdiffusers\\b|\\bdatasets\\b.*hugging|\\bhub cache\\b|\\bmodel registry\\b|\\bmodel hub\\b|\\bjupyter\\b|\\bjupyterlab\\b|\\blabel studio\\b|\\bcvat\\b|\\broboflow\\b|\\bnvidia tao\\b|\\bisaac lab\\b|\\bopenpi\\b|\\blerobot\\b|\\bhuggingface lerobot\\b|\\bvla model\\b|\\bvision-language-action\\b|\\bimitation learning\\b|\\breinforcement learning\\b|\\bstable-?baselines\\b|\\bgymnasium\\b|\\bopenai gym\\b|\\btraining pipeline\\b|\\bmodel poisoning\\b|\\bdata poisoning\\b|\\bbackdoor(ed)? model\\b|\\bmodel supply chain\\b|\\bpickle\\b.*\\bmodel\\b",
+      "weight": 4,
+      "domains": [
+        "Physical AI Infrastructure"
+      ],
+      "layers": [
+        "AI/ML Training Pipeline",
+        "Physical AI Infrastructure / MLOps"
+      ],
+      "nvd_keywords": [
+        "MLflow",
+        "Kubeflow",
+        "Ray",
+        "Hugging Face",
+        "transformers",
+        "LeRobot",
+        "model registry",
+        "training pipeline"
+      ]
+    },
+    {
+      "label": "Embodied / agentic AI frameworks",
+      "pattern": "\\bopenclaw\\b|\\bclawdbot\\b|\\bmoltbot\\b|\\bembodied (ai|agent)\\b|\\bphysical ai\\b|\\bai agent framework\\b|\\bagentic\\b|\\blangchain\\b|\\blanggraph\\b|\\bllamaindex\\b|\\bllama-?index\\b|\\bcrewai\\b|\\bautogen\\b|\\bautogpt\\b|\\bagentgpt\\b|\\bsemantic kernel\\b|\\bhaystack\\b|\\bdify\\b|\\bflowise\\b|\\bn8n\\b|\\blangflow\\b|\\bopen webui\\b|\\banything-?llm\\b|\\blobe-?chat\\b|\\bmodel context protocol\\b|\\bmcp server\\b|\\bmcp client\\b|\\bfastmcp\\b|\\bagent protocol\\b|\\bopenai agents sdk\\b|\\bgoogle adk\\b|\\bsmolagents\\b|\\bbrowser-?use\\b|\\bcomputer-?use\\b|\\bvoice assistant\\b|\\bsmart speaker\\b|\\bhome assistant\\b|\\bopenhab\\b|\\bmatter\\b.*\\bsmart home\\b|\\bprompt injection\\b|\\btool poisoning\\b|\\bindirect prompt\\b",
+      "weight": 4,
+      "domains": [
+        "Embodied AI Agent",
+        "Physical AI Infrastructure"
+      ],
+      "layers": [
+        "Physical AI Infrastructure / MLOps"
+      ],
+      "nvd_keywords": [
+        "OpenClaw",
+        "embodied AI",
+        "AI agent",
+        "LangChain",
+        "LlamaIndex",
+        "CrewAI",
+        "AutoGen",
+        "Model Context Protocol",
+        "MCP server",
+        "prompt injection"
+      ]
+    },
+    {
+      "label": "Robot-specific terms",
+      "pattern": "\\brobots?\\b|\\brobotics?\\b|\\brobotic\\b|\\bactuators?\\b|\\bservo (motor|controller|drive)s?\\b|\\bmotor controller\\b|\\bend effector\\b|\\bgripper\\b|\\bkinematics?\\b|\\bteleoperat(e|ed|ion|or)\\b|\\bteleop\\b|\\bemergency stop\\b|\\be-?stop\\b|\\bsafety interlock\\b|\\bcollision avoidance\\b|\\bodometry\\b|\\bimu\\b|\\binertial measurement\\b|\\bdepth camera\\b|\\brealsense\\b|\\bzed camera\\b|\\bstereolabs\\b|\\bluxonis\\b|\\boak-?d\\b|\\bouster\\b|\\bvelodyne\\b|\\bhesai\\b|\\blivox\\b|\\brobosense\\b|\\bcan ?bus\\b|\\bethercat\\b|\\bcanopen\\b|\\bopc ua\\b|\\bprofinet\\b|\\bmodbus\\b|\\bros-?industrial\\b|\\bmotion controller\\b|\\bservo drive\\b|\\bbeckhoff twincat\\b|\\btwincat\\b|\\bcodesys\\b",
+      "weight": 3,
+      "domains": [
+        "Cross-Domain Components"
+      ],
+      "layers": [
+        "Hardware / Firmware"
+      ],
+      "nvd_keywords": [
+        "robot",
+        "robotic",
+        "teleoperation",
+        "actuator",
+        "RealSense",
+        "EtherCAT",
+        "CODESYS"
+      ]
+    },
+    {
+      "label": "Companion mobile app",
+      "pattern": "\\bandroid app(lication)?\\b|\\bios app(lication)?\\b|\\bmobile app(lication)?\\b|\\bcompanion app\\b|\\bapk\\b",
+      "weight": 1,
+      "domains": [],
+      "layers": [
+        "Mobile Companion App"
+      ],
+      "nvd_keywords": []
+    },
+    {
+      "label": "Fleet / cloud / OTA",
+      "pattern": "\\bota update\\b|\\bover-the-air\\b|\\bfirmware update\\b|\\bmqtt\\b|\\btelemetry\\b|\\bfleet\\b|\\bremote control\\b|\\bremote command\\b|\\bcloud platform\\b|\\bdevice management\\b|\\bbalena\\b|\\bmender\\b|\\bformant\\b|\\binorbit\\b|\\bfreedom robotics\\b|\\brobotics cloud\\b|\\brocos\\b|\\bopen-?rmf\\b|\\brmf\\b",
+      "weight": 1,
+      "domains": [],
+      "layers": [
+        "Network / Connectivity"
+      ],
+      "nvd_keywords": [
+        "Open-RMF",
+        "robot fleet management"
+      ]
+    }
+  ],
+  "negative": [
+    {
+      "label": "robots.txt",
+      "pattern": "robots\\.txt",
+      "weight": -8
+    },
+    {
+      "label": "Robot Framework (test automation)",
+      "pattern": "\\brobot ?framework\\b|robotframework",
+      "weight": -8
+    },
+    {
+      "label": "Drone CI",
+      "pattern": "\\bdrone ci\\b|\\bdrone\\.io\\b|harness/drone|drone-runner|\\bdrone server\\b|\\bdrone pipeline\\b",
+      "weight": -10
+    },
+    {
+      "label": "RPA",
+      "pattern": "robotic process automation|\\brpa\\b|\\buipath\\b|\\bautomation anywhere\\b|\\bblue prism\\b|\\bpega robotic\\b|\\bpower automate desktop\\b",
+      "weight": -6
+    },
+    {
+      "label": "reCAPTCHA / anti-bot",
+      "pattern": "\\bcaptcha\\b|\\banti-?bot\\b|\\bchatbot\\b|\\bbot detection\\b|\\btelegram bot\\b|\\bdiscord bot\\b|\\bslack bot\\b|\\bbot framework\\b|\\btwitch bot\\b",
+      "weight": -4
+    },
+    {
+      "label": "Generic GPU driver (not edge AI)",
+      "pattern": "\\bgpu display driver\\b|\\bgeforce\\b|\\bquadro\\b|\\bvgpu\\b|\\bnvidia (windows|linux) display driver\\b|\\bcuda toolkit\\b|\\bcuda-gdb\\b|\\bnvjpeg\\b|\\bcuobjdump\\b|\\bnvdisasm\\b",
+      "weight": -4
+    },
+    {
+      "label": "OpenAI Triton compiler (not Triton server)",
+      "pattern": "\\btriton compiler\\b|openai/triton|\\btriton-lang\\b|\\btriton kernel\\b",
+      "weight": -6
+    },
+    {
+      "label": "Apollo (non-Baidu)",
+      "pattern": "\\bapollo (router|graphql|server|client|federation|studio)\\b|\\bapache apollo\\b|\\bapollo config\\b",
+      "weight": -8
+    },
+    {
+      "label": "Spot (non-robot)",
+      "pattern": "\\bspotify\\b|\\bspotlight\\b|\\bspot instance\\b|\\bhotspot\\b",
+      "weight": -4
+    },
+    {
+      "label": "Figure (non-robot)",
+      "pattern": "\\bfigma\\b|\\bfigure (caption|element|tag)\\b|\\bconfigure\\b",
+      "weight": 0
+    },
+    {
+      "label": "Generic web CMS noise",
+      "pattern": "\\bwordpress\\b|\\bwp plugin\\b|\\bjoomla\\b|\\bdrupal\\b|\\bphpgurukul\\b|\\bcode-projects\\b|\\bsourcecodester\\b|\\bitsourcecode\\b|\\bcampcodes\\b|\\boretnom23\\b",
+      "weight": -3
+    },
+    {
+      "label": "Non-physical 'agent'",
+      "pattern": "\\buser agent\\b|\\bagent (string|header)\\b|\\bsnmp agent\\b|\\bbackup agent\\b|\\bantivirus agent\\b|\\bendpoint agent\\b|\\bmonitoring agent\\b|\\bjenkins agent\\b|\\bbuild agent\\b|\\bzabbix agent\\b|\\bssh agent\\b|\\bssh-agent\\b",
+      "weight": -3
+    },
+    {
+      "label": "Industrial robot but generic PLC",
+      "pattern": "\\bsiemens s7\\b|\\bsimatic s7\\b|\\brockwell controllogix\\b|\\bcompactlogix\\b|\\bmicrologix\\b|\\bschneider modicon\\b|\\bmitsubishi melsec\\b",
+      "weight": -1
+    },
+    {
+      "label": "Mobile vendor noise",
+      "pattern": "\\bxiaomi (phone|smartphone|miui|hyperos|redmi)\\b|\\bsamsung (galaxy|exynos|one ui)\\b",
+      "weight": -4
+    },
+    {
+      "label": "RTPS (Linux rtps / rtp stream)",
+      "pattern": "\\brtp stream\\b|\\brtpengine\\b|\\brtps\\.c\\b",
+      "weight": -4
+    },
+    {
+      "label": "Generic 'ray'",
+      "pattern": "\\bx-?ray\\b|\\bray ?tracing\\b|\\bblu-?ray\\b",
+      "weight": -3
+    },
+    {
+      "label": "Generic 'imu' word collisions",
+      "pattern": "\\bsimulat",
+      "weight": 0
+    }
+  ]
+}
