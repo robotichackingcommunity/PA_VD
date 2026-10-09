@@ -3818,8 +3818,8 @@
     "cwe": "CWE-502",
     "domains": [
       "Physical AI Infrastructure",
-      "Embodied AI Agent",
-      "Cross-Domain Components"
+      "Cross-Domain Components",
+      "Embodied AI Agent"
     ],
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
@@ -4111,9 +4111,10 @@
     "cvss_version": "4.0",
     "cwe": "CWE-426",
     "domains": [
-      "Robot Operating Systems & Middleware"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Robot Operating Systems & Middleware",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Robot OS / Development Tools"
     ],
@@ -4146,9 +4147,10 @@
     "cvss_version": "4.0",
     "cwe": "CWE-862",
     "domains": [
-      "Robot Operating Systems & Middleware"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Robot Operating Systems & Middleware",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Middleware / Communication Layer"
     ],
@@ -4181,9 +4183,10 @@
     "cvss_version": "4.0",
     "cwe": "CWE-693",
     "domains": [
-      "Robot Operating Systems & Middleware"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Robot Operating Systems & Middleware",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Robot OS / Development Tools"
     ],
@@ -4289,9 +4292,10 @@
     "cvss_version": "4.0",
     "cwe": "CWE-367",
     "domains": [
-      "Robot Operating Systems & Middleware"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Robot Operating Systems & Middleware",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Middleware / Communication Layer"
     ],
@@ -4324,9 +4328,10 @@
     "cvss_version": "4.0",
     "cwe": "CWE-918",
     "domains": [
-      "Robot Operating Systems & Middleware"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Robot Operating Systems & Middleware",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Middleware / Communication Layer"
     ],
@@ -4360,7 +4365,7 @@
     "cwe": "CWE-862",
     "domains": [
       "Embodied AI Agent",
-      "Cross-Domain Components"
+      "Physical AI Infrastructure"
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
@@ -4434,7 +4439,7 @@
     "cwe": "CWE-427",
     "domains": [
       "Embodied AI Agent",
-      "Cross-Domain Components"
+      "Physical AI Infrastructure"
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
@@ -4471,7 +4476,7 @@
     "cwe": "CWE-862",
     "domains": [
       "Embodied AI Agent",
-      "Cross-Domain Components"
+      "Physical AI Infrastructure"
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
@@ -4508,7 +4513,7 @@
     "cwe": "CWE-862",
     "domains": [
       "Embodied AI Agent",
-      "Cross-Domain Components"
+      "Physical AI Infrastructure"
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
@@ -4614,10 +4619,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-285",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Network / Connectivity",
       "Physical AI Infrastructure / MLOps"
@@ -4933,7 +4938,7 @@
     "cwe": "CWE-184",
     "domains": [
       "Embodied AI Agent",
-      "Cross-Domain Components"
+      "Physical AI Infrastructure"
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
@@ -5318,7 +5323,7 @@
     "cwe": "CWE-863",
     "domains": [
       "Embodied AI Agent",
-      "Cross-Domain Components"
+      "Physical AI Infrastructure"
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
@@ -5353,7 +5358,7 @@
     "cwe": "CWE-648",
     "domains": [
       "Embodied AI Agent",
-      "Cross-Domain Components"
+      "Physical AI Infrastructure"
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
@@ -5389,7 +5394,7 @@
     "cwe": "CWE-862",
     "domains": [
       "Embodied AI Agent",
-      "Cross-Domain Components"
+      "Physical AI Infrastructure"
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
@@ -5424,7 +5429,7 @@
     "cwe": "CWE-863",
     "domains": [
       "Embodied AI Agent",
-      "Cross-Domain Components"
+      "Physical AI Infrastructure"
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
@@ -5459,7 +5464,7 @@
     "cwe": "CWE-862",
     "domains": [
       "Embodied AI Agent",
-      "Cross-Domain Components"
+      "Physical AI Infrastructure"
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
@@ -5493,10 +5498,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-345",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Network / Connectivity",
       "Distribution / Supply Chain"
@@ -5567,10 +5572,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-285",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Network / Connectivity",
       "Middleware / Communication Layer"
@@ -5605,10 +5610,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-672",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
@@ -5952,10 +5957,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-362",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Distribution / Supply Chain",
       "Robot OS / Development Tools"
@@ -6059,10 +6064,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-285",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Network / Connectivity",
       "Physical AI Infrastructure / MLOps"
@@ -6096,10 +6101,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-20",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Distribution / Supply Chain",
       "Robot OS / Development Tools"
@@ -6170,10 +6175,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-306",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Network / Connectivity",
       "Physical AI Infrastructure / MLOps"
@@ -6208,10 +6213,10 @@
     "cvss_version": "4.0",
     "cwe": "CWE-287",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Network / Connectivity",
       "Physical AI Infrastructure / MLOps"
@@ -6246,10 +6251,10 @@
     "cvss_version": "4.0",
     "cwe": "CWE-307",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Network / Connectivity",
       "Physical AI Infrastructure / MLOps"
@@ -6284,10 +6289,10 @@
     "cvss_version": "4.0",
     "cwe": "CWE-290",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Network / Connectivity",
       "Physical AI Infrastructure / MLOps"
@@ -6322,10 +6327,10 @@
     "cvss_version": "4.0",
     "cwe": "CWE-78",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Robot OS / Development Tools",
       "Physical AI Infrastructure / MLOps"
@@ -6637,10 +6642,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-78",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Robot OS / Development Tools",
       "Physical AI Infrastructure / MLOps"
@@ -6851,10 +6856,10 @@
     "cvss_version": "4.0",
     "cwe": "CWE-306",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Network / Connectivity",
       "Physical AI Infrastructure / MLOps"
@@ -6889,10 +6894,10 @@
     "cvss_version": "4.0",
     "cwe": "CWE-22",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Distribution / Supply Chain",
       "Robot OS / Development Tools"
@@ -6926,10 +6931,10 @@
     "cvss_version": "4.0",
     "cwe": "CWE-285",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
@@ -7612,11 +7617,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-770",
     "domains": [
-      "Embodied AI Agent",
       "Physical AI Infrastructure",
+      "Embodied AI Agent",
       "Service & Companion Robot"
     ],
-    "primary_domain": "Embodied AI Agent",
+    "primary_domain": "Physical AI Infrastructure",
     "layers": [
       "AI/ML Runtime / Inference",
       "Physical AI Infrastructure / MLOps"
@@ -10937,10 +10942,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-1395",
     "domains": [
-      "Industrial Robot",
-      "Cross-Domain Components"
+      "Cross-Domain Components",
+      "Industrial Robot"
     ],
-    "primary_domain": "Industrial Robot",
+    "primary_domain": "Cross-Domain Components",
     "layers": [
       "Distribution / Supply Chain"
     ],

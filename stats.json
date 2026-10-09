@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T04:38:32Z",
+  "generated_at": "2026-10-09T04:49:19Z",
   "total": 359,
   "severity": {
     "CRITICAL": 70,
@@ -14,22 +14,22 @@
     "Drone & Aerial Robotics": 60,
     "Service & Companion Robot": 42,
     "Autonomous Vehicle AI": 2,
-    "Embodied AI Agent": 63,
-    "Robot Operating Systems & Middleware": 101,
-    "Physical AI Infrastructure": 103,
-    "Cross-Domain Components": 147
+    "Embodied AI Agent": 68,
+    "Robot Operating Systems & Middleware": 96,
+    "Physical AI Infrastructure": 118,
+    "Cross-Domain Components": 137
   },
   "primary_domains": {
     "Humanoid Robot": 7,
-    "Industrial Robot": 17,
+    "Industrial Robot": 16,
     "Mobile Robot & AMR": 34,
     "Drone & Aerial Robotics": 60,
     "Service & Companion Robot": 36,
     "Autonomous Vehicle AI": 1,
-    "Embodied AI Agent": 17,
-    "Robot Operating Systems & Middleware": 75,
-    "Physical AI Infrastructure": 81,
-    "Cross-Domain Components": 31
+    "Embodied AI Agent": 37,
+    "Robot Operating Systems & Middleware": 70,
+    "Physical AI Infrastructure": 66,
+    "Cross-Domain Components": 32
   },
   "layers": {
     "Hardware / Firmware": 114,

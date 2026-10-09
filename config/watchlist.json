@@ -7,7 +7,7 @@
   "terms": [
     {
       "label": "ROS 2 / ROS",
-      "pattern": "\\bROS ?2\\b|robot operating system|\\brclcpp\\b|\\brclpy\\b|\\bros2cli\\b|\\bros_comm\\b|\\broscpp\\b|\\brospy\\b|\\bros-(humble|jazzy|iron|rolling|noetic|foxy|galactic|kilted)\\b|\\bros (humble|jazzy|iron|rolling|noetic|foxy|galactic|kilted)\\b|\\bnav2\\b|navigation2|\\bmoveit ?2\\b|\\bmoveit (ros|motion planning|servo|task constructor)\\b|\\bros-planning/moveit\\b|slam_toolbox|\\bros_control\\b|\\bros2_control\\b|\\brosbag2?\\b|\\bmicro-?ros\\b|\\brmw_\\w+",
+      "pattern": "\\bROS ?2\\b|robot operating system|\\brclcpp\\b|\\brclpy\\b|\\bros2cli\\b|\\bros_comm\\b|\\broscpp\\b|\\brospy\\b|\\bros-(humble|jazzy|iron|rolling|noetic|foxy|galactic|kilted)\\b|\\bros (humble|jazzy|iron|rolling|noetic|foxy|galactic|kilted)\\b|\\bnav2\\b|navigation2|\\bmoveit ?2\\b|\\bmoveit (ros|motion planning|servo|task constructor)\\b|\\bros-planning/moveit\\b|slam_toolbox|\\bros_control\\b|\\bros2_control\\b|\\brosbag2?\\b|\\bmicro-?ros\\b|\\brmw_\\w+|\\bros#|\\bros-?sharp\\b|\\brosbridge\\b|\\broslibjs\\b|\\brosjava\\b|\\bros-?industrial\\b|\\bros1\\b|\\bros ?(melodic|kinetic|dashing|eloquent)\\b",
       "weight": 7,
       "domains": [
         "Robot Operating Systems & Middleware"
@@ -25,7 +25,7 @@
     },
     {
       "label": "DDS middleware",
-      "pattern": "\\bfast-?dds\\b|\\bfast-?rtps\\b|cyclone ?dds|\\bopendds\\b|\\brti connext\\b|connext dds|\\bdds security\\b|data distribution service|\\brtps\\b|\\bzenoh\\b|\\beclipse iceoryx\\b|\\biceoryx\\b",
+      "pattern": "\\bfast-?dds\\b|\\bfast-?rtps\\b|cyclone ?dds|\\bopendds\\b|\\brti connext\\b|connext dds|\\bdds security\\b|data distribution service|\\brtps\\b|\\bzenoh\\b|\\beclipse iceoryx\\b|\\biceoryx\\b|\\bmicro-?xrce-?dds\\b|\\bxrce-?dds\\b|\\beprosima\\b|\\bdds agent\\b|\\bdds-?xrce\\b",
       "weight": 7,
       "domains": [
         "Robot Operating Systems & Middleware"
@@ -203,8 +203,8 @@
     },
     {
       "label": "AMR / AGV / logistics robots",
-      "pattern": "\\bautonomous mobile robots?\\b|\\bagvs?\\b|automated guided vehicle|\\bmobile industrial robots\\b|\\bmir ?(100|200|250|500|600|1000|1200|1350)\\b|\\bmir fleet\\b|\\botto motors\\b|\\botto ?(100|600|750|1500)\\b|\\bclearpath robotics\\b|\\bclearpath (husky|jackal|warthog|dingo|ridgeback)\\b|\\bhusky (ugv|robot|a200|a300)\\b|\\bjackal (ugv|robot|j100)\\b|\\bturtlebot\\b|\\blocus robotics\\b|\\bgeek\\+\\b|\\bgeekplus\\b|\\bfetch robotics\\b|\\b6 river\\b|\\bbrightpick\\b|\\bhai robotics\\b|\\bexotec\\b|\\bautostore\\b|\\bsymbotic\\b|\\bseegrid\\b|\\bvecna robotics\\b|\\bagilox\\b|\\bbluebotics\\b|\\bomron ld\\b|\\bkivnon\\b|\\bsafelog\\b|\\bfleet manage(r|ment)\\b|\\brobot fleet\\b|\\bwarehouse robots?\\b|\\bdelivery robots?\\b|\\bsidewalk robot\\b|\\bstarship technologies\\b|\\bserve robotics\\b|\\bcoco robotics\\b|\\bnavigation controller\\b|\\banc navigation\\b|\\brobot navigation\\b|\\bslam\\b|\\blidar\\b|\\bpath planning\\b|\\bmotion planning\\b|\\bobstacle avoidance\\b",
-      "weight": 5,
+      "pattern": "\\bautonomous mobile robots?\\b|\\bagvs?\\b|automated guided vehicle|\\bmobile industrial robots\\b|\\bmir ?(100|200|250|500|600|1000|1200|1350)\\b|\\bmir fleet\\b|\\botto motors\\b|\\botto ?(100|600|750|1500)\\b|\\bclearpath robotics\\b|\\bclearpath (husky|jackal|warthog|dingo|ridgeback)\\b|\\bhusky (ugv|robot|a200|a300)\\b|\\bjackal (ugv|robot|j100)\\b|\\bturtlebot\\b|\\blocus robotics\\b|\\bgeek\\+\\b|\\bgeekplus\\b|\\bfetch robotics\\b|\\b6 river\\b|\\bbrightpick\\b|\\bhai robotics\\b|\\bexotec\\b|\\bautostore\\b|\\bsymbotic\\b|\\bseegrid\\b|\\bvecna robotics\\b|\\bagilox\\b|\\bbluebotics\\b|\\bomron ld\\b|\\bkivnon\\b|\\bsafelog\\b|\\bfleet manage(r|ment)\\b|\\brobot fleet\\b|\\bwarehouse robots?\\b|\\bdelivery robots?\\b|\\bsidewalk robot\\b|\\bstarship technologies\\b|\\bserve robotics\\b|\\bcoco robotics\\b|\\banc navigation\\b|\\babb anc\\b|\\basti mobile robotics\\b|\\bmobile robot\\b",
+      "weight": 7,
       "domains": [
         "Mobile Robot & AMR"
       ],
@@ -222,6 +222,13 @@
         "lidar",
         "Clearpath Robotics"
       ]
+    },
+    {
+      "label": "Robot navigation / perception terms",
+      "weight": 3,
+      "pattern": "\\bnavigation controller\\b|\\brobot navigation\\b|\\bslam\\b|\\blidar\\b|\\bpath planning\\b|\\bmotion planning\\b|\\bobstacle avoidance\\b|\\bfleet manage(r|ment)\\b",
+      "domain": null,
+      "layer": null
     },
     {
       "label": "Service / consumer robots",
@@ -284,7 +291,7 @@
     },
     {
       "label": "NVIDIA edge AI platforms",
-      "pattern": "\\bjetson\\b|\\bnvidia jetpack\\b|\\bjetpack (sdk|\\d)|\\bjetson linux\\b|\\bl4t\\b|\\bigx orin\\b|\\bigx\\b|\\bagx orin\\b|\\borin nano\\b|\\borin nx\\b|\\bagx thor\\b|\\bjetson thor\\b|\\bholoscan\\b|\\bdeepstream\\b|\\bisaac gr00t\\b|\\bgr00t\\b|\\bcosmos (world|foundation)\\b|\\bnvidia cosmos\\b|\\bmetropolis\\b|\\briva\\b|\\bnvidia nim\\b|\\bnim microservice\\b|\\bnemoclaw\\b|\\bopenshell\\b|\\bnvidia agent intelligence toolkit\\b|\\bnvidia aiq\\b|\\bnvidia fleet command\\b|\\bnvidia tao\\b|\\bcuda-x\\b|\\btegra\\b",
+      "pattern": "\\bjetson\\b|\\bnvidia jetpack\\b|\\bjetpack (sdk|\\d)|\\bjetson linux\\b|\\bl4t\\b|\\bigx orin\\b|\\bigx\\b|\\bagx orin\\b|\\borin nano\\b|\\borin nx\\b|\\bagx thor\\b|\\bjetson thor\\b|\\bholoscan\\b|\\bdeepstream\\b|\\bisaac gr00t\\b|\\bgr00t\\b|\\bcosmos (world|foundation)\\b|\\bnvidia cosmos\\b|\\bmetropolis\\b|\\briva\\b|\\bnvidia nim\\b|\\bnim microservice\\b|\\bnemoclaw\\b|\\bopenshell\\b|\\bnvidia agent intelligence toolkit\\b|\\bnvidia aiq\\b|\\bnvidia fleet command\\b|\\bnvidia tao\\b|\\bcuda-x\\b|\\btegra\\b|\\bnvidia isaac\\b|\\bisaac (launchable|sim|ros|lab|manipulator|perceptor|apps?|navigation)\\b|\\bisaac-?ros\\b",
       "weight": 6,
       "domains": [
         "Cross-Domain Components",
@@ -366,7 +373,7 @@
     },
     {
       "label": "ML training / MLOps",
-      "pattern": "\\bnvidia nemo\\b|\\bnemo framework\\b|\\bnemo guardrails\\b|\\bmlflow\\b|\\bkubeflow\\b|\\bray\\b.*\\banyscale\\b|\\bray dashboard\\b|\\bray cluster\\b|\\bray-project\\b|\\bweights ?& ?biases\\b|\\bwandb\\b|\\bclearml\\b|\\bdvc\\b|\\bmetaflow\\b|\\bzenml\\b|\\bprefect\\b|\\bairflow\\b|\\bhugging ?face\\b|\\btransformers\\b|\\bdiffusers\\b|\\bdatasets\\b.*hugging|\\bhub cache\\b|\\bmodel registry\\b|\\bmodel hub\\b|\\bjupyter\\b|\\bjupyterlab\\b|\\blabel studio\\b|\\bcvat\\b|\\broboflow\\b|\\bnvidia tao\\b|\\bisaac lab\\b|\\bopenpi\\b|\\blerobot\\b|\\bhuggingface lerobot\\b|\\bvla model\\b|\\bvision-language-action\\b|\\bimitation learning\\b|\\breinforcement learning\\b|\\bstable-?baselines\\b|\\bgymnasium\\b|\\bopenai gym\\b|\\btraining pipeline\\b|\\bmodel poisoning\\b|\\bdata poisoning\\b|\\bbackdoor(ed)? model\\b|\\bmodel supply chain\\b|\\bpickle\\b.*\\bmodel\\b",
+      "pattern": "\\bnvidia nemo\\b|\\bnemo framework\\b|\\bnemo guardrails\\b|\\bmlflow\\b|\\bkubeflow\\b|\\bray\\b.*\\banyscale\\b|\\bray dashboard\\b|\\bray cluster\\b|\\bray-project\\b|\\bweights ?& ?biases\\b|\\bwandb\\b|\\bclearml\\b|\\bdvc\\b|\\bmetaflow\\b|\\bzenml\\b|\\bprefect\\b|\\bairflow\\b|\\bhugging ?face\\b|\\btransformers\\b|\\bdiffusers\\b|\\bdatasets\\b.*hugging|\\bhub cache\\b|\\bmodel registry\\b|\\bmodel hub\\b|\\bjupyter\\b|\\bjupyterlab\\b|\\blabel studio\\b|\\bcvat\\b|\\broboflow\\b|\\bnvidia tao\\b|\\bisaac lab\\b|\\bopenpi\\b|\\blerobot\\b|\\bhuggingface lerobot\\b|\\bvla model\\b|\\bvision-language-action\\b|\\bimitation learning\\b|\\breinforcement learning\\b|\\bstable-?baselines\\b|\\bgymnasium\\b|\\bopenai gym\\b|\\btraining pipeline\\b|\\bmodel poisoning\\b|\\bdata poisoning\\b|\\bbackdoor(ed)? model\\b|\\bmodel supply chain\\b|\\bpickle\\b.*\\bmodel\\b|\\bmegatron-?lm\\b|\\bnvtabular\\b|\\btransformers4rec\\b|\\bnvidia merlin\\b",
       "weight": 4,
       "domains": [
         "Physical AI Infrastructure"
@@ -389,7 +396,7 @@
     },
     {
       "label": "Embodied / agentic AI frameworks",
-      "pattern": "\\bopenclaw\\b|\\bclawdbot\\b|\\bmoltbot\\b|\\bembodied (ai|agent)\\b|\\bphysical ai\\b|\\bai agent framework\\b|\\bagentic\\b|\\blangchain\\b|\\blanggraph\\b|\\bllamaindex\\b|\\bllama-?index\\b|\\bcrewai\\b|\\bautogen\\b|\\bautogpt\\b|\\bagentgpt\\b|\\bsemantic kernel\\b|\\bhaystack\\b|\\bdify\\b|\\bflowise\\b|\\bn8n\\b|\\blangflow\\b|\\bopen webui\\b|\\banything-?llm\\b|\\blobe-?chat\\b|\\bmodel context protocol\\b|\\bmcp server\\b|\\bmcp client\\b|\\bfastmcp\\b|\\bagent protocol\\b|\\bopenai agents sdk\\b|\\bgoogle adk\\b|\\bsmolagents\\b|\\bbrowser-?use\\b|\\bcomputer-?use\\b|\\bvoice assistant\\b|\\bsmart speaker\\b|\\bhome assistant\\b|\\bopenhab\\b|\\bmatter\\b.*\\bsmart home\\b|\\bprompt injection\\b|\\btool poisoning\\b|\\bindirect prompt\\b",
+      "pattern": "\\bopenclaw\\b|\\bclawdbot\\b|\\bmoltbot\\b|\\bembodied (ai|agent)\\b|\\bphysical ai\\b|\\bai agent framework\\b|\\bagentic\\b|\\blangchain\\b|\\blanggraph\\b|\\bllamaindex\\b|\\bllama-?index\\b|\\bcrewai\\b|\\bautogen\\b|\\bautogpt\\b|\\bagentgpt\\b|\\bsemantic kernel\\b|\\bhaystack\\b|\\bdify\\b|\\bflowise\\b|\\bn8n\\b|\\blangflow\\b|\\bopen webui\\b|\\banything-?llm\\b|\\blobe-?chat\\b|\\bmodel context protocol\\b|\\bmcp server\\b|\\bmcp client\\b|\\bfastmcp\\b|\\bagent protocol\\b|\\bopenai agents sdk\\b|\\bgoogle adk\\b|\\bsmolagents\\b|\\bbrowser-?use\\b|\\bcomputer-?use\\b|\\bvoice assistant\\b|\\bsmart speaker\\b|\\bhome assistant\\b|\\bopenhab\\b|\\bmatter\\b.*\\bsmart home\\b|\\bprompt injection\\b|\\btool poisoning\\b|\\bindirect prompt\\b|\\bminiclaw\\b|\\bnemoclaw\\b",
       "weight": 4,
       "domains": [
         "Embodied AI Agent",
@@ -412,8 +419,22 @@
       ]
     },
     {
+      "label": "Robotics libraries",
+      "weight": 6,
+      "pattern": "\\bapriltags?\\b|\\baprilrobotics\\b|\\bfiducial markers?\\b|\\bompl\\b|\\bopen motion planning library\\b|\\bpoint cloud library\\b|\\borocos\\b|\\bgtsam\\b|\\burdf\\b|\\bxacro\\b|\\brobot_localization\\b|\\boctomap\\b|\\bcostmap\\b|\\bmavsdk\\b|\\bmavros\\b|\\bpymavlink\\b",
+      "domain": "Robot Operating Systems & Middleware",
+      "layer": "Robot OS / Development Tools"
+    },
+    {
+      "label": "Robot perception sensors",
+      "weight": 5,
+      "pattern": "\\bdepth camera\\b|\\brealsense\\b|\\bzed camera\\b|\\bstereolabs\\b|\\bluxonis\\b|\\boak-?d\\b|\\bouster\\b|\\bvelodyne\\b|\\bhesai\\b|\\blivox\\b|\\brobosense\\b|\\bsick (multiscan|picoscan|nanoscan|microscan|outdoorscan|lms|tim5|tim7|mrs|ld-mrs|safety laser scanner)\\w*|\\bsafety laser scanner\\b|\\b3d lidar\\b|\\bsolid-state lidar\\b",
+      "domain": "Cross-Domain Components",
+      "layer": "Hardware / Firmware"
+    },
+    {
       "label": "Robot-specific terms",
-      "pattern": "\\brobots?\\b|\\brobotics?\\b|\\brobotic\\b|\\bactuators?\\b|\\bservo (motor|controller|drive)s?\\b|\\bmotor controller\\b|\\bend effector\\b|\\bgripper\\b|\\bkinematics?\\b|\\bteleoperat(e|ed|ion|or)\\b|\\bteleop\\b|\\bemergency stop\\b|\\be-?stop\\b|\\bsafety interlock\\b|\\bcollision avoidance\\b|\\bodometry\\b|\\bimu\\b|\\binertial measurement\\b|\\bdepth camera\\b|\\brealsense\\b|\\bzed camera\\b|\\bstereolabs\\b|\\bluxonis\\b|\\boak-?d\\b|\\bouster\\b|\\bvelodyne\\b|\\bhesai\\b|\\blivox\\b|\\brobosense\\b|\\bcan ?bus\\b|\\bethercat\\b|\\bcanopen\\b|\\bopc ua\\b|\\bprofinet\\b|\\bmodbus\\b|\\bros-?industrial\\b|\\bmotion controller\\b|\\bservo drive\\b|\\bbeckhoff twincat\\b|\\btwincat\\b|\\bcodesys\\b",
+      "pattern": "\\brobots?\\b|\\brobotics?\\b|\\brobotic\\b|\\bactuators?\\b|\\bservo (motor|controller|drive)s?\\b|\\bmotor controller\\b|\\bend effector\\b|\\bgripper\\b|\\bkinematics?\\b|\\bteleoperat(e|ed|ion|or)\\b|\\bteleop\\b|\\bemergency stop\\b|\\be-?stop\\b|\\bsafety interlock\\b|\\bcollision avoidance\\b|\\bodometry\\b|\\bimu\\b|\\binertial measurement\\b|\\bcan ?bus\\b|\\bethercat\\b|\\bcanopen\\b|\\bopc ua\\b|\\bprofinet\\b|\\bmodbus\\b|\\bros-?industrial\\b|\\bmotion controller\\b|\\bservo drive\\b|\\bbeckhoff twincat\\b|\\btwincat\\b|\\bcodesys\\b",
       "weight": 3,
       "domains": [
         "Cross-Domain Components"
@@ -478,7 +499,7 @@
     },
     {
       "label": "reCAPTCHA / anti-bot",
-      "pattern": "\\bcaptcha\\b|\\banti-?bot\\b|\\bchatbot\\b|\\bbot detection\\b|\\btelegram bot\\b|\\bdiscord bot\\b|\\bslack bot\\b|\\bbot framework\\b|\\btwitch bot\\b",
+      "pattern": "\\bcaptcha\\b|\\banti-?bot\\b|\\bchatbot\\b|\\bbot detection\\b|\\bbot framework\\b",
       "weight": -4
     },
     {
@@ -498,7 +519,7 @@
     },
     {
       "label": "Spot (non-robot)",
-      "pattern": "\\bspotify\\b|\\bspotlight\\b|\\bspot instance\\b|\\bhotspot\\b",
+      "pattern": "\\bspotify\\b|\\bspotlight\\b|\\bspot instances?\\b",
       "weight": -4
     },
     {

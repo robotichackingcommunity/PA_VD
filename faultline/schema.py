@@ -143,8 +143,27 @@ def validate(rec: dict) -> tuple[list[str], list[str]]:
                 e(f"taxonomy.{key} must be a list of strings")
 
     ac = rec.get("attack_chain")
-    if not isinstance(ac, (dict, list)) or not ac:
+    if not isinstance(ac, dict) or not ac:
         e("attack_chain missing")
+    else:
+        if "paths" in ac:
+            e("attack_chain uses legacy 'paths' layout (run normalize)")
+        steps = ac.get("steps")
+        if not isinstance(steps, list) or not all(isinstance(x, str) for x in steps):
+            e("attack_chain.steps must be a list of strings")
+        elif len(steps) < 2:
+            w("attack_chain has fewer than 2 steps")
+        if not isinstance(ac.get("preconditions"), list):
+            e("attack_chain.preconditions must be a list")
+        if not ac.get("physical_consequence"):
+            w("attack_chain.physical_consequence missing")
+        try:
+            from .normalize import contains_payload
+            all_steps = list(steps or []) + [x for p in (ac.get("alternate_paths") or []) for x in (p.get("steps") or [])]
+            if any(isinstance(x, str) and contains_payload(x) for x in all_steps):
+                e("attack_chain.steps contain an operational payload (run normalize)")
+        except Exception:
+            pass
     if not isinstance(rec.get("impact"), dict):
         e("impact must be an object")
     if not isinstance(rec.get("security_observations"), dict):
@@ -152,10 +171,19 @@ def validate(rec: dict) -> tuple[list[str], list[str]]:
     tags = rec.get("cross_domain_tags")
     if not isinstance(tags, list) or not all(isinstance(t, str) for t in tags):
         e("cross_domain_tags must be a list of strings")
-    if "mitigation" in rec and not isinstance(rec["mitigation"], dict):
-        e("mitigation must be an object")
-    if "mitigation" not in rec:
-        w("mitigation missing")
+    mit = rec.get("mitigation")
+    if not isinstance(mit, dict):
+        e("mitigation must be an object (run normalize)")
+    else:
+        for key in ("patch_available", "fixed_version", "workaround", "fix_description"):
+            if key not in mit:
+                e(f"mitigation.{key} missing")
+        if mit.get("patch_available") is not None and not isinstance(mit.get("patch_available"), bool):
+            e("mitigation.patch_available must be boolean or null")
+        if not any(mit.get(k) for k in ("fixed_version", "workaround", "fix_description")):
+            w("mitigation has no actionable content")
+    if not isinstance(rec.get("enrichment"), dict) or rec["enrichment"].get("method") not in ("curated", "claude-auto", "manual"):
+        e("enrichment.method must be one of curated / claude-auto / manual")
     affc = rec.get("affected_configurations")
     if affc is not None and not isinstance(affc, (list, dict)):
         e("affected_configurations must be a list or object")
