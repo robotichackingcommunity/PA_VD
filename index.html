@@ -113,11 +113,9 @@
 
     function renderStats() {
       const sev = count(allMetadata.map(i => i.severity));
-      const latest = allMetadata.map(i => i.last_modified || i.published || '').sort().pop();
       document.getElementById('stats-strip').innerHTML =
         `<span><b>${allMetadata.length}</b> records</span>` +
-        SEV_ORDER.filter(s => sev.get(s)).map(s => `<span><b>${sev.get(s)}</b> ${s.toLowerCase()}</span>`).join('') +
-        (latest ? `<span>latest update <b>${esc(latest)}</b></span>` : '');
+        SEV_ORDER.filter(s => sev.get(s)).map(s => `<span><b>${sev.get(s)}</b> ${s.toLowerCase()}</span>`).join('');
     }
 
     function filterHTML(id, counts, order) {
