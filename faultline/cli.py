@@ -72,6 +72,14 @@ def cmd_enrich(args) -> int:
     return 0
 
 
+def cmd_triage(args) -> int:
+    from .triage import triage_review
+    stats = triage_review(max_records=args.max, model=args.model, min_confidence=args.min_confidence,
+                          jobs=args.jobs, dry_run=args.dry_run)
+    print(json.dumps(stats, indent=2))
+    return 0
+
+
 def cmd_index(args) -> int:
     from .index import build_all
     stats = build_all()
@@ -144,6 +152,14 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--dry-run", action="store_true", help="print the prompt for the first candidate and exit")
     p.add_argument("--cve", nargs="*", help="only these CVE ids")
     p.set_defaults(fn=cmd_enrich)
+
+    p = sub.add_parser("triage", help="auto-adjudicate the review queue with an LLM gate (accept→pending, else→rejected)")
+    p.add_argument("--max", type=int, default=None, help="max review candidates to adjudicate")
+    p.add_argument("--model", default=None, help="gate model (default: claude-haiku-5-5)")
+    p.add_argument("--min-confidence", type=float, default=0.6)
+    p.add_argument("--jobs", type=int, default=4, help="parallel gate workers")
+    p.add_argument("--dry-run", action="store_true", help="print the gate prompt for the first candidate and exit")
+    p.set_defaults(fn=cmd_triage)
 
     p = sub.add_parser("index", help="rebuild index.json, stats.json and README stats")
     p.set_defaults(fn=cmd_index)
