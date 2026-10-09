@@ -113,12 +113,10 @@
 
     function renderStats() {
       const sev = count(allMetadata.map(i => i.severity));
-      const auto = allMetadata.filter(i => i.enrichment !== 'curated' && i.reviewed === false).length;
       const latest = allMetadata.map(i => i.last_modified || i.published || '').sort().pop();
       document.getElementById('stats-strip').innerHTML =
         `<span><b>${allMetadata.length}</b> records</span>` +
         SEV_ORDER.filter(s => sev.get(s)).map(s => `<span><b>${sev.get(s)}</b> ${s.toLowerCase()}</span>`).join('') +
-        (auto ? `<span><b>${auto}</b> auto-enriched awaiting review</span>` : '') +
         (latest ? `<span>latest update <b>${esc(latest)}</b></span>` : '');
     }
 
@@ -177,7 +175,7 @@
             <span class="sev sev-${item.severity}">${item.severity} ${item.score ?? ''}</span>
           </div>
           <p>${title}</p>
-          <div class="chips">${item.domains.map(d => `<span class="chip">${esc(d)}</span>`).join('')}${item.layers.map(l => `<span class="chip layer">${esc(l)}</span>`).join('')}${item.enrichment !== 'curated' && item.reviewed === false ? '<span class="chip auto">auto · unreviewed</span>' : ''}</div>
+          <div class="chips">${item.domains.map(d => `<span class="chip">${esc(d)}</span>`).join('')}${item.layers.map(l => `<span class="chip layer">${esc(l)}</span>`).join('')}</div>
           <div style="font-size:.8rem;color:var(--muted)">${esc(item.vendors.join(', '))}${item.published ? ' · ' + esc(item.published) : ''}${item.cwe ? ' · ' + esc(item.cwe) : ''}</div>
         </div>`;
       }).join('');
