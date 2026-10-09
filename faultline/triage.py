@@ -18,7 +18,6 @@ from typing import Any
 
 from .discover import QUEUE_FILES, load_queue, save_queue
 from .enrich import _ThreadLocalDict, _extract_json, call_claude, claude_available, resolve_model
-from .refresh import gather_facts
 from .taxonomy import DOMAINS
 
 log = logging.getLogger("faultline.triage")
@@ -60,16 +59,18 @@ CVE:
 """
 
 
-def build_gate_prompt(facts: dict[str, Any], candidate: dict[str, Any]) -> str:
+def build_gate_prompt(cve_id: str, candidate: dict[str, Any]) -> str:
+    # The queued candidate already carries title/description/affected from discovery,
+    # so the gate needs no network fetch — a relevance call only needs what the CVE is about.
+    affected = candidate.get("affected") or []
     slim = {
-        "cve_id": facts.get("cve_id"),
-        "title": facts.get("title"),
-        "description": (facts.get("description") or "")[:1200],
+        "cve_id": cve_id,
+        "title": candidate.get("title"),
+        "description": (candidate.get("description") or "")[:1200],
         "vendor_product": [
             {"vendor": a.get("vendor"), "product": a.get("product")}
-            for a in (facts.get("affected") or [])[:6]
+            for a in affected[:6] if isinstance(a, dict)
         ],
-        "cpes": (facts.get("cpes") or [])[:6],
         "classifier_hint": {
             "matched_rules": [m["rule"] for m in candidate.get("matched", [])],
             "proposed_domains": candidate.get("proposed_domains"),
@@ -82,12 +83,7 @@ def build_gate_prompt(facts: dict[str, Any], candidate: dict[str, Any]) -> str:
 
 def gate_one(cve_id: str, candidate: dict[str, Any], model: str | None) -> dict[str, Any] | None:
     """Return the verdict dict, or None if the model gave no usable JSON."""
-    facts = gather_facts(cve_id)
-    if not facts:
-        # No upstream facts: fall back to the queued description so we can still decide.
-        facts = {"cve_id": cve_id, "description": candidate.get("description", ""),
-                 "title": candidate.get("title")}
-    prompt = build_gate_prompt(facts, candidate)
+    prompt = build_gate_prompt(cve_id, candidate)
     raw = call_claude(prompt, model)
     verdict = raw if isinstance(raw, dict) else None
     if verdict is None:
@@ -116,7 +112,7 @@ def triage_review(max_records: int | None = None, model: str | None = None,
         return stats
     if dry_run:
         c = targets[0]
-        print(build_gate_prompt(gather_facts(c) or {"cve_id": c}, review[c]))
+        print(build_gate_prompt(c, review[c]))
         return stats
     if not claude_available():
         stats["skipped_no_claude"] = len(targets)
