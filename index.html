@@ -56,7 +56,6 @@
       <div class="filter-group"><h3>Technical Layer</h3><div id="layer-filters" class="checkbox-group"></div></div>
       <div class="filter-group"><h3>Severity</h3><div id="severity-filters" class="checkbox-group"></div></div>
       <div class="filter-group"><h3>Vendor</h3><div id="vendor-filters" class="checkbox-group"></div></div>
-      <div class="filter-group"><h3>Enrichment</h3><div id="enrich-filters" class="checkbox-group"></div></div>
 
       <button onclick="resetFilters()" style="width:100%;padding:12px;margin-top:4px;">Reset All</button>
     </aside>
@@ -133,7 +132,6 @@
       document.getElementById("layer-filters").innerHTML = filterHTML('layer', count(allMetadata.flatMap(i => i.layers)));
       document.getElementById("severity-filters").innerHTML = filterHTML('severity', count(allMetadata.map(i => i.severity)), SEV_ORDER);
       document.getElementById("vendor-filters").innerHTML = filterHTML('vendor', count(allMetadata.flatMap(i => i.vendors)));
-      document.getElementById("enrich-filters").innerHTML = filterHTML('enrich', count(allMetadata.map(i => i.enrichment)));
     }
 
     function getSelectedValues(id) { return Array.from(document.querySelectorAll(`#${id} input:checked`)).map(el => el.value); }
@@ -144,7 +142,6 @@
       const selLayers = getSelectedValues("layer-filters");
       const selVendors = getSelectedValues("vendor-filters");
       const selSeverities = getSelectedValues("severity-filters");
-      const selEnrich = getSelectedValues("enrich-filters");
       const sort = document.getElementById("sort").value;
 
       const filtered = allMetadata.filter(item => {
@@ -156,7 +153,6 @@
         if (selLayers.length && !selLayers.some(l => item.layers.includes(l))) return false;
         if (selVendors.length && !selVendors.some(v => item.vendors.includes(v))) return false;
         if (selSeverities.length && !selSeverities.includes(item.severity)) return false;
-        if (selEnrich.length && !selEnrich.includes(item.enrichment)) return false;
         return true;
       });
       filtered.sort((a, b) => {

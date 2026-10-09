@@ -67,7 +67,7 @@ def cmd_rescore(args) -> int:
 
 def cmd_enrich(args) -> int:
     from .enrich import enrich_pending
-    stats = enrich_pending(max_records=args.max, model=args.model, dry_run=args.dry_run, ids=args.cve)
+    stats = enrich_pending(max_records=args.max, model=args.model, dry_run=args.dry_run, ids=args.cve, jobs=args.jobs)
     print(json.dumps(stats, indent=2))
     return 0
 
@@ -97,7 +97,7 @@ def cmd_sync(args) -> int:
     if not args.skip_discover:
         summary["discover"] = discover(days=args.days)
     if not args.skip_enrich:
-        summary["enrich"] = enrich_pending(max_records=args.max_enrich, model=args.model)
+        summary["enrich"] = enrich_pending(max_records=args.max_enrich, model=args.model, jobs=args.jobs)
     summary["normalize_after"] = normalize_tree()
     rc = cmd_validate(argparse.Namespace(warnings=False))
     if rc:
@@ -140,6 +140,7 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("enrich", help="generate full records for queued candidates with Claude")
     p.add_argument("--max", type=int, default=20)
     p.add_argument("--model", default=None)
+    p.add_argument("--jobs", type=int, default=1, help="parallel enrichment workers")
     p.add_argument("--dry-run", action="store_true", help="print the prompt for the first candidate and exit")
     p.add_argument("--cve", nargs="*", help="only these CVE ids")
     p.set_defaults(fn=cmd_enrich)
@@ -153,6 +154,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--days", type=int, default=None)
     p.add_argument("--max-enrich", type=int, default=20)
     p.add_argument("--model", default=None)
+    p.add_argument("--jobs", type=int, default=1, help="parallel enrichment workers")
     p.add_argument("--skip-refresh", action="store_true")
     p.add_argument("--skip-discover", action="store_true")
     p.add_argument("--skip-enrich", action="store_true")

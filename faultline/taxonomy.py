@@ -154,6 +154,31 @@ LAYER_ALIASES: dict[str, str] = {
 # Vendors (canonical spellings for names that drifted)
 # --------------------------------------------------------------------------
 VENDOR_ALIASES: dict[str, str] = {
+    # case / spelling splits surfaced after bulk enrichment
+    "bentoml": "BentoML",
+    "cursor": "Cursor",
+    "docker": "Docker",
+    "fanuc": "FANUC",
+    "google": "Google",
+    "mlflow": "MLflow",
+    "ollama": "Ollama",
+    "pilz": "Pilz",
+    "pytorch": "PyTorch",
+    "huggingface": "Hugging Face",
+    "hugging face": "Hugging Face",
+    # GitHub org slugs -> project names
+    "ggml-org": "ggml (llama.cpp)",
+    "keras-team": "Keras",
+    "kedro-org": "Kedro",
+    "axolotl-ai-cloud": "Axolotl",
+    "state-spaces": "state-spaces (Mamba)",
+    "nltk": "NLTK",
+    "langchain-ai": "LangChain",
+    "run-llama": "LlamaIndex",
+    "mlc-ai": "MLC AI",
+    "kvcache-ai": "KVCache.AI",
+    "gpt-researcher": "GPT Researcher",
+    "svc-develop-team": "svc-develop-team",
     # CPE / CNA spellings that leak in through upstream facts
     "ros": "Open Robotics",
     "ros 2": "Open Robotics",

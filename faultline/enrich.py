@@ -10,8 +10,39 @@ import os
 import re
 import shutil
 import subprocess
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
+
+
+class _ThreadLocalDict:
+    """A dict-like whose contents are per-thread, so parallel enrichment workers
+    never clobber each other's last-call model/cost or withheld-text state."""
+
+    def __init__(self) -> None:
+        self._local = threading.local()
+
+    def _d(self) -> dict:
+        d = getattr(self._local, "d", None)
+        if d is None:
+            d = self._local.d = {}
+        return d
+
+    def clear(self) -> None:
+        self._d().clear()
+
+    def update(self, other: dict) -> None:
+        self._d().update(other)
+
+    def get(self, key, default=None):
+        return self._d().get(key, default)
+
+    def __getitem__(self, key):
+        return self._d()[key]
+
+    def __setitem__(self, key, value) -> None:
+        self._d()[key] = value
 
 from .discover import QUEUE_FILES, load_queue, save_queue
 from .normalize import normalize
@@ -76,7 +107,7 @@ def _extract_json(text: str) -> dict | None:
     return None
 
 
-LAST_MODEL_TEXT: dict[str, str] = {}
+LAST_MODEL_TEXT = _ThreadLocalDict()
 WITHHELD_RE = re.compile(r"withheld|won't regenerate|will not regenerate|I've stopped", re.I)
 
 
@@ -85,7 +116,7 @@ WITHHELD_RE = re.compile(r"withheld|won't regenerate|will not regenerate|I've st
 # (the model answers "I've stopped and won't regenerate that enrichment record"), which is
 # exactly the content this database curates.  Override with FAULTLINE_ENRICH_MODEL or --model.
 DEFAULT_MODEL = "claude-opus-5-5"
-LAST_CALL: dict[str, Any] = {}  # model actually used, cost, duration of the last call
+LAST_CALL = _ThreadLocalDict()  # per-thread: model actually used, cost, duration of the last call
 
 
 def resolve_model(model: str | None) -> str:
@@ -203,7 +234,8 @@ def enrich_one(cve_id: str, candidate: dict[str, Any], model: str | None, attemp
     return None, errors
 
 
-def enrich_pending(max_records: int = 20, model: str | None = None, dry_run: bool = False, ids: list[str] | None = None) -> dict[str, Any]:
+def enrich_pending(max_records: int = 20, model: str | None = None, dry_run: bool = False,
+                   ids: list[str] | None = None, jobs: int = 1) -> dict[str, Any]:
     pending = load_queue(QUEUE_FILES["accept"])
     stats = {"pending": len(pending), "enriched": 0, "failed": 0, "skipped_no_claude": 0}
     targets = [c for c in pending if not ids or c in ids]
@@ -218,27 +250,63 @@ def enrich_pending(max_records: int = 20, model: str | None = None, dry_run: boo
         stats["skipped_no_claude"] = len(targets)
         log.warning("claude CLI not available (or FAULTLINE_ENRICH=0); %d candidate(s) stay queued", len(targets))
         return stats
+
     failed = load_queue("failed.json")
+    # Skip anything already written in an earlier (possibly interrupted) run.
+    todo = []
     for cve_id in targets[:max_records]:
         if record_path(cve_id).exists():
             pending.pop(cve_id, None)
-            continue
-        rec, errors = enrich_one(cve_id, pending[cve_id], model)
+        else:
+            todo.append(cve_id)
+    if pending != load_queue(QUEUE_FILES["accept"]):
+        save_queue(QUEUE_FILES["accept"], pending)
+
+    lock = threading.Lock()
+    done = {"n": 0}
+    total = len(todo)
+    jobs = max(1, jobs)
+
+    def commit(cve_id: str, rec: dict | None, errors: list[str]) -> None:
+        with lock:
+            if rec:
+                pending.pop(cve_id, None)
+                failed.pop(cve_id, None)
+                stats["enriched"] += 1
+                log.info("[%d/%d] %s: enriched -> %s", done["n"] + 1, total, cve_id, rec["title"][:70])
+            else:
+                stats["failed"] += 1
+                entry = dict(pending.get(cve_id, {}))
+                entry["last_error"] = errors
+                entry["failures"] = entry.get("failures", 0) + 1
+                pending[cve_id] = entry
+                failed[cve_id] = entry
+                log.error("[%d/%d] %s: enrichment failed: %s", done["n"] + 1, total, cve_id, "; ".join(errors[:3]))
+            done["n"] += 1
+            # save_record (atomic, per file) happens outside the lock by the worker;
+            # the queue files are shared, so persist them here under the lock.
+            save_queue(QUEUE_FILES["accept"], pending)
+            save_queue("failed.json", failed)
+
+    def work(cve_id: str) -> None:
+        with lock:
+            candidate = dict(pending.get(cve_id, {}))
+        rec, errors = enrich_one(cve_id, candidate, model)
         if rec:
             save_record(rec)
-            pending.pop(cve_id, None)
-            failed.pop(cve_id, None)
-            stats["enriched"] += 1
-            log.info("%s: enriched -> %s", cve_id, rec["title"][:80])
-        else:
-            stats["failed"] += 1
-            entry = dict(pending[cve_id])
-            entry["last_error"] = errors
-            entry["failures"] = entry.get("failures", 0) + 1
-            pending[cve_id] = entry
-            failed[cve_id] = entry
-            log.error("%s: enrichment failed: %s", cve_id, "; ".join(errors[:3]))
-        save_queue(QUEUE_FILES["accept"], pending)
-        save_queue("failed.json", failed)
+        commit(cve_id, rec, errors)
+
+    if jobs == 1:
+        for cve_id in todo:
+            work(cve_id)
+    else:
+        log.info("enriching %d candidate(s) with %d parallel workers", total, jobs)
+        with ThreadPoolExecutor(max_workers=jobs) as pool:
+            futures = {pool.submit(work, c): c for c in todo}
+            for fut in as_completed(futures):
+                exc = fut.exception()
+                if exc:
+                    log.error("%s: worker crashed: %s", futures[fut], exc)
+
     stats["pending"] = len(pending)
     return stats
