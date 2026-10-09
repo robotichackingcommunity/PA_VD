@@ -629,6 +629,46 @@
     "file_name": "CVE-2026-96455.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-33625",
+    "title": "InternLM LMDeploy Code Injection via eval() of Model Config quant_dtype Enables Arbitrary Code Execution",
+    "published": "2026-09-18",
+    "last_modified": "2026-09-24",
+    "vuln_status": "Deferred",
+    "score": 8.8,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "CWE-400",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components",
+      "Embodied AI Agent"
+    ],
+    "primary_domain": "Physical AI Infrastructure",
+    "layers": [
+      "AI/ML Runtime / Inference",
+      "Distribution / Supply Chain",
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "vendors": [
+      "InternLM"
+    ],
+    "products": [
+      "lmdeploy"
+    ],
+    "tags": [
+      "llm-inference",
+      "model-supply-chain",
+      "huggingface",
+      "code-injection",
+      "pytorch",
+      "mass-fleet-attack"
+    ],
+    "robot_safety_impact": "MEDIUM",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2026-33625.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-86793",
     "title": "SGLang SafeUnpickler Builtins Allowlist Bypass Enables Unauthenticated Remote Code Execution on LLM Inference Servers",
     "published": "2026-09-11",
@@ -649,7 +689,7 @@
       "Physical AI Infrastructure / MLOps"
     ],
     "vendors": [
-      "SGLang Project"
+      "SGLang"
     ],
     "products": [
       "SGLang"
@@ -1619,6 +1659,59 @@
     "file_name": "CVE-2026-84698.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-78251",
+    "title": "DJI Consumer Drones FTP Hardcoded Credentials Enable Storage Exhaustion Blocking Flight Logs and Updates",
+    "published": "2026-08-27",
+    "last_modified": "2026-08-28",
+    "vuln_status": "Deferred",
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "cvss_version": "4.0",
+    "cwe": "CWE-798",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity"
+    ],
+    "vendors": [
+      "DJI"
+    ],
+    "products": [
+      "Neo",
+      "Neo 2",
+      "Flip",
+      "Air 3",
+      "Air 3S",
+      "Avata 2",
+      "Avata 360",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Pro",
+      "Mavic 4 Pro",
+      "Mini 2",
+      "Mini 3",
+      "Mini 3 Pro",
+      "Mini 4 Pro",
+      "Mini 5 Pro"
+    ],
+    "tags": [
+      "dji",
+      "hardcoded-credentials",
+      "storage-exhaustion",
+      "flight-log-integrity",
+      "ota-update-blocking",
+      "usb-rndis"
+    ],
+    "robot_safety_impact": "MEDIUM",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2026-78251.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-76640",
     "title": "Unitree G1 EDU BLE GATT and Wi-Fi Provisioning Buffer Overflow Pre-Authentication Root Remote Code Execution",
     "published": "2026-08-27",
@@ -1693,6 +1786,45 @@
     "enrichment": "curated",
     "reviewed": true,
     "file_name": "CVE-2026-76639.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-78684",
+    "title": "vLLM DeepStream Backend Resource Limit Bypass Causes Partial Denial of Service",
+    "published": "2026-08-25",
+    "last_modified": "2026-09-29",
+    "vuln_status": "Analyzed",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "cvss_version": "3.1",
+    "cwe": "CWE-400",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components",
+      "Embodied AI Agent"
+    ],
+    "primary_domain": "Physical AI Infrastructure",
+    "layers": [
+      "AI/ML Runtime / Inference",
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "vendors": [
+      "vLLM Project"
+    ],
+    "products": [
+      "vLLM"
+    ],
+    "tags": [
+      "vllm",
+      "nvidia-deepstream",
+      "inference-dos",
+      "multimodal-video",
+      "gpu-resource-exhaustion",
+      "shared-inference-backend"
+    ],
+    "robot_safety_impact": "LOW",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2026-78684.pavd.json"
   },
   {
     "cve_id": "CVE-2026-65105",
@@ -2348,6 +2480,221 @@
     "file_name": "CVE-2026-55419.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-78321",
+    "title": "DJI Consumer Drones HTTP Media Server Connection Pool Exhaustion Denial of Service",
+    "published": "2026-08-24",
+    "last_modified": "2026-08-26",
+    "vuln_status": "Deferred",
+    "score": 6.0,
+    "severity": "MEDIUM",
+    "cvss_version": "4.0",
+    "cwe": "CWE-770",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity",
+      "Mobile Companion App"
+    ],
+    "vendors": [
+      "DJI"
+    ],
+    "products": [
+      "Neo",
+      "Neo 2",
+      "Flip",
+      "Air 3",
+      "Air 3S",
+      "Avata 2",
+      "Avata 360",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Pro",
+      "Mavic 4 Pro",
+      "Mini 2",
+      "Mini 3",
+      "Mini 3 Pro",
+      "Mini 4 Pro",
+      "Mini 5 Pro"
+    ],
+    "tags": [
+      "dji",
+      "uav",
+      "quicktransfer",
+      "resource-exhaustion",
+      "adjacent-network",
+      "consumer-drone"
+    ],
+    "robot_safety_impact": "LOW",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2026-78321.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-78306",
+    "title": "DJI Consumer Drones: Unauthenticated Bluetooth DUML Interface Allows Wi-Fi Takeover and In-Flight Link Denial of Service",
+    "published": "2026-08-24",
+    "last_modified": "2026-08-26",
+    "vuln_status": "Deferred",
+    "score": 8.5,
+    "severity": "HIGH",
+    "cvss_version": "4.0",
+    "cwe": "CWE-306",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "DJI"
+    ],
+    "products": [
+      "Neo",
+      "Neo 2",
+      "Flip",
+      "Air 3",
+      "Air 3S",
+      "Avata 2",
+      "Avata 360",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Pro",
+      "Mavic 4 Pro",
+      "Mini 2",
+      "Mini 3",
+      "Mini 3 Pro",
+      "Mini 4 Pro",
+      "Mini 5 Pro"
+    ],
+    "tags": [
+      "dji",
+      "duml",
+      "bluetooth",
+      "uav-link-hijack",
+      "wireless-dos",
+      "missing-auth"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2026-78306.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-78255",
+    "title": "DJI Consumer Drones HTTP Media Server Missing Authentication Allows Exfiltration of Stored Photos and Videos",
+    "published": "2026-08-24",
+    "last_modified": "2026-08-26",
+    "vuln_status": "Deferred",
+    "score": 8.7,
+    "severity": "HIGH",
+    "cvss_version": "4.0",
+    "cwe": "CWE-306",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity"
+    ],
+    "vendors": [
+      "DJI"
+    ],
+    "products": [
+      "Neo",
+      "Neo 2",
+      "Flip",
+      "Air 3",
+      "Air 3S",
+      "Avata 2",
+      "Avata 360",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Pro",
+      "Mavic 4 Pro",
+      "Mini 2",
+      "Mini 3",
+      "Mini 3 Pro",
+      "Mini 4 Pro",
+      "Mini 5 Pro"
+    ],
+    "tags": [
+      "dji",
+      "consumer-drone",
+      "unauthenticated-endpoint",
+      "media-exfiltration",
+      "privacy-leak",
+      "firmware"
+    ],
+    "robot_safety_impact": "LOW",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2026-78255.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-77812",
+    "title": "DJI Consumer Drones Cleartext BLE DUML Exposure of Wi-Fi PSK and Trusted UUID Enabling Unauthorized Access",
+    "published": "2026-08-21",
+    "last_modified": "2026-08-26",
+    "vuln_status": "Deferred",
+    "score": 9.4,
+    "severity": "CRITICAL",
+    "cvss_version": "4.0",
+    "cwe": "CWE-311",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity",
+      "Mobile Companion App"
+    ],
+    "vendors": [
+      "DJI"
+    ],
+    "products": [
+      "Neo",
+      "Neo 2",
+      "DJI Flip",
+      "Air 3",
+      "Air 3S",
+      "Avata 2",
+      "Avata 360",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Pro",
+      "Mavic 4 Pro",
+      "Mini 2",
+      "Mini 3",
+      "Mini 3 Pro",
+      "Mini 4 Pro",
+      "Mini 5 Pro"
+    ],
+    "tags": [
+      "dji",
+      "duml",
+      "ble-sniffing",
+      "cleartext-credentials",
+      "wifi-psk-exposure",
+      "consumer-drone"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2026-77812.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-75112",
     "title": "Rockwell Automation OTTO Fleet Manager Insufficient bcrypt Work Factor Weakens Stored Password Hashes",
     "published": "2026-08-19",
@@ -2951,6 +3298,46 @@
     "enrichment": "curated",
     "reviewed": true,
     "file_name": "CVE-2026-47487.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-15976",
+    "title": "SGLang Unsafe Pickle Deserialization in update_weights_from_disk Enables Remote Code Execution",
+    "published": "2026-07-30",
+    "last_modified": "2026-08-04",
+    "vuln_status": "Analyzed",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "cvss_version": "3.1",
+    "cwe": "CWE-502",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Physical AI Infrastructure",
+    "layers": [
+      "AI/ML Runtime / Inference",
+      "Physical AI Infrastructure / MLOps",
+      "Distribution / Supply Chain"
+    ],
+    "vendors": [
+      "SGLang"
+    ],
+    "products": [
+      "SGLang"
+    ],
+    "tags": [
+      "sglang",
+      "pickle-deserialization",
+      "llm-inference-server",
+      "model-supply-chain",
+      "mass-fleet-attack",
+      "embodied-ai-backend"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2026-15976.pavd.json"
   },
   {
     "cve_id": "CVE-2026-12991",
@@ -3675,6 +4062,45 @@
     "file_name": "CVE-2026-56767.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-53923",
+    "title": "vLLM GGUF Dequantize Kernel Integer Truncation Leaks Residual GPU Memory Across Tenants",
+    "published": "2026-06-22",
+    "last_modified": "2026-06-24",
+    "vuln_status": "Analyzed",
+    "score": 7.5,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "CWE-200",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Physical AI Infrastructure",
+    "layers": [
+      "AI/ML Runtime / Inference",
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "vendors": [
+      "vLLM Project"
+    ],
+    "products": [
+      "vllm"
+    ],
+    "tags": [
+      "vllm",
+      "gguf",
+      "cuda",
+      "gpu-memory-disclosure",
+      "multi-tenant-inference",
+      "integer-truncation"
+    ],
+    "robot_safety_impact": "LOW",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2026-53923.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-53865",
     "title": "OpenClaw Maintenance Task Workspace-Derived PATH Untrusted Search Path Arbitrary Command Execution",
     "published": "2026-06-16",
@@ -4282,6 +4708,47 @@
     "enrichment": "curated",
     "reviewed": true,
     "file_name": "CVE-2026-24162.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-5817",
+    "title": "Docker Desktop Model Runner vllm-metal Unsandboxed trust_remote_code Container-to-Host Code Execution",
+    "published": "2026-05-22",
+    "last_modified": "2026-07-23",
+    "vuln_status": "Analyzed",
+    "score": 8.6,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "CWE-829",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components",
+      "Embodied AI Agent"
+    ],
+    "primary_domain": "Physical AI Infrastructure",
+    "layers": [
+      "AI/ML Runtime / Inference",
+      "Physical AI Infrastructure / MLOps",
+      "Distribution / Supply Chain"
+    ],
+    "vendors": [
+      "Docker"
+    ],
+    "products": [
+      "Docker Desktop",
+      "Docker Model Runner (vllm-metal backend)"
+    ],
+    "tags": [
+      "docker-model-runner",
+      "trust-remote-code",
+      "container-escape",
+      "model-supply-chain",
+      "llm-inference",
+      "dev-host-compromise"
+    ],
+    "robot_safety_impact": "MEDIUM",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2026-5817.pavd.json"
   },
   {
     "cve_id": "CVE-2024-55045",
@@ -6690,7 +7157,7 @@
       "Middleware / Communication Layer"
     ],
     "vendors": [
-      "ros-navigation"
+      "Open Navigation"
     ],
     "products": [
       "navigation2",
@@ -7250,6 +7717,44 @@
     "file_name": "CVE-2025-15150.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-67729",
+    "title": "InternLM lmdeploy Insecure torch.load() Deserialization Enabling Code Execution on AI Inference Hosts",
+    "published": "2025-12-26",
+    "last_modified": "2026-10-07",
+    "vuln_status": "Analyzed",
+    "score": 8.8,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "CWE-502",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components",
+      "Embodied AI Agent"
+    ],
+    "primary_domain": "Physical AI Infrastructure",
+    "layers": [
+      "AI/ML Runtime / Inference",
+      "Distribution / Supply Chain"
+    ],
+    "vendors": [
+      "InternLM"
+    ],
+    "products": [
+      "lmdeploy"
+    ],
+    "tags": [
+      "insecure-deserialization",
+      "pytorch-pickle",
+      "model-supply-chain",
+      "llm-inference",
+      "mass-fleet-attack"
+    ],
+    "robot_safety_impact": "MEDIUM",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2025-67729.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-67111",
     "title": "OpenDDS RTPS Protocol Integer Overflow Denial of Service",
     "published": "2025-12-23",
@@ -7498,6 +8003,46 @@
     "file_name": "CVE-2025-33222.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-14931",
+    "title": "Hugging Face smolagents Remote Python Executor Pickle Deserialization Unauthenticated Remote Code Execution",
+    "published": "2025-12-23",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Deferred",
+    "score": 10.0,
+    "severity": "CRITICAL",
+    "cvss_version": "3.0",
+    "cwe": "CWE-502",
+    "domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Embodied AI Agent",
+    "layers": [
+      "AI/ML Runtime / Inference",
+      "Physical AI Infrastructure / MLOps",
+      "Distribution / Supply Chain"
+    ],
+    "vendors": [
+      "Hugging Face"
+    ],
+    "products": [
+      "smolagents"
+    ],
+    "tags": [
+      "smolagents",
+      "huggingface",
+      "pickle-deserialization",
+      "agentic-ai",
+      "unauthenticated-rce",
+      "mass-fleet-attack"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2025-14931.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-13716",
     "title": "Tencent MimicMotion create_pipeline Deserialization Untrusted Data Remote Code Execution",
     "published": "2025-12-23",
@@ -7680,6 +8225,45 @@
     "enrichment": "curated",
     "reviewed": true,
     "file_name": "CVE-2025-13819.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-62164",
+    "title": "vLLM Completions API Prompt-Embeddings Deserialization Out-of-Bounds Write Leading to DoS and Potential RCE",
+    "published": "2025-11-21",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Analyzed",
+    "score": 8.8,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "CWE-20",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Physical AI Infrastructure",
+    "layers": [
+      "AI/ML Runtime / Inference",
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "vendors": [
+      "vLLM Project"
+    ],
+    "products": [
+      "vLLM"
+    ],
+    "tags": [
+      "vllm",
+      "llm-inference",
+      "unsafe-deserialization",
+      "pytorch",
+      "embodied-agent-planning",
+      "mass-fleet-attack"
+    ],
+    "robot_safety_impact": "MEDIUM",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2025-62164.pavd.json"
   },
   {
     "cve_id": "CVE-2025-10571",
@@ -10269,6 +10853,46 @@
     "file_name": "CVE-2024-48849.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-24357",
+    "title": "vLLM Unsafe torch.load Deserialization Enables RCE on Inference Servers Driving Embodied AI",
+    "published": "2025-01-27",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Analyzed",
+    "score": 8.8,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "CWE-502",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Physical AI Infrastructure",
+    "layers": [
+      "AI/ML Runtime / Inference",
+      "Distribution / Supply Chain",
+      "Physical AI Infrastructure / MLOps"
+    ],
+    "vendors": [
+      "vLLM Project"
+    ],
+    "products": [
+      "vllm"
+    ],
+    "tags": [
+      "vllm",
+      "pytorch",
+      "pickle-deserialization",
+      "model-supply-chain",
+      "llm-inference",
+      "mass-fleet-attack"
+    ],
+    "robot_safety_impact": "MEDIUM",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2025-24357.pavd.json"
+  },
+  {
     "cve_id": "CVE-2024-48841",
     "title": "ABB FLXEON Edge Controller Command Injection Unauthenticated Remote Code Execution",
     "published": "2025-01-27",
@@ -10933,6 +11557,247 @@
     "file_name": "CVE-2024-40427.pavd.json"
   },
   {
+    "cve_id": "CVE-2024-37860",
+    "title": "ROS 2 navigation2 nav2_amcl Buffer Overflow via Crafted YAML Enables Local Code Execution",
+    "published": "2024-12-05",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Deferred",
+    "score": 7.3,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "CWE-94",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "layers": [
+      "Robot OS / Development Tools",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "Open Navigation"
+    ],
+    "products": [
+      "navigation2 (humble)",
+      "nav2_amcl"
+    ],
+    "tags": [
+      "ros2",
+      "nav2",
+      "amcl",
+      "localization-spoofing",
+      "config-file-injection",
+      "memory-corruption"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2024-37860.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-30964",
+    "title": "Open Robotics ROS 2 Navigation2 nav2_bt_navigator Insecure Permissions Local Code Execution on Mobile Robots",
+    "published": "2024-12-05",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Deferred",
+    "score": 7.8,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "CWE-94",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR",
+      "Service & Companion Robot"
+    ],
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "layers": [
+      "Robot OS / Development Tools",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "Open Robotics"
+    ],
+    "products": [
+      "Robotic Operating System 2 (ROS2) Humble",
+      "Navigation2 (nav2) Humble",
+      "nav2_bt_navigator"
+    ],
+    "tags": [
+      "ros2",
+      "nav2",
+      "behavior-tree",
+      "amr-navigation",
+      "local-code-execution",
+      "dds"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2024-30964.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-30963",
+    "title": "Open Robotics ROS2 navigation2 (Humble) Buffer Overflow Enables Local Arbitrary Code Execution",
+    "published": "2024-12-05",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Deferred",
+    "score": 7.8,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "CWE-94",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "layers": [
+      "Robot OS / Development Tools",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "Open Robotics"
+    ],
+    "products": [
+      "ROS2 navigation2 (Humble)"
+    ],
+    "tags": [
+      "ros2",
+      "nav2",
+      "humble",
+      "memory-corruption",
+      "local-code-execution",
+      "amr-navigation"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2024-30963.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-30962",
+    "title": "Open Robotics ROS 2 Navigation2 nav2_amcl Buffer Overflow Enables Local Code Execution on Robot Host",
+    "published": "2024-12-05",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Modified",
+    "score": 7.8,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "CWE-120",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "layers": [
+      "Robot OS / Development Tools",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "Open Robotics"
+    ],
+    "products": [
+      "Robot Operating System 2 (ROS 2)",
+      "Navigation2 (nav2_amcl)"
+    ],
+    "tags": [
+      "ros2",
+      "nav2",
+      "amcl",
+      "localization",
+      "memory-corruption",
+      "amr"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2024-30962.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-30961",
+    "title": "Open Robotics ROS 2 navigation2 nav2_bt_navigator Error-Handling Flaw Allows Local Arbitrary Code Execution",
+    "published": "2024-12-05",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Analyzed",
+    "score": 7.8,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "NVD-CWE-noinfo",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "layers": [
+      "Robot OS / Development Tools",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "Open Robotics"
+    ],
+    "products": [
+      "Robot Operating System 2 (ROS 2)",
+      "navigation2 (Nav2)",
+      "nav2_bt_navigator"
+    ],
+    "tags": [
+      "ros2",
+      "nav2",
+      "behavior-tree",
+      "amr",
+      "local-code-execution",
+      "autonomous-navigation"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2024-30961.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-52876",
+    "title": "Holy Stone HSRID01 Remote ID Module Unauthenticated BLE GATT Read Flaw Enables Remote Power-Off",
+    "published": "2024-11-17",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Deferred",
+    "score": 7.5,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "CWE-125",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity",
+      "Mobile Companion App"
+    ],
+    "vendors": [
+      "Holy Stone"
+    ],
+    "products": [
+      "Remote ID Module HSRID01",
+      "Drone Go2 mobile application (firmware distribution)"
+    ],
+    "tags": [
+      "remote-id",
+      "ble-gatt",
+      "drone-compliance",
+      "astm-f3411",
+      "unauthenticated-dos",
+      "holy-stone"
+    ],
+    "robot_safety_impact": "LOW",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2024-52876.pavd.json"
+  },
+  {
     "cve_id": "CVE-2023-52660",
     "title": "Linux Kernel rkisp1 Driver Shared IRQ Handling SoC Hang Denial of Service",
     "published": "2024-05-17",
@@ -10971,6 +11836,752 @@
     "enrichment": "curated",
     "reviewed": true,
     "file_name": "CVE-2023-52660.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-33844",
+    "title": "Parrot ANAFI USA Firmware MAVLink Mission-Type Validation Flaw Cuts Controller Link (DoS)",
+    "published": "2024-05-03",
+    "last_modified": "2026-07-09",
+    "vuln_status": "Modified",
+    "score": 7.5,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "NVD-CWE-noinfo",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Robot Operating Systems & Middleware"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Middleware / Communication Layer",
+      "Network / Connectivity"
+    ],
+    "vendors": [
+      "Parrot"
+    ],
+    "products": [
+      "ANAFI USA firmware"
+    ],
+    "tags": [
+      "mavlink",
+      "uav",
+      "parrot-anafi",
+      "link-loss-dos",
+      "input-validation",
+      "command-and-control"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2024-33844.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-30800",
+    "title": "PX4 Autopilot Geofence Value-Handling Flaw Enables Flight Into No-Fly Zones",
+    "published": "2024-04-23",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Analyzed",
+    "score": 5.6,
+    "severity": "MEDIUM",
+    "cvss_version": "3.1",
+    "cwe": "CWE-229",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Mobile Robot & AMR",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "PX4 Autopilot Project"
+    ],
+    "products": [
+      "PX4 Autopilot"
+    ],
+    "tags": [
+      "px4",
+      "geofence-bypass",
+      "uav",
+      "mavlink",
+      "safety-interlock-bypass",
+      "flight-controller"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2024-30800.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-29460",
+    "title": "PX4 Autopilot 1.14.0 Mission Home-Point Value Handling Flaw Enables Flight Path Manipulation and Crash",
+    "published": "2024-04-10",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Analyzed",
+    "score": 6.6,
+    "severity": "MEDIUM",
+    "cvss_version": "3.1",
+    "cwe": "CWE-229",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Robot OS / Development Tools",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "PX4 Autopilot Project"
+    ],
+    "products": [
+      "PX4 Autopilot (px4_drone_autopilot)"
+    ],
+    "tags": [
+      "px4",
+      "mavlink",
+      "uav-flight-control",
+      "mission-planning",
+      "navigation-integrity",
+      "unsafe-motion"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2024-29460.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2023-6951",
+    "title": "DJI Mavic 3 / Matrice / Mini 3 Pro Weak Wi-Fi WPA2 PSK Allows Unauthorized Drone Network Access and Traffic Decryption",
+    "published": "2024-04-02",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Deferred",
+    "score": 6.6,
+    "severity": "MEDIUM",
+    "cvss_version": "3.1",
+    "cwe": "CWE-334",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity",
+      "Mobile Companion App"
+    ],
+    "vendors": [
+      "DJI"
+    ],
+    "products": [
+      "Mavic 3 Pro",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Enterprise",
+      "Matrice 300",
+      "Matrice M30",
+      "Mini 3 Pro"
+    ],
+    "tags": [
+      "dji",
+      "uav",
+      "wifi-wpa2",
+      "weak-credentials",
+      "quicktransfer",
+      "data-exfiltration"
+    ],
+    "robot_safety_impact": "LOW",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2023-6951.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2023-6949",
+    "title": "DJI Mini 3 Pro HTTP Service Missing Authentication Allows Unauthenticated Media Download (Disputed)",
+    "published": "2024-04-02",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Deferred",
+    "score": 5.2,
+    "severity": "MEDIUM",
+    "cvss_version": "3.1",
+    "cwe": "CWE-306",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity"
+    ],
+    "vendors": [
+      "DJI"
+    ],
+    "products": [
+      "Mini 3 Pro"
+    ],
+    "tags": [
+      "dji",
+      "consumer-drone",
+      "missing-authentication",
+      "media-exfiltration",
+      "wifi-adjacent",
+      "disputed-cve"
+    ],
+    "robot_safety_impact": "NONE",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2023-6949.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2023-6948",
+    "title": "DJI Drones v2_sdk_service sdk_printf Buffer Overflow Causing SDK Service Denial of Service",
+    "published": "2024-04-02",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Deferred",
+    "score": 3.0,
+    "severity": "LOW",
+    "cvss_version": "3.1",
+    "cwe": "CWE-120",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Robot Operating Systems & Middleware"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity"
+    ],
+    "vendors": [
+      "DJI"
+    ],
+    "products": [
+      "Mavic 3 Pro",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Enterprise",
+      "Matrice 300",
+      "Matrice M30",
+      "Mini 3 Pro"
+    ],
+    "tags": [
+      "dji",
+      "uav-firmware",
+      "buffer-overflow",
+      "sdk-service",
+      "denial-of-service",
+      "adjacent-network"
+    ],
+    "robot_safety_impact": "LOW",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2023-6948.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2023-51456",
+    "title": "DJI Drone v2_sdk_service Input Validation Flaw Enables Memory Corruption and Code Execution",
+    "published": "2024-04-02",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Deferred",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "cvss_version": "3.1",
+    "cwe": "CWE-125",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity"
+    ],
+    "vendors": [
+      "DJI"
+    ],
+    "products": [
+      "Mavic 3 Pro",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Enterprise",
+      "Matrice 300",
+      "Matrice M30",
+      "Mini 3 Pro"
+    ],
+    "tags": [
+      "dji",
+      "uav-firmware",
+      "memory-corruption",
+      "adjacent-network",
+      "enterprise-drone",
+      "shared-library"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2023-51456.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2023-51455",
+    "title": "DJI Mavic/Matrice/Mini v2_sdk_service Array Index Flaw Enables Memory Leak or Code Execution",
+    "published": "2024-04-02",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Deferred",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "cvss_version": "3.1",
+    "cwe": "CWE-129",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Robot Operating Systems & Middleware"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "DJI"
+    ],
+    "products": [
+      "Mavic 3 Pro",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Enterprise",
+      "Matrice 300",
+      "Matrice M30",
+      "Mini 3 Pro"
+    ],
+    "tags": [
+      "dji",
+      "uav-firmware",
+      "memory-corruption",
+      "adjacent-network",
+      "drone-sdk",
+      "enterprise-drone"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2023-51455.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2023-51454",
+    "title": "DJI Drone v2_sdk_service Out-of-Bounds Write Enables Memory Leak or Arbitrary Code Execution",
+    "published": "2024-04-02",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Deferred",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "cvss_version": "3.1",
+    "cwe": "CWE-787",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "DJI"
+    ],
+    "products": [
+      "Mavic 3 Pro",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Enterprise",
+      "Matrice 300",
+      "Matrice M30",
+      "Mini 3 Pro"
+    ],
+    "tags": [
+      "dji",
+      "uav-firmware",
+      "memory-corruption",
+      "adjacent-network",
+      "fleet-wide-exposure",
+      "onboard-sdk"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2023-51454.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2023-51453",
+    "title": "DJI Drone v2_sdk_service Input Validation Flaw Lets Adjacent Attacker Crash Service (DoS)",
+    "published": "2024-04-02",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Deferred",
+    "score": 3.0,
+    "severity": "LOW",
+    "cvss_version": "3.1",
+    "cwe": "CWE-787",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity"
+    ],
+    "vendors": [
+      "DJI"
+    ],
+    "products": [
+      "Mavic 3 Pro",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Enterprise",
+      "Matrice 300",
+      "Matrice M30",
+      "Mini 3 Pro"
+    ],
+    "tags": [
+      "dji",
+      "uav-firmware",
+      "onboard-sdk",
+      "adjacent-network",
+      "denial-of-service",
+      "shared-library"
+    ],
+    "robot_safety_impact": "LOW",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2023-51453.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2023-51452",
+    "title": "DJI Drones v2_sdk_service Missing Input Size Check Allows Adjacent Denial-of-Service of SDK Service",
+    "published": "2024-04-02",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Deferred",
+    "score": 3.0,
+    "severity": "LOW",
+    "cvss_version": "3.1",
+    "cwe": "CWE-787",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "DJI"
+    ],
+    "products": [
+      "Mavic 3 Pro",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Enterprise",
+      "Matrice 300",
+      "Matrice M30",
+      "Mini 3 Pro"
+    ],
+    "tags": [
+      "dji",
+      "uav-firmware",
+      "sdk-service",
+      "adjacent-network",
+      "denial-of-service",
+      "memory-safety"
+    ],
+    "robot_safety_impact": "LOW",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2023-51452.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-25199",
+    "title": "Open Robotics ROS 2 Nav2 AMCL Use-After-Free in Map Handling Causing Localization Crash or Corruption",
+    "published": "2024-02-20",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Analyzed",
+    "score": 8.1,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "CWE-416",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR",
+      "Service & Companion Robot"
+    ],
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "layers": [
+      "Robot OS / Development Tools",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "Open Robotics",
+      "Open Navigation"
+    ],
+    "products": [
+      "Nav2 (navigation2) nav2_amcl",
+      "Robot Operating System 2 (ROS 2) Humble"
+    ],
+    "tags": [
+      "ros2",
+      "nav2",
+      "amcl",
+      "dds",
+      "use-after-free",
+      "localization"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2024-25199.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-25198",
+    "title": "Nav2 AMCL Use-After-Free in Shutdown Ordering Crashes ROS 2 Robot Localization",
+    "published": "2024-02-20",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Analyzed",
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "cvss_version": "3.1",
+    "cwe": "CWE-416",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "layers": [
+      "Robot OS / Development Tools",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "Open Navigation",
+      "Open Robotics"
+    ],
+    "products": [
+      "Nav2 (navigation2) nav2_amcl",
+      "Robot Operating System 2 (ROS 2) Humble"
+    ],
+    "tags": [
+      "ros2",
+      "nav2",
+      "amcl",
+      "localization",
+      "use-after-free",
+      "amr"
+    ],
+    "robot_safety_impact": "MEDIUM",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2024-25198.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-25197",
+    "title": "Nav2 (ROS 2 Humble) Layered Costmap NULL Pointer Dereference Navigation Stack Crash",
+    "published": "2024-02-20",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Analyzed",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "cvss_version": "3.1",
+    "cwe": "CWE-476",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "layers": [
+      "Robot OS / Development Tools",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "Open Robotics",
+      "Open Navigation"
+    ],
+    "products": [
+      "Robot Operating System 2 (ROS 2) Humble",
+      "Nav2 (navigation2)"
+    ],
+    "tags": [
+      "ros2",
+      "nav2",
+      "costmap",
+      "navigation-dos",
+      "amr",
+      "null-pointer"
+    ],
+    "robot_safety_impact": "MEDIUM",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2024-25197.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-25196",
+    "title": "Nav2 (ROS 2 Humble) nav2_controller Buffer Overflow via Crafted YAML Parameters Causes Controller Crash",
+    "published": "2024-02-20",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Analyzed",
+    "score": 3.3,
+    "severity": "LOW",
+    "cvss_version": "3.1",
+    "cwe": "CWE-120",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "layers": [
+      "Robot OS / Development Tools"
+    ],
+    "vendors": [
+      "Open Navigation",
+      "Open Robotics"
+    ],
+    "products": [
+      "Nav2 (navigation2)",
+      "Robot Operating System 2 (ROS 2) Humble"
+    ],
+    "tags": [
+      "ros2",
+      "nav2",
+      "yaml-config",
+      "buffer-overflow",
+      "navigation-dos",
+      "amr"
+    ],
+    "robot_safety_impact": "LOW",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2024-25196.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-24255",
+    "title": "PX4 Autopilot Geofence and Mission Feasibility Check Race Condition Allows Unsafe Missions to Be Accepted",
+    "published": "2024-02-06",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Modified",
+    "score": 4.2,
+    "severity": "MEDIUM",
+    "cvss_version": "3.1",
+    "cwe": "CWE-362",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Middleware / Communication Layer",
+      "Network / Connectivity"
+    ],
+    "vendors": [
+      "PX4 Autopilot Project"
+    ],
+    "products": [
+      "PX4 Autopilot"
+    ],
+    "tags": [
+      "px4",
+      "mavlink",
+      "geofence-bypass",
+      "race-condition",
+      "uav-flight-safety"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2024-24255.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-24254",
+    "title": "PX4 Autopilot Geofence Loading Race Condition Allows Missions That Overlap Geofence Boundaries",
+    "published": "2024-02-06",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Modified",
+    "score": 4.2,
+    "severity": "MEDIUM",
+    "cvss_version": "3.1",
+    "cwe": "CWE-362",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "PX4 Autopilot Project"
+    ],
+    "products": [
+      "PX4 Autopilot"
+    ],
+    "tags": [
+      "px4",
+      "mavlink",
+      "geofence-bypass",
+      "race-condition",
+      "uav-flight-safety"
+    ],
+    "robot_safety_impact": "MEDIUM",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2024-24254.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2023-50121",
+    "title": "Autel EVO NANO Flight Control Firmware Uncontrolled Resource Consumption Denial of Service",
+    "published": "2024-01-06",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Modified",
+    "score": 5.7,
+    "severity": "MEDIUM",
+    "cvss_version": "3.1",
+    "cwe": "NVD-CWE-noinfo",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity"
+    ],
+    "vendors": [
+      "Autel Robotics"
+    ],
+    "products": [
+      "EVO NANO drone firmware"
+    ],
+    "tags": [
+      "drone",
+      "uav",
+      "flight-controller",
+      "resource-exhaustion",
+      "geofence",
+      "loss-of-control"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2023-50121.pavd.json"
   },
   {
     "cve_id": "CVE-2023-3104",
@@ -11100,6 +12711,128 @@
     "file_name": "CVE-2023-47335.pavd.json"
   },
   {
+    "cve_id": "CVE-2023-47625",
+    "title": "PX4 PX4-Autopilot CRSF RC Parser Global Buffer Overflow Causing Flight Controller Denial of Service",
+    "published": "2023-11-13",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Modified",
+    "score": 4.3,
+    "severity": "MEDIUM",
+    "cvss_version": "3.1",
+    "cwe": "CWE-120",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity"
+    ],
+    "vendors": [
+      "PX4 Autopilot Project"
+    ],
+    "products": [
+      "PX4-Autopilot"
+    ],
+    "tags": [
+      "px4",
+      "crsf",
+      "rc-link",
+      "flight-controller",
+      "buffer-overflow",
+      "uav-dos"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2023-47625.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2023-46256",
+    "title": "PX4-Autopilot Lightware Laser Serial Parser Heap Buffer Overflow Causing Unexpected Drone Behavior",
+    "published": "2023-10-31",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Modified",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "cvss_version": "3.1",
+    "cwe": "CWE-120",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Mobile Robot & AMR",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Robot OS / Development Tools"
+    ],
+    "vendors": [
+      "PX4 Autopilot Project"
+    ],
+    "products": [
+      "PX4-Autopilot"
+    ],
+    "tags": [
+      "px4",
+      "flight-controller",
+      "sensor-driver",
+      "heap-overflow",
+      "rangefinder",
+      "uav-safety"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2023-46256.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2021-34125",
+    "title": "PX4-Autopilot and Yuneec Mantis Q NuttX Shell Memory-Access Commands Expose Sensitive Information",
+    "published": "2023-03-09",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Modified",
+    "score": 7.5,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "NVD-CWE-noinfo",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Robot OS / Development Tools",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "PX4 Autopilot Project",
+      "Yuneec",
+      "Apache NuttX"
+    ],
+    "products": [
+      "PX4-Autopilot",
+      "Mantis Q firmware",
+      "NuttX Shell (NSH)"
+    ],
+    "tags": [
+      "px4",
+      "nuttx",
+      "mavlink",
+      "info-disclosure",
+      "debug-interface",
+      "flight-controller"
+    ],
+    "robot_safety_impact": "LOW",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2021-34125.pavd.json"
+  },
+  {
     "cve_id": "CVE-2022-42268",
     "title": "NVIDIA Omniverse Kit USD Embedded Python Code Execution Across Reference Applications",
     "published": "2023-01-13",
@@ -11141,5 +12874,431 @@
     "enrichment": "curated",
     "reviewed": true,
     "file_name": "CVE-2022-42268.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2022-48217",
+    "title": "tradr-project tf_remapper ROS Unvalidated Topic-Name Parameter Allows TF Frame Data Redirection (Disputed)",
+    "published": "2023-01-04",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Modified",
+    "score": 8.1,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "NVD-CWE-noinfo",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "layers": [
+      "Robot OS / Development Tools",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "TRADR project"
+    ],
+    "products": [
+      "tf_remapper"
+    ],
+    "tags": [
+      "ros1",
+      "tf-transforms",
+      "parameter-injection",
+      "disputed-cve",
+      "supply-chain-node",
+      "insider-node-trust"
+    ],
+    "robot_safety_impact": "MEDIUM",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2022-48217.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2022-48198",
+    "title": "ntpd_driver ROS Node Untrusted time_ref_topic Parameter Allows Co-Located Node to Alter Robot Behavior",
+    "published": "2023-01-01",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Modified",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "cvss_version": "3.1",
+    "cwe": "CWE-668",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Cross-Domain Components",
+      "Mobile Robot & AMR"
+    ],
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "layers": [
+      "Robot OS / Development Tools",
+      "Middleware / Communication Layer"
+    ],
+    "vendors": [
+      "ntpd_driver project"
+    ],
+    "products": [
+      "ntpd_driver"
+    ],
+    "tags": [
+      "ros",
+      "ros2",
+      "time-synchronization",
+      "ntp",
+      "malicious-node",
+      "supply-chain"
+    ],
+    "robot_safety_impact": "MEDIUM",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2022-48198.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2022-2675",
+    "title": "Unitree Go 1 Missing RF Authentication Allows Unauthenticated Remote Power-Down of Legged Robot",
+    "published": "2022-08-05",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Modified",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "cvss_version": "3.1",
+    "cwe": "CWE-285",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Service & Companion Robot",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Mobile Robot & AMR",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity"
+    ],
+    "vendors": [
+      "Unitree Robotics"
+    ],
+    "products": [
+      "Go 1",
+      "go_1_firmware",
+      "A1 (possibly affected)"
+    ],
+    "tags": [
+      "unitree",
+      "quadruped",
+      "rf-control-link",
+      "unauthenticated-command",
+      "remote-shutdown",
+      "legged-robot"
+    ],
+    "robot_safety_impact": "MEDIUM",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2022-2675.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2022-29945",
+    "title": "DJI Drone AeroScope Broadcast Missing Encryption Exposes Operator Physical Location",
+    "published": "2022-04-29",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Modified",
+    "score": 7.5,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "CWE-319",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Hardware / Firmware",
+      "Network / Connectivity"
+    ],
+    "vendors": [
+      "DJI"
+    ],
+    "products": [
+      "Mavic 3",
+      "RC Pro",
+      "Air 2S",
+      "Air 2",
+      "Mini 2",
+      "Mini SE",
+      "FPV",
+      "Phantom 4 Pro",
+      "Inspire 2",
+      "Zenmuse X7",
+      "Zenmuse X5S"
+    ],
+    "tags": [
+      "dji",
+      "aeroscope",
+      "drone-remote-id",
+      "cleartext-telemetry",
+      "operator-location-privacy",
+      "rf-passive-sniffing"
+    ],
+    "robot_safety_impact": "LOW",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2022-29945.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2021-37146",
+    "title": "ros_comm XMLRPC Server Infinite Loop Allows Remote Denial of Service of ROS 1 Master and Nodes",
+    "published": "2021-09-28",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Modified",
+    "score": 7.5,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "CWE-835",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR",
+      "Industrial Robot"
+    ],
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "layers": [
+      "Middleware / Communication Layer",
+      "Robot OS / Development Tools",
+      "Network / Connectivity"
+    ],
+    "vendors": [
+      "Open Robotics"
+    ],
+    "products": [
+      "ros-comm"
+    ],
+    "tags": [
+      "ros1",
+      "ros-comm",
+      "xmlrpc",
+      "denial-of-service",
+      "rosmaster",
+      "mass-fleet-attack"
+    ],
+    "robot_safety_impact": "MEDIUM",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2021-37146.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2020-10272",
+    "title": "MiR Robots ROS Computational Graph Missing Authentication Enables Full Remote Robot Control",
+    "published": "2020-06-24",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Modified",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "cvss_version": "3.1",
+    "cwe": "CWE-306",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware",
+      "Industrial Robot"
+    ],
+    "primary_domain": "Mobile Robot & AMR",
+    "layers": [
+      "Robot OS / Development Tools",
+      "Middleware / Communication Layer",
+      "Hardware / Firmware"
+    ],
+    "vendors": [
+      "Mobile Industrial Robots",
+      "Enabled Robotics",
+      "UVD Robots"
+    ],
+    "products": [
+      "MiR100",
+      "MiR200",
+      "MiR250",
+      "MiR500",
+      "MiR1000",
+      "ER200",
+      "ER-Lite",
+      "ER-Flex",
+      "ER-One",
+      "UVD Robots"
+    ],
+    "tags": [
+      "ros",
+      "ros-master",
+      "mir-amr",
+      "missing-authentication",
+      "insecure-defaults",
+      "mass-fleet-attack"
+    ],
+    "robot_safety_impact": "CRITICAL",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2020-10272.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2020-10271",
+    "title": "MiR Robots ROS Computational Graph Exposed on All Network Interfaces Enables Full Robot Takeover",
+    "published": "2020-06-24",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Modified",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "cvss_version": "3.1",
+    "cwe": "CWE-668",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware",
+      "Industrial Robot"
+    ],
+    "primary_domain": "Mobile Robot & AMR",
+    "layers": [
+      "Robot OS / Development Tools",
+      "Network / Connectivity",
+      "Hardware / Firmware"
+    ],
+    "vendors": [
+      "Mobile Industrial Robots",
+      "Enabled Robotics",
+      "UVD Robots"
+    ],
+    "products": [
+      "MiR100",
+      "MiR200",
+      "MiR250",
+      "MiR500",
+      "MiR1000",
+      "ER200",
+      "ER-Lite",
+      "ER-Flex",
+      "ER-One",
+      "UVD Robots"
+    ],
+    "tags": [
+      "ros",
+      "ros-master-exposure",
+      "amr",
+      "insecure-default",
+      "network-exposure",
+      "mass-fleet-attack"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2020-10271.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2019-3944",
+    "title": "Parrot ANAFI Wi-Fi Deauthentication Lets Unauthenticated Attackers Cut Drone-Controller Link Mid-Flight",
+    "published": "2020-04-01",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Modified",
+    "score": 7.5,
+    "severity": "HIGH",
+    "cvss_version": "3.1",
+    "cwe": "CWE-276",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Drone & Aerial Robotics",
+    "layers": [
+      "Network / Connectivity",
+      "Hardware / Firmware"
+    ],
+    "vendors": [
+      "Parrot"
+    ],
+    "products": [
+      "ANAFI",
+      "ANAFI Firmware"
+    ],
+    "tags": [
+      "wifi-deauth",
+      "c2-link-loss",
+      "uav",
+      "parrot-anafi",
+      "denial-of-service",
+      "802-11-management-frames"
+    ],
+    "robot_safety_impact": "HIGH",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2019-3944.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2019-19627",
+    "title": "ROS 2 SROS 2 Security Configuration Bypass Leaks ROS 2 Node Graph Information",
+    "published": "2019-12-06",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Modified",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "cvss_version": "3.1",
+    "cwe": "CWE-200",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR",
+      "Cross-Domain Components"
+    ],
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "layers": [
+      "Middleware / Communication Layer",
+      "Robot OS / Development Tools"
+    ],
+    "vendors": [
+      "Open Robotics"
+    ],
+    "products": [
+      "sros2"
+    ],
+    "tags": [
+      "ros2",
+      "sros2",
+      "dds-security",
+      "information-disclosure",
+      "robot-reconnaissance"
+    ],
+    "robot_safety_impact": "LOW",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2019-19627.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2019-19625",
+    "title": "ROS sros2 Leaky Default DDS Governance Configuration Exposes ROS 2 Node Information",
+    "published": "2019-12-06",
+    "last_modified": "2026-06-17",
+    "vuln_status": "Modified",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "cvss_version": "3.1",
+    "cwe": "CWE-200",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Cross-Domain Components",
+      "Mobile Robot & AMR"
+    ],
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "layers": [
+      "Middleware / Communication Layer",
+      "Robot OS / Development Tools",
+      "Network / Connectivity"
+    ],
+    "vendors": [
+      "Open Robotics"
+    ],
+    "products": [
+      "sros2"
+    ],
+    "tags": [
+      "ros2",
+      "sros2",
+      "dds-security",
+      "insecure-default",
+      "information-disclosure",
+      "reconnaissance"
+    ],
+    "robot_safety_impact": "LOW",
+    "enrichment": "claude-auto",
+    "reviewed": false,
+    "file_name": "CVE-2019-19625.pavd.json"
   }
 ]

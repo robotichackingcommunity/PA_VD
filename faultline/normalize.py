@@ -288,4 +288,23 @@ def normalize(record: dict) -> tuple[dict, list[str]]:
                 mapping["secondary_domains"] = new_sec
                 changes.append("mapping secondary_domains canonicalized")
 
+    affc = rec.get("affected_configurations")
+    if isinstance(affc, list):
+        kept = [row for row in affc if not _placeholder_row(row)]
+        if len(kept) != len(affc):
+            rec["affected_configurations"] = kept
+            changes.append(f"affected_configurations: dropped {len(affc) - len(kept)} placeholder row(s)")
+
     return rec, changes
+
+
+_PLACEHOLDERS = {"", "n/a", "na", "none", "unspecified", "unknown", "-"}
+
+
+def _placeholder_row(row) -> bool:
+    """True for CNA filler rows such as {"vendor": "n/a", "product": "n/a"}."""
+    if not isinstance(row, dict):
+        return False
+    vendor = str(row.get("vendor") or "").strip().lower()
+    product = str(row.get("product") or "").strip().lower()
+    return vendor in _PLACEHOLDERS and product in _PLACEHOLDERS

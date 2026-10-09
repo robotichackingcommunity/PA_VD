@@ -77,14 +77,26 @@ def _extract_json(text: str) -> dict | None:
 
 
 LAST_MODEL_TEXT: dict[str, str] = {}
+WITHHELD_RE = re.compile(r"withheld|won't regenerate|will not regenerate|I've stopped", re.I)
+
+
+# Default enrichment model.  Opus is used deliberately: the Fable-tier models apply extra
+# dual-use safety measures that withhold output for a large share of drone / autopilot CVEs
+# (the model answers "I've stopped and won't regenerate that enrichment record"), which is
+# exactly the content this database curates.  Override with FAULTLINE_ENRICH_MODEL or --model.
+DEFAULT_MODEL = "claude-opus-5-5"
+LAST_CALL: dict[str, Any] = {}  # model actually used, cost, duration of the last call
+
+
+def resolve_model(model: str | None) -> str:
+    return model or os.environ.get("FAULTLINE_ENRICH_MODEL") or DEFAULT_MODEL
 
 
 def call_claude(prompt: str, model: str | None = None, timeout: int = 600) -> dict | None:
     cmd = ["claude", "-p", "--output-format", "json", "--no-session-persistence", "--tools", ""]
     if os.environ.get("ANTHROPIC_API_KEY"):
         cmd.append("--bare")  # CI: API-key auth, skip hooks/keychain
-    if model:
-        cmd += ["--model", model]
+    cmd += ["--model", resolve_model(model)]
     cmd += ["--system-prompt", "You are a defensive security analyst writing structured enrichment for a public CVE database (like NVD/CISA enrichment). Output only the requested JSON object; never include exploit code or operational attack instructions."]
     cmd += ["--", prompt]  # '--' keeps the variadic --tools from swallowing the prompt
     env = dict(os.environ)
@@ -102,6 +114,13 @@ def call_claude(prompt: str, model: str | None = None, timeout: int = 600) -> di
     except ValueError:
         return _extract_json(proc.stdout)
     if isinstance(envelope, dict):
+        usage = envelope.get("modelUsage") or {}
+        LAST_CALL.clear()
+        LAST_CALL.update({
+            "model": next(iter(usage), None) or resolve_model(model),
+            "cost_usd": envelope.get("total_cost_usd"),
+            "duration_ms": envelope.get("duration_ms"),
+        })
         if isinstance(envelope.get("structured_output"), dict):
             return envelope["structured_output"]
         result = envelope.get("result")
@@ -109,7 +128,10 @@ def call_claude(prompt: str, model: str | None = None, timeout: int = 600) -> di
             parsed = _extract_json(result)
             if parsed is None:
                 LAST_MODEL_TEXT["text"] = result.strip()[:300]
-                log.warning("model returned non-JSON text: %s", result.strip()[:160])
+                if WITHHELD_RE.search(result):
+                    log.warning("model output withheld by safety layer (model=%s); try another --model", LAST_CALL.get("model"))
+                else:
+                    log.warning("model returned non-JSON text: %s", result.strip()[:160])
             return parsed
         if isinstance(result, dict):
             return result
@@ -146,7 +168,8 @@ def assemble_record(cve_id: str, generated: dict, facts: dict[str, Any], candida
         "mitigation": generated.get("mitigation") or {},
         "enrichment": {
             "method": "claude-auto",
-            "model": model or os.environ.get("FAULTLINE_ENRICH_MODEL") or "default",
+            "model": LAST_CALL.get("model") or resolve_model(model),
+            "cost_usd": LAST_CALL.get("cost_usd"),
             "generated_at": now_iso(),
             "classifier_score": candidate.get("score"),
             "classifier_rules": [m["rule"] for m in candidate.get("matched", [])],

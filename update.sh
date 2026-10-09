@@ -42,7 +42,7 @@ python3 -m unittest discover -s tests -q >/dev/null || { log "unit tests failed;
 [ "$DRY" = 1 ] && { log "dry run complete"; exit 0; }
 
 PATHS=()
-for p in CVE-json index.json stats.json README.md data/state.json data/queue; do [ -e "$p" ] && PATHS+=("$p"); done
+for p in CVE-json index.json stats.json README.md; do [ -e "$p" ] && PATHS+=("$p"); done
 git add -A "${PATHS[@]}"
 if git diff --cached --quiet; then
   log "no changes to commit"; exit 0

@@ -34,12 +34,14 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Restore HTTP cache
+      # data/ (discovery queues, refresh provenance, HTTP cache) is gitignored;
+      # it is carried between nightly runs through the Actions cache instead.
+      - name: Restore pipeline state
         uses: actions/cache@v4
         with:
-          path: data/cache
-          key: faultline-http-cache-${{ github.run_id }}
-          restore-keys: faultline-http-cache-
+          path: data
+          key: faultline-data-${{ github.run_id }}
+          restore-keys: faultline-data-
 
       - name: Install Claude Code CLI (optional enrichment)
         if: env.HAS_ANTHROPIC_KEY == 'true'

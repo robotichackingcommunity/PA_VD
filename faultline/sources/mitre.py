@@ -38,6 +38,13 @@ def _metrics(container: dict, kind: str) -> list[dict]:
     return out
 
 
+PLACEHOLDERS = {"", "n/a", "na", "none", "unspecified", "unknown", "-"}
+
+
+def _is_placeholder(value: str | None) -> bool:
+    return (value or "").strip().lower() in PLACEHOLDERS
+
+
 def parse(raw: dict) -> dict[str, Any]:
     meta = raw.get("cveMetadata", {})
     cna = raw.get("containers", {}).get("cna", {}) or {}
@@ -88,10 +95,14 @@ def parse(raw: dict) -> dict[str, Any]:
                 s = f"{s} <= {v['lessThanOrEqual']}".strip()
             if s:
                 versions.append(s)
+        vendor = (a.get("vendor") or "").strip()
+        product = (a.get("product") or a.get("packageName") or "").strip()
+        if _is_placeholder(vendor) and _is_placeholder(product):
+            continue  # CNA placeholder rows ("n/a" / "unspecified") carry no information
         f["affected"].append({
-            "vendor": a.get("vendor"),
-            "product": a.get("product") or a.get("packageName"),
-            "versions": versions,
+            "vendor": None if _is_placeholder(vendor) else vendor,
+            "product": product,
+            "versions": [v for v in versions if not _is_placeholder(v)],
             "platforms": a.get("platforms") or [],
         })
         for c in a.get("cpes") or []:

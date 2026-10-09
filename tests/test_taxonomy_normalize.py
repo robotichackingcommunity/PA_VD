@@ -159,3 +159,18 @@ class CweSourceTests(unittest.TestCase):
         rec = base_record(source={"nvd": {"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-0001"}})
         out, _ = normalize(rec)
         self.assertIsInstance(out["source"]["nvd"], str)
+
+
+class PlaceholderAffectedTests(unittest.TestCase):
+    def test_na_rows_dropped(self):
+        from faultline.normalize import normalize
+        rec = {
+            "cve_id": "CVE-2023-50121",
+            "affected_configurations": [
+                {"vendor": "autelrobotics", "product": "evo_nano_drone_firmware", "versions": ["1.6.5"]},
+                {"vendor": "n/a", "product": "n/a", "versions": ["n/a"]},
+            ],
+        }
+        out, changes = normalize(rec)
+        self.assertEqual(len(out["affected_configurations"]), 1)
+        self.assertTrue(any("placeholder" in c for c in changes))

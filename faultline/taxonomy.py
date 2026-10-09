@@ -154,6 +154,24 @@ LAYER_ALIASES: dict[str, str] = {
 # Vendors (canonical spellings for names that drifted)
 # --------------------------------------------------------------------------
 VENDOR_ALIASES: dict[str, str] = {
+    # CPE / CNA spellings that leak in through upstream facts
+    "ros": "Open Robotics",
+    "ros 2": "Open Robotics",
+    "ros2": "Open Robotics",
+    "opennav": "Open Navigation",
+    "open navigation (opennav)": "Open Navigation",
+    "ros-navigation": "Open Navigation",
+    "ros 2 navigation2 (ros-navigation)": "Open Navigation",
+    "navigation2": "Open Navigation",
+    "vllm-project": "vLLM Project",
+    "vllm": "vLLM Project",
+    "sglang project": "SGLang",
+    "sgl-project": "SGLang",
+    "dronecode": "PX4 Autopilot Project",
+    "px4 (dronecode)": "PX4 Autopilot Project",
+    "mobile industrial robots a/s": "Mobile Industrial Robots",
+    "ntpd_driver_project": "ntpd_driver project",
+    "tradr-project": "TRADR project",
     "ecovacs robotics": "ECOVACS",
     "ecovacs": "ECOVACS",
     "px4": "PX4 Autopilot Project",

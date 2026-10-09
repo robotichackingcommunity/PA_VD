@@ -1,5 +1,9 @@
+# Only CVE records (CVE-json/), the web explorer (index.html, index.json, stats.json),
+# source code (faultline/, tests/, config/, update.sh, .github/) and README are tracked.
+# Everything under data/ is local operational state (discovery queues, refresh
+# provenance, HTTP cache); CI keeps it in an actions/cache entry, never in git.
 .DS_Store
-data/cache/
 *.tmp
 __pycache__/
-data/queue/rejected.json
+data/
+docs/superpowers/
