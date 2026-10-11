@@ -80,6 +80,14 @@ def cmd_triage(args) -> int:
     return 0
 
 
+def cmd_audit(args) -> int:
+    from .audit import audit_all
+    stats = audit_all(max_records=args.max, model=args.model, jobs=args.jobs,
+                      min_confidence=args.min_confidence, only_domain=args.domain)
+    print(json.dumps(stats, indent=2))
+    return 0
+
+
 def cmd_index(args) -> int:
     from .index import build_all
     stats = build_all()
@@ -160,6 +168,14 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--jobs", type=int, default=4, help="parallel gate workers")
     p.add_argument("--dry-run", action="store_true", help="print the gate prompt for the first candidate and exit")
     p.set_defaults(fn=cmd_triage)
+
+    p = sub.add_parser("audit", help="LLM-check every record's domain/layer classification (read-only report)")
+    p.add_argument("--max", type=int, default=None)
+    p.add_argument("--model", default=None)
+    p.add_argument("--jobs", type=int, default=8)
+    p.add_argument("--min-confidence", type=float, default=0.7)
+    p.add_argument("--domain", default=None, help="audit only records whose primary_domain is this")
+    p.set_defaults(fn=cmd_audit)
 
     p = sub.add_parser("index", help="rebuild index.json, stats.json and README stats")
     p.set_defaults(fn=cmd_index)
