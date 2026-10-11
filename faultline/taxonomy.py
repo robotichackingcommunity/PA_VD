@@ -154,6 +154,16 @@ LAYER_ALIASES: dict[str, str] = {
 # Vendors (canonical spellings for names that drifted)
 # --------------------------------------------------------------------------
 VENDOR_ALIASES: dict[str, str] = {
+    "openclaw": "OpenClaw",
+    "anthropic": "Anthropic",
+    "crewai": "CrewAI",
+    "easyrobotics": "EasyRobotics",
+    "flowiseai": "FlowiseAI",
+    "langchain": "LangChain",
+    "langflow": "Langflow",
+    "uvd-robots": "UVD Robots",
+    "uvd robots": "UVD Robots",
+    "vecna": "Vecna",
     # case / spelling splits surfaced after bulk enrichment
     "bentoml": "BentoML",
     "cursor": "Cursor",

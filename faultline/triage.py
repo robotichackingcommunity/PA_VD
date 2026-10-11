@@ -34,19 +34,29 @@ GATE_SYSTEM = (
     "never include exploit details."
 )
 
-GATE_TEMPLATE = """FaultLine catalogues vulnerabilities in **Physical AI systems** and the AI \
-infrastructure that drives them. A CVE is IN SCOPE only if the vulnerable product is, or is a \
-direct component of, one of these and a physical or embodied consequence is plausible:
+GATE_TEMPLATE = """FaultLine catalogues vulnerabilities in **Physical AI systems**, the AI \
+infrastructure that drives them, and **agentic AI that can act on the world**. A CVE is IN SCOPE if \
+the vulnerable product is, or is a direct component of, any of these:
 - a robot, drone/UAV, autonomous vehicle, humanoid, or other embodied/mobile machine;
 - robot software stacks or middleware (ROS/ROS 2, DDS, MoveIt, Nav2, PX4/ArduPilot, MAVLink);
 - AI inference/serving, training, or MLOps infrastructure that runs models for such systems
-  (e.g. an inference server, model loader, or agent framework that issues actions to a robot
-  or embodied device), where compromise could reach a physical or embodied system.
+  (e.g. an inference server, model loader, agent framework that issues actions to a robot or
+  embodied device), where compromise could reach a physical or embodied system;
+- an **agentic / LLM-agent framework that acts beyond generating text** — it executes code or
+  shell commands, controls a browser/host/device, pairs with or drives hardware, or invokes
+  tools/actuators — AND the flaw touches that acting capability (e.g. sandbox or allowlist
+  bypass, command/code injection, SSRF or path traversal from an agent action, device-pairing
+  or scope/auth bypass, tool-permission bypass, env/PATH injection into a spawned process).
+  Examples in scope: OpenClaw, AutoGPT, computer-use / browser-use agents, MCP servers that
+  execute tools, agent gateways that pair devices or run host commands.
 
 OUT OF SCOPE (reject): generic IT/web/enterprise software, CMS/plugins, mobile apps unrelated
 to a robot, robotic process automation (RPA), pure-cloud ML with no embodied pathway, a library
-whose CVE has no robotics/embodied use, developer tooling, chat/social bots, and anything whose
-only link is an incidental keyword ("robot", "drone", "spot", "apollo") unrelated to Physical AI.
+whose CVE has no robotics/embodied use, developer tooling, and anything whose only link is an
+incidental keyword ("robot", "drone", "spot", "apollo"). For an agent framework, reject when the
+flaw is **purely conversational** (e.g. prompt injection that only alters chat output, a content
+filter bypass) or a generic web/library bug with no code-execution, device, or tool-action
+dimension, or when it is only a chat/social bot integration with no actuation.
 
 Allowed domains (for primary_domain): {{DOMAINS}}
 
