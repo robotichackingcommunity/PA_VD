@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T17:14:36Z",
+  "generated_at": "2026-10-12T00:45:22Z",
   "total": 1593,
   "severity": {
     "CRITICAL": 288,
@@ -9,37 +9,37 @@
   },
   "domains": {
     "Humanoid Robot": 18,
-    "Industrial Robot": 112,
-    "Mobile Robot & AMR": 195,
+    "Industrial Robot": 113,
+    "Mobile Robot & AMR": 200,
     "Drone & Aerial Robotics": 110,
     "Service & Companion Robot": 82,
     "Autonomous Vehicle AI": 158,
-    "Embodied AI Agent": 950,
+    "Embodied AI Agent": 964,
     "Robot Operating Systems & Middleware": 237,
-    "Physical AI Infrastructure": 1154,
-    "Cross-Domain Components": 1045
+    "Physical AI Infrastructure": 1159,
+    "Cross-Domain Components": 1050
   },
   "primary_domains": {
-    "Humanoid Robot": 7,
-    "Industrial Robot": 52,
-    "Mobile Robot & AMR": 41,
-    "Drone & Aerial Robotics": 80,
+    "Humanoid Robot": 4,
+    "Industrial Robot": 51,
+    "Mobile Robot & AMR": 46,
+    "Drone & Aerial Robotics": 79,
     "Service & Companion Robot": 49,
-    "Autonomous Vehicle AI": 2,
-    "Embodied AI Agent": 615,
-    "Robot Operating Systems & Middleware": 180,
-    "Physical AI Infrastructure": 469,
-    "Cross-Domain Components": 98
+    "Autonomous Vehicle AI": 1,
+    "Embodied AI Agent": 695,
+    "Robot Operating Systems & Middleware": 181,
+    "Physical AI Infrastructure": 391,
+    "Cross-Domain Components": 96
   },
   "layers": {
     "Hardware / Firmware": 227,
-    "Robot OS / Development Tools": 230,
+    "Robot OS / Development Tools": 231,
     "Middleware / Communication Layer": 299,
     "Network / Connectivity": 533,
     "Mobile Companion App": 41,
     "AI/ML Runtime / Inference": 774,
     "AI/ML Training Pipeline": 33,
-    "Physical AI Infrastructure / MLOps": 1006,
+    "Physical AI Infrastructure / MLOps": 444,
     "Distribution / Supply Chain": 224
   },
   "vendors": {

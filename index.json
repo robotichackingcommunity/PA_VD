@@ -175,8 +175,7 @@
     ],
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "vLLM Project"
@@ -207,12 +206,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-863",
     "domains": [
-      "Physical AI Infrastructure",
-      "Cross-Domain Components"
+      "Cross-Domain Components",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Cross-Domain Components",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -251,8 +249,7 @@
     ],
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "vLLM Project"
@@ -634,13 +631,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-78",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -1137,7 +1133,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -1176,7 +1171,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -1215,7 +1209,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -1253,7 +1246,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -1292,7 +1284,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -1438,7 +1429,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -1508,14 +1498,13 @@
     "cvss_version": "3.1",
     "cwe": "CWE-863",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "Ollama"
@@ -1935,13 +1924,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-863",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -1979,7 +1967,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -2018,7 +2005,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "AI/ML Runtime / Inference"
     ],
@@ -2096,7 +2082,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -2209,7 +2194,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -2247,7 +2231,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Middleware / Communication Layer"
     ],
@@ -2327,7 +2310,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -2368,7 +2350,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -2406,7 +2387,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Robot OS / Development Tools"
     ],
     "vendors": [
@@ -2444,7 +2424,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -2486,8 +2465,7 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Mobile Companion App",
-      "Physical AI Infrastructure / MLOps"
+      "Mobile Companion App"
     ],
     "vendors": [
       "OpenClaw"
@@ -2526,7 +2504,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -2565,7 +2542,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -2602,7 +2578,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -2641,7 +2616,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -2678,7 +2652,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -2716,7 +2689,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -2754,7 +2726,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -2792,7 +2763,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -2831,7 +2801,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -2909,7 +2878,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -2948,7 +2916,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -3024,7 +2991,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -3064,7 +3030,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -3140,7 +3105,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -3179,7 +3143,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -3218,7 +3181,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -3258,7 +3220,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -3296,7 +3257,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -3334,7 +3294,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -3374,7 +3333,6 @@
     "primary_domain": "Embodied AI Agent",
     "layers": [
       "Mobile Companion App",
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -3414,7 +3372,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -3453,7 +3410,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Robot OS / Development Tools"
     ],
     "vendors": [
@@ -3492,7 +3448,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -3531,7 +3486,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -3571,7 +3525,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -3609,7 +3562,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -3647,7 +3599,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "Distribution / Supply Chain"
     ],
@@ -3688,7 +3639,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -3725,7 +3675,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -3764,7 +3713,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -3801,7 +3749,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -3840,7 +3787,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -3880,7 +3826,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -3918,7 +3863,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -3956,7 +3900,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -4074,7 +4017,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -4112,7 +4054,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -4151,7 +4092,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -4258,14 +4198,13 @@
     "cvss_version": "3.1",
     "cwe": "CWE-74",
     "domains": [
+      "Embodied AI Agent",
       "Cross-Domain Components",
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Cross-Domain Components",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "BitterSecurity"
@@ -4379,8 +4318,7 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Mobile Companion App",
-      "Physical AI Infrastructure / MLOps"
+      "Mobile Companion App"
     ],
     "vendors": [
       "OpenClaw"
@@ -4570,12 +4508,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-918",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -4609,13 +4546,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-22",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -4647,13 +4583,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-22",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -4686,13 +4621,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-22",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure",
-      "Cross-Domain Components",
-      "Embodied AI Agent"
+      "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -4726,13 +4660,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-306",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -4766,13 +4699,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-22",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -4805,13 +4737,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-284",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -5273,8 +5204,7 @@
     ],
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "vLLM Project"
@@ -6212,7 +6142,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "Distribution / Supply Chain"
     ],
@@ -6252,7 +6181,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -6285,13 +6213,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-78",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -6369,8 +6296,7 @@
     ],
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "vLLM Project"
@@ -6446,7 +6372,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -6597,11 +6522,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-94",
     "domains": [
-      "Cross-Domain Components",
       "Physical AI Infrastructure",
+      "Cross-Domain Components",
       "Embodied AI Agent"
     ],
-    "primary_domain": "Cross-Domain Components",
+    "primary_domain": "Physical AI Infrastructure",
     "layers": [
       "AI/ML Runtime / Inference",
       "Physical AI Infrastructure / MLOps"
@@ -6706,13 +6631,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-284",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -6747,13 +6671,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-78",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -8983,7 +8906,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -9016,13 +8938,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-287",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "GPT Researcher"
@@ -9059,7 +8980,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -9243,13 +9163,13 @@
     "cvss_version": "3.1",
     "cwe": "CWE-78",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Robot OS / Development Tools",
-      "Physical AI Infrastructure / MLOps"
+      "Robot OS / Development Tools"
     ],
     "vendors": [
       "NVIDIA"
@@ -9277,10 +9197,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-1390",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Network / Connectivity",
       "Robot OS / Development Tools"
@@ -9311,12 +9232,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-494",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Distribution / Supply Chain",
-      "Physical AI Infrastructure / MLOps"
+      "Distribution / Supply Chain"
     ],
     "vendors": [
       "NVIDIA"
@@ -9345,10 +9266,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-78",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Network / Connectivity",
       "Robot OS / Development Tools"
@@ -9379,12 +9300,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-427",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -9413,13 +9334,13 @@
     "cvss_version": "3.1",
     "cwe": "CWE-22",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Network / Connectivity",
-      "Physical AI Infrastructure / MLOps"
+      "Network / Connectivity"
     ],
     "vendors": [
       "NVIDIA"
@@ -9515,13 +9436,13 @@
     "cvss_version": "3.1",
     "cwe": "CWE-78",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Robot OS / Development Tools",
-      "Physical AI Infrastructure / MLOps"
+      "Robot OS / Development Tools"
     ],
     "vendors": [
       "NVIDIA"
@@ -9549,12 +9470,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-214",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Robot OS / Development Tools"
     ],
     "vendors": [
@@ -9584,12 +9505,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-522",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Robot OS / Development Tools"
     ],
     "vendors": [
@@ -9618,12 +9539,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-78",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -9653,12 +9574,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-116",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "NVIDIA"
@@ -9686,12 +9607,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-295",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Distribution / Supply Chain",
-      "Physical AI Infrastructure / MLOps"
+      "Distribution / Supply Chain"
     ],
     "vendors": [
       "NVIDIA"
@@ -9719,12 +9640,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-184",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -9753,13 +9674,13 @@
     "cvss_version": "3.1",
     "cwe": "CWE-94",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Robot OS / Development Tools",
-      "Physical AI Infrastructure / MLOps"
+      "Robot OS / Development Tools"
     ],
     "vendors": [
       "NVIDIA"
@@ -9787,12 +9708,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-494",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Distribution / Supply Chain",
-      "Physical AI Infrastructure / MLOps"
+      "Distribution / Supply Chain"
     ],
     "vendors": [
       "NVIDIA"
@@ -9826,7 +9747,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -9865,7 +9785,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -9904,7 +9823,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -9944,7 +9862,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -10352,13 +10269,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-184",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -10430,13 +10346,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-77",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -10547,12 +10462,12 @@
     "cvss_version": "4.0",
     "cwe": "CWE-916",
     "domains": [
-      "Physical AI Infrastructure",
-      "Mobile Robot & AMR"
+      "Mobile Robot & AMR",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Mobile Robot & AMR",
     "layers": [
-      "Physical AI Infrastructure / MLOps"
+      "Robot OS / Development Tools"
     ],
     "vendors": [
       "Rockwell Automation (OTTO Motors)"
@@ -10588,7 +10503,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -10801,10 +10715,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-125",
     "domains": [
-      "Autonomous Vehicle AI",
-      "Robot Operating Systems & Middleware"
+      "Robot Operating Systems & Middleware",
+      "Autonomous Vehicle AI"
     ],
-    "primary_domain": "Autonomous Vehicle AI",
+    "primary_domain": "Robot Operating Systems & Middleware",
     "layers": [
       "Middleware / Communication Layer",
       "Network / Connectivity"
@@ -11108,13 +11022,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-94",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -11149,13 +11062,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-94",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -11194,7 +11106,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -11865,8 +11776,7 @@
     ],
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "ggml (llama.cpp)",
@@ -11906,8 +11816,7 @@
     ],
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "ggml (llama.cpp)"
@@ -11945,8 +11854,7 @@
     ],
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "ggml (llama.cpp)"
@@ -12022,7 +11930,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -12060,7 +11967,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -12172,13 +12078,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-306",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -12253,13 +12158,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-266",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Hardware / Firmware"
     ],
@@ -12335,13 +12239,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-94",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -12375,13 +12278,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-184",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -12456,7 +12358,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -12652,8 +12553,7 @@
     ],
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "SGLang"
@@ -12809,8 +12709,7 @@
     ],
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "ggml (llama.cpp)"
@@ -13041,7 +12940,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Middleware / Communication Layer"
     ],
@@ -13154,13 +13052,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-455",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -13233,12 +13130,11 @@
     "cvss_version": "4.0",
     "cwe": "CWE-77",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -13270,11 +13166,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-94",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
@@ -13312,12 +13208,11 @@
     "cvss_version": "3.1",
     "cwe": "NVD-CWE-noinfo",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -13397,7 +13292,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -13435,7 +13329,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -13474,7 +13367,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -13512,7 +13404,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -13549,7 +13440,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -13587,7 +13477,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -13661,7 +13550,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -13698,7 +13586,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -13773,7 +13660,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "AI/ML Runtime / Inference"
     ],
@@ -13813,7 +13699,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -13853,7 +13738,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -13931,7 +13815,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -13970,7 +13853,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -14007,7 +13889,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -14160,7 +14041,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -14192,12 +14072,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-78",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -14276,7 +14155,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -14940,10 +14818,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-129",
     "domains": [
-      "Cross-Domain Components",
-      "Physical AI Infrastructure"
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
     ],
-    "primary_domain": "Cross-Domain Components",
+    "primary_domain": "Physical AI Infrastructure",
     "layers": [
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
@@ -15198,7 +15076,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -15277,7 +15154,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -15353,7 +15229,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -15390,7 +15265,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -15429,7 +15303,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -15468,7 +15341,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -15507,7 +15379,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -15544,7 +15415,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -15582,7 +15452,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -15619,7 +15488,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -15696,7 +15564,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -15736,7 +15603,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "Distribution / Supply Chain"
     ],
@@ -15771,12 +15637,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-862",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -15888,13 +15753,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-693",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -15934,7 +15798,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Mobile Companion App"
     ],
     "vendors": [
@@ -16358,15 +16221,14 @@
     "cvss_version": "3.1",
     "cwe": "CWE-22",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure",
-      "Cross-Domain Components",
-      "Embodied AI Agent"
+      "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Robot OS / Development Tools",
-      "Distribution / Supply Chain",
-      "Physical AI Infrastructure / MLOps"
+      "Distribution / Supply Chain"
     ],
     "vendors": [
       "Anthropic"
@@ -16398,12 +16260,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-178",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -16475,13 +16336,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-284",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -16549,13 +16409,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-78",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -16589,13 +16448,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-78",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -16635,7 +16493,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -16753,7 +16610,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -17103,11 +16959,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-552",
     "domains": [
-      "Cross-Domain Components",
       "Embodied AI Agent",
+      "Cross-Domain Components",
       "Physical AI Infrastructure"
     ],
-    "primary_domain": "Cross-Domain Components",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Robot OS / Development Tools",
       "AI/ML Runtime / Inference",
@@ -17188,8 +17044,7 @@
     ],
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "vLLM Project"
@@ -17662,7 +17517,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -17817,7 +17671,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -17855,7 +17708,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Robot OS / Development Tools"
     ],
     "vendors": [
@@ -17892,7 +17744,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -17930,7 +17781,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "AI/ML Runtime / Inference"
     ],
@@ -18008,7 +17858,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -18047,7 +17896,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -18087,7 +17935,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -18200,7 +18047,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -18238,7 +18084,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -18276,7 +18121,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -18315,7 +18159,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -18390,7 +18233,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -18468,7 +18310,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -18508,8 +18349,7 @@
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
       "AI/ML Runtime / Inference",
-      "Distribution / Supply Chain",
-      "Physical AI Infrastructure / MLOps"
+      "Distribution / Supply Chain"
     ],
     "vendors": [
       "leejet"
@@ -18656,13 +18496,12 @@
     "cvss_version": "4.0",
     "cwe": "CWE-346",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -18775,7 +18614,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -18814,7 +18652,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -18852,7 +18689,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -18889,7 +18725,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -18928,7 +18763,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -18967,7 +18801,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -19044,7 +18877,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -19118,7 +18950,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -19192,7 +19023,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -19231,7 +19061,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -19270,7 +19099,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -19347,7 +19175,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Middleware / Communication Layer"
     ],
@@ -19535,7 +19362,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "AI/ML Runtime / Inference"
     ],
@@ -19610,7 +19436,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -19647,7 +19472,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -19723,7 +19547,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -19760,7 +19583,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -19799,7 +19621,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -19877,7 +19698,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -19949,13 +19769,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-88",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -20379,7 +20198,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Middleware / Communication Layer"
     ],
@@ -20418,7 +20236,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -20457,7 +20274,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -20532,8 +20348,7 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Network / Connectivity",
-      "Physical AI Infrastructure / MLOps"
+      "Network / Connectivity"
     ],
     "vendors": [
       "OpenClaw"
@@ -21188,8 +21003,7 @@
     ],
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "NVIDIA"
@@ -21479,9 +21293,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-120",
     "domains": [
+      "Mobile Robot & AMR",
       "Drone & Aerial Robotics"
     ],
-    "primary_domain": "Drone & Aerial Robotics",
+    "primary_domain": "Mobile Robot & AMR",
     "layers": [
       "Hardware / Firmware"
     ],
@@ -21518,7 +21333,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -21635,7 +21449,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -21675,7 +21488,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -21750,7 +21562,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -21938,13 +21749,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-94",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "Distribution / Supply Chain"
     ],
@@ -22022,7 +21832,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -22138,7 +21947,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Middleware / Communication Layer"
     ],
@@ -22178,7 +21986,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -22216,7 +22023,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -22254,7 +22060,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -22330,7 +22135,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -22369,7 +22173,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -22408,7 +22211,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -22445,7 +22247,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -22520,7 +22321,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -22557,7 +22357,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -22664,7 +22463,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -22837,7 +22635,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -22876,7 +22673,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -22914,7 +22710,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -22947,13 +22742,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-367",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -23030,7 +22824,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -23069,7 +22862,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -23108,7 +22900,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -23146,7 +22937,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -23224,7 +23014,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -23262,7 +23051,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -23302,7 +23090,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "AI/ML Runtime / Inference"
     ],
@@ -23342,7 +23129,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -23421,7 +23207,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -23460,7 +23245,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -23498,7 +23282,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -23536,7 +23319,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -23573,7 +23355,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -23610,7 +23391,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -23648,7 +23428,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -23686,7 +23465,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -23724,7 +23502,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -23798,7 +23575,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -23876,7 +23652,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -23994,7 +23769,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain",
       "AI/ML Runtime / Inference"
     ],
@@ -24034,7 +23808,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Hardware / Firmware"
     ],
@@ -24074,7 +23847,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -24152,7 +23924,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -24192,7 +23963,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -24230,7 +24000,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -24268,7 +24037,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -24344,7 +24112,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -24385,7 +24152,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -24498,9 +24264,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-77",
     "domains": [
+      "Cross-Domain Components",
       "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Cross-Domain Components",
     "layers": [
       "Hardware / Firmware",
       "Network / Connectivity"
@@ -24763,7 +24530,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -24802,7 +24568,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "AI/ML Runtime / Inference"
     ],
@@ -24842,7 +24607,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -24881,8 +24645,7 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Distribution / Supply Chain",
-      "Physical AI Infrastructure / MLOps"
+      "Distribution / Supply Chain"
     ],
     "vendors": [
       "OpenClaw"
@@ -24958,7 +24721,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -25035,7 +24797,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -25113,7 +24874,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -25150,7 +24910,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -25227,7 +24986,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -25266,7 +25024,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -25343,7 +25100,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -25381,7 +25137,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -25420,7 +25175,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -25458,7 +25212,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -25496,7 +25249,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -25535,7 +25287,6 @@
     "primary_domain": "Embodied AI Agent",
     "layers": [
       "Mobile Companion App",
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -25612,7 +25363,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -25650,7 +25400,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "AI/ML Runtime / Inference"
     ],
@@ -25689,7 +25438,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -25728,7 +25476,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -25767,7 +25514,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -25806,7 +25552,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -25918,7 +25663,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -25957,7 +25701,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Robot OS / Development Tools"
     ],
@@ -26035,7 +25778,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -26073,7 +25815,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -26150,7 +25891,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -26223,7 +25963,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -26299,7 +26038,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Robot OS / Development Tools",
       "Distribution / Supply Chain"
     ],
@@ -26338,7 +26076,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -26376,7 +26113,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -26413,7 +26149,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -26452,7 +26187,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -26528,7 +26262,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -26605,7 +26338,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -26678,13 +26410,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-918",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -26717,13 +26448,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-497",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -26873,7 +26603,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -26912,7 +26641,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -26988,7 +26716,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -27066,7 +26793,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -27104,7 +26830,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -27141,7 +26866,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -27213,7 +26937,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -27251,7 +26974,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -27290,7 +27012,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -27327,7 +27048,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -27403,7 +27123,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -27441,7 +27160,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -27517,7 +27235,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -27594,7 +27311,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -27632,7 +27348,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -27666,13 +27381,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-77",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -27706,12 +27420,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-184",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -27745,10 +27458,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-502",
     "domains": [
+      "Physical AI Infrastructure",
       "Cross-Domain Components",
       "Embodied AI Agent"
     ],
-    "primary_domain": "Cross-Domain Components",
+    "primary_domain": "Physical AI Infrastructure",
     "layers": [
       "AI/ML Runtime / Inference"
     ],
@@ -27787,7 +27501,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -27827,7 +27540,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -27865,7 +27577,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -27904,7 +27615,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain",
       "Network / Connectivity"
     ],
@@ -27942,7 +27652,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -27980,7 +27689,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -28018,7 +27726,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer",
       "AI/ML Runtime / Inference"
     ],
@@ -28058,7 +27765,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -28095,7 +27801,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -28171,7 +27876,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -28210,7 +27914,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain",
       "AI/ML Runtime / Inference"
     ],
@@ -28244,13 +27947,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-78",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -28488,7 +28190,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer",
       "Distribution / Supply Chain"
     ],
@@ -28528,7 +28229,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -28566,7 +28266,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Robot OS / Development Tools",
       "Distribution / Supply Chain"
     ],
@@ -28644,7 +28343,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -28683,7 +28381,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -28721,7 +28418,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -28761,7 +28457,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain",
       "AI/ML Runtime / Inference"
     ],
@@ -28800,7 +28495,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -28916,7 +28610,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -28955,7 +28648,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -28994,7 +28686,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -29032,7 +28723,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -29069,7 +28759,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -29107,7 +28796,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -29145,7 +28833,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -29183,7 +28870,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -29222,7 +28908,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -29261,7 +28946,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -29415,7 +29099,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -29453,7 +29136,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -29485,14 +29167,13 @@
     "cvss_version": "3.1",
     "cwe": "CWE-940",
     "domains": [
-      "Cross-Domain Components",
       "Embodied AI Agent",
+      "Cross-Domain Components",
       "Physical AI Infrastructure"
     ],
-    "primary_domain": "Cross-Domain Components",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Mobile Companion App",
-      "Physical AI Infrastructure / MLOps"
+      "Mobile Companion App"
     ],
     "vendors": [
       "OpenClaw"
@@ -29529,7 +29210,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -29567,7 +29247,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer",
       "Distribution / Supply Chain"
     ],
@@ -29606,7 +29285,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -29639,12 +29317,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-79",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -29684,7 +29361,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -29723,7 +29399,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -29801,7 +29476,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -29841,7 +29515,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -29878,7 +29551,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -29915,7 +29587,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -29953,7 +29624,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -29991,7 +29661,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -30067,7 +29736,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -30105,7 +29773,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -30143,7 +29810,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Middleware / Communication Layer"
     ],
@@ -30183,7 +29849,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -30221,7 +29886,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -30259,7 +29923,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -30296,7 +29959,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -30333,7 +29995,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -30372,7 +30033,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -30713,7 +30373,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Mobile Companion App"
     ],
     "vendors": [
@@ -30989,7 +30648,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "AI/ML Runtime / Inference"
     ],
@@ -31068,7 +30726,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -31107,7 +30764,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -31297,7 +30953,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -31335,7 +30990,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -31414,7 +31068,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "AI/ML Runtime / Inference"
     ],
@@ -31454,7 +31107,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -31493,7 +31145,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -31532,7 +31183,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -31571,7 +31221,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -31649,7 +31298,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -31688,7 +31336,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -31726,7 +31373,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Robot OS / Development Tools"
     ],
@@ -31765,7 +31411,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Robot OS / Development Tools"
     ],
     "vendors": [
@@ -31841,7 +31486,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -31919,7 +31563,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -32175,7 +31818,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -32288,7 +31930,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "Mobile Companion App"
     ],
@@ -32364,7 +32005,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -32403,7 +32043,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -32481,7 +32120,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -32520,7 +32158,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -32559,7 +32196,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "AI/ML Runtime / Inference"
     ],
@@ -32676,7 +32312,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -32713,7 +32348,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -32751,7 +32385,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -32789,7 +32422,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -32866,7 +32498,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -32905,7 +32536,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -32944,7 +32574,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Mobile Companion App"
     ],
     "vendors": [
@@ -33022,7 +32651,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -33371,7 +32999,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -33448,7 +33075,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -33521,7 +33147,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -33559,7 +33184,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -33598,7 +33222,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -33636,7 +33259,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -33675,7 +33297,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -33715,7 +33336,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -33754,7 +33374,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -33831,8 +33450,7 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Network / Connectivity",
-      "Physical AI Infrastructure / MLOps"
+      "Network / Connectivity"
     ],
     "vendors": [
       "OpenClaw"
@@ -33869,7 +33487,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -33987,7 +33604,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -34065,7 +33681,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -34143,7 +33758,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "AI/ML Runtime / Inference"
     ],
@@ -34221,7 +33835,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Robot OS / Development Tools"
     ],
@@ -34261,7 +33874,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -34300,7 +33912,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "AI/ML Runtime / Inference"
     ],
@@ -34414,7 +34025,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -34454,7 +34064,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -34529,7 +34138,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -34568,8 +34176,7 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Network / Connectivity",
-      "Physical AI Infrastructure / MLOps"
+      "Network / Connectivity"
     ],
     "vendors": [
       "OpenClaw"
@@ -34645,7 +34252,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -34682,7 +34288,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -34719,7 +34324,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -34758,7 +34362,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "AI/ML Runtime / Inference"
     ],
@@ -34797,7 +34400,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -34873,8 +34475,7 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Network / Connectivity",
-      "Physical AI Infrastructure / MLOps"
+      "Network / Connectivity"
     ],
     "vendors": [
       "OpenClaw"
@@ -34912,7 +34513,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -34991,7 +34591,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -35029,7 +34628,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -35102,7 +34700,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -35180,7 +34777,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -35218,8 +34814,7 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Network / Connectivity",
-      "Physical AI Infrastructure / MLOps"
+      "Network / Connectivity"
     ],
     "vendors": [
       "OpenClaw"
@@ -35257,7 +34852,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -35295,7 +34889,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -35334,7 +34927,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -35373,7 +34965,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -35411,7 +35002,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -35448,7 +35038,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -35487,7 +35076,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -35526,7 +35114,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -35564,7 +35151,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -35603,7 +35189,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -35642,7 +35227,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer",
       "AI/ML Runtime / Inference"
     ],
@@ -35761,7 +35345,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer",
       "AI/ML Runtime / Inference"
     ],
@@ -35802,7 +35385,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Robot OS / Development Tools"
     ],
@@ -35880,7 +35462,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -35919,7 +35500,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -35959,8 +35539,7 @@
     "primary_domain": "Embodied AI Agent",
     "layers": [
       "AI/ML Runtime / Inference",
-      "Mobile Companion App",
-      "Physical AI Infrastructure / MLOps"
+      "Mobile Companion App"
     ],
     "vendors": [
       "OpenClaw"
@@ -35998,7 +35577,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -36036,7 +35614,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -36073,7 +35650,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -36111,7 +35687,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -36190,7 +35765,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -36306,7 +35880,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -36344,7 +35917,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Robot OS / Development Tools"
     ],
     "vendors": [
@@ -36421,7 +35993,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -36536,7 +36107,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -36575,7 +36145,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -36613,7 +36182,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -36731,7 +36299,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -36770,7 +36337,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -36810,7 +36376,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -36881,13 +36446,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-424",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -37167,7 +36731,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -37200,9 +36763,10 @@
     "cvss_version": "4.0",
     "cwe": "CWE-294",
     "domains": [
+      "Cross-Domain Components",
       "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Cross-Domain Components",
     "layers": [
       "Network / Connectivity"
     ],
@@ -37242,7 +36806,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -37398,7 +36961,6 @@
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
       "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -37476,7 +37038,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -37514,7 +37075,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Robot OS / Development Tools"
     ],
     "vendors": [
@@ -37552,7 +37112,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -37592,7 +37151,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -37631,7 +37189,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -37744,7 +37301,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -37851,12 +37407,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-918",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -37931,13 +37486,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-306",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -38043,7 +37597,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "Distribution / Supply Chain"
     ],
@@ -38084,7 +37637,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -38123,7 +37675,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -38162,7 +37713,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -38200,7 +37750,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -38239,7 +37788,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -38278,7 +37826,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -38317,7 +37864,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -38355,7 +37901,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -38393,8 +37938,7 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Network / Connectivity",
-      "Physical AI Infrastructure / MLOps"
+      "Network / Connectivity"
     ],
     "vendors": [
       "OpenClaw"
@@ -38432,7 +37976,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -38472,7 +38015,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -38510,7 +38052,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -38549,7 +38090,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -38589,7 +38129,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -38628,7 +38167,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -38669,7 +38207,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -38707,7 +38244,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -38746,7 +38282,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -38784,7 +38319,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -38823,7 +38357,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "Distribution / Supply Chain"
     ],
@@ -38941,7 +38474,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -39017,7 +38549,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -39055,7 +38586,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer"
     ],
     "vendors": [
@@ -39093,8 +38623,7 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Distribution / Supply Chain",
-      "Physical AI Infrastructure / MLOps"
+      "Distribution / Supply Chain"
     ],
     "vendors": [
       "OpenClaw"
@@ -39131,7 +38660,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "AI/ML Runtime / Inference"
     ],
@@ -39171,7 +38699,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -39209,7 +38736,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -39285,7 +38811,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -39479,7 +39004,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -39588,9 +39112,10 @@
     "cvss_version": "4.0",
     "cwe": "CWE-345",
     "domains": [
+      "Mobile Robot & AMR",
       "Humanoid Robot"
     ],
-    "primary_domain": "Humanoid Robot",
+    "primary_domain": "Mobile Robot & AMR",
     "layers": [
       "Mobile Companion App",
       "Hardware / Firmware"
@@ -39626,10 +39151,11 @@
     "cvss_version": "4.0",
     "cwe": "CWE-306",
     "domains": [
+      "Mobile Robot & AMR",
       "Humanoid Robot",
       "Robot Operating Systems & Middleware"
     ],
-    "primary_domain": "Humanoid Robot",
+    "primary_domain": "Mobile Robot & AMR",
     "layers": [
       "Middleware / Communication Layer",
       "Hardware / Firmware"
@@ -39672,7 +39198,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -39710,7 +39235,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Robot OS / Development Tools"
     ],
     "vendors": [
@@ -39749,7 +39273,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -39787,7 +39310,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -39825,7 +39347,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -39938,7 +39459,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -39977,8 +39497,7 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "OpenClaw"
@@ -40015,7 +39534,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -40054,7 +39572,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -40129,8 +39646,7 @@
     "primary_domain": "Embodied AI Agent",
     "layers": [
       "Network / Connectivity",
-      "Mobile Companion App",
-      "Physical AI Infrastructure / MLOps"
+      "Mobile Companion App"
     ],
     "vendors": [
       "OpenClaw"
@@ -40168,7 +39684,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -40208,7 +39723,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -40247,7 +39761,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -40285,7 +39798,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -40325,7 +39837,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -40363,7 +39874,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -40402,7 +39912,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -40441,7 +39950,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -40481,7 +39989,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -40594,7 +40101,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Middleware / Communication Layer",
       "Distribution / Supply Chain"
     ],
@@ -40706,7 +40212,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -40744,7 +40249,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -40778,12 +40282,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-918",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -41257,7 +40760,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity",
       "Distribution / Supply Chain"
     ],
@@ -41457,8 +40959,7 @@
     ],
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "Ollama"
@@ -41728,13 +41229,12 @@
     "cvss_version": "4.0",
     "cwe": "CWE-749",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -41773,7 +41273,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -42172,7 +41671,6 @@
     "primary_domain": "Embodied AI Agent",
     "layers": [
       "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps",
       "Distribution / Supply Chain"
     ],
     "vendors": [
@@ -42328,8 +41826,7 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "OpenAgentPlatform"
@@ -42513,13 +42010,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-77",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -42668,13 +42164,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-78",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Network / Connectivity"
     ],
     "vendors": [
@@ -42892,11 +42387,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-94",
     "domains": [
+      "Physical AI Infrastructure",
       "Embodied AI Agent",
       "Humanoid Robot",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Embodied AI Agent",
+    "primary_domain": "Physical AI Infrastructure",
     "layers": [
       "AI/ML Runtime / Inference",
       "Robot OS / Development Tools"
@@ -42930,11 +42426,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-94",
     "domains": [
+      "Physical AI Infrastructure",
       "Embodied AI Agent",
       "Humanoid Robot",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Embodied AI Agent",
+    "primary_domain": "Physical AI Infrastructure",
     "layers": [
       "AI/ML Runtime / Inference",
       "Robot OS / Development Tools"
@@ -42972,8 +42469,7 @@
     ],
     "primary_domain": "Mobile Robot & AMR",
     "layers": [
-      "Network / Connectivity",
-      "Physical AI Infrastructure / MLOps"
+      "Network / Connectivity"
     ],
     "vendors": [
       "Brightpick AI"
@@ -43192,11 +42688,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-284",
     "domains": [
-      "Cross-Domain Components",
       "Embodied AI Agent",
+      "Cross-Domain Components",
       "Physical AI Infrastructure"
     ],
-    "primary_domain": "Cross-Domain Components",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Robot OS / Development Tools",
       "Distribution / Supply Chain",
@@ -43232,15 +42728,14 @@
     "cvss_version": "3.1",
     "cwe": "CWE-78",
     "domains": [
+      "Embodied AI Agent",
       "Cross-Domain Components",
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Cross-Domain Components",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Robot OS / Development Tools",
-      "Distribution / Supply Chain",
-      "Physical AI Infrastructure / MLOps"
+      "Distribution / Supply Chain"
     ],
     "vendors": [
       "Cursor"
@@ -43271,11 +42766,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-22",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure",
-      "Cross-Domain Components",
-      "Embodied AI Agent"
+      "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Robot OS / Development Tools",
       "Distribution / Supply Chain"
@@ -43385,9 +42880,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-770",
     "domains": [
+      "Mobile Robot & AMR",
       "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Mobile Robot & AMR",
     "layers": [
       "Hardware / Firmware",
       "Network / Connectivity"
@@ -43526,8 +43022,7 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "Hugging Face"
@@ -43664,11 +43159,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-306",
     "domains": [
+      "Physical AI Infrastructure",
       "Robot Operating Systems & Middleware",
       "Embodied AI Agent",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Robot Operating Systems & Middleware",
+    "primary_domain": "Physical AI Infrastructure",
     "layers": [
       "AI/ML Training Pipeline",
       "Robot OS / Development Tools"
@@ -43732,13 +43228,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-22",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -43958,11 +43453,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-200",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure",
-      "Cross-Domain Components",
-      "Embodied AI Agent"
+      "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Robot OS / Development Tools",
       "AI/ML Runtime / Inference"
@@ -43997,14 +43492,13 @@
     "cvss_version": "3.1",
     "cwe": "CWE-61",
     "domains": [
+      "Embodied AI Agent",
       "Cross-Domain Components",
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Cross-Domain Components",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Robot OS / Development Tools",
-      "Physical AI Infrastructure / MLOps"
+      "Robot OS / Development Tools"
     ],
     "vendors": [
       "Anthropic"
@@ -44037,15 +43531,14 @@
     "cvss_version": "3.1",
     "cwe": "CWE-94",
     "domains": [
+      "Embodied AI Agent",
       "Cross-Domain Components",
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Cross-Domain Components",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Robot OS / Development Tools",
-      "Distribution / Supply Chain",
-      "Physical AI Infrastructure / MLOps"
+      "Distribution / Supply Chain"
     ],
     "vendors": [
       "Anthropic"
@@ -44288,7 +43781,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Robot OS / Development Tools",
       "Distribution / Supply Chain"
     ],
@@ -44479,13 +43971,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-94",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -44964,7 +44455,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -45200,13 +44690,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-306",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Network / Connectivity"
     ],
@@ -45280,10 +44769,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-94",
     "domains": [
+      "Physical AI Infrastructure",
       "Embodied AI Agent",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Embodied AI Agent",
+    "primary_domain": "Physical AI Infrastructure",
     "layers": [
       "AI/ML Runtime / Inference",
       "Robot OS / Development Tools"
@@ -45354,10 +44844,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-306",
     "domains": [
+      "Cross-Domain Components",
       "Industrial Robot",
       "Physical AI Infrastructure"
     ],
-    "primary_domain": "Industrial Robot",
+    "primary_domain": "Cross-Domain Components",
     "layers": [
       "Hardware / Firmware",
       "Network / Connectivity"
@@ -45393,10 +44884,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-120",
     "domains": [
+      "Cross-Domain Components",
       "Industrial Robot",
       "Physical AI Infrastructure"
     ],
-    "primary_domain": "Industrial Robot",
+    "primary_domain": "Cross-Domain Components",
     "layers": [
       "Hardware / Firmware",
       "Network / Connectivity"
@@ -45594,7 +45086,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -46328,11 +45819,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-918",
     "domains": [
+      "Embodied AI Agent",
       "Physical AI Infrastructure",
-      "Cross-Domain Components",
-      "Embodied AI Agent"
+      "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
       "Robot OS / Development Tools",
       "AI/ML Runtime / Inference",
@@ -46406,9 +45897,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-276",
     "domains": [
+      "Mobile Robot & AMR",
       "Humanoid Robot"
     ],
-    "primary_domain": "Humanoid Robot",
+    "primary_domain": "Mobile Robot & AMR",
     "layers": [
       "Hardware / Firmware"
     ],
@@ -46934,13 +46426,12 @@
     "cvss_version": "4.0",
     "cwe": "CWE-78",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Robot OS / Development Tools",
       "Distribution / Supply Chain"
     ],
@@ -47055,7 +46546,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -47089,13 +46579,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-77",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -47298,7 +46787,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -47339,7 +46827,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -47380,7 +46867,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "Robot OS / Development Tools",
       "Distribution / Supply Chain"
     ],
@@ -47656,8 +47142,7 @@
     ],
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "vLLM Project"
@@ -47884,12 +47369,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-78",
     "domains": [
-      "Physical AI Infrastructure",
-      "Embodied AI Agent"
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -48006,8 +47490,7 @@
     ],
     "primary_domain": "Service & Companion Robot",
     "layers": [
-      "Mobile Companion App",
-      "Physical AI Infrastructure / MLOps"
+      "Mobile Companion App"
     ],
     "vendors": [
       "ECOVACS"
@@ -48201,8 +47684,7 @@
     ],
     "primary_domain": "Robot Operating Systems & Middleware",
     "layers": [
-      "Middleware / Communication Layer",
-      "Physical AI Infrastructure / MLOps"
+      "Middleware / Communication Layer"
     ],
     "vendors": [
       "RTI (Real-Time Innovations)"
@@ -48468,8 +47950,7 @@
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
       "AI/ML Runtime / Inference",
-      "Middleware / Communication Layer",
-      "Physical AI Infrastructure / MLOps"
+      "Middleware / Communication Layer"
     ],
     "vendors": [
       "vLLM Project"
@@ -49406,8 +48887,7 @@
     ],
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "vLLM Project"
@@ -49485,8 +48965,7 @@
     ],
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "vLLM Project"
@@ -49709,9 +49188,10 @@
     "cvss_version": "4.0",
     "cwe": "CWE-288",
     "domains": [
+      "Cross-Domain Components",
       "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Cross-Domain Components",
     "layers": [
       "Network / Connectivity",
       "Hardware / Firmware"
@@ -49973,9 +49453,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-532",
     "domains": [
+      "Industrial Robot",
       "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Industrial Robot",
     "layers": [
       "Network / Connectivity"
     ],
@@ -50990,8 +50471,7 @@
     "primary_domain": "Robot Operating Systems & Middleware",
     "layers": [
       "Middleware / Communication Layer",
-      "Robot OS / Development Tools",
-      "Physical AI Infrastructure / MLOps"
+      "Robot OS / Development Tools"
     ],
     "vendors": [
       "RTI (Real-Time Innovations)"
@@ -51033,8 +50513,7 @@
     ],
     "primary_domain": "Robot Operating Systems & Middleware",
     "layers": [
-      "Middleware / Communication Layer",
-      "Physical AI Infrastructure / MLOps"
+      "Middleware / Communication Layer"
     ],
     "vendors": [
       "RTI (Real-Time Innovations)"
@@ -51155,8 +50634,7 @@
     ],
     "primary_domain": "Robot Operating Systems & Middleware",
     "layers": [
-      "Middleware / Communication Layer",
-      "Physical AI Infrastructure / MLOps"
+      "Middleware / Communication Layer"
     ],
     "vendors": [
       "RTI (Real-Time Innovations)"
@@ -52827,13 +52305,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-502",
     "domains": [
-      "Physical AI Infrastructure",
       "Embodied AI Agent",
+      "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -53075,7 +52552,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -56066,7 +55542,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference"
     ],
     "vendors": [
@@ -56105,7 +55580,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -56539,8 +56013,7 @@
     "primary_domain": "Drone & Aerial Robotics",
     "layers": [
       "Hardware / Firmware",
-      "Network / Connectivity",
-      "Physical AI Infrastructure / MLOps"
+      "Network / Connectivity"
     ],
     "vendors": [
       "BlueMark Innovations"
@@ -56619,7 +56092,6 @@
     ],
     "primary_domain": "Embodied AI Agent",
     "layers": [
-      "Physical AI Infrastructure / MLOps",
       "AI/ML Runtime / Inference",
       "Distribution / Supply Chain"
     ],
@@ -57016,8 +56488,7 @@
     ],
     "primary_domain": "Cross-Domain Components",
     "layers": [
-      "Robot OS / Development Tools",
-      "Physical AI Infrastructure / MLOps"
+      "Robot OS / Development Tools"
     ],
     "vendors": [
       "NVIDIA"
@@ -57342,8 +56813,7 @@
     ],
     "primary_domain": "Physical AI Infrastructure",
     "layers": [
-      "AI/ML Runtime / Inference",
-      "Physical AI Infrastructure / MLOps"
+      "AI/ML Runtime / Inference"
     ],
     "vendors": [
       "Intel"
@@ -58920,11 +58390,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-703",
     "domains": [
+      "Cross-Domain Components",
       "Mobile Robot & AMR",
-      "Industrial Robot",
-      "Cross-Domain Components"
+      "Industrial Robot"
     ],
-    "primary_domain": "Mobile Robot & AMR",
+    "primary_domain": "Cross-Domain Components",
     "layers": [
       "Hardware / Firmware",
       "Network / Connectivity"
@@ -60136,11 +59606,11 @@
     "cvss_version": "3.0",
     "cwe": "CWE-119",
     "domains": [
-      "Cross-Domain Components",
       "Robot Operating Systems & Middleware",
+      "Cross-Domain Components",
       "Humanoid Robot"
     ],
-    "primary_domain": "Cross-Domain Components",
+    "primary_domain": "Robot Operating Systems & Middleware",
     "layers": [
       "Robot OS / Development Tools",
       "Hardware / Firmware",
@@ -61275,10 +60745,10 @@
     "cvss_version": "3.0",
     "cwe": "CWE-254",
     "domains": [
-      "Physical AI Infrastructure",
-      "Cross-Domain Components"
+      "Cross-Domain Components",
+      "Physical AI Infrastructure"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Cross-Domain Components",
     "layers": [
       "Hardware / Firmware",
       "Network / Connectivity"
@@ -61607,14 +61077,13 @@
     "cvss_version": "3.1",
     "cwe": "CWE-312",
     "domains": [
+      "Cross-Domain Components",
       "Physical AI Infrastructure",
-      "Industrial Robot",
-      "Cross-Domain Components"
+      "Industrial Robot"
     ],
-    "primary_domain": "Physical AI Infrastructure",
+    "primary_domain": "Cross-Domain Components",
     "layers": [
-      "Network / Connectivity",
-      "Physical AI Infrastructure / MLOps"
+      "Network / Connectivity"
     ],
     "vendors": [
       "GE Fanuc"
