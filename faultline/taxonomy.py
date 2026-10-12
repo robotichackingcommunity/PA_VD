@@ -12,7 +12,7 @@ import re
 # Physical AI domains
 # --------------------------------------------------------------------------
 DOMAINS: tuple[str, ...] = (
-    "Humanoid Robot",
+    "Humanoid & Legged Robot",
     "Industrial Robot",
     "Mobile Robot & AMR",
     "Drone & Aerial Robotics",
@@ -25,8 +25,16 @@ DOMAINS: tuple[str, ...] = (
 )
 
 DOMAIN_ALIASES: dict[str, str] = {
-    "humanoid": "Humanoid Robot",
-    "humanoid robots": "Humanoid Robot",
+    "humanoid": "Humanoid & Legged Robot",
+    "humanoid robot": "Humanoid & Legged Robot",
+    "humanoid robots": "Humanoid & Legged Robot",
+    "humanoid & legged robot": "Humanoid & Legged Robot",
+    "humanoid and legged robot": "Humanoid & Legged Robot",
+    "legged robot": "Humanoid & Legged Robot",
+    "legged": "Humanoid & Legged Robot",
+    "quadruped": "Humanoid & Legged Robot",
+    "quadruped robot": "Humanoid & Legged Robot",
+    "biped": "Humanoid & Legged Robot",
     "industrial robots": "Industrial Robot",
     "industrial robotics": "Industrial Robot",
     "mobile robot": "Mobile Robot & AMR",

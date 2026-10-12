@@ -141,7 +141,7 @@
       "pattern": "\\bhumanoid\\b|\\bquadruped\\b|\\blegged robot\\b|\\bbipedal\\b|\\bunitree\\b|\\bboston dynamics\\b|\\bspot robot\\b|\\batlas robot\\b|\\bagility robotics\\b|\\bdigit robot\\b|\\bfigure ai\\b|\\bfigure 0[12]\\b|\\boptimus robot\\b|\\btesla optimus\\b|\\b1x technologies\\b|\\bneo gamma\\b|\\bapptronik\\b|\\bapollo humanoid\\b|\\bsanctuary ai\\b|\\bfourier intelligence\\b|\\bfourier gr-?1\\b|\\bubtech\\b|\\bwalker s\\b|\\bagibot\\b|\\bxpeng iron\\b|\\bpollen robotics\\b|\\breachy\\b|\\bghost robotics\\b|\\banybotics\\b|\\banymal\\b|\\bdeep robotics\\b|\\bengineai\\b|\\bbooster robotics\\b|\\bmit cheetah\\b|\\bunitree go ?[12]\\b|\\bb2-?w\\b|\\bg1 edu\\b|\\bunitree h1\\b",
       "weight": 7,
       "domains": [
-        "Humanoid Robot"
+        "Humanoid & Legged Robot"
       ],
       "layers": [
         "Hardware / Firmware"

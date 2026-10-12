@@ -15,6 +15,15 @@ Rules:
   physical_ai_domain.domain ∈ {{DOMAINS}}
   technical_layer.layer ∈ {{LAYERS}}
 - Choose 1-3 domains with a confidence (0-1) and a one-sentence rationale each. Order by confidence.
+- Assign a MACHINE domain (Humanoid & Legged Robot, Industrial Robot, Mobile Robot & AMR,
+  Drone & Aerial Robotics, Service & Companion Robot, Autonomous Vehicle AI) ONLY when the
+  vulnerable product IS that machine or a part that ships in / directly controls that specific
+  machine. For generic compute, an SDK, a model, or middleware used across many robot types,
+  use Physical AI Infrastructure, Robot Operating Systems & Middleware, or Cross-Domain
+  Components instead, and record the machine hint in cross_domain_tags rather than as a domain.
+  Humanoid & Legged Robot covers BOTH bipedal humanoids (Unitree G1/H1, Figure, Optimus) and
+  quadruped/legged robots (Unitree Go2/B2, Boston Dynamics Spot, ANYmal); wheeled/tracked AMRs
+  stay in Mobile Robot & AMR.
 - Choose 1-3 technical layers; list concrete technologies for each.
 - attack_chain: 2-6 ordered, conceptual steps (no payloads or commands) describing how the flaw is
   reached and what it leads to, grounded in the description, then physical_consequence: what happens in the physical world (collision, loss of

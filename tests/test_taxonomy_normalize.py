@@ -89,11 +89,11 @@ class NormalizeTests(unittest.TestCase):
     def test_layer_as_domain_not_replaced_when_other_domains_exist(self):
         rec = base_record()
         rec["taxonomy"]["physical_ai_domain"] = [
-            {"domain": "Humanoid Robot", "confidence": 0.9, "rationale": "r"},
+            {"domain": "Humanoid & Legged Robot", "confidence": 0.9, "rationale": "r"},
             {"domain": "Mobile Companion App", "confidence": 0.8, "rationale": "app"},
         ]
         out, _ = normalize(rec)
-        self.assertEqual([d["domain"] for d in out["taxonomy"]["physical_ai_domain"]], ["Humanoid Robot"])
+        self.assertEqual([d["domain"] for d in out["taxonomy"]["physical_ai_domain"]], ["Humanoid & Legged Robot"])
         self.assertIn("Mobile Companion App", [l["layer"] for l in out["taxonomy"]["technical_layer"]])
 
     def test_vendor_objects_and_aliases(self):

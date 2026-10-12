@@ -1012,10 +1012,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-250",
     "domains": [
+      "Humanoid & Legged Robot",
       "Service & Companion Robot",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Service & Companion Robot",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Hardware / Firmware",
       "Robot OS / Development Tools"
@@ -4238,10 +4239,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-287",
     "domains": [
+      "Humanoid & Legged Robot",
       "Service & Companion Robot",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Service & Companion Robot",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Network / Connectivity",
       "Robot OS / Development Tools"
@@ -4275,11 +4277,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-306",
     "domains": [
+      "Humanoid & Legged Robot",
       "Service & Companion Robot",
       "Physical AI Infrastructure",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Service & Companion Robot",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Robot OS / Development Tools",
       "Distribution / Supply Chain"
@@ -8824,9 +8827,9 @@
     "cvss_version": "3.1",
     "cwe": "CWE-306",
     "domains": [
-      "Humanoid Robot"
+      "Humanoid & Legged Robot"
     ],
-    "primary_domain": "Humanoid Robot",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Network / Connectivity",
       "Hardware / Firmware"
@@ -8862,10 +8865,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-22",
     "domains": [
-      "Humanoid Robot",
+      "Humanoid & Legged Robot",
       "Robot Operating Systems & Middleware"
     ],
-    "primary_domain": "Humanoid Robot",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Middleware / Communication Layer",
       "Hardware / Firmware"
@@ -9894,9 +9897,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-434",
     "domains": [
+      "Humanoid & Legged Robot",
       "Service & Companion Robot"
     ],
-    "primary_domain": "Service & Companion Robot",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Robot OS / Development Tools",
       "Network / Connectivity"
@@ -12741,10 +12745,11 @@
     "cvss_version": "4.0",
     "cwe": "CWE-300",
     "domains": [
+      "Humanoid & Legged Robot",
       "Mobile Robot & AMR",
       "Industrial Robot"
     ],
-    "primary_domain": "Mobile Robot & AMR",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Network / Connectivity",
       "Mobile Companion App"
@@ -12780,10 +12785,11 @@
     "cvss_version": "4.0",
     "cwe": "CWE-284",
     "domains": [
+      "Humanoid & Legged Robot",
       "Mobile Robot & AMR",
       "Industrial Robot"
     ],
-    "primary_domain": "Mobile Robot & AMR",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Mobile Companion App",
       "Network / Connectivity"
@@ -12817,10 +12823,11 @@
     "cvss_version": "4.0",
     "cwe": "CWE-306",
     "domains": [
+      "Humanoid & Legged Robot",
       "Mobile Robot & AMR",
       "Industrial Robot"
     ],
-    "primary_domain": "Mobile Robot & AMR",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Mobile Companion App",
       "Network / Connectivity"
@@ -39036,9 +39043,9 @@
     "cvss_version": "3.1",
     "cwe": "CWE-321",
     "domains": [
-      "Humanoid Robot"
+      "Humanoid & Legged Robot"
     ],
-    "primary_domain": "Humanoid Robot",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Hardware / Firmware",
       "Distribution / Supply Chain"
@@ -39112,10 +39119,10 @@
     "cvss_version": "4.0",
     "cwe": "CWE-345",
     "domains": [
-      "Mobile Robot & AMR",
-      "Humanoid Robot"
+      "Humanoid & Legged Robot",
+      "Mobile Robot & AMR"
     ],
-    "primary_domain": "Mobile Robot & AMR",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Mobile Companion App",
       "Hardware / Firmware"
@@ -39151,11 +39158,11 @@
     "cvss_version": "4.0",
     "cwe": "CWE-306",
     "domains": [
+      "Humanoid & Legged Robot",
       "Mobile Robot & AMR",
-      "Humanoid Robot",
       "Robot Operating Systems & Middleware"
     ],
-    "primary_domain": "Mobile Robot & AMR",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Middleware / Communication Layer",
       "Hardware / Firmware"
@@ -40022,8 +40029,7 @@
     "cwe": "CWE-122",
     "domains": [
       "Robot Operating Systems & Middleware",
-      "Mobile Robot & AMR",
-      "Humanoid Robot"
+      "Mobile Robot & AMR"
     ],
     "primary_domain": "Robot Operating Systems & Middleware",
     "layers": [
@@ -42389,7 +42395,6 @@
     "domains": [
       "Physical AI Infrastructure",
       "Embodied AI Agent",
-      "Humanoid Robot",
       "Cross-Domain Components"
     ],
     "primary_domain": "Physical AI Infrastructure",
@@ -42428,7 +42433,6 @@
     "domains": [
       "Physical AI Infrastructure",
       "Embodied AI Agent",
-      "Humanoid Robot",
       "Cross-Domain Components"
     ],
     "primary_domain": "Physical AI Infrastructure",
@@ -42911,9 +42915,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-287",
     "domains": [
+      "Humanoid & Legged Robot",
       "Mobile Robot & AMR"
     ],
-    "primary_domain": "Mobile Robot & AMR",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Mobile Companion App",
       "Hardware / Firmware"
@@ -42947,9 +42952,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-798",
     "domains": [
+      "Humanoid & Legged Robot",
       "Mobile Robot & AMR"
     ],
-    "primary_domain": "Mobile Robot & AMR",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Hardware / Firmware",
       "Network / Connectivity"
@@ -42982,9 +42988,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-287",
     "domains": [
+      "Humanoid & Legged Robot",
       "Mobile Robot & AMR"
     ],
-    "primary_domain": "Mobile Robot & AMR",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Middleware / Communication Layer",
       "Network / Connectivity"
@@ -43083,7 +43090,6 @@
     "cwe": "CWE-862",
     "domains": [
       "Cross-Domain Components",
-      "Humanoid Robot",
       "Embodied AI Agent"
     ],
     "primary_domain": "Cross-Domain Components",
@@ -43121,8 +43127,7 @@
     "cwe": "CWE-400",
     "domains": [
       "Cross-Domain Components",
-      "Embodied AI Agent",
-      "Humanoid Robot"
+      "Embodied AI Agent"
     ],
     "primary_domain": "Cross-Domain Components",
     "layers": [
@@ -43571,11 +43576,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-306",
     "domains": [
-      "Humanoid Robot",
+      "Humanoid & Legged Robot",
       "Mobile Robot & AMR",
       "Robot Operating Systems & Middleware"
     ],
-    "primary_domain": "Humanoid Robot",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Hardware / Firmware",
       "Middleware / Communication Layer"
@@ -43617,11 +43622,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-321",
     "domains": [
+      "Humanoid & Legged Robot",
       "Mobile Robot & AMR",
-      "Humanoid Robot",
       "Robot Operating Systems & Middleware"
     ],
-    "primary_domain": "Mobile Robot & AMR",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Hardware / Firmware",
       "Network / Connectivity"
@@ -43669,11 +43674,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-78",
     "domains": [
+      "Humanoid & Legged Robot",
       "Mobile Robot & AMR",
-      "Humanoid Robot",
       "Robot Operating Systems & Middleware"
     ],
-    "primary_domain": "Mobile Robot & AMR",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Hardware / Firmware",
       "Network / Connectivity",
@@ -43723,11 +43728,11 @@
     "cvss_version": "3.1",
     "cwe": "CWE-78",
     "domains": [
+      "Humanoid & Legged Robot",
       "Mobile Robot & AMR",
-      "Humanoid Robot",
       "Physical AI Infrastructure"
     ],
-    "primary_domain": "Mobile Robot & AMR",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Hardware / Firmware",
       "Network / Connectivity"
@@ -45897,10 +45902,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-276",
     "domains": [
-      "Mobile Robot & AMR",
-      "Humanoid Robot"
+      "Humanoid & Legged Robot",
+      "Mobile Robot & AMR"
     ],
-    "primary_domain": "Mobile Robot & AMR",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Hardware / Firmware"
     ],
@@ -45927,9 +45932,10 @@
     "cvss_version": "3.1",
     "cwe": "CWE-798",
     "domains": [
+      "Humanoid & Legged Robot",
       "Mobile Robot & AMR"
     ],
-    "primary_domain": "Mobile Robot & AMR",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Hardware / Firmware",
       "Network / Connectivity"
@@ -46079,8 +46085,7 @@
     "domains": [
       "Cross-Domain Components",
       "Embodied AI Agent",
-      "Industrial Robot",
-      "Humanoid Robot"
+      "Industrial Robot"
     ],
     "primary_domain": "Cross-Domain Components",
     "layers": [
@@ -47642,8 +47647,7 @@
     "cwe": "CWE-276",
     "domains": [
       "Cross-Domain Components",
-      "Mobile Robot & AMR",
-      "Humanoid Robot"
+      "Mobile Robot & AMR"
     ],
     "primary_domain": "Cross-Domain Components",
     "layers": [
@@ -48604,11 +48608,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-912",
     "domains": [
+      "Humanoid & Legged Robot",
       "Service & Companion Robot",
       "Mobile Robot & AMR",
       "Physical AI Infrastructure"
     ],
-    "primary_domain": "Service & Companion Robot",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Hardware / Firmware",
       "Network / Connectivity"
@@ -55135,11 +55140,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-306",
     "domains": [
+      "Humanoid & Legged Robot",
       "Mobile Robot & AMR",
       "Service & Companion Robot",
       "Robot Operating Systems & Middleware"
     ],
-    "primary_domain": "Mobile Robot & AMR",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Network / Connectivity",
       "Hardware / Firmware"
@@ -55179,11 +55185,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-290",
     "domains": [
+      "Humanoid & Legged Robot",
       "Mobile Robot & AMR",
       "Service & Companion Robot",
       "Robot Operating Systems & Middleware"
     ],
-    "primary_domain": "Mobile Robot & AMR",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Middleware / Communication Layer",
       "Network / Connectivity"
@@ -56921,11 +56928,12 @@
     "cvss_version": "3.1",
     "cwe": "CWE-285",
     "domains": [
+      "Humanoid & Legged Robot",
       "Mobile Robot & AMR",
       "Service & Companion Robot",
       "Cross-Domain Components"
     ],
-    "primary_domain": "Mobile Robot & AMR",
+    "primary_domain": "Humanoid & Legged Robot",
     "layers": [
       "Hardware / Firmware",
       "Network / Connectivity"
@@ -59607,8 +59615,7 @@
     "cwe": "CWE-119",
     "domains": [
       "Robot Operating Systems & Middleware",
-      "Cross-Domain Components",
-      "Humanoid Robot"
+      "Cross-Domain Components"
     ],
     "primary_domain": "Robot Operating Systems & Middleware",
     "layers": [

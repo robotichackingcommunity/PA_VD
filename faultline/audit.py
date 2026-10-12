@@ -32,7 +32,8 @@ PHYSICAL_AI_DOMAIN = {{DOMAINS}}
 TECHNICAL_LAYER = {{LAYERS}}
 
 Domain meaning in brief:
-- Humanoid Robot, Industrial Robot, Mobile Robot & AMR, Drone & Aerial Robotics,
+- Humanoid & Legged Robot (bipedal humanoids AND quadruped/legged robots, e.g. Unitree Go2/G1/H1,
+  Boston Dynamics Spot, ANYmal), Industrial Robot, Mobile Robot & AMR (wheeled/tracked AMRs), Drone & Aerial Robotics,
   Service & Companion Robot, Autonomous Vehicle AI: the vulnerable product is that kind of machine.
 - Robot Operating Systems & Middleware: ROS/ROS 2, DDS, MoveIt, Nav2, robot middleware/SDKs.
 - Physical AI Infrastructure: AI inference/serving, training, MLOps that runs models for physical/embodied systems.
