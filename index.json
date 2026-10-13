@@ -1,21 +1,24 @@
 [
   {
     "cve_id": "CVE-2026-10557",
-    "title": "Yarbo Android/iOS Application Hard-Coded MQTT Credentials Full Fleet Takeover",
+    "title": "Yarbo Mobile Apps and Cloud MQTT Hard-Coded Shared Broker Credentials Enabling Fleet-Wide Telemetry Access and Robot Command Injection",
     "published": "2026-06-12",
-    "score": 9.3,
+    "score": 9.8,
     "severity": "CRITICAL",
     "domains": [
+      "Physical AI Infrastructure",
       "Service & Companion Robot",
-      "Physical AI Infrastructure"
+      "Mobile Robot & AMR"
     ],
     "vendors": [
       "Yarbo"
     ],
     "tags": [
-      "mass-fleet-attack",
-      "MQTT-hardcoded-credentials",
-      "consumer-robot-safety"
+      "MQTT",
+      "Hard-coded credentials",
+      "Consumer robotics",
+      "Fleet cloud backend",
+      "CISA ICS advisory"
     ],
     "file_name": "CVE-2026-10557.pavd.json"
   },
@@ -41,46 +44,44 @@
   },
   {
     "cve_id": "CVE-2026-85434",
-    "title": "MOOS-IvP uFldShoreBroker Unverified NODE_BROKER_PING Enables Bridge Route Injection and Variable Redirection",
+    "title": "MOOS-IvP uFldShoreBroker Unauthenticated NODE_BROKER_PING Bridge Route Injection Enabling Data Redirection",
     "published": "2026-09-03",
     "score": 9.1,
     "severity": "CRITICAL",
     "domains": [
       "Robot Operating Systems & Middleware",
+      "Physical AI Infrastructure",
       "Mobile Robot & AMR"
     ],
     "vendors": [
       "MOOS-IvP project"
     ],
     "tags": [
-      "moos-ivp",
-      "marine-autonomy",
-      "vulncheck-disclosure",
-      "traffic-redirection",
-      "mitm-like"
+      "Marine robotics",
+      "Robotics middleware",
+      "Unauthenticated pub/sub",
+      "Fleet brokering"
     ],
     "file_name": "CVE-2026-85434.pavd.json"
   },
   {
     "cve_id": "CVE-2026-93291",
-    "title": "Eufy Omni C20 Improper Certificate Validation Enables Man-in-the-Middle Arbitrary Code Execution",
+    "title": "Eufy Omni C20 Improper Certificate Validation Enabling Man-in-the-Middle Arbitrary Code Execution",
     "published": "2026-09-24",
     "score": 9.4,
     "severity": "CRITICAL",
     "domains": [
       "Service & Companion Robot",
-      "Cross-Domain Components"
+      "Mobile Robot & AMR"
     ],
     "vendors": [
       "Eufy (Anker)"
     ],
     "tags": [
-      "consumer-robot",
-      "robot-vacuum",
-      "tls-validation",
-      "mitm",
-      "same-advisory-as-CVE-2026-93289",
-      "same-advisory-as-CVE-2026-93290"
+      "Consumer robotics",
+      "Robot vacuum",
+      "CISA ICS advisory",
+      "TLS validation failure"
     ],
     "file_name": "CVE-2026-93291.pavd.json"
   },
@@ -127,7 +128,7 @@
   },
   {
     "cve_id": "CVE-2026-53605",
-    "title": "Pollen Robotics Reachy Mini Wireless OS Overly Broad Sudoers systemctl Entry Local Privilege Escalation to Root",
+    "title": "Pollen Robotics Reachy Mini Wireless OS Overly Broad Sudoers Entry Local Privilege Escalation to Root",
     "published": "2026-09-30",
     "score": 7.8,
     "severity": "HIGH",
@@ -139,11 +140,10 @@
       "Pollen Robotics"
     ],
     "tags": [
-      "Reachy Mini ecosystem",
-      "Raspberry Pi based robots",
-      "Linux privilege escalation",
-      "Robot OS image hardening",
-      "Chain amplifier: converts app-level foothold to root"
+      "Raspberry Pi robots",
+      "Open-source robot OS image",
+      "Sudoers misconfiguration",
+      "Hugging Face / Pollen ecosystem"
     ],
     "file_name": "CVE-2026-53605.pavd.json"
   },
@@ -5894,6 +5894,27 @@
       "CWE-502 cluster with CVE-2026-24157, CVE-2026-24237, CVE-2026-24162"
     ],
     "file_name": "CVE-2026-24228.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-47483",
+    "title": "NVIDIA DCGM Exporter Unauthenticated /debug/pprof Uncontrolled Resource Consumption Denial of Service and Information Disclosure",
+    "published": "2026-07-28",
+    "score": 8.2,
+    "severity": "HIGH",
+    "domains": [
+      "Cross-Domain Components",
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA GPU stack",
+      "MLOps monitoring",
+      "Debug endpoint exposure",
+      "Go pprof"
+    ],
+    "file_name": "CVE-2026-47483.pavd.json"
   },
   {
     "cve_id": "CVE-2024-40427",
