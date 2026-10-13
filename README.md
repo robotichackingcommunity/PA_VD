@@ -43,7 +43,7 @@ Example — [`CVE-2024-0112`](./CVE-json/CVE-2024-0112.pavd.json), an NVIDIA Jet
 
 ### Current Coverage (snapshot)
 
-- **200** enriched vulnerability records (see [`index.json`](./index.json) for the full lightweight index)
+- **300** enriched vulnerability records (see [`index.json`](./index.json) for the full lightweight index)
 - **Severity:** 32 Critical · 88 High · 69 Medium · 10 Low (CVSS-based)
 - **Physical AI domains:** Robot Operating Systems & Middleware (54) · Cross-Domain Components (51) · Physical AI Infrastructure (43) · Embodied AI Agent (40) · Mobile Robot & AMR (26) · Service & Companion Robot (24) · Drone & Aerial Robotics (24) · Industrial Robot (19) · Humanoid Robot (14) · Autonomous Vehicle AI (1)
 - **Notable vendors/projects tracked:** NVIDIA, ABB, eProsima (Fast DDS), Unitree Robotics, ECOVACS, RTI Connext DDS, PX4/ArduPilot, Mobile Industrial Robots, SICK, Open Robotics/ROS, Franka Robotics, Ghost Robotics, and more
