@@ -646,7 +646,7 @@
           "type": "object"
         },
         "title": {
-          "maxLength": 200,
+          "maxLength": 256,
           "minLength": 1,
           "type": "string"
         }
@@ -685,6 +685,6 @@
     "judgments",
     "mitre_data"
   ],
-  "title": "Physical AI vulnerability record, schema 4.1",
+  "title": "Physical AI vulnerability record, schema 4.2",
   "type": "object"
 }

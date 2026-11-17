@@ -57,8 +57,13 @@ SECRET_PATTERNS = [
     ('a private key block', re.compile(r'-----BEGIN (?:[A-Z0-9]+ )*PRIVATE KEY(?: BLOCK)?-----')),  # PEM, OpenSSH, PGP
     ('a private key block', re.compile(r'PuTTY-User-Key-File-\d')),
 ]
-# Text that must never be published inside a sentence field: markup and active content.
-_MARKUP = re.compile(r'<\s*/?\s*(?:script|iframe|object|embed|svg|img|style|link|meta)\b|javascript:|\bon[a-z]+\s*=', re.I)
+# Text that must never be published inside a sentence field: markup and active content. A
+# `javascript:` URL counts when it is a link target (markdown `](`, an autolink `<`, an attribute `=`)
+# or has code right after it; prose that only names the scheme ("blocks javascript: and data: links",
+# common in XSS advisories) is accepted.
+_MARKUP = re.compile(r'<\s*/?\s*(?:script|iframe|object|embed|svg|img|style|link|meta)\b'
+                     r'|(?:\]\(|<|=)\s*["\']?\s*javascript:|javascript:(?=[^\s,.;:)\]\'"])'
+                     r'|\bon[a-z]+\s*=', re.I)
 _TEXT_KEYS = {'title', 'classification_reason', 'rationale', 'text', 'note', 'fix_description', 'workaround',
               'component'}   # component names are free text while the vocabulary is being tuned
 
