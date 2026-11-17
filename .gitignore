@@ -6,8 +6,25 @@
 *.key
 id_rsa*
 *.p12
+# Windows: certificate bundles with a private key, PuTTY private keys
+*.pfx
+*.ppk
 
-# Local clutter
+# Local clutter: macOS
 .DS_Store
+
+# Local clutter: Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.stackdump
+# Office lock files (~$name.docx and the like)
+~$*
+
+# Local clutter: Python
 __pycache__/
 .venv/
