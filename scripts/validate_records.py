@@ -167,6 +167,17 @@ def validate_text(name: str, text: str, schema: Dict[str, Any],
     return problems
 
 
+def line_ending_problems(data: bytes) -> List[str]:
+    """A record must use LF line endings (the repository's .gitattributes). A file uploaded through the
+    GitHub web page is not converted, so a CRLF one is caught here. Checked by main() (the pull-request
+    workflow and a contributor's own run), not by validate_folder: a record that is already published
+    with CRLF must not stop the export."""
+    if b'\r' not in data:
+        return []
+    return ['uses CRLF (Windows) line endings; the repository uses LF. Convert the file to LF '
+            '(in VS Code: "CRLF" in the status bar, then "LF"; with git: git add --renormalize .)']
+
+
 def validate_folder(folder: Path, schema: Dict[str, Any]) -> Dict[str, List[str]]:
     """{file name: problems} for every record file under folder/CVE-json that has problems."""
     out: Dict[str, List[str]] = {}
@@ -199,6 +210,8 @@ def main(argv: List[str] = None) -> int:
         problems = validate_text(path.name, path.read_text(encoding='utf-8'), schema,
                                  pr_author=args.pr_author, pr_number=args.pr_number, today=today,
                                  pr_created=args.pr_created)
+        # read_text turns CRLF into LF, so the line endings are read from the bytes.
+        problems += line_ending_problems(path.read_bytes())
         for problem in problems:
             print(f'{path}: {problem}')
         failed += bool(problems)

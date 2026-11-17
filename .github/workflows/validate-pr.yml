@@ -27,6 +27,18 @@ jobs:
 
       - run: pip install jsonschema==4.23.0
 
+      # Every text file keeps LF line endings (the repository's .gitattributes). Git converts on
+      # commit, but a file uploaded through the GitHub web page is not converted, so it is caught here.
+      # grep -I skips binary files.
+      - name: Text files use LF line endings
+        run: |
+          crlf=$(git diff -z --name-only --diff-filter=AM "$BASE_SHA" HEAD | xargs -0 -r grep -lI $'\r' -- || true)
+          if [ -n "$crlf" ]; then
+            echo "::error::These files use CRLF (Windows) line endings; the repository uses LF. Convert them to LF (in VS Code: click CRLF in the status bar and choose LF; with git: git add --renormalize .) and push again:"
+            echo "$crlf"
+            exit 1
+          fi
+
       # A contribution may ADD record files under CVE-json/ and nothing else. Changing or deleting
       # a record, the index, the schema, the scripts or this workflow is done by the maintainers
       # (after an issue), so every record stays consistent.
