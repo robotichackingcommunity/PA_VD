@@ -1,0 +1,13 @@
+# Secrets and local env files must never reach this public repository
+.env
+.env.*
+*.env
+*.pem
+*.key
+id_rsa*
+*.p12
+
+# Local clutter
+.DS_Store
+__pycache__/
+.venv/

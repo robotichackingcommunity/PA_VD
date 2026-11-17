@@ -1,0 +1,100 @@
+{
+  "domains": {
+    "Autonomous Vehicle AI": 2,
+    "Drone & Aerial Robotics": 53,
+    "Embodied AI Agent": 6,
+    "Humanoid & Legged Robot": 23,
+    "Industrial Robot": 4,
+    "Mobile Robot & AMR": 54,
+    "Physical AI Infrastructure": 881,
+    "Robot Operating Systems & Middleware": 91,
+    "Service & Companion Robot": 48
+  },
+  "exploitation": {
+    "Unknown": 406,
+    "none": 620,
+    "poc": 109
+  },
+  "generated_at": "2026-11-13T09:39:12Z",
+  "latest_changes": {
+    "added": 1135,
+    "baseline": true,
+    "cves": {
+      "added": [],
+      "domains_changed": [],
+      "removed_not_physical_ai": [],
+      "removed_rejected": [],
+      "surfaces_changed": []
+    },
+    "date": "2026-11-13",
+    "domains_changed": 0,
+    "removed_not_physical_ai": 0,
+    "removed_rejected": 0,
+    "surfaces_changed": 0
+  },
+  "patch_available": {
+    "No": 216,
+    "Yes": 919
+  },
+  "primary_domains": {
+    "Autonomous Vehicle AI": 2,
+    "Drone & Aerial Robotics": 53,
+    "Embodied AI Agent": 5,
+    "Humanoid & Legged Robot": 20,
+    "Industrial Robot": 4,
+    "Mobile Robot & AMR": 40,
+    "Physical AI Infrastructure": 881,
+    "Robot Operating Systems & Middleware": 85,
+    "Service & Companion Robot": 45
+  },
+  "published_month": {
+    "2025-01": 15,
+    "2025-02": 3,
+    "2025-03": 20,
+    "2025-04": 8,
+    "2025-05": 7,
+    "2025-06": 3,
+    "2025-07": 11,
+    "2025-08": 26,
+    "2025-09": 36,
+    "2025-10": 12,
+    "2025-11": 8,
+    "2025-12": 17,
+    "2026-01": 6,
+    "2026-02": 50,
+    "2026-03": 218,
+    "2026-04": 191,
+    "2026-05": 95,
+    "2026-06": 79,
+    "2026-07": 67,
+    "2026-08": 48,
+    "2026-09": 156,
+    "2026-10": 52,
+    "2026-11": 7
+  },
+  "published_year": {
+    "2025": 166,
+    "2026": 969
+  },
+  "safety_impact": {
+    "CRITICAL": 7,
+    "HIGH": 74,
+    "LOW": 707,
+    "MEDIUM": 347
+  },
+  "severity": {
+    "CRITICAL": 116,
+    "HIGH": 524,
+    "LOW": 105,
+    "MEDIUM": 389,
+    "UNKNOWN": 1
+  },
+  "surfaces": {
+    "AI Model Layer": 51,
+    "Perception Layer": 2,
+    "Physical Layer": 13,
+    "Software & Cloud": 1129,
+    "Wireless Layer": 57
+  },
+  "total": 1135
+}

@@ -1,0 +1,690 @@
+{
+  "$id": "pavd-record",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "contributed_by": {
+      "oneOf": [
+        {
+          "additionalProperties": false,
+          "properties": {
+            "source": {
+              "const": "VicOne"
+            }
+          },
+          "required": [
+            "source"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "date": {
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+              "type": "string"
+            },
+            "github": {
+              "pattern": "^[A-Za-z0-9](?:[A-Za-z0-9-]{0,38})$",
+              "type": "string"
+            },
+            "pull_request": {
+              "minimum": 1,
+              "type": "integer"
+            },
+            "source": {
+              "const": "community"
+            }
+          },
+          "required": [
+            "source",
+            "github",
+            "pull_request",
+            "date"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "cve_id": {
+      "pattern": "^CVE-\\d{4}-\\d{4,}$",
+      "type": "string"
+    },
+    "facts": {
+      "additionalProperties": false,
+      "properties": {
+        "affected_products": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "platforms": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "product": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "vendor": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "versions": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            },
+            "required": [
+              "vendor",
+              "product",
+              "versions",
+              "platforms"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "cvss": {
+          "additionalProperties": false,
+          "properties": {
+            "all_versions": {
+              "additionalProperties": {
+                "additionalProperties": false,
+                "properties": {
+                  "score": {
+                    "maximum": 10,
+                    "minimum": 0,
+                    "type": "number"
+                  },
+                  "severity": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "source": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "vector": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "score",
+                  "severity",
+                  "vector",
+                  "source"
+                ],
+                "type": "object"
+              },
+              "type": "object"
+            },
+            "origin": {
+              "enum": [
+                "nvd",
+                "mitre",
+                null
+              ]
+            },
+            "score": {
+              "maximum": 10,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "severity": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "source": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "ssvc": {
+              "oneOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "automatable": {
+                      "enum": [
+                        "yes",
+                        "no",
+                        null
+                      ]
+                    },
+                    "exploitation": {
+                      "enum": [
+                        "none",
+                        "poc",
+                        "active",
+                        null
+                      ]
+                    },
+                    "technicalImpact": {
+                      "enum": [
+                        "partial",
+                        "total",
+                        null
+                      ]
+                    }
+                  },
+                  "required": [
+                    "exploitation",
+                    "automatable",
+                    "technicalImpact"
+                  ],
+                  "type": "object"
+                }
+              ]
+            },
+            "vector": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "version": {
+              "enum": [
+                "4.0",
+                "3.1",
+                "3.0",
+                "2.0",
+                null
+              ]
+            }
+          },
+          "required": [
+            "version",
+            "score",
+            "severity",
+            "vector",
+            "source",
+            "origin",
+            "all_versions",
+            "ssvc"
+          ],
+          "type": "object"
+        },
+        "epss": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "additionalProperties": false,
+              "properties": {
+                "date": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "percentile": {
+                  "maximum": 1,
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "score": {
+                  "maximum": 1,
+                  "minimum": 0,
+                  "type": "number"
+                }
+              },
+              "required": [
+                "score",
+                "percentile",
+                "date"
+              ],
+              "type": "object"
+            }
+          ]
+        },
+        "references": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "tags": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "url",
+              "name",
+              "tags"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "reporter": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "type"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "vuln_status": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "vuln_status",
+        "reporter",
+        "references",
+        "affected_products",
+        "cvss",
+        "epss"
+      ],
+      "type": "object"
+    },
+    "judgments": {
+      "additionalProperties": false,
+      "properties": {
+        "attack_scenarios": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "attack_chain": {
+                "additionalProperties": false,
+                "properties": {
+                  "preconditions": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array"
+                  },
+                  "steps": {
+                    "items": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "basis": {
+                          "enum": [
+                            "stated",
+                            "inferred_from_cwe",
+                            "assumed"
+                          ],
+                          "type": "string"
+                        },
+                        "note": {
+                          "type": "string"
+                        },
+                        "step": {
+                          "minimum": 1,
+                          "type": "integer"
+                        },
+                        "surface": {
+                          "enum": [
+                            "Physical Layer",
+                            "Perception Layer",
+                            "AI Model Layer",
+                            "Software & Cloud",
+                            "Wireless Layer",
+                            null
+                          ]
+                        },
+                        "text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "step",
+                        "text",
+                        "basis",
+                        "note",
+                        "surface"
+                      ],
+                      "type": "object"
+                    },
+                    "maxItems": 6,
+                    "minItems": 2,
+                    "type": "array"
+                  }
+                },
+                "required": [
+                  "preconditions",
+                  "steps"
+                ],
+                "type": "object"
+              },
+              "domains": {
+                "items": {
+                  "enum": [
+                    "Humanoid & Legged Robot",
+                    "Industrial Robot",
+                    "Mobile Robot & AMR",
+                    "Drone & Aerial Robotics",
+                    "Service & Companion Robot",
+                    "Autonomous Vehicle AI",
+                    "Embodied AI Agent",
+                    "Robot Operating Systems & Middleware",
+                    "Physical AI Infrastructure"
+                  ],
+                  "type": "string"
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "impact": {
+                "additionalProperties": false,
+                "properties": {
+                  "physical_world_impact": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array"
+                  },
+                  "safety_impact": {
+                    "enum": [
+                      "NONE",
+                      "LOW",
+                      "MEDIUM",
+                      "HIGH",
+                      "CRITICAL",
+                      null
+                    ]
+                  }
+                },
+                "required": [
+                  "safety_impact",
+                  "physical_world_impact"
+                ],
+                "type": "object"
+              },
+              "title": {
+                "maxLength": 120,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "domains"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "classification": {
+          "additionalProperties": false,
+          "properties": {
+            "domains": {
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "attack_surfaces": {
+                    "items": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "confidence": {
+                          "maximum": 1,
+                          "minimum": 0.5,
+                          "type": "number"
+                        },
+                        "rationale": {
+                          "type": "string"
+                        },
+                        "surface": {
+                          "enum": [
+                            "Physical Layer",
+                            "Perception Layer",
+                            "AI Model Layer",
+                            "Software & Cloud",
+                            "Wireless Layer"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "surface",
+                        "confidence",
+                        "rationale"
+                      ],
+                      "type": "object"
+                    },
+                    "type": "array"
+                  },
+                  "components": {
+                    "items": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "component": {
+                          "examples": [
+                            "Hardware / Embedded Device",
+                            "Firmware / Embedded Software",
+                            "Controller",
+                            "Flight Controller",
+                            "Autopilot / Flight Stack",
+                            "Learned Controller",
+                            "Middleware",
+                            "Communication Interface",
+                            "Perception & Sensor",
+                            "Perception Model",
+                            "Sensor Fusion / State Estimation",
+                            "World Model / Spatial Representation",
+                            "Navigation & Guidance",
+                            "Navigation & Motion",
+                            "Motion / Trajectory Planner",
+                            "Robot Application & Autonomy",
+                            "Decision / Policy Model",
+                            "Embodied Agent / Task Planner",
+                            "AI-to-Control Interface",
+                            "Human Command Interface",
+                            "Payload System",
+                            "Safety / Failsafe System",
+                            "Safety Filter / Runtime Assurance",
+                            "Counter-UAS System",
+                            "Remote ID / Identification System",
+                            "Ground Control Station",
+                            "Remote Controller / Operator Device",
+                            "Mission Planning & Operations Platform",
+                            "Fleet / Cloud Management Platform",
+                            "Management Platform",
+                            "Management Interface",
+                            "Physical AI Management Platform",
+                            "Simulation & Engineering Tool",
+                            "Infrastructure Service",
+                            "Library / SDK",
+                            "Physical AI Runtime / Framework",
+                            "Model / Model Artifact",
+                            "Training Framework",
+                            "Training & Fine-tuning Pipeline",
+                            "Inference Runtime",
+                            "Model Serving Platform",
+                            "Dataset & Data Pipeline",
+                            "Vector Store & Retrieval",
+                            "RAG Component",
+                            "Prompt & Context Management",
+                            "Agent & Orchestration",
+                            "Tool / Connector",
+                            "AI Application",
+                            "Evaluation & Monitoring",
+                            "MLOps / Model Management",
+                            "AI Platform / Control Plane"
+                          ],
+                          "maxLength": 100,
+                          "minLength": 1,
+                          "pattern": "^\\S(?:.*\\S)?$",
+                          "type": "string"
+                        },
+                        "rationale": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "component",
+                        "rationale"
+                      ],
+                      "type": "object"
+                    },
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "confidence": {
+                    "maximum": 1,
+                    "minimum": 0.7,
+                    "type": "number"
+                  },
+                  "domain": {
+                    "enum": [
+                      "Humanoid & Legged Robot",
+                      "Industrial Robot",
+                      "Mobile Robot & AMR",
+                      "Drone & Aerial Robotics",
+                      "Service & Companion Robot",
+                      "Autonomous Vehicle AI",
+                      "Embodied AI Agent",
+                      "Robot Operating Systems & Middleware",
+                      "Physical AI Infrastructure"
+                    ],
+                    "type": "string"
+                  },
+                  "rationale": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "domain",
+                  "confidence",
+                  "rationale",
+                  "components",
+                  "attack_surfaces"
+                ],
+                "type": "object"
+              },
+              "minItems": 1,
+              "type": "array"
+            },
+            "vulnerability_class": {
+              "items": {
+                "pattern": "^CWE-[0-9]+: \\S",
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "vulnerability_class_source": {
+              "enum": [
+                "cve",
+                "ai"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "domains",
+            "vulnerability_class"
+          ],
+          "type": "object"
+        },
+        "classification_reason": {
+          "type": "string"
+        },
+        "mitigation": {
+          "additionalProperties": false,
+          "properties": {
+            "fix_description": {
+              "type": "string"
+            },
+            "patch_available": {
+              "type": "boolean"
+            },
+            "workaround": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "patch_available",
+            "fix_description",
+            "workaround"
+          ],
+          "type": "object"
+        },
+        "title": {
+          "maxLength": 200,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "classification_reason",
+        "classification",
+        "mitigation"
+      ],
+      "type": "object"
+    },
+    "mitre_data": {
+      "properties": {
+        "containers": {
+          "type": "object"
+        },
+        "cveMetadata": {
+          "required": [
+            "cveId"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "cveMetadata",
+        "containers"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "cve_id",
+    "contributed_by",
+    "facts",
+    "judgments",
+    "mitre_data"
+  ],
+  "title": "Physical AI vulnerability record, schema 4.1",
+  "type": "object"
+}

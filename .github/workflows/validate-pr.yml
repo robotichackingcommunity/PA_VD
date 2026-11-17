@@ -1,0 +1,70 @@
+name: Validate records
+
+# Runs on every pull request, so it can be a required status check without blocking a pull request
+# that touches no record (a maintainer's change to index.html or README.md).
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    env:
+      BASE_SHA: ${{ github.event.pull_request.base.sha }}
+      # A pull request from a branch of this repository can only be opened by someone with write
+      # access, a maintainer. Every other pull request (from a fork) is a contribution.
+      FROM_MAINTAINER: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install jsonschema==4.23.0
+
+      # A contribution may ADD record files under CVE-json/ and nothing else. Changing or deleting
+      # a record, the index, the schema, the scripts or this workflow is done by the maintainers
+      # (after an issue), so every record stays consistent.
+      - name: Only new record files may be added
+        if: env.FROM_MAINTAINER != 'true'
+        run: |
+          git diff --name-status "$BASE_SHA" HEAD
+          not_added=$(git diff --name-status --diff-filter=MDRTUXB "$BASE_SHA" HEAD | cut -f2- || true)
+          if [ -n "$not_added" ]; then
+            echo "::error::A pull request may only add new records. To change or remove an existing record, or to add a field or allowed value, open an issue. Not allowed:"
+            echo "$not_added"
+            exit 1
+          fi
+          bad=$(git diff --name-only --diff-filter=A "$BASE_SHA" HEAD | grep -v -E '^CVE-json/CVE-[0-9]{4}-[0-9]{4,}\.pavd\.json$' || true)
+          if [ -n "$bad" ]; then
+            echo "::error::Only files named CVE-json/CVE-YYYY-N.pavd.json may be added. Not allowed:"
+            echo "$bad"
+            exit 1
+          fi
+
+      # A contribution's new records must match the schema, and contributed_by must name the account
+      # that opened this pull request and this pull request, dated between the day it was opened and
+      # today; a record may not claim to be a VicOne record.
+      - name: Validate the new records and their provenance
+        if: env.FROM_MAINTAINER != 'true'
+        env:
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_CREATED: ${{ github.event.pull_request.created_at }}
+        run: |
+          files=$(git diff --name-only --diff-filter=A "$BASE_SHA" HEAD -- 'CVE-json/*.pavd.json')
+          if [ -z "$files" ]; then echo "No record files added."; exit 0; fi
+          python scripts/validate_records.py --pr-author "$PR_AUTHOR" --pr-number "$PR_NUMBER" --pr-created "$PR_CREATED" $files
+
+      # A maintainer may change any file; the records it adds or edits must still match the schema.
+      - name: Validate the records a maintainer added or changed
+        if: env.FROM_MAINTAINER == 'true'
+        run: |
+          files=$(git diff --name-only --diff-filter=AM "$BASE_SHA" HEAD -- 'CVE-json/*.pavd.json')
+          if [ -z "$files" ]; then echo "No record files added or changed."; exit 0; fi
+          python scripts/validate_records.py $files

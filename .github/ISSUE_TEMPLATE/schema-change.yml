@@ -1,0 +1,60 @@
+name: Propose a schema change
+description: A new field, a new allowed value (domain, component, attack surface) or a change to a field.
+title: "[Schema] "
+labels: ["schema-change"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The schema (`schema/pavd-record.schema.json`) changes only through an issue, never through a
+        pull request. A field whose values the schema lists only as `examples` already accepts any
+        value: use a listed one when it fits, and propose a new one here only if it should be added
+        to the list.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of change
+      options:
+        - New allowed value for an existing field
+        - New field
+        - Change to an existing field (meaning, format or allowed values)
+    validations:
+      required: true
+
+  - type: input
+    id: field
+    attributes:
+      label: Field
+      description: The path of the field in a record, or where a new field would go.
+      placeholder: judgments.classification.domains[].components[].component
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: The value(s) or field, with a one-line definition of each.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why it is needed
+      description: >-
+        Which CVEs need it (give a few IDs) and why the existing fields or values do not describe
+        them.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirm
+      options:
+        - label: I checked schema/pavd-record.schema.json and the change is not already there.
+          required: true
+        - label: This issue contains no commands, payloads or exploit code.
+          required: true

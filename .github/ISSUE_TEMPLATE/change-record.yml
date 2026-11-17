@@ -1,0 +1,73 @@
+name: Change an existing record
+description: Correct, remove or replace a record that is already in CVE-json/.
+title: "[Record] CVE-YYYY-N: "
+labels: ["record-change"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        To add a record for a CVE that is **not** in `CVE-json/` yet, open a pull request instead
+        (see the pull request template). Use this form when a record already exists and you think it
+        is wrong, should be removed, or should be replaced by your version. The maintainers decide,
+        so that every record stays consistent.
+
+  - type: input
+    id: cve_id
+    attributes:
+      label: CVE ID
+      description: The record this is about, for example CVE-2026-12345.
+      placeholder: CVE-YYYY-N
+    validations:
+      required: true
+
+  - type: dropdown
+    id: request
+    attributes:
+      label: What should happen
+      options:
+        - Correct one or more fields
+        - Remove the record (the CVE does not belong in the database)
+        - Replace the record with a different version
+    validations:
+      required: true
+
+  - type: textarea
+    id: fields
+    attributes:
+      label: Fields
+      description: >-
+        The fields that are wrong, each with its current value and the value you propose. For a
+        replacement, list the differences or attach your version of the record.
+      placeholder: |
+        judgments.classification.domains[0].domain
+          current:  Industrial Robot
+          proposed: Mobile Robot & AMR
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why
+      description: What the record gets wrong, in a few sentences.
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Public sources
+      description: Links that support the change (NVD, MITRE, vendor advisory, CISA advisory).
+      placeholder: https://
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirm
+      options:
+        - label: The sources above are public.
+          required: true
+        - label: This issue contains no commands, payloads or exploit code.
+          required: true
