@@ -1,0 +1,20 @@
+# Keep LF line endings in the repository, whatever the contributor's OS. Without this, Git on Windows
+# can commit a record with CRLF endings, and every line of it then shows as changed.
+* text=auto eol=lf
+
+# Text files the repository holds, stated explicitly
+*.json text eol=lf
+*.md   text eol=lf
+*.html text eol=lf
+*.py   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+CNAME  text eol=lf
+
+# Binary files are never converted
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
