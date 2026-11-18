@@ -53,7 +53,7 @@ _Auto-generated on 2026-11-13, do not edit by hand._
 - **Attack surfaces (where the flaw is reached):** none
 - **Exploitation (CISA SSVC):** none
 - **Safety impact:** none
-- **Patch available:** none
+- **Patch availability evidence:** none
 - **Published per year:** none
 - **Latest update:** none recorded yet
 <!-- stats:end -->
