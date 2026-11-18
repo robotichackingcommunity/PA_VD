@@ -1,5 +1,276 @@
 [
   {
+    "automatable": "no",
+    "cve_id": "CVE-2026-67455",
+    "cvss_version": "3.1",
+    "cwe": "CWE-502",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-67455.pavd.json",
+    "last_modified": "2026-11-17",
+    "patch_available": false,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "Model-Optimizer"
+    ],
+    "published": "2026-11-17",
+    "safety_impact": "MEDIUM",
+    "score": 8.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2026-67455",
+    "vendors": [
+      "NVIDIA"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-502: Deserialization of Untrusted Data"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2026-65167",
+    "cvss_version": "3.1",
+    "cwe": "CWE-789",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-65167.pavd.json",
+    "last_modified": "2026-11-17",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "TensorRT"
+    ],
+    "published": "2026-11-17",
+    "safety_impact": "LOW",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "AI Model Layer",
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2026-65167",
+    "vendors": [
+      "NVIDIA"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-789: Memory Allocation with Excessive Size Value"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2026-130603",
+    "cvss_version": "4.0",
+    "cwe": "CWE-121",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "file_name": "CVE-2026-130603.pavd.json",
+    "last_modified": "2026-11-17",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Eclipse Zenoh (zenoh-pico)"
+    ],
+    "published": "2026-11-17",
+    "safety_impact": "MEDIUM",
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2026-130603",
+    "vendors": [
+      "Eclipse Foundation"
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-121: Stack-based Buffer Overflow",
+      "CWE-122: Heap-based Buffer Overflow",
+      "CWE-125: Out-of-bounds Read"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2026-100963",
+    "cvss_version": "3.1",
+    "cwe": "CWE-190",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-100963.pavd.json",
+    "last_modified": "2026-11-17",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "TensorRT"
+    ],
+    "published": "2026-11-17",
+    "safety_impact": "LOW",
+    "score": 8.1,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2026-100963",
+    "vendors": [
+      "NVIDIA"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-190: Integer Overflow or Wraparound"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-128910",
+    "cvss_version": "3.1",
+    "cwe": "CWE-798",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "file_name": "CVE-2026-128910.pavd.json",
+    "last_modified": "2026-11-13",
+    "patch_available": false,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [
+      "AeroScope Mobile (TP703)",
+      "AeroScope Mobile (TP703) 1300 communications board firmware"
+    ],
+    "published": "2026-11-13",
+    "safety_impact": "LOW",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "surfaces": [
+      "Software & Cloud",
+      "Physical Layer"
+    ],
+    "title": "DJI AeroScope Mobile: Hard-coded root password on the serial console",
+    "vendors": [
+      "DJI"
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-798: Use of Hard-coded Credentials",
+      "CWE-916: Use of Password Hash With Insufficient Computational Effort",
+      "CWE-521: Weak Password Requirements"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-128909",
+    "cvss_version": "3.1",
+    "cwe": "CWE-347",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "file_name": "CVE-2026-128909.pavd.json",
+    "last_modified": "2026-11-13",
+    "patch_available": false,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [
+      "AeroScope Mobile (TP703)",
+      "AeroScope Mobile (TP703) 1300 communications board firmware"
+    ],
+    "published": "2026-11-13",
+    "safety_impact": "MEDIUM",
+    "score": 8.8,
+    "severity": "HIGH",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "DJI AeroScope Mobile: Firmware updates are not signature-verified",
+    "vendors": [
+      "DJI"
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-347: Improper Verification of Cryptographic Signature",
+      "CWE-494: Download of Code Without Integrity Check"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-128908",
+    "cvss_version": "3.1",
+    "cwe": "CWE-78",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "file_name": "CVE-2026-128908.pavd.json",
+    "last_modified": "2026-11-13",
+    "patch_available": false,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [
+      "AeroScope Mobile (TP703)",
+      "AeroScope Mobile (TP703) 1300 communications board firmware"
+    ],
+    "published": "2026-11-13",
+    "safety_impact": "MEDIUM",
+    "score": 8.8,
+    "severity": "HIGH",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "DJI AeroScope Mobile: OS command injection leads to root code execution",
+    "vendors": [
+      "DJI"
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-78: Improper Neutralization of Special Elements used in an OS Command"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-128907",
+    "cvss_version": "3.1",
+    "cwe": "CWE-306",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "file_name": "CVE-2026-128907.pavd.json",
+    "last_modified": "2026-11-13",
+    "patch_available": false,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [
+      "AeroScope Mobile (TP703)",
+      "AeroScope Mobile (TP703) 1300 communications board firmware"
+    ],
+    "published": "2026-11-13",
+    "safety_impact": "LOW",
+    "score": 4.3,
+    "severity": "MEDIUM",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "DJI AeroScope Mobile: Missing authentication on the management interface",
+    "vendors": [
+      "DJI"
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-306: Missing Authentication for Critical Functionality"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
     "cve_id": "CVE-2026-109097",
     "cvss_version": "4.0",
     "cwe": "CWE-94",

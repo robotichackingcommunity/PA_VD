@@ -45,17 +45,17 @@ Each record in [`CVE-json/`](./CVE-json) is a single vulnerability, structured i
 ### Current Coverage
 
 <!-- stats:start -->
-_Auto-generated on 2026-11-13, do not edit by hand._
+_Auto-generated on 2026-11-18, do not edit by hand._
 
-- **0** vulnerability records (see [`index.json`](./index.json) for the lightweight index, [`stats.json`](./stats.json) for all counts)
-- **Severity:** none
-- **Physical AI domains (a record may belong to several):** none
-- **Attack surfaces (where the flaw is reached):** none
-- **Exploitation (CISA SSVC):** none
-- **Safety impact:** none
-- **Patch availability evidence:** none
-- **Published per year:** none
-- **Latest update:** none recorded yet
+- **1143** vulnerability records (see [`index.json`](./index.json) for the lightweight index, [`stats.json`](./stats.json) for all counts)
+- **Severity:** HIGH (528) · MEDIUM (392) · CRITICAL (117) · LOW (105) · UNKNOWN (1)
+- **Physical AI domains (a record may belong to several):** Physical AI Infrastructure (884) · Robot Operating Systems & Middleware (92) · Drone & Aerial Robotics (57) · Mobile Robot & AMR (54) · Service & Companion Robot (48) · Humanoid & Legged Robot (23) · Embodied AI Agent (6) · Industrial Robot (4) · Autonomous Vehicle AI (2)
+- **Attack surfaces (where the flaw is reached):** Software & Cloud (1137) · Wireless Layer (57) · AI Model Layer (52) · Physical Layer (14) · Perception Layer (2)
+- **Exploitation (CISA SSVC):** none (623) · Unknown (410) · poc (110)
+- **Safety impact:** LOW (711) · MEDIUM (351) · HIGH (74) · CRITICAL (7)
+- **Patch availability evidence:** Confirmed (922) · Not Specified (221)
+- **Published per year:** 2025 (166) · 2026 (977)
+- **Latest update (2026-11-18):** 8 added · 0 Physical AI domains changed · 0 attack surfaces changed · 0 removed (CVE REJECTED) · 0 removed (no longer Physical AI) (see [`CHANGELOG.md`](./CHANGELOG.md))
 <!-- stats:end -->
 
 Every record carries its Physical AI `domains` (what kind of physical system is affected), and each domain its `attack_surfaces` (where in the stack the flaw is reached), so risk can be sliced for supply-chain and SBOM triage, not just "which robot is affected". The numbers above are regenerated from `CVE-json/` on every update; `stats.json` holds the full breakdown, including counts by publication year and month.
