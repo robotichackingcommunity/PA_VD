@@ -102,7 +102,7 @@
       <div class="filter-group"><h3>Attack Surface</h3><div id="layer-filters" class="checkbox-group"></div></div>
       <div class="filter-group"><h3>Exploitation (CISA SSVC)</h3><div id="exploit-filters" class="checkbox-group"></div></div>
       <div class="filter-group"><h3>Severity</h3><div id="severity-filters" class="checkbox-group"></div></div>
-      <div class="filter-group"><h3>Patch Available</h3><div id="patch-filters" class="checkbox-group"></div></div>
+      <div class="filter-group"><h3>Patch Availability Evidence</h3><div id="patch-filters" class="checkbox-group"></div></div>
 
       <button onclick="resetFilters()" style="width:100%;padding:12px;margin-top:4px;">Reset All</button>
     </aside>
@@ -166,7 +166,7 @@
     };
 
     const PATCH_ORDER = ['yes', 'no', 'unknown'];
-    const PATCH_LABEL = { yes: 'Yes', no: 'No', unknown: 'Unknown' };
+    const PATCH_LABEL = { yes: 'Confirmed', no: 'Not Specified', unknown: 'Unknown' };
 
     function debouncedSearch() { clearTimeout(timeout); timeout = setTimeout(applyFilters, 180); }
     function esc(s) { return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
