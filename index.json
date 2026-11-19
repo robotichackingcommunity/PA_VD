@@ -106,6 +106,114 @@
   },
   {
     "automatable": "no",
+    "cve_id": "CVE-2026-126976",
+    "cvss_version": "3.0",
+    "cwe": "CWE-190",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00226,
+    "epss_percentile": 0.13472,
+    "file_name": "CVE-2026-126976.pavd.json",
+    "last_modified": "2026-11-18",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "llama.cpp"
+    ],
+    "published": "2026-11-17",
+    "safety_impact": "MEDIUM",
+    "score": 7.0,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "llama.cpp MTMD Multimodal GGUF File Parsing Integer Overflow Remote Code Execution Vulnerability",
+    "vendors": [
+      "llama.cpp"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-190: Integer Overflow or Wraparound"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2026-126975",
+    "cvss_version": "3.0",
+    "cwe": "CWE-122",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00286,
+    "epss_percentile": 0.21426,
+    "file_name": "CVE-2026-126975.pavd.json",
+    "last_modified": "2026-11-18",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "llama.cpp"
+    ],
+    "published": "2026-11-17",
+    "safety_impact": "MEDIUM",
+    "score": 7.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "llama.cpp GGUF File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability",
+    "vendors": [
+      "llama.cpp"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-122: Heap-based Buffer Overflow"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2026-126974",
+    "cvss_version": "3.0",
+    "cwe": "CWE-190",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00264,
+    "epss_percentile": 0.18539,
+    "file_name": "CVE-2026-126974.pavd.json",
+    "last_modified": "2026-11-18",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "llama.cpp"
+    ],
+    "published": "2026-11-17",
+    "safety_impact": "MEDIUM",
+    "score": 7.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "llama.cpp GGUF File Parsing Integer Overflow Remote Code Execution Vulnerability",
+    "vendors": [
+      "llama.cpp"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-190: Integer Overflow or Wraparound"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
     "cve_id": "CVE-2026-100963",
     "cvss_version": "3.1",
     "cwe": "CWE-190",

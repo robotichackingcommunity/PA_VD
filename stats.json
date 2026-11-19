@@ -6,35 +6,30 @@
     "Humanoid & Legged Robot": 23,
     "Industrial Robot": 4,
     "Mobile Robot & AMR": 54,
-    "Physical AI Infrastructure": 884,
+    "Physical AI Infrastructure": 887,
     "Robot Operating Systems & Middleware": 92,
     "Service & Companion Robot": 48
   },
   "exploitation": {
     "Unknown": 410,
-    "none": 623,
+    "none": 626,
     "poc": 110
   },
-  "generated_at": "2026-11-18T12:02:38Z",
+  "generated_at": "2026-11-19T12:02:22Z",
   "latest_changes": {
-    "added": 8,
+    "added": 3,
     "cves": {
       "added": [
-        "CVE-2026-100963",
-        "CVE-2026-128907",
-        "CVE-2026-128908",
-        "CVE-2026-128909",
-        "CVE-2026-128910",
-        "CVE-2026-130603",
-        "CVE-2026-65167",
-        "CVE-2026-67455"
+        "CVE-2026-126974",
+        "CVE-2026-126975",
+        "CVE-2026-126976"
       ],
       "domains_changed": [],
       "removed_not_physical_ai": [],
       "removed_rejected": [],
       "surfaces_changed": []
     },
-    "date": "2026-11-18",
+    "date": "2026-11-19",
     "domains_changed": 0,
     "removed_not_physical_ai": 0,
     "removed_rejected": 0,
@@ -42,7 +37,7 @@
   },
   "patch_available": {
     "No": 221,
-    "Yes": 922
+    "Yes": 925
   },
   "primary_domains": {
     "Autonomous Vehicle AI": 2,
@@ -51,7 +46,7 @@
     "Humanoid & Legged Robot": 20,
     "Industrial Robot": 4,
     "Mobile Robot & AMR": 40,
-    "Physical AI Infrastructure": 884,
+    "Physical AI Infrastructure": 887,
     "Robot Operating Systems & Middleware": 86,
     "Service & Companion Robot": 45
   },
@@ -78,21 +73,21 @@
     "2026-08": 48,
     "2026-09": 156,
     "2026-10": 52,
-    "2026-11": 15
+    "2026-11": 18
   },
   "published_year": {
     "2025": 166,
-    "2026": 977
+    "2026": 980
   },
   "safety_impact": {
     "CRITICAL": 7,
     "HIGH": 74,
     "LOW": 711,
-    "MEDIUM": 351
+    "MEDIUM": 354
   },
   "severity": {
     "CRITICAL": 117,
-    "HIGH": 528,
+    "HIGH": 531,
     "LOW": 105,
     "MEDIUM": 392,
     "UNKNOWN": 1
@@ -101,8 +96,8 @@
     "AI Model Layer": 52,
     "Perception Layer": 2,
     "Physical Layer": 14,
-    "Software & Cloud": 1137,
+    "Software & Cloud": 1140,
     "Wireless Layer": 57
   },
-  "total": 1143
+  "total": 1146
 }
