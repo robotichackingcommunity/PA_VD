@@ -1,6 +1,43 @@
 [
   {
     "automatable": "no",
+    "cve_id": "CVE-2026-92613",
+    "cvss_version": "4.0",
+    "cwe": "CWE-843",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00141,
+    "epss_percentile": 0.03496,
+    "file_name": "CVE-2026-92613.pavd.json",
+    "last_modified": "2026-11-19",
+    "patch_available": false,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Eclipse iceoryx™"
+    ],
+    "published": "2026-11-19",
+    "safety_impact": "LOW",
+    "score": 1.0,
+    "severity": "LOW",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2026-92613",
+    "vendors": [
+      "Eclipse Foundation"
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-843: Access of Resource Using Incompatible Type",
+      "CWE-125: Out-of-bounds Read"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
     "cve_id": "CVE-2026-67455",
     "cvss_version": "3.1",
     "cwe": "CWE-502",

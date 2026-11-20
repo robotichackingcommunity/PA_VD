@@ -7,36 +7,34 @@
     "Industrial Robot": 4,
     "Mobile Robot & AMR": 54,
     "Physical AI Infrastructure": 887,
-    "Robot Operating Systems & Middleware": 92,
+    "Robot Operating Systems & Middleware": 93,
     "Service & Companion Robot": 48
   },
   "exploitation": {
     "Unknown": 410,
     "none": 626,
-    "poc": 110
+    "poc": 111
   },
-  "generated_at": "2026-11-19T12:02:22Z",
+  "generated_at": "2026-11-20T12:02:21Z",
   "latest_changes": {
-    "added": 3,
+    "added": 1,
     "cves": {
       "added": [
-        "CVE-2026-126974",
-        "CVE-2026-126975",
-        "CVE-2026-126976"
+        "CVE-2026-92613"
       ],
       "domains_changed": [],
       "removed_not_physical_ai": [],
       "removed_rejected": [],
       "surfaces_changed": []
     },
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "domains_changed": 0,
     "removed_not_physical_ai": 0,
     "removed_rejected": 0,
     "surfaces_changed": 0
   },
   "patch_available": {
-    "No": 221,
+    "No": 222,
     "Yes": 925
   },
   "primary_domains": {
@@ -47,7 +45,7 @@
     "Industrial Robot": 4,
     "Mobile Robot & AMR": 40,
     "Physical AI Infrastructure": 887,
-    "Robot Operating Systems & Middleware": 86,
+    "Robot Operating Systems & Middleware": 87,
     "Service & Companion Robot": 45
   },
   "published_month": {
@@ -73,22 +71,22 @@
     "2026-08": 48,
     "2026-09": 156,
     "2026-10": 52,
-    "2026-11": 18
+    "2026-11": 19
   },
   "published_year": {
     "2025": 166,
-    "2026": 980
+    "2026": 981
   },
   "safety_impact": {
     "CRITICAL": 7,
     "HIGH": 74,
-    "LOW": 711,
+    "LOW": 712,
     "MEDIUM": 354
   },
   "severity": {
     "CRITICAL": 117,
     "HIGH": 531,
-    "LOW": 105,
+    "LOW": 106,
     "MEDIUM": 392,
     "UNKNOWN": 1
   },
@@ -96,8 +94,8 @@
     "AI Model Layer": 52,
     "Perception Layer": 2,
     "Physical Layer": 14,
-    "Software & Cloud": 1140,
+    "Software & Cloud": 1141,
     "Wireless Layer": 57
   },
-  "total": 1146
+  "total": 1147
 }
