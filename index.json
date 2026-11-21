@@ -1,5 +1,318 @@
 [
   {
+    "cve_id": "CVE-2026-134052",
+    "cvss_version": "3.0",
+    "cwe": "CWE-122",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "file_name": "CVE-2026-134052.pavd.json",
+    "last_modified": "2026-11-20",
+    "patch_available": false,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "RViz"
+    ],
+    "published": "2026-11-20",
+    "safety_impact": "MEDIUM",
+    "score": 8.8,
+    "severity": "HIGH",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "Open Robotics RViz fillIndexBuffer Heap-based Buffer Overflow Remote Code Execution Vulnerability",
+    "vendors": [
+      "Open Robotics"
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-122: Heap-based Buffer Overflow"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-134051",
+    "cvss_version": "3.0",
+    "cwe": "CWE-125",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "file_name": "CVE-2026-134051.pavd.json",
+    "last_modified": "2026-11-20",
+    "patch_available": false,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "RViz"
+    ],
+    "published": "2026-11-20",
+    "safety_impact": "LOW",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "Open Robotics RViz XYZPCTransformer PointField Out-Of-Bounds Read Denial-of-Service Vulnerability",
+    "vendors": [
+      "Open Robotics"
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-125: Out-of-bounds Read"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-134050",
+    "cvss_version": "3.0",
+    "cwe": "CWE-125",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "file_name": "CVE-2026-134050.pavd.json",
+    "last_modified": "2026-11-20",
+    "patch_available": false,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "RViz"
+    ],
+    "published": "2026-11-20",
+    "safety_impact": "LOW",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "Open Robotics RViz AxisColorPCTransformer PointField Out-Of-Bounds Read Denial-of-Service Vulnerability",
+    "vendors": [
+      "Open Robotics"
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-125: Out-of-bounds Read"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-134049",
+    "cvss_version": "3.0",
+    "cwe": "CWE-125",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "file_name": "CVE-2026-134049.pavd.json",
+    "last_modified": "2026-11-20",
+    "patch_available": false,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "RViz"
+    ],
+    "published": "2026-11-20",
+    "safety_impact": "LOW",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "Open Robotics RViz RGBF32PCTransformer PointField Out-Of-Bounds Read Denial-of-Service Vulnerability",
+    "vendors": [
+      "Open Robotics"
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-125: Out-of-bounds Read"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-134048",
+    "cvss_version": "3.0",
+    "cwe": "CWE-125",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "file_name": "CVE-2026-134048.pavd.json",
+    "last_modified": "2026-11-20",
+    "patch_available": false,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "RViz"
+    ],
+    "published": "2026-11-20",
+    "safety_impact": "LOW",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "Open Robotics RViz RGB8PCTransformer PointField Out-Of-Bounds Read Denial-of-Service Vulnerability",
+    "vendors": [
+      "Open Robotics"
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-125: Out-of-bounds Read"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-134047",
+    "cvss_version": "3.0",
+    "cwe": "CWE-125",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "file_name": "CVE-2026-134047.pavd.json",
+    "last_modified": "2026-11-20",
+    "patch_available": false,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "RViz"
+    ],
+    "published": "2026-11-20",
+    "safety_impact": "LOW",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "Open Robotics RViz IntensityPCTransformer PointField Out-Of-Bounds Read Denial-of-Service Vulnerability",
+    "vendors": [
+      "Open Robotics"
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-125: Out-of-bounds Read"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-134046",
+    "cvss_version": "3.0",
+    "cwe": "CWE-125",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "file_name": "CVE-2026-134046.pavd.json",
+    "last_modified": "2026-11-20",
+    "patch_available": false,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "RViz"
+    ],
+    "published": "2026-11-20",
+    "safety_impact": "LOW",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "Open Robotics RViz MapDisplay OccupancyGridUpdate Out-Of-Bounds Read Denial-of-Service Vulnerability",
+    "vendors": [
+      "Open Robotics"
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-125: Out-of-bounds Read"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-134045",
+    "cvss_version": "3.0",
+    "cwe": "CWE-125",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "file_name": "CVE-2026-134045.pavd.json",
+    "last_modified": "2026-11-20",
+    "patch_available": false,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "RViz"
+    ],
+    "published": "2026-11-20",
+    "safety_impact": "LOW",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "Open Robotics RViz PointCloud2Display PointField Out-of-Bounds Read Denial-of-Service Vulnerability",
+    "vendors": [
+      "Open Robotics"
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-125: Out-of-bounds Read"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-134044",
+    "cvss_version": "3.0",
+    "cwe": "CWE-611",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "file_name": "CVE-2026-134044.pavd.json",
+    "last_modified": "2026-11-20",
+    "patch_available": false,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "ROS 2"
+    ],
+    "published": "2026-11-20",
+    "safety_impact": "LOW",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "Open Robotics ROS 2 sros2 load_policy XML External Entity Processing Information Disclosure Vulnerability",
+    "vendors": [
+      "Open Robotics"
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-611: Improper Restriction of XML External Entity Reference"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2026-133710",
+    "cvss_version": "4.0",
+    "cwe": "CWE-190",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-133710.pavd.json",
+    "last_modified": "2026-11-20",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "llama.cpp"
+    ],
+    "published": "2026-11-20",
+    "safety_impact": "LOW",
+    "score": 8.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "llama.cpp b11003 before b12556 Heap Out-of-Bounds Write via hrm_text Model Loader",
+    "vendors": [
+      "ggml (llama.cpp)"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-190: Integer Overflow or Wraparound"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
     "automatable": "no",
     "cve_id": "CVE-2026-92613",
     "cvss_version": "4.0",

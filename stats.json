@@ -6,36 +6,45 @@
     "Humanoid & Legged Robot": 23,
     "Industrial Robot": 4,
     "Mobile Robot & AMR": 54,
-    "Physical AI Infrastructure": 887,
-    "Robot Operating Systems & Middleware": 93,
+    "Physical AI Infrastructure": 888,
+    "Robot Operating Systems & Middleware": 102,
     "Service & Companion Robot": 48
   },
   "exploitation": {
-    "Unknown": 410,
-    "none": 626,
+    "Unknown": 419,
+    "none": 627,
     "poc": 111
   },
-  "generated_at": "2026-11-20T12:02:21Z",
+  "generated_at": "2026-11-21T12:02:22Z",
   "latest_changes": {
-    "added": 1,
+    "added": 10,
     "cves": {
       "added": [
-        "CVE-2026-92613"
+        "CVE-2026-133710",
+        "CVE-2026-134044",
+        "CVE-2026-134045",
+        "CVE-2026-134046",
+        "CVE-2026-134047",
+        "CVE-2026-134048",
+        "CVE-2026-134049",
+        "CVE-2026-134050",
+        "CVE-2026-134051",
+        "CVE-2026-134052"
       ],
       "domains_changed": [],
       "removed_not_physical_ai": [],
       "removed_rejected": [],
       "surfaces_changed": []
     },
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "domains_changed": 0,
     "removed_not_physical_ai": 0,
     "removed_rejected": 0,
     "surfaces_changed": 0
   },
   "patch_available": {
-    "No": 222,
-    "Yes": 925
+    "No": 231,
+    "Yes": 926
   },
   "primary_domains": {
     "Autonomous Vehicle AI": 2,
@@ -44,8 +53,8 @@
     "Humanoid & Legged Robot": 20,
     "Industrial Robot": 4,
     "Mobile Robot & AMR": 40,
-    "Physical AI Infrastructure": 887,
-    "Robot Operating Systems & Middleware": 87,
+    "Physical AI Infrastructure": 888,
+    "Robot Operating Systems & Middleware": 96,
     "Service & Companion Robot": 45
   },
   "published_month": {
@@ -71,31 +80,31 @@
     "2026-08": 48,
     "2026-09": 156,
     "2026-10": 52,
-    "2026-11": 19
+    "2026-11": 29
   },
   "published_year": {
     "2025": 166,
-    "2026": 981
+    "2026": 991
   },
   "safety_impact": {
     "CRITICAL": 7,
     "HIGH": 74,
-    "LOW": 712,
-    "MEDIUM": 354
+    "LOW": 721,
+    "MEDIUM": 355
   },
   "severity": {
     "CRITICAL": 117,
-    "HIGH": 531,
+    "HIGH": 533,
     "LOW": 106,
-    "MEDIUM": 392,
+    "MEDIUM": 400,
     "UNKNOWN": 1
   },
   "surfaces": {
     "AI Model Layer": 52,
     "Perception Layer": 2,
     "Physical Layer": 14,
-    "Software & Cloud": 1141,
+    "Software & Cloud": 1151,
     "Wireless Layer": 57
   },
-  "total": 1147
+  "total": 1157
 }
