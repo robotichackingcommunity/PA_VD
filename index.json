@@ -1,5 +1,36 @@
 [
   {
+    "cve_id": "CVE-2026-134540",
+    "cvss_version": "4.0",
+    "cwe": "CWE-20",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-134540.pavd.json",
+    "last_modified": "2026-11-21",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "llama.cpp"
+    ],
+    "published": "2026-11-21",
+    "safety_impact": "LOW",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "ggml-org llama.cpp llama-server sampling.cpp common_sampler_init input validation",
+    "vendors": [
+      "ggml (llama.cpp)"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-20: Improper Input Validation"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
     "cve_id": "CVE-2026-134052",
     "cvss_version": "3.0",
     "cwe": "CWE-122",
