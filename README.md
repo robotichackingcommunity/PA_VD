@@ -45,7 +45,7 @@ Each record in [`CVE-json/`](./CVE-json) is a single vulnerability, structured i
 ### Current Coverage
 
 <!-- stats:start -->
-_Auto-generated on 2026-11-22, do not edit by hand._
+_Auto-generated on 2026-11-23, do not edit by hand._
 
 - **1158** vulnerability records (see [`index.json`](./index.json) for the lightweight index, [`stats.json`](./stats.json) for all counts)
 - **Severity:** HIGH (533) · MEDIUM (401) · CRITICAL (117) · LOW (106) · UNKNOWN (1)
