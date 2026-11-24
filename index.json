@@ -1,5 +1,201 @@
 [
   {
+    "cve_id": "CVE-2026-69437",
+    "cvss_version": "3.1",
+    "cwe": "CWE-862",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-69437.pavd.json",
+    "last_modified": "2026-11-23",
+    "patch_available": false,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "Azure AI Foundry"
+    ],
+    "published": "2026-11-23",
+    "safety_impact": "LOW",
+    "score": 8.6,
+    "severity": "HIGH",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "Azure AI Foundry Information Disclosure Vulnerability",
+    "vendors": [
+      "Microsoft"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-862: Missing Authorization"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2026-49964",
+    "cvss_version": "4.0",
+    "cwe": "CWE-639",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "file_name": "CVE-2026-49964.pavd.json",
+    "last_modified": "2026-11-23",
+    "patch_available": true,
+    "primary_domain": "Service & Companion Robot",
+    "products": [
+      "DreameHome"
+    ],
+    "published": "2026-11-23",
+    "safety_impact": "LOW",
+    "score": 7.1,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "DreameHome Cloud API IDOR via token/rtc2 Endpoint",
+    "vendors": [
+      "Dreame Innovation Technology (Suzhou) Co., Ltd."
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-639: Authorization Bypass Through User-Controlled Key"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-49963",
+    "cvss_version": "4.0",
+    "cwe": "CWE-494",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "file_name": "CVE-2026-49963.pavd.json",
+    "last_modified": "2026-11-23",
+    "patch_available": true,
+    "primary_domain": "Service & Companion Robot",
+    "products": [
+      "DreameHome"
+    ],
+    "published": "2026-11-23",
+    "safety_impact": "MEDIUM",
+    "score": 7.6,
+    "severity": "HIGH",
+    "surfaces": [
+      "Software & Cloud",
+      "Wireless Layer"
+    ],
+    "title": "DreameHome before 2.6.4.0 Code Integrity Bypass via RnPluginDownloadManager",
+    "vendors": [
+      "Dreame Innovation Technology (Suzhou) Co., Ltd."
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-494: Download of Code Without Integrity Check"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2026-49962",
+    "cvss_version": "4.0",
+    "cwe": "CWE-863",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "file_name": "CVE-2026-49962.pavd.json",
+    "last_modified": "2026-11-23",
+    "patch_available": true,
+    "primary_domain": "Service & Companion Robot",
+    "products": [
+      "DreameHome"
+    ],
+    "published": "2026-11-23",
+    "safety_impact": "LOW",
+    "score": 7.1,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "DreameHome MQTT Broker Improper Authorization After Share Revocation",
+    "vendors": [
+      "Dreame Innovation Technology (Suzhou) Co., Ltd."
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-863: Incorrect Authorization"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-49961",
+    "cvss_version": "4.0",
+    "cwe": "CWE-863",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "file_name": "CVE-2026-49961.pavd.json",
+    "last_modified": "2026-11-23",
+    "patch_available": true,
+    "primary_domain": "Service & Companion Robot",
+    "products": [
+      "DreameHome"
+    ],
+    "published": "2026-11-23",
+    "safety_impact": "LOW",
+    "score": 7.1,
+    "severity": "HIGH",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "DreameHome MQTT Broker Incorrect Authorization via Status Topic Subscription",
+    "vendors": [
+      "Dreame Innovation Technology (Suzhou) Co., Ltd."
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-863: Incorrect Authorization"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-115232",
+    "cvss_version": "4.0",
+    "cwe": "CWE-170",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00166,
+    "epss_percentile": 0.05798,
+    "file_name": "CVE-2026-115232.pavd.json",
+    "last_modified": "2026-11-23",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Eclipse iceoryx"
+    ],
+    "published": "2026-11-23",
+    "safety_impact": "LOW",
+    "score": 2.1,
+    "severity": "LOW",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "CVE-2026-115232",
+    "vendors": [
+      "Eclipse Foundation"
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-170: Improper Null Termination",
+      "CWE-787: Out-of-bounds Write"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
     "cve_id": "CVE-2026-134540",
     "cvss_version": "4.0",
     "cwe": "CWE-20",
@@ -40685,6 +40881,1527 @@
     "vuln_status": "Analyzed",
     "vulnerability_class": [
       "CWE-120: Buffer Copy without Checking Size of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-12836",
+    "cvss_version": "3.0",
+    "cwe": "CWE-843",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "epss": 0.00345,
+    "epss_percentile": 0.28672,
+    "file_name": "CVE-2024-12836.pavd.json",
+    "last_modified": "2024-12-31",
+    "patch_available": true,
+    "primary_domain": "Industrial Robot",
+    "products": [
+      "DRASimuCAD"
+    ],
+    "published": "2024-12-30",
+    "safety_impact": "MEDIUM",
+    "score": 7.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "Delta Electronics DRASimuCAD STP File Parsing Type Confusion Remote Code Execution Vulnerability",
+    "vendors": [
+      "Delta Electronics"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-843: Access of Resource Using Incompatible Type"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-12835",
+    "cvss_version": "3.0",
+    "cwe": "CWE-787",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "epss": 0.00343,
+    "epss_percentile": 0.28342,
+    "file_name": "CVE-2024-12835.pavd.json",
+    "last_modified": "2024-12-31",
+    "patch_available": true,
+    "primary_domain": "Industrial Robot",
+    "products": [
+      "DRASimuCAD"
+    ],
+    "published": "2024-12-30",
+    "safety_impact": "MEDIUM",
+    "score": 7.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "Delta Electronics DRASimuCAD ICS File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability",
+    "vendors": [
+      "Delta Electronics"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-787: Out-of-bounds Write"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-12834",
+    "cvss_version": "3.0",
+    "cwe": "CWE-843",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "epss": 0.00355,
+    "epss_percentile": 0.29772,
+    "file_name": "CVE-2024-12834.pavd.json",
+    "last_modified": "2024-12-31",
+    "patch_available": true,
+    "primary_domain": "Industrial Robot",
+    "products": [
+      "DRASimuCAD"
+    ],
+    "published": "2024-12-30",
+    "safety_impact": "LOW",
+    "score": 7.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "Delta Electronics DRASimuCAD STP File Parsing Type Confusion Remote Code Execution Vulnerability",
+    "vendors": [
+      "Delta Electronics"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-843: Access of Resource Using Incompatible Type"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-52066",
+    "cvss_version": "4.0",
+    "cwe": "CWE-120",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00297,
+    "epss_percentile": 0.22646,
+    "file_name": "CVE-2024-52066.pavd.json",
+    "last_modified": "2025-02-06",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Connext Professional"
+    ],
+    "published": "2024-12-13",
+    "safety_impact": "MEDIUM",
+    "score": 8.3,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "Potential stack corruption in Routing Service when using a malicious XML configuration document",
+    "vendors": [
+      "RTI"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-52065",
+    "cvss_version": "4.0",
+    "cwe": "CWE-120",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00157,
+    "epss_percentile": 0.04811,
+    "file_name": "CVE-2024-52065.pavd.json",
+    "last_modified": "2025-02-07",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Connext Professional"
+    ],
+    "published": "2024-12-13",
+    "safety_impact": "LOW",
+    "score": 6.9,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "Potential stack buffer write overflow in Persistence Service while parsing malicious environment variable on non-Windows systems",
+    "vendors": [
+      "RTI"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-52064",
+    "cvss_version": "4.0",
+    "cwe": "CWE-120",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00155,
+    "epss_percentile": 0.04653,
+    "file_name": "CVE-2024-52064.pavd.json",
+    "last_modified": "2025-02-07",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Connext Professional"
+    ],
+    "published": "2024-12-13",
+    "safety_impact": "LOW",
+    "score": 6.9,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "Potential stack buffer write overflow in Connext applications while parsing malicious license file",
+    "vendors": [
+      "RTI"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-52063",
+    "cvss_version": "4.0",
+    "cwe": "CWE-120",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00339,
+    "epss_percentile": 0.27802,
+    "file_name": "CVE-2024-52063.pavd.json",
+    "last_modified": "2025-02-07",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Connext Professional"
+    ],
+    "published": "2024-12-13",
+    "safety_impact": "MEDIUM",
+    "score": 8.3,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "Potential stack buffer write overflow in Connext applications while parsing malicious XML types document",
+    "vendors": [
+      "RTI"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-52062",
+    "cvss_version": "4.0",
+    "cwe": "CWE-120",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00167,
+    "epss_percentile": 0.06003,
+    "file_name": "CVE-2024-52062.pavd.json",
+    "last_modified": "2025-02-07",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Connext Professional"
+    ],
+    "published": "2024-12-13",
+    "safety_impact": "MEDIUM",
+    "score": 6.9,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "Potential stack buffer write overflow in Connext applications while parsing malicious XML types document",
+    "vendors": [
+      "RTI"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-52061",
+    "cvss_version": "4.0",
+    "cwe": "CWE-120",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00462,
+    "epss_percentile": 0.40851,
+    "file_name": "CVE-2024-52061.pavd.json",
+    "last_modified": "2025-02-07",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Connext Professional"
+    ],
+    "published": "2024-12-13",
+    "safety_impact": "MEDIUM",
+    "score": 8.3,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "Potential stack buffer overflow when parsing an XML type",
+    "vendors": [
+      "RTI"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-52060",
+    "cvss_version": "4.0",
+    "cwe": "CWE-120",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00314,
+    "epss_percentile": 0.24732,
+    "file_name": "CVE-2024-52060.pavd.json",
+    "last_modified": "2025-02-07",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Connext Professional"
+    ],
+    "published": "2024-12-13",
+    "safety_impact": "MEDIUM",
+    "score": 8.3,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "Potential stack overflow when using XML configuration file referencing environment variables",
+    "vendors": [
+      "RTI"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-52059",
+    "cvss_version": "4.0",
+    "cwe": "CWE-120",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00168,
+    "epss_percentile": 0.06155,
+    "file_name": "CVE-2024-52059.pavd.json",
+    "last_modified": "2026-09-22",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Connext Professional"
+    ],
+    "published": "2024-12-13",
+    "safety_impact": "MEDIUM",
+    "score": 6.9,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow'), Heap-based Buffer Overflow, Integer Overflow or Wraparound vulnerability in RTI Connext Professional (Security Plugins) allows Overflow Variables and Tags.",
+    "vendors": [
+      "RTI"
+    ],
+    "vuln_status": "Modified",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input",
+      "CWE-122: Heap-based Buffer Overflow",
+      "CWE-190: Integer Overflow or Wraparound"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-52058",
+    "cvss_version": "4.0",
+    "cwe": "CWE-78",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00634,
+    "epss_percentile": 0.5136,
+    "file_name": "CVE-2024-52058.pavd.json",
+    "last_modified": "2025-02-07",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Connext Professional"
+    ],
+    "published": "2024-12-13",
+    "safety_impact": "LOW",
+    "score": 8.6,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "Potential arbitrary command execution in System Designer while parsing malicious HTTP/REST requests",
+    "vendors": [
+      "RTI"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-78: Improper Neutralization of Special Elements used in an OS Command"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-52057",
+    "cvss_version": "4.0",
+    "cwe": "CWE-89",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00408,
+    "epss_percentile": 0.35867,
+    "file_name": "CVE-2024-52057.pavd.json",
+    "last_modified": "2025-02-07",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Connext Professional"
+    ],
+    "published": "2024-12-13",
+    "safety_impact": "LOW",
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "Potential arbitrary SQL query execution in Queuing Service while parsing malicious remote commands or configuration files",
+    "vendors": [
+      "RTI"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-89: Improper Neutralization of Special Elements used in an SQL Command"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-44856",
+    "cvss_version": "3.1",
+    "cwe": "CWE-476",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.0059,
+    "epss_percentile": 0.4911,
+    "file_name": "CVE-2024-44856.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": false,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "MEDIUM",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-44856",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-476: NULL Pointer Dereference"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-44855",
+    "cvss_version": "3.1",
+    "cwe": "CWE-476",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.0059,
+    "epss_percentile": 0.4911,
+    "file_name": "CVE-2024-44855.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "MEDIUM",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-44855",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-476: NULL Pointer Dereference"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-44854",
+    "cvss_version": "3.1",
+    "cwe": "CWE-476",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.0059,
+    "epss_percentile": 0.4911,
+    "file_name": "CVE-2024-44854.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "MEDIUM",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-44854",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-476: NULL Pointer Dereference"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-44853",
+    "cvss_version": "3.1",
+    "cwe": "CWE-476",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.0059,
+    "epss_percentile": 0.49109,
+    "file_name": "CVE-2024-44853.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "MEDIUM",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-44853",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-476: NULL Pointer Dereference"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-44852",
+    "cvss_version": "3.1",
+    "cwe": "CWE-763",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00604,
+    "epss_percentile": 0.49864,
+    "file_name": "CVE-2024-44852.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": false,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "MEDIUM",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-44852",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-763: Release of Invalid Pointer or Reference"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-41650",
+    "cvss_version": "3.1",
+    "cwe": "CWE-281",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.0048,
+    "epss_percentile": 0.42265,
+    "file_name": "CVE-2024-41650.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "HIGH",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-41650",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-281: Improper Preservation of Permissions"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-41649",
+    "cvss_version": "3.1",
+    "cwe": "CWE-281",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00696,
+    "epss_percentile": 0.53972,
+    "file_name": "CVE-2024-41649.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "HIGH",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-41649",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-281: Improper Preservation of Permissions"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-41648",
+    "cvss_version": "3.1",
+    "cwe": "CWE-281",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "epss": 0.0048,
+    "epss_percentile": 0.42264,
+    "file_name": "CVE-2024-41648.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": false,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "HIGH",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-41648",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-281: Improper Preservation of Permissions"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-41647",
+    "cvss_version": "3.1",
+    "cwe": "CWE-732",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00696,
+    "epss_percentile": 0.53972,
+    "file_name": "CVE-2024-41647.pavd.json",
+    "last_modified": "2024-12-10",
+    "patch_available": false,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "HIGH",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-41647",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-732: Incorrect Permission Assignment for Critical Resource"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-41646",
+    "cvss_version": "3.1",
+    "cwe": "CWE-281",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00696,
+    "epss_percentile": 0.53972,
+    "file_name": "CVE-2024-41646.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": false,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "HIGH",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-41646",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-281: Improper Preservation of Permissions"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-41645",
+    "cvss_version": "3.1",
+    "cwe": "CWE-281",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00696,
+    "epss_percentile": 0.53971,
+    "file_name": "CVE-2024-41645.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "HIGH",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-41645",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-281: Improper Preservation of Permissions"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-41644",
+    "cvss_version": "3.1",
+    "cwe": "CWE-281",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00696,
+    "epss_percentile": 0.53972,
+    "file_name": "CVE-2024-41644.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "MEDIUM",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-41644",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-281: Improper Preservation of Permissions"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-38927",
+    "cvss_version": "3.1",
+    "cwe": "CWE-416",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00587,
+    "epss_percentile": 0.48993,
+    "file_name": "CVE-2024-38927.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "MEDIUM",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-38927",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-416: Use After Free"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-38926",
+    "cvss_version": "3.1",
+    "cwe": "CWE-416",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00587,
+    "epss_percentile": 0.48993,
+    "file_name": "CVE-2024-38926.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "MEDIUM",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-38926",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-416: Use After Free"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-38925",
+    "cvss_version": "3.1",
+    "cwe": "CWE-416",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00587,
+    "epss_percentile": 0.48992,
+    "file_name": "CVE-2024-38925.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "MEDIUM",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-38925",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-416: Use After Free"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-38924",
+    "cvss_version": "3.1",
+    "cwe": "CWE-416",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00553,
+    "epss_percentile": 0.47061,
+    "file_name": "CVE-2024-38924.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "MEDIUM",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-38924",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-416: Use After Free"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-38923",
+    "cvss_version": "3.1",
+    "cwe": "CWE-416",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00553,
+    "epss_percentile": 0.47061,
+    "file_name": "CVE-2024-38923.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "MEDIUM",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-38923",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-416: Use After Free"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-38922",
+    "cvss_version": "3.1",
+    "cwe": "CWE-120",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00623,
+    "epss_percentile": 0.50817,
+    "file_name": "CVE-2024-38922.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "MEDIUM",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-38922",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-38921",
+    "cvss_version": "3.1",
+    "cwe": "CWE-416",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00601,
+    "epss_percentile": 0.49691,
+    "file_name": "CVE-2024-38921.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-06",
+    "safety_impact": "MEDIUM",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-38921",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-416: Use After Free"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-38920",
+    "cvss_version": "3.1",
+    "cwe": "CWE-416",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00529,
+    "epss_percentile": 0.45655,
+    "file_name": "CVE-2024-38920.pavd.json",
+    "last_modified": "2024-12-06",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-05",
+    "safety_impact": "MEDIUM",
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-38920",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-416: Use After Free"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-38910",
+    "cvss_version": "3.1",
+    "cwe": "CWE-416",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00529,
+    "epss_percentile": 0.45655,
+    "file_name": "CVE-2024-38910.pavd.json",
+    "last_modified": "2024-12-06",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-05",
+    "safety_impact": "MEDIUM",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-38910",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-416: Use After Free"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-37863",
+    "cvss_version": "3.1",
+    "cwe": "CWE-120",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00616,
+    "epss_percentile": 0.50452,
+    "file_name": "CVE-2024-37863.pavd.json",
+    "last_modified": "2024-12-06",
+    "patch_available": false,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-05",
+    "safety_impact": "MEDIUM",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-37863",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-37862",
+    "cvss_version": "3.1",
+    "cwe": "CWE-94",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00304,
+    "epss_percentile": 0.23511,
+    "file_name": "CVE-2024-37862.pavd.json",
+    "last_modified": "2024-12-06",
+    "patch_available": false,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-05",
+    "safety_impact": "MEDIUM",
+    "score": 7.3,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-37862",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-94: Improper Control of Generation of Code"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-37861",
+    "cvss_version": "3.1",
+    "cwe": "CWE-120",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00637,
+    "epss_percentile": 0.51489,
+    "file_name": "CVE-2024-37861.pavd.json",
+    "last_modified": "2024-12-06",
+    "patch_available": false,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-05",
+    "safety_impact": "MEDIUM",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-37861",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-37860",
+    "cvss_version": "3.1",
+    "cwe": "CWE-94",
+    "domains": [
+      "Mobile Robot & AMR"
+    ],
+    "epss": 0.00307,
+    "epss_percentile": 0.23889,
+    "file_name": "CVE-2024-37860.pavd.json",
+    "last_modified": "2024-12-06",
+    "patch_available": false,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-05",
+    "safety_impact": "MEDIUM",
+    "score": 7.3,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-37860",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-94: Improper Control of Generation of Code"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-30964",
+    "cvss_version": "3.1",
+    "cwe": "CWE-94",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00225,
+    "epss_percentile": 0.13157,
+    "file_name": "CVE-2024-30964.pavd.json",
+    "last_modified": "2024-12-06",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-05",
+    "safety_impact": "MEDIUM",
+    "score": 7.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-30964",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-94: Improper Control of Generation of Code"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-30963",
+    "cvss_version": "3.1",
+    "cwe": "CWE-94",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00229,
+    "epss_percentile": 0.13808,
+    "file_name": "CVE-2024-30963.pavd.json",
+    "last_modified": "2024-12-06",
+    "patch_available": false,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-05",
+    "safety_impact": "MEDIUM",
+    "score": 7.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-30963",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-94: Improper Control of Generation of Code"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-30962",
+    "cvss_version": "3.1",
+    "cwe": "CWE-94",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.0029,
+    "epss_percentile": 0.21867,
+    "file_name": "CVE-2024-30962.pavd.json",
+    "last_modified": "2025-01-09",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-05",
+    "safety_impact": "HIGH",
+    "score": 7.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-30962",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Modified",
+    "vulnerability_class": [
+      "CWE-94: Improper Control of Generation of Code"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-30961",
+    "cvss_version": "3.1",
+    "cwe": "CWE-94",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00295,
+    "epss_percentile": 0.22501,
+    "file_name": "CVE-2024-30961.pavd.json",
+    "last_modified": "2024-12-11",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-12-05",
+    "safety_impact": "MEDIUM",
+    "score": 7.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-30961",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-94: Improper Control of Generation of Code"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-53104",
+    "cvss_version": "3.1",
+    "cwe": "CWE-787",
+    "domains": [
+      "Humanoid & Legged Robot"
+    ],
+    "epss": 0.03395,
+    "epss_percentile": 0.89134,
+    "file_name": "CVE-2024-53104.pavd.json",
+    "last_modified": "2026-05-11",
+    "patch_available": true,
+    "primary_domain": "Humanoid & Legged Robot",
+    "products": [
+      "Linux"
+    ],
+    "published": "2024-12-02",
+    "safety_impact": "MEDIUM",
+    "score": 7.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "active",
+    "surfaces": [
+      "Physical Layer",
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "media: uvcvideo: Skip parsing frames of type UVC_VS_UNDEFINED in uvc_parse_format",
+    "vendors": [
+      "Linux"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-787: Out-of-bounds Write"
     ],
     "vulnerability_class_source": "cve"
   }
