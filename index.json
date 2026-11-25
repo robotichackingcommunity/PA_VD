@@ -1,5 +1,290 @@
 [
   {
+    "cve_id": "CVE-2026-136433",
+    "cvss_version": "3.0",
+    "cwe": "CWE-502",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-136433.pavd.json",
+    "last_modified": "2026-11-24",
+    "patch_available": false,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "PyTorch"
+    ],
+    "published": "2026-11-24",
+    "safety_impact": "MEDIUM",
+    "score": 7.8,
+    "severity": "HIGH",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "PyTorch Foundation PyTorch torch_save_to_dcp Deserialization of Untrusted Data Remote Code Execution Vulnerability",
+    "vendors": [
+      "PyTorch Foundation"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-502: Deserialization of Untrusted Data"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-136432",
+    "cvss_version": "3.0",
+    "cwe": "CWE-502",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-136432.pavd.json",
+    "last_modified": "2026-11-24",
+    "patch_available": false,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "PyTorch"
+    ],
+    "published": "2026-11-24",
+    "safety_impact": "LOW",
+    "score": 7.8,
+    "severity": "HIGH",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "PyTorch Foundation PyTorch FileSystemReader Deserialization of Untrusted Data Remote Code Execution Vulnerability",
+    "vendors": [
+      "PyTorch Foundation"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-502: Deserialization of Untrusted Data"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-136431",
+    "cvss_version": "3.0",
+    "cwe": "CWE-502",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-136431.pavd.json",
+    "last_modified": "2026-11-24",
+    "patch_available": false,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "PyTorch"
+    ],
+    "published": "2026-11-24",
+    "safety_impact": "LOW",
+    "score": 7.8,
+    "severity": "HIGH",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "PyTorch Foundation PyTorch load_state_dict_from_url Deserialization of Untrusted Data Remote Code Execution Vulnerability",
+    "vendors": [
+      "PyTorch Foundation"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-502: Deserialization of Untrusted Data"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-136430",
+    "cvss_version": "3.0",
+    "cwe": "CWE-22",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-136430.pavd.json",
+    "last_modified": "2026-11-24",
+    "patch_available": false,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "PyTorch"
+    ],
+    "published": "2026-11-24",
+    "safety_impact": "LOW",
+    "score": 7.8,
+    "severity": "HIGH",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "PyTorch Foundation PyTorch AOTIModelPackageLoader  Directory Traversal Remote Code Execution Vulnerability",
+    "vendors": [
+      "PyTorch Foundation"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-22: Improper Limitation of a Pathname to a Restricted Directory"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-136429",
+    "cvss_version": "3.0",
+    "cwe": "CWE-749",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-136429.pavd.json",
+    "last_modified": "2026-11-24",
+    "patch_available": false,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "PyTorch"
+    ],
+    "published": "2026-11-24",
+    "safety_impact": "LOW",
+    "score": 7.0,
+    "severity": "HIGH",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "PyTorch Foundation PyTorch PT2 File Parsing Exposed Dangerous Method Remote Code Execution Vulnerability",
+    "vendors": [
+      "PyTorch Foundation"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-749: Exposed Dangerous Method or Function"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-136428",
+    "cvss_version": "3.0",
+    "cwe": "CWE-502",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-136428.pavd.json",
+    "last_modified": "2026-11-24",
+    "patch_available": false,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "PyTorch"
+    ],
+    "published": "2026-11-24",
+    "safety_impact": "LOW",
+    "score": 7.8,
+    "severity": "HIGH",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "PyTorch Foundation PyTorch load_compiled_function Deserialization of Untrusted Data Remote Code Execution Vulnerability",
+    "vendors": [
+      "PyTorch Foundation"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-502: Deserialization of Untrusted Data"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "cve_id": "CVE-2026-136427",
+    "cvss_version": "3.0",
+    "cwe": "CWE-78",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-136427.pavd.json",
+    "last_modified": "2026-11-24",
+    "patch_available": false,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "PyTorch"
+    ],
+    "published": "2026-11-24",
+    "safety_impact": "LOW",
+    "score": 7.8,
+    "severity": "HIGH",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "PyTorch Foundation PyTorch AOTIModelPackageLoader Command Injection Remote Code Execution Vulnerability",
+    "vendors": [
+      "PyTorch Foundation"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-78: Improper Neutralization of Special Elements used in an OS Command"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2026-100969",
+    "cvss_version": "3.1",
+    "cwe": "CWE-476",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-100969.pavd.json",
+    "last_modified": "2026-11-24",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "Triton Inference Server"
+    ],
+    "published": "2026-11-24",
+    "safety_impact": "LOW",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2026-100969",
+    "vendors": [
+      "NVIDIA"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-476: NULL Pointer Dereference"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2026-100965",
+    "cvss_version": "3.1",
+    "cwe": "CWE-248",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-100965.pavd.json",
+    "last_modified": "2026-11-24",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "Triton Inference Server"
+    ],
+    "published": "2026-11-24",
+    "safety_impact": "LOW",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2026-100965",
+    "vendors": [
+      "NVIDIA"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-248: Uncaught Exception"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
     "cve_id": "CVE-2026-69437",
     "cvss_version": "3.1",
     "cwe": "CWE-862",
@@ -42402,6 +42687,536 @@
     "vuln_status": "Analyzed",
     "vulnerability_class": [
       "CWE-787: Out-of-bounds Write"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-11394",
+    "cvss_version": "3.1",
+    "cwe": "CWE-502",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.02731,
+    "epss_percentile": 0.86356,
+    "file_name": "CVE-2024-11394.pavd.json",
+    "last_modified": "2024-12-04",
+    "patch_available": false,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "Transformers"
+    ],
+    "published": "2024-11-22",
+    "safety_impact": "LOW",
+    "score": 8.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "Hugging Face Transformers Trax Model Deserialization of Untrusted Data Remote Code Execution Vulnerability",
+    "vendors": [
+      "Hugging Face"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-502: Deserialization of Untrusted Data"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-52876",
+    "cvss_version": "3.1",
+    "cwe": "CWE-125",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00468,
+    "epss_percentile": 0.41052,
+    "file_name": "CVE-2024-52876.pavd.json",
+    "last_modified": "2024-11-18",
+    "patch_available": true,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [],
+    "published": "2024-11-17",
+    "safety_impact": "LOW",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Wireless Layer",
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-52876",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-125: Out-of-bounds Read"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-32048",
+    "cvss_version": "4.0",
+    "cwe": "CWE-20",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00297,
+    "epss_percentile": 0.22422,
+    "file_name": "CVE-2024-32048.pavd.json",
+    "last_modified": "2024-11-14",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "Intel(R) Distribution of OpenVINO(TM) Model Server software"
+    ],
+    "published": "2024-11-13",
+    "safety_impact": "LOW",
+    "score": 6.0,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-32048",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-20: Improper Input Validation"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-21976",
+    "cvss_version": "3.1",
+    "cwe": "CWE-20",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00266,
+    "epss_percentile": 0.18514,
+    "file_name": "CVE-2024-21976.pavd.json",
+    "last_modified": "2025-08-26",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "AMD Ryzen™ AI Software"
+    ],
+    "published": "2024-11-12",
+    "safety_impact": "LOW",
+    "score": 8.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-21976",
+    "vendors": [
+      "AMD"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-20: Improper Input Validation"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-21975",
+    "cvss_version": "3.1",
+    "cwe": "CWE-20",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00268,
+    "epss_percentile": 0.18905,
+    "file_name": "CVE-2024-21975.pavd.json",
+    "last_modified": "2024-11-13",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "AMD Ryzen™ AI Software"
+    ],
+    "published": "2024-11-12",
+    "safety_impact": "LOW",
+    "score": 7.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-21975",
+    "vendors": [
+      "AMD"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-20: Improper Input Validation"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-39722",
+    "cvss_version": "3.1",
+    "cwe": "CWE-22",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.03972,
+    "epss_percentile": 0.90646,
+    "file_name": "CVE-2024-39722.pavd.json",
+    "last_modified": "2024-11-01",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [],
+    "published": "2024-10-31",
+    "safety_impact": "LOW",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-39722",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-22: Improper Limitation of a Pathname to a Restricted Directory"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-39721",
+    "cvss_version": "3.1",
+    "cwe": "CWE-404",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.02665,
+    "epss_percentile": 0.85999,
+    "file_name": "CVE-2024-39721.pavd.json",
+    "last_modified": "2024-11-01",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [],
+    "published": "2024-10-31",
+    "safety_impact": "LOW",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-39721",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-404: Improper Resource Shutdown or Release"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-39720",
+    "cvss_version": "3.1",
+    "cwe": "CWE-125",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.02443,
+    "epss_percentile": 0.84621,
+    "file_name": "CVE-2024-39720.pavd.json",
+    "last_modified": "2024-11-01",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [],
+    "published": "2024-10-31",
+    "safety_impact": "LOW",
+    "score": 8.2,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-39720",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-125: Out-of-bounds Read"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-39719",
+    "cvss_version": "3.1",
+    "cwe": "CWE-209",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.0424,
+    "epss_percentile": 0.91182,
+    "file_name": "CVE-2024-39719.pavd.json",
+    "last_modified": "2024-11-01",
+    "patch_available": false,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [],
+    "published": "2024-10-31",
+    "safety_impact": "LOW",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-39719",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-209: Generation of Error Message Containing Sensitive Information"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-48063",
+    "cvss_version": "3.1",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.01617,
+    "epss_percentile": 0.76533,
+    "file_name": "CVE-2024-48063.pavd.json",
+    "last_modified": "2025-01-09",
+    "patch_available": false,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [],
+    "published": "2024-10-29",
+    "safety_impact": "LOW",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-48063",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-502: Deserialization of Untrusted Data"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-48790",
+    "cvss_version": "3.1",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "epss": 0.00282,
+    "epss_percentile": 0.20785,
+    "file_name": "CVE-2024-48790.pavd.json",
+    "last_modified": "2024-10-16",
+    "patch_available": false,
+    "primary_domain": "Service & Companion Robot",
+    "products": [],
+    "published": "2024-10-14",
+    "safety_impact": "LOW",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-48790",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-284: Improper Access Control",
+      "CWE-639: Authorization Bypass Through User-Controlled Key",
+      "CWE-200: Exposure of Sensitive Information to an Unauthorized Actor"
+    ],
+    "vulnerability_class_source": "ai"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-6157",
+    "cvss_version": "3.1",
+    "cwe": "CWE-476",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "epss": 0.00151,
+    "epss_percentile": 0.04229,
+    "file_name": "CVE-2024-6157.pavd.json",
+    "last_modified": "2024-10-10",
+    "patch_available": true,
+    "primary_domain": "Industrial Robot",
+    "products": [
+      "RobotWare 6"
+    ],
+    "published": "2024-10-10",
+    "safety_impact": "MEDIUM",
+    "score": 5.1,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-6157",
+    "vendors": [
+      "ABB"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-476: NULL Pointer Dereference"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-45252",
+    "cvss_version": "3.1",
+    "cwe": "CWE-78",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.01007,
+    "epss_percentile": 0.63726,
+    "file_name": "CVE-2024-45252.pavd.json",
+    "last_modified": "2024-10-07",
+    "patch_available": false,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [
+      "Halo version 11.7.1.5"
+    ],
+    "published": "2024-10-06",
+    "safety_impact": "HIGH",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud",
+      "Wireless Layer"
+    ],
+    "technical_impact": "total",
+    "title": "Elsight – CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+    "vendors": [
+      "Elsight"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-78: Improper Neutralization of Special Elements used in an OS Command"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-45251",
+    "cvss_version": "3.1",
+    "cwe": "CWE-78",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Mobile Robot & AMR"
+    ],
+    "epss": 0.01007,
+    "epss_percentile": 0.63726,
+    "file_name": "CVE-2024-45251.pavd.json",
+    "last_modified": "2024-10-07",
+    "patch_available": false,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [
+      "Halo version 11.7.1.5"
+    ],
+    "published": "2024-10-06",
+    "safety_impact": "HIGH",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud",
+      "Wireless Layer"
+    ],
+    "technical_impact": "total",
+    "title": "Elsight – CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+    "vendors": [
+      "Elsight"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-78: Improper Neutralization of Special Elements used in an OS Command"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-0116",
+    "cvss_version": "3.1",
+    "cwe": "CWE-125",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00466,
+    "epss_percentile": 0.40843,
+    "file_name": "CVE-2024-0116.pavd.json",
+    "last_modified": "2024-10-01",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "Triton Inference Server"
+    ],
+    "published": "2024-10-01",
+    "safety_impact": "LOW",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-0116",
+    "vendors": [
+      "NVIDIA"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-125: Out-of-bounds Read"
     ],
     "vulnerability_class_source": "cve"
   }

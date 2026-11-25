@@ -1,103 +1,80 @@
 {
   "domains": {
     "Autonomous Vehicle AI": 2,
-    "Drone & Aerial Robotics": 57,
+    "Drone & Aerial Robotics": 60,
     "Embodied AI Agent": 6,
     "Humanoid & Legged Robot": 24,
-    "Industrial Robot": 7,
-    "Mobile Robot & AMR": 83,
-    "Physical AI Infrastructure": 890,
+    "Industrial Robot": 8,
+    "Mobile Robot & AMR": 84,
+    "Physical AI Infrastructure": 909,
     "Robot Operating Systems & Middleware": 141,
-    "Service & Companion Robot": 52
+    "Service & Companion Robot": 53
   },
   "exploitation": {
-    "Unknown": 424,
+    "Unknown": 431,
     "active": 1,
-    "none": 644,
-    "poc": 138
+    "none": 655,
+    "poc": 144
   },
-  "generated_at": "2026-11-24T12:02:26Z",
+  "generated_at": "2026-11-25T12:02:31Z",
   "latest_changes": {
-    "added": 49,
+    "added": 24,
     "cves": {
       "added": [
-        "CVE-2024-12834",
-        "CVE-2024-12835",
-        "CVE-2024-12836",
-        "CVE-2024-30961",
-        "CVE-2024-30962",
-        "CVE-2024-30963",
-        "CVE-2024-30964",
-        "CVE-2024-37860",
-        "CVE-2024-37861",
-        "CVE-2024-37862",
-        "CVE-2024-37863",
-        "CVE-2024-38910",
-        "CVE-2024-38920",
-        "CVE-2024-38921",
-        "CVE-2024-38922",
-        "CVE-2024-38923",
-        "CVE-2024-38924",
-        "CVE-2024-38925",
-        "CVE-2024-38926",
-        "CVE-2024-38927",
-        "CVE-2024-41644",
-        "CVE-2024-41645",
-        "CVE-2024-41646",
-        "CVE-2024-41647",
-        "CVE-2024-41648",
-        "CVE-2024-41649",
-        "CVE-2024-41650",
-        "CVE-2024-44852",
-        "CVE-2024-44853",
-        "CVE-2024-44854",
-        "CVE-2024-44855",
-        "CVE-2024-44856",
-        "CVE-2024-52057",
-        "CVE-2024-52058",
-        "CVE-2024-52059",
-        "CVE-2024-52060",
-        "CVE-2024-52061",
-        "CVE-2024-52062",
-        "CVE-2024-52063",
-        "CVE-2024-52064",
-        "CVE-2024-52065",
-        "CVE-2024-52066",
-        "CVE-2024-53104",
-        "CVE-2026-115232",
-        "CVE-2026-49961",
-        "CVE-2026-49962",
-        "CVE-2026-49963",
-        "CVE-2026-49964",
-        "CVE-2026-69437"
+        "CVE-2024-0116",
+        "CVE-2024-11394",
+        "CVE-2024-21975",
+        "CVE-2024-21976",
+        "CVE-2024-32048",
+        "CVE-2024-39719",
+        "CVE-2024-39720",
+        "CVE-2024-39721",
+        "CVE-2024-39722",
+        "CVE-2024-45251",
+        "CVE-2024-45252",
+        "CVE-2024-48063",
+        "CVE-2024-48790",
+        "CVE-2024-52876",
+        "CVE-2024-6157",
+        "CVE-2026-100965",
+        "CVE-2026-100969",
+        "CVE-2026-136427",
+        "CVE-2026-136428",
+        "CVE-2026-136429",
+        "CVE-2026-136430",
+        "CVE-2026-136431",
+        "CVE-2026-136432",
+        "CVE-2026-136433"
       ],
       "domains_changed": [],
       "removed_not_physical_ai": [],
       "removed_rejected": [],
       "surfaces_changed": []
     },
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "domains_changed": 0,
     "removed_not_physical_ai": 0,
     "removed_rejected": 0,
     "surfaces_changed": 0
   },
   "patch_available": {
-    "No": 242,
-    "Yes": 965
+    "No": 255,
+    "Yes": 976
   },
   "primary_domains": {
     "Autonomous Vehicle AI": 2,
-    "Drone & Aerial Robotics": 57,
+    "Drone & Aerial Robotics": 60,
     "Embodied AI Agent": 5,
     "Humanoid & Legged Robot": 21,
-    "Industrial Robot": 7,
+    "Industrial Robot": 8,
     "Mobile Robot & AMR": 68,
-    "Physical AI Infrastructure": 890,
+    "Physical AI Infrastructure": 909,
     "Robot Operating Systems & Middleware": 108,
-    "Service & Companion Robot": 49
+    "Service & Companion Robot": 50
   },
   "published_month": {
+    "2024-10": 10,
+    "2024-11": 5,
     "2024-12": 43,
     "2025-01": 15,
     "2025-02": 3,
@@ -121,32 +98,32 @@
     "2026-08": 48,
     "2026-09": 156,
     "2026-10": 52,
-    "2026-11": 36
+    "2026-11": 45
   },
   "published_year": {
-    "2024": 43,
+    "2024": 58,
     "2025": 166,
-    "2026": 998
+    "2026": 1007
   },
   "safety_impact": {
     "CRITICAL": 7,
-    "HIGH": 81,
-    "LOW": 732,
-    "MEDIUM": 387
+    "HIGH": 83,
+    "LOW": 752,
+    "MEDIUM": 389
   },
   "severity": {
-    "CRITICAL": 136,
-    "HIGH": 558,
+    "CRITICAL": 139,
+    "HIGH": 575,
     "LOW": 107,
-    "MEDIUM": 405,
+    "MEDIUM": 409,
     "UNKNOWN": 1
   },
   "surfaces": {
     "AI Model Layer": 52,
     "Perception Layer": 2,
     "Physical Layer": 15,
-    "Software & Cloud": 1201,
-    "Wireless Layer": 58
+    "Software & Cloud": 1225,
+    "Wireless Layer": 61
   },
-  "total": 1207
+  "total": 1231
 }
