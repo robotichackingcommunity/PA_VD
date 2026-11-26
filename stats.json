@@ -6,52 +6,37 @@
     "Humanoid & Legged Robot": 24,
     "Industrial Robot": 8,
     "Mobile Robot & AMR": 84,
-    "Physical AI Infrastructure": 909,
+    "Physical AI Infrastructure": 918,
     "Robot Operating Systems & Middleware": 141,
     "Service & Companion Robot": 53
   },
   "exploitation": {
-    "Unknown": 431,
+    "Unknown": 432,
     "active": 1,
-    "none": 655,
-    "poc": 144
+    "none": 658,
+    "poc": 149
   },
-  "generated_at": "2026-11-25T12:02:31Z",
+  "generated_at": "2026-11-26T12:02:33Z",
   "latest_changes": {
-    "added": 24,
+    "added": 9,
     "cves": {
       "added": [
-        "CVE-2024-0116",
-        "CVE-2024-11394",
-        "CVE-2024-21975",
-        "CVE-2024-21976",
-        "CVE-2024-32048",
-        "CVE-2024-39719",
-        "CVE-2024-39720",
-        "CVE-2024-39721",
-        "CVE-2024-39722",
-        "CVE-2024-45251",
-        "CVE-2024-45252",
-        "CVE-2024-48063",
-        "CVE-2024-48790",
-        "CVE-2024-52876",
-        "CVE-2024-6157",
-        "CVE-2026-100965",
-        "CVE-2026-100969",
-        "CVE-2026-136427",
-        "CVE-2026-136428",
-        "CVE-2026-136429",
-        "CVE-2026-136430",
-        "CVE-2026-136431",
-        "CVE-2026-136432",
-        "CVE-2026-136433"
+        "CVE-2023-33976",
+        "CVE-2024-41130",
+        "CVE-2024-42477",
+        "CVE-2024-42478",
+        "CVE-2024-42479",
+        "CVE-2024-45436",
+        "CVE-2024-7340",
+        "CVE-2026-137057",
+        "CVE-2026-137083"
       ],
       "domains_changed": [],
       "removed_not_physical_ai": [],
       "removed_rejected": [],
       "surfaces_changed": []
     },
-    "date": "2026-11-25",
+    "date": "2026-11-26",
     "domains_changed": 0,
     "removed_not_physical_ai": 0,
     "removed_rejected": 0,
@@ -59,7 +44,7 @@
   },
   "patch_available": {
     "No": 255,
-    "Yes": 976
+    "Yes": 985
   },
   "primary_domains": {
     "Autonomous Vehicle AI": 2,
@@ -68,11 +53,13 @@
     "Humanoid & Legged Robot": 21,
     "Industrial Robot": 8,
     "Mobile Robot & AMR": 68,
-    "Physical AI Infrastructure": 909,
+    "Physical AI Infrastructure": 918,
     "Robot Operating Systems & Middleware": 108,
     "Service & Companion Robot": 50
   },
   "published_month": {
+    "2024-07": 3,
+    "2024-08": 4,
     "2024-10": 10,
     "2024-11": 5,
     "2024-12": 43,
@@ -98,32 +85,32 @@
     "2026-08": 48,
     "2026-09": 156,
     "2026-10": 52,
-    "2026-11": 45
+    "2026-11": 47
   },
   "published_year": {
-    "2024": 58,
+    "2024": 65,
     "2025": 166,
-    "2026": 1007
+    "2026": 1009
   },
   "safety_impact": {
     "CRITICAL": 7,
     "HIGH": 83,
-    "LOW": 752,
-    "MEDIUM": 389
+    "LOW": 760,
+    "MEDIUM": 390
   },
   "severity": {
-    "CRITICAL": 139,
-    "HIGH": 575,
+    "CRITICAL": 141,
+    "HIGH": 580,
     "LOW": 107,
-    "MEDIUM": 409,
+    "MEDIUM": 411,
     "UNKNOWN": 1
   },
   "surfaces": {
     "AI Model Layer": 52,
     "Perception Layer": 2,
     "Physical Layer": 15,
-    "Software & Cloud": 1225,
+    "Software & Cloud": 1234,
     "Wireless Layer": 61
   },
-  "total": 1231
+  "total": 1240
 }

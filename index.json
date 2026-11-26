@@ -1,5 +1,70 @@
 [
   {
+    "cve_id": "CVE-2026-137083",
+    "cvss_version": "4.0",
+    "cwe": "CWE-125",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-137083.pavd.json",
+    "last_modified": "2026-11-25",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "OpenCV"
+    ],
+    "published": "2026-11-25",
+    "safety_impact": "LOW",
+    "score": 5.8,
+    "severity": "MEDIUM",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "OpenCV 3.0.0 through 4.14.0 and 5.0.0 through 5.1.0 MJPEG Encoder Out-of-Bounds Read",
+    "vendors": [
+      "OpenCV"
+    ],
+    "vuln_status": "Received",
+    "vulnerability_class": [
+      "CWE-125: Out-of-bounds Read"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2026-137057",
+    "cvss_version": "4.0",
+    "cwe": "CWE-191",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-137057.pavd.json",
+    "last_modified": "2026-11-25",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "llama.cpp"
+    ],
+    "published": "2026-11-25",
+    "safety_impact": "LOW",
+    "score": 8.7,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "llama.cpp b7118 before b12604 Integer Underflow in Grammar Parser parse_sequence",
+    "vendors": [
+      "ggml (llama.cpp)"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-191: Integer Underflow (Wrap or Wraparound)"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
     "cve_id": "CVE-2026-136433",
     "cvss_version": "3.0",
     "cwe": "CWE-502",
@@ -43217,6 +43282,257 @@
     "vuln_status": "Analyzed",
     "vulnerability_class": [
       "CWE-125: Out-of-bounds Read"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-45436",
+    "cvss_version": "3.1",
+    "cwe": "CWE-22",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.03799,
+    "epss_percentile": 0.90767,
+    "file_name": "CVE-2024-45436.pavd.json",
+    "last_modified": "2024-08-29",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [],
+    "published": "2024-08-29",
+    "safety_impact": "LOW",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-45436",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-22: Improper Limitation of a Pathname to a Restricted Directory"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-42479",
+    "cvss_version": "3.1",
+    "cwe": "CWE-123",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.01063,
+    "epss_percentile": 0.6402,
+    "file_name": "CVE-2024-42479.pavd.json",
+    "last_modified": "2024-08-13",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "llama.cpp"
+    ],
+    "published": "2024-08-12",
+    "safety_impact": "MEDIUM",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "llama.cpp allows write-what-where in rpc_server::set_tensor",
+    "vendors": [
+      "ggerganov"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-123: Write-what-where Condition"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-42478",
+    "cvss_version": "3.1",
+    "cwe": "CWE-125",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00854,
+    "epss_percentile": 0.55765,
+    "file_name": "CVE-2024-42478.pavd.json",
+    "last_modified": "2024-08-16",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "llama.cpp"
+    ],
+    "published": "2024-08-12",
+    "safety_impact": "LOW",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "llama.cpp allows Arbitrary Address Read in rpc_server::get_tensor",
+    "vendors": [
+      "ggerganov"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-125: Out-of-bounds Read"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-42477",
+    "cvss_version": "3.1",
+    "cwe": "CWE-125",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00689,
+    "epss_percentile": 0.48051,
+    "file_name": "CVE-2024-42477.pavd.json",
+    "last_modified": "2024-08-13",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "llama.cpp"
+    ],
+    "published": "2024-08-12",
+    "safety_impact": "LOW",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "llama.cpp global-buffer-overflow in ggml_type_size",
+    "vendors": [
+      "ggerganov"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-125: Out-of-bounds Read"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-7340",
+    "cvss_version": "3.1",
+    "cwe": "CWE-22",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.05406,
+    "epss_percentile": 0.93455,
+    "file_name": "CVE-2024-7340.pavd.json",
+    "last_modified": "2024-11-25",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "weave"
+    ],
+    "published": "2024-07-31",
+    "safety_impact": "LOW",
+    "score": 8.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "W&B Weave server remote arbitrary file leak and privilege escalation",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-22: Improper Limitation of a Pathname to a Restricted Directory",
+      "CWE-20: Improper Input Validation"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2023-33976",
+    "cvss_version": "3.1",
+    "cwe": "CWE-190",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00512,
+    "epss_percentile": 0.36947,
+    "file_name": "CVE-2023-33976.pavd.json",
+    "last_modified": "2024-08-02",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "tensorflow"
+    ],
+    "published": "2024-07-30",
+    "safety_impact": "LOW",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "TensorFlow segfault in array_ops.upper_bound",
+    "vendors": [
+      "tensorflow"
+    ],
+    "vuln_status": "Modified",
+    "vulnerability_class": [
+      "CWE-190: Integer Overflow or Wraparound"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-41130",
+    "cvss_version": "3.1",
+    "cwe": "CWE-476",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00619,
+    "epss_percentile": 0.43935,
+    "file_name": "CVE-2024-41130.pavd.json",
+    "last_modified": "2024-08-02",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "llama.cpp"
+    ],
+    "published": "2024-07-22",
+    "safety_impact": "LOW",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "llama.cpp null pointer dereference in gguf_init_from_file",
+    "vendors": [
+      "ggerganov"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-476: NULL Pointer Dereference"
     ],
     "vulnerability_class_source": "cve"
   }
