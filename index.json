@@ -1,5 +1,36 @@
 [
   {
+    "cve_id": "CVE-2026-137567",
+    "cvss_version": "4.0",
+    "cwe": "CWE-787",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "file_name": "CVE-2026-137567.pavd.json",
+    "last_modified": "2026-11-26",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "llama.cpp"
+    ],
+    "published": "2026-11-26",
+    "safety_impact": "MEDIUM",
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "title": "llama.cpp b11450 before b12658 Out-of-Bounds Write via RPC copy_tensor",
+    "vendors": [
+      "ggml (llama.cpp)"
+    ],
+    "vuln_status": "Awaiting Analysis",
+    "vulnerability_class": [
+      "CWE-787: Out-of-bounds Write"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
     "cve_id": "CVE-2026-137083",
     "cvss_version": "4.0",
     "cwe": "CWE-125",
@@ -43533,6 +43564,1122 @@
     "vuln_status": "Analyzed",
     "vulnerability_class": [
       "CWE-476: NULL Pointer Dereference"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-38952",
+    "cvss_version": "3.1",
+    "cwe": "CWE-120",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.01198,
+    "epss_percentile": 0.68029,
+    "file_name": "CVE-2024-38952.pavd.json",
+    "last_modified": "2024-08-14",
+    "patch_available": false,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [],
+    "published": "2024-06-25",
+    "safety_impact": "MEDIUM",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-38952",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-38951",
+    "cvss_version": "3.1",
+    "cwe": "CWE-120",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00505,
+    "epss_percentile": 0.36306,
+    "file_name": "CVE-2024-38951.pavd.json",
+    "last_modified": "2024-10-28",
+    "patch_available": false,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [],
+    "published": "2024-06-25",
+    "safety_impact": "HIGH",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Wireless Layer",
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-38951",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-0103",
+    "cvss_version": "3.1",
+    "cwe": "CWE-1419",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00513,
+    "epss_percentile": 0.37017,
+    "file_name": "CVE-2024-0103.pavd.json",
+    "last_modified": "2024-08-01",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "NVIDIA Triton Inference Server"
+    ],
+    "published": "2024-06-13",
+    "safety_impact": "LOW",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE",
+    "vendors": [
+      "NVIDIA"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-1419: Incorrect Initialization of Resource"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-0095",
+    "cvss_version": "3.1",
+    "cwe": "CWE-117",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00972,
+    "epss_percentile": 0.60685,
+    "file_name": "CVE-2024-0095.pavd.json",
+    "last_modified": "2024-08-01",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "NVIDIA Triton Inference Server"
+    ],
+    "published": "2024-06-13",
+    "safety_impact": "LOW",
+    "score": 7.2,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE",
+    "vendors": [
+      "NVIDIA"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-117: Improper Output Neutralization for Logs"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-3095",
+    "cvss_version": "3.1",
+    "cwe": "CWE-918",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00747,
+    "epss_percentile": 0.50949,
+    "file_name": "CVE-2024-3095.pavd.json",
+    "last_modified": "2024-08-01",
+    "patch_available": false,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "langchain-ai/langchain"
+    ],
+    "published": "2024-06-06",
+    "safety_impact": "LOW",
+    "score": 7.7,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "SSRF in Langchain Web Research Retriever in langchain-ai/langchain",
+    "vendors": [
+      "LangChain"
+    ],
+    "vuln_status": "Modified",
+    "vulnerability_class": [
+      "CWE-918: Server-Side Request Forgery"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-37032",
+    "cvss_version": "3.1",
+    "cwe": "CWE-22",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.54484,
+    "epss_percentile": 0.99257,
+    "file_name": "CVE-2024-37032.pavd.json",
+    "last_modified": "2025-03-27",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [],
+    "published": "2024-05-31",
+    "safety_impact": "MEDIUM",
+    "score": 8.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-37032",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-22: Improper Limitation of a Pathname to a Restricted Directory"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-25724",
+    "cvss_version": "3.1",
+    "cwe": "CWE-120",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00291,
+    "epss_percentile": 0.14199,
+    "file_name": "CVE-2024-25724.pavd.json",
+    "last_modified": "2025-08-27",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [],
+    "published": "2024-05-21",
+    "safety_impact": "MEDIUM",
+    "score": 7.3,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-25724",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-1914",
+    "cvss_version": "3.1",
+    "cwe": "CWE-476",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "epss": 0.00774,
+    "epss_percentile": 0.52161,
+    "file_name": "CVE-2024-1914.pavd.json",
+    "last_modified": "2024-08-01",
+    "patch_available": true,
+    "primary_domain": "Industrial Robot",
+    "products": [
+      "RobotWare 6",
+      "RobotWare 7"
+    ],
+    "published": "2024-05-14",
+    "safety_impact": "MEDIUM",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-1914",
+    "vendors": [
+      "ABB"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-476: NULL Pointer Dereference"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-1913",
+    "cvss_version": "3.1",
+    "cwe": "CWE-787",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "epss": 0.00752,
+    "epss_percentile": 0.51215,
+    "file_name": "CVE-2024-1913.pavd.json",
+    "last_modified": "2024-08-01",
+    "patch_available": true,
+    "primary_domain": "Industrial Robot",
+    "products": [
+      "RobotWare 6",
+      "RobotWare 7"
+    ],
+    "published": "2024-05-14",
+    "safety_impact": "HIGH",
+    "score": 7.6,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-1913",
+    "vendors": [
+      "ABB"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-787: Out-of-bounds Write"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-30259",
+    "cvss_version": "3.1",
+    "cwe": "CWE-120",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.01268,
+    "epss_percentile": 0.69798,
+    "file_name": "CVE-2024-30259.pavd.json",
+    "last_modified": "2024-08-02",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Fast-DDS"
+    ],
+    "published": "2024-05-13",
+    "safety_impact": "MEDIUM",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "FastDDS heap buffer overflow when publisher sends malformed packet",
+    "vendors": [
+      "eProsima"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input",
+      "CWE-122: Heap-based Buffer Overflow"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-30258",
+    "cvss_version": "3.1",
+    "cwe": "CWE-20",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.01197,
+    "epss_percentile": 0.68014,
+    "file_name": "CVE-2024-30258.pavd.json",
+    "last_modified": "2024-08-02",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Fast-DDS"
+    ],
+    "published": "2024-05-13",
+    "safety_impact": "MEDIUM",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "FastDDS crash when publisher send malformed packet",
+    "vendors": [
+      "eProsima"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-20: Improper Input Validation"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-0100",
+    "cvss_version": "3.1",
+    "cwe": "CWE-73",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.0081,
+    "epss_percentile": 0.53838,
+    "file_name": "CVE-2024-0100.pavd.json",
+    "last_modified": "2024-08-01",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "NVIDIA Triton Inference Server"
+    ],
+    "published": "2024-05-09",
+    "safety_impact": "LOW",
+    "score": 8.1,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE",
+    "vendors": [
+      "NVIDIA"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-73: External Control of File Name or Path"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-0088",
+    "cvss_version": "3.1",
+    "cwe": "CWE-119",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00597,
+    "epss_percentile": 0.42568,
+    "file_name": "CVE-2024-0088.pavd.json",
+    "last_modified": "2024-08-01",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "NVIDIA Triton Inference Server"
+    ],
+    "published": "2024-05-09",
+    "safety_impact": "LOW",
+    "score": 8.1,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE",
+    "vendors": [
+      "NVIDIA"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-0087",
+    "cvss_version": "3.1",
+    "cwe": "CWE-73",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00992,
+    "epss_percentile": 0.61414,
+    "file_name": "CVE-2024-0087.pavd.json",
+    "last_modified": "2024-08-01",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "NVIDIA Triton Inference Server"
+    ],
+    "published": "2024-05-09",
+    "safety_impact": "LOW",
+    "score": 8.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE",
+    "vendors": [
+      "NVIDIA"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-73: External Control of File Name or Path"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-33844",
+    "cvss_version": "3.1",
+    "cwe": "CWE-404",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00833,
+    "epss_percentile": 0.5486,
+    "file_name": "CVE-2024-33844.pavd.json",
+    "last_modified": "2026-07-09",
+    "patch_available": false,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [],
+    "published": "2024-05-03",
+    "safety_impact": "HIGH",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Wireless Layer",
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-33844",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Modified",
+    "vulnerability_class": [
+      "CWE-404: Improper Resource Shutdown or Release"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-3571",
+    "cvss_version": "3.1",
+    "cwe": "CWE-22",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.02512,
+    "epss_percentile": 0.85506,
+    "file_name": "CVE-2024-3571.pavd.json",
+    "last_modified": "2024-08-01",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "langchain-ai/langchain"
+    ],
+    "published": "2024-04-16",
+    "safety_impact": "LOW",
+    "score": 8.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "Path Traversal in langchain-ai/langchain",
+    "vendors": [
+      "LangChain"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-22: Improper Limitation of a Pathname to a Restricted Directory"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-30917",
+    "cvss_version": "3.1",
+    "cwe": "CWE-229",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00253,
+    "epss_percentile": 0.10276,
+    "file_name": "CVE-2024-30917.pavd.json",
+    "last_modified": "2024-08-02",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [],
+    "published": "2024-04-11",
+    "safety_impact": "MEDIUM",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-30917",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-229: Improper Handling of Values",
+      "CWE-922: Insecure Storage of Sensitive Information"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-30916",
+    "cvss_version": "3.1",
+    "cwe": "CWE-20",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.0027,
+    "epss_percentile": 0.12028,
+    "file_name": "CVE-2024-30916.pavd.json",
+    "last_modified": "2025-02-10",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [],
+    "published": "2024-04-11",
+    "safety_impact": "MEDIUM",
+    "score": 7.1,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-30916",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Modified",
+    "vulnerability_class": [
+      "CWE-20: Improper Input Validation"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-30915",
+    "cvss_version": "3.1",
+    "cwe": "CWE-400",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00638,
+    "epss_percentile": 0.45111,
+    "file_name": "CVE-2024-30915.pavd.json",
+    "last_modified": "2025-03-25",
+    "patch_available": false,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [],
+    "published": "2024-04-11",
+    "safety_impact": "MEDIUM",
+    "score": 4.3,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-30915",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-400: Uncontrolled Resource Consumption"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-29460",
+    "cvss_version": "3.1",
+    "cwe": "CWE-229",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00268,
+    "epss_percentile": 0.11875,
+    "file_name": "CVE-2024-29460.pavd.json",
+    "last_modified": "2024-08-02",
+    "patch_available": false,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [],
+    "published": "2024-04-10",
+    "safety_impact": "HIGH",
+    "score": 6.6,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-29460",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-229: Improper Handling of Values"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-28224",
+    "cvss_version": "3.1",
+    "cwe": "CWE-346",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00303,
+    "epss_percentile": 0.15411,
+    "file_name": "CVE-2024-28224.pavd.json",
+    "last_modified": "2025-03-26",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [],
+    "published": "2024-04-08",
+    "safety_impact": "LOW",
+    "score": 6.6,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-28224",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-346: Origin Validation Error"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2023-6951",
+    "cvss_version": "3.1",
+    "cwe": "CWE-334",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00419,
+    "epss_percentile": 0.2793,
+    "file_name": "CVE-2023-6951.pavd.json",
+    "last_modified": "2024-09-30",
+    "patch_available": true,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [
+      "Mavic 3 Pro",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Enterprise",
+      "Matrice 300",
+      "Matrice M30",
+      "Mini 3 Pro"
+    ],
+    "published": "2024-04-02",
+    "safety_impact": "MEDIUM",
+    "score": 6.6,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Wireless Layer",
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2023-6951",
+    "vendors": [
+      "DJI"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-334: Small Space of Random Values"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2023-6950",
+    "cvss_version": "3.1",
+    "cwe": "CWE-1286",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00303,
+    "epss_percentile": 0.15422,
+    "file_name": "CVE-2023-6950.pavd.json",
+    "last_modified": "2024-09-30",
+    "patch_available": false,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [
+      "Mini 3 Pro"
+    ],
+    "published": "2024-04-02",
+    "safety_impact": "LOW",
+    "score": 3.0,
+    "severity": "LOW",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Wireless Layer",
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2023-6950",
+    "vendors": [
+      "DJI"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-1286: Improper Validation of Syntactic Correctness of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2023-6949",
+    "cvss_version": "3.1",
+    "cwe": "CWE-306",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00349,
+    "epss_percentile": 0.20983,
+    "file_name": "CVE-2023-6949.pavd.json",
+    "last_modified": "2025-02-13",
+    "patch_available": false,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [
+      "Mini 3 Pro"
+    ],
+    "published": "2024-04-02",
+    "safety_impact": "LOW",
+    "score": 5.2,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Wireless Layer",
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2023-6949",
+    "vendors": [
+      "DJI"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-306: Missing Authentication for Critical Functionality"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2023-6948",
+    "cvss_version": "3.1",
+    "cwe": "CWE-120",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00303,
+    "epss_percentile": 0.15421,
+    "file_name": "CVE-2023-6948.pavd.json",
+    "last_modified": "2025-03-04",
+    "patch_available": true,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [
+      "Mavic 3 Pro",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Enterprise",
+      "Matrice 300",
+      "Matrice M30",
+      "Mini 3 Pro"
+    ],
+    "published": "2024-04-02",
+    "safety_impact": "LOW",
+    "score": 3.0,
+    "severity": "LOW",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Wireless Layer",
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2023-6948",
+    "vendors": [
+      "DJI"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2023-51456",
+    "cvss_version": "3.1",
+    "cwe": "CWE-125",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00367,
+    "epss_percentile": 0.22673,
+    "file_name": "CVE-2023-51456.pavd.json",
+    "last_modified": "2024-09-30",
+    "patch_available": true,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [
+      "Mavic 3 Pro",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Enterprise",
+      "Matrice 300",
+      "Matrice M30",
+      "Mini 3 Pro"
+    ],
+    "published": "2024-04-02",
+    "safety_impact": "HIGH",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2023-51456",
+    "vendors": [
+      "DJI"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-125: Out-of-bounds Read",
+      "CWE-787: Out-of-bounds Write"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2023-51455",
+    "cvss_version": "3.1",
+    "cwe": "CWE-129",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00367,
+    "epss_percentile": 0.22673,
+    "file_name": "CVE-2023-51455.pavd.json",
+    "last_modified": "2024-08-08",
+    "patch_available": true,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [
+      "Mavic 3 Pro",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Enterprise",
+      "Matrice 300",
+      "Matrice M30",
+      "Mini 3 Pro"
+    ],
+    "published": "2024-04-02",
+    "safety_impact": "HIGH",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Wireless Layer",
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2023-51455",
+    "vendors": [
+      "DJI"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-129: Improper Validation of Array Index"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2023-51454",
+    "cvss_version": "3.1",
+    "cwe": "CWE-787",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00367,
+    "epss_percentile": 0.22672,
+    "file_name": "CVE-2023-51454.pavd.json",
+    "last_modified": "2024-08-19",
+    "patch_available": true,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [
+      "Mavic 3 Pro",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Enterprise",
+      "Matrice 300",
+      "Matrice M30",
+      "Mini 3 Pro"
+    ],
+    "published": "2024-04-02",
+    "safety_impact": "HIGH",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2023-51454",
+    "vendors": [
+      "DJI"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-787: Out-of-bounds Write"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2023-51453",
+    "cvss_version": "3.1",
+    "cwe": "CWE-787",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00303,
+    "epss_percentile": 0.15421,
+    "file_name": "CVE-2023-51453.pavd.json",
+    "last_modified": "2024-09-30",
+    "patch_available": true,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [
+      "Mavic 3 Pro",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Enterprise",
+      "Matrice 300",
+      "Matrice M30",
+      "Mini 3 Pro"
+    ],
+    "published": "2024-04-02",
+    "safety_impact": "LOW",
+    "score": 3.0,
+    "severity": "LOW",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Wireless Layer",
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2023-51453",
+    "vendors": [
+      "DJI"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-787: Out-of-bounds Write"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2023-51452",
+    "cvss_version": "3.1",
+    "cwe": "CWE-787",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00303,
+    "epss_percentile": 0.15421,
+    "file_name": "CVE-2023-51452.pavd.json",
+    "last_modified": "2024-09-30",
+    "patch_available": true,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [
+      "Mavic 3 Pro",
+      "Mavic 3",
+      "Mavic 3 Classic",
+      "Mavic 3 Enterprise",
+      "Matrice 300",
+      "Matrice M30",
+      "Mini 3 Pro"
+    ],
+    "published": "2024-04-02",
+    "safety_impact": "LOW",
+    "score": 3.0,
+    "severity": "LOW",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Wireless Layer",
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2023-51452",
+    "vendors": [
+      "DJI"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-787: Out-of-bounds Write"
     ],
     "vulnerability_class_source": "cve"
   }

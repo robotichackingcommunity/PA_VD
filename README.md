@@ -45,17 +45,17 @@ Each record in [`CVE-json/`](./CVE-json) is a single vulnerability, structured i
 ### Current Coverage
 
 <!-- stats:start -->
-_Auto-generated on 2026-11-26, do not edit by hand._
+_Auto-generated on 2026-11-27, do not edit by hand._
 
-- **1240** vulnerability records (see [`index.json`](./index.json) for the lightweight index, [`stats.json`](./stats.json) for all counts)
-- **Severity:** HIGH (580) · MEDIUM (411) · CRITICAL (141) · LOW (107) · UNKNOWN (1)
-- **Physical AI domains (a record may belong to several):** Physical AI Infrastructure (918) · Robot Operating Systems & Middleware (141) · Mobile Robot & AMR (84) · Drone & Aerial Robotics (60) · Service & Companion Robot (53) · Humanoid & Legged Robot (24) · Industrial Robot (8) · Embodied AI Agent (6) · Autonomous Vehicle AI (2)
-- **Attack surfaces (where the flaw is reached):** Software & Cloud (1234) · Wireless Layer (61) · AI Model Layer (52) · Physical Layer (15) · Perception Layer (2)
-- **Exploitation (CISA SSVC):** none (658) · Unknown (432) · poc (149) · active (1)
-- **Safety impact:** LOW (760) · MEDIUM (390) · HIGH (83) · CRITICAL (7)
-- **Patch availability evidence:** Confirmed (985) · Not Specified (255)
-- **Published per year:** 2024 (65) · 2025 (166) · 2026 (1009)
-- **Latest update (2026-11-26):** 9 added · 0 Physical AI domains changed · 0 attack surfaces changed · 0 removed (CVE REJECTED) · 0 removed (no longer Physical AI) (see [`CHANGELOG.md`](./CHANGELOG.md))
+- **1271** vulnerability records (see [`index.json`](./index.json) for the lightweight index, [`stats.json`](./stats.json) for all counts)
+- **Severity:** HIGH (594) · MEDIUM (423) · CRITICAL (142) · LOW (111) · UNKNOWN (1)
+- **Physical AI domains (a record may belong to several):** Physical AI Infrastructure (928) · Robot Operating Systems & Middleware (147) · Mobile Robot & AMR (84) · Drone & Aerial Robotics (73) · Service & Companion Robot (53) · Humanoid & Legged Robot (24) · Industrial Robot (10) · Embodied AI Agent (6) · Autonomous Vehicle AI (2)
+- **Attack surfaces (where the flaw is reached):** Software & Cloud (1265) · Wireless Layer (70) · AI Model Layer (52) · Physical Layer (15) · Perception Layer (2)
+- **Exploitation (CISA SSVC):** none (681) · Unknown (433) · poc (156) · active (1)
+- **Safety impact:** LOW (773) · MEDIUM (401) · HIGH (90) · CRITICAL (7)
+- **Patch availability evidence:** Confirmed (1008) · Not Specified (263)
+- **Published per year:** 2024 (95) · 2025 (166) · 2026 (1010)
+- **Latest update (2026-11-27):** 31 added · 0 Physical AI domains changed · 0 attack surfaces changed · 0 removed (CVE REJECTED) · 0 removed (no longer Physical AI) (see [`CHANGELOG.md`](./CHANGELOG.md))
 <!-- stats:end -->
 
 Every record carries its Physical AI `domains` (what kind of physical system is affected), and each domain its `attack_surfaces` (where in the stack the flaw is reached), so risk can be sliced for supply-chain and SBOM triage, not just "which robot is affected". The numbers above are regenerated from `CVE-json/` on every update; `stats.json` holds the full breakdown, including counts by publication year and month.
