@@ -44104,6 +44104,283 @@
   },
   {
     "automatable": "no",
+    "cve_id": "CVE-2024-33903",
+    "cvss_version": "3.1",
+    "cwe": "CWE-693",
+    "domains": [
+      "Autonomous Vehicle AI"
+    ],
+    "epss": 0.00741,
+    "epss_percentile": 0.50748,
+    "file_name": "CVE-2024-33903.pavd.json",
+    "last_modified": "2024-09-06",
+    "patch_available": true,
+    "primary_domain": "Autonomous Vehicle AI",
+    "products": [],
+    "published": "2024-04-29",
+    "safety_impact": "LOW",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-33903",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-693: Protection Mechanism Failure"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-32878",
+    "cvss_version": "3.1",
+    "cwe": "CWE-456",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00949,
+    "epss_percentile": 0.59768,
+    "file_name": "CVE-2024-32878.pavd.json",
+    "last_modified": "2024-08-02",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "llama.cpp"
+    ],
+    "published": "2024-04-26",
+    "safety_impact": "LOW",
+    "score": 8.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "Use of Uninitialized Variable Vulnerability in llama.cpp",
+    "vendors": [
+      "ggerganov"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-456: Missing Initialization of a Variable"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-30800",
+    "cvss_version": "3.1",
+    "cwe": "CWE-229",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00235,
+    "epss_percentile": 0.08718,
+    "file_name": "CVE-2024-30800.pavd.json",
+    "last_modified": "2024-08-02",
+    "patch_available": true,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [],
+    "published": "2024-04-23",
+    "safety_impact": "HIGH",
+    "score": 5.6,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-30800",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-229: Improper Handling of Values"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-30799",
+    "cvss_version": "3.1",
+    "cwe": "CWE-120",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00267,
+    "epss_percentile": 0.11764,
+    "file_name": "CVE-2024-30799.pavd.json",
+    "last_modified": "2024-11-22",
+    "patch_available": false,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [],
+    "published": "2024-04-22",
+    "safety_impact": "HIGH",
+    "score": 4.4,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-30799",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-31584",
+    "cvss_version": "3.1",
+    "cwe": "CWE-125",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00529,
+    "epss_percentile": 0.38172,
+    "file_name": "CVE-2024-31584.pavd.json",
+    "last_modified": "2024-08-02",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [],
+    "published": "2024-04-19",
+    "safety_impact": "LOW",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "AI Model Layer",
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-31584",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-125: Out-of-bounds Read"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-31583",
+    "cvss_version": "3.1",
+    "cwe": "CWE-416",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00379,
+    "epss_percentile": 0.23773,
+    "file_name": "CVE-2024-31583.pavd.json",
+    "last_modified": "2024-08-02",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [],
+    "published": "2024-04-17",
+    "safety_impact": "LOW",
+    "score": 7.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-31583",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-416: Use After Free"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-31580",
+    "cvss_version": "3.1",
+    "cwe": "CWE-122",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.00301,
+    "epss_percentile": 0.15203,
+    "file_name": "CVE-2024-31580.pavd.json",
+    "last_modified": "2025-03-28",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [],
+    "published": "2024-04-17",
+    "safety_impact": "LOW",
+    "score": 4.0,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-31580",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-122: Heap-based Buffer Overflow"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-0257",
+    "cvss_version": "3.1",
+    "cwe": "CWE-122",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "epss": 0.00269,
+    "epss_percentile": 0.11989,
+    "file_name": "CVE-2024-0257.pavd.json",
+    "last_modified": "2024-08-20",
+    "patch_available": false,
+    "primary_domain": "Industrial Robot",
+    "products": [
+      "RoboDK"
+    ],
+    "published": "2024-04-17",
+    "safety_impact": "LOW",
+    "score": 3.3,
+    "severity": "LOW",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "RoboDK Heap-based Buffer Overflow",
+    "vendors": [
+      "RoboDK"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-122: Heap-based Buffer Overflow"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
     "cve_id": "CVE-2024-3571",
     "cvss_version": "3.1",
     "cwe": "CWE-22",
@@ -44680,6 +44957,567 @@
     "vuln_status": "Deferred",
     "vulnerability_class": [
       "CWE-787: Out-of-bounds Write"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-28231",
+    "cvss_version": "3.1",
+    "cwe": "CWE-122",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.01151,
+    "epss_percentile": 0.66737,
+    "file_name": "CVE-2024-28231.pavd.json",
+    "last_modified": "2024-08-02",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Fast-DDS"
+    ],
+    "published": "2024-03-20",
+    "safety_impact": "MEDIUM",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "Manipulated DATA Submessage causes a heap-buffer-overflow error",
+    "vendors": [
+      "eProsima"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-122: Heap-based Buffer Overflow"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-26369",
+    "cvss_version": "3.1",
+    "cwe": "CWE-400",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00751,
+    "epss_percentile": 0.51242,
+    "file_name": "CVE-2024-26369.pavd.json",
+    "last_modified": "2024-08-02",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [],
+    "published": "2024-03-19",
+    "safety_impact": "MEDIUM",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-26369",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Deferred",
+    "vulnerability_class": [
+      "CWE-400: Uncontrolled Resource Consumption"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-0917",
+    "cvss_version": "3.1",
+    "cwe": "CWE-94",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.01736,
+    "epss_percentile": 0.78147,
+    "file_name": "CVE-2024-0917.pavd.json",
+    "last_modified": "2025-02-13",
+    "patch_available": false,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "paddlepaddle/paddle"
+    ],
+    "published": "2024-03-07",
+    "safety_impact": "MEDIUM",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-0917",
+    "vendors": [
+      "paddlepaddle"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-94: Improper Control of Generation of Code"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-0818",
+    "cvss_version": "3.1",
+    "cwe": "CWE-22",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.01217,
+    "epss_percentile": 0.6856,
+    "file_name": "CVE-2024-0818.pavd.json",
+    "last_modified": "2025-02-13",
+    "patch_available": true,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "paddlepaddle/paddle"
+    ],
+    "published": "2024-03-07",
+    "safety_impact": "LOW",
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-0818",
+    "vendors": [
+      "paddlepaddle"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-22: Improper Limitation of a Pathname to a Restricted Directory"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-0815",
+    "cvss_version": "3.1",
+    "cwe": "CWE-78",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "epss": 0.01881,
+    "epss_percentile": 0.80037,
+    "file_name": "CVE-2024-0815.pavd.json",
+    "last_modified": "2025-02-13",
+    "patch_available": false,
+    "primary_domain": "Physical AI Infrastructure",
+    "products": [
+      "paddlepaddle/paddle"
+    ],
+    "published": "2024-03-07",
+    "safety_impact": "LOW",
+    "score": 8.8,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-0815",
+    "vendors": [
+      "paddlepaddle"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-78: Improper Neutralization of Special Elements used in an OS Command"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2023-50716",
+    "cvss_version": "3.1",
+    "cwe": "CWE-416",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00976,
+    "epss_percentile": 0.60932,
+    "file_name": "CVE-2023-50716.pavd.json",
+    "last_modified": "2024-08-02",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Fast-DDS"
+    ],
+    "published": "2024-03-06",
+    "safety_impact": "MEDIUM",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "Invalid DATA_FRAG Submessage causes a bad-free error",
+    "vendors": [
+      "eProsima"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-416: Use After Free"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-25199",
+    "cvss_version": "3.1",
+    "cwe": "CWE-416",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00635,
+    "epss_percentile": 0.45024,
+    "file_name": "CVE-2024-25199.pavd.json",
+    "last_modified": "2024-08-29",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-02-20",
+    "safety_impact": "MEDIUM",
+    "score": 8.1,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-25199",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-416: Use After Free"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-25198",
+    "cvss_version": "3.1",
+    "cwe": "CWE-416",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.01093,
+    "epss_percentile": 0.65077,
+    "file_name": "CVE-2024-25198.pavd.json",
+    "last_modified": "2024-08-01",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-02-20",
+    "safety_impact": "MEDIUM",
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "CVE-2024-25198",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-416: Use After Free"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-25197",
+    "cvss_version": "3.1",
+    "cwe": "CWE-476",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00919,
+    "epss_percentile": 0.58513,
+    "file_name": "CVE-2024-25197.pavd.json",
+    "last_modified": "2024-10-29",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-02-20",
+    "safety_impact": "MEDIUM",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-25197",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-476: NULL Pointer Dereference"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-25196",
+    "cvss_version": "3.1",
+    "cwe": "CWE-120",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00307,
+    "epss_percentile": 0.16003,
+    "file_name": "CVE-2024-25196.pavd.json",
+    "last_modified": "2024-08-15",
+    "patch_available": true,
+    "primary_domain": "Mobile Robot & AMR",
+    "products": [],
+    "published": "2024-02-20",
+    "safety_impact": "MEDIUM",
+    "score": 3.3,
+    "severity": "LOW",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-25196",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-120: Buffer Copy without Checking Size of Input"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2023-50257",
+    "cvss_version": "3.1",
+    "cwe": "CWE-284",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00704,
+    "epss_percentile": 0.48949,
+    "file_name": "CVE-2023-50257.pavd.json",
+    "last_modified": "2024-08-14",
+    "patch_available": true,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [
+      "Fast-DDS"
+    ],
+    "published": "2024-02-19",
+    "safety_impact": "MEDIUM",
+    "score": 8.1,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "total",
+    "title": "Disconnect Vulnerability in RTPS Packets Used by SROS2",
+    "vendors": [
+      "eProsima"
+    ],
+    "vuln_status": "Analyzed",
+    "vulnerability_class": [
+      "CWE-284: Improper Access Control"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2023-52427",
+    "cvss_version": "3.1",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "epss": 0.00856,
+    "epss_percentile": 0.55933,
+    "file_name": "CVE-2023-52427.pavd.json",
+    "last_modified": "2024-08-02",
+    "patch_available": false,
+    "primary_domain": "Robot Operating Systems & Middleware",
+    "products": [],
+    "published": "2024-02-11",
+    "safety_impact": "MEDIUM",
+    "score": 7.5,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2023-52427",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Modified",
+    "vulnerability_class": [
+      "CWE-770: Allocation of Resources Without Limits or Throttling"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-24255",
+    "cvss_version": "3.1",
+    "cwe": "CWE-362",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00386,
+    "epss_percentile": 0.24431,
+    "file_name": "CVE-2024-24255.pavd.json",
+    "last_modified": "2025-05-08",
+    "patch_available": false,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [],
+    "published": "2024-02-06",
+    "safety_impact": "HIGH",
+    "score": 4.2,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-24255",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Modified",
+    "vulnerability_class": [
+      "CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-24254",
+    "cvss_version": "3.1",
+    "cwe": "CWE-362",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00413,
+    "epss_percentile": 0.27216,
+    "file_name": "CVE-2024-24254.pavd.json",
+    "last_modified": "2025-06-05",
+    "patch_available": false,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [],
+    "published": "2024-02-06",
+    "safety_impact": "MEDIUM",
+    "score": 4.2,
+    "severity": "MEDIUM",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-24254",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Modified",
+    "vulnerability_class": [
+      "CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "yes",
+    "cve_id": "CVE-2024-22520",
+    "cvss_version": "3.1",
+    "cwe": "CWE-290",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00719,
+    "epss_percentile": 0.49708,
+    "file_name": "CVE-2024-22520.pavd.json",
+    "last_modified": "2025-05-15",
+    "patch_available": false,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [],
+    "published": "2024-02-06",
+    "safety_impact": "MEDIUM",
+    "score": 8.2,
+    "severity": "HIGH",
+    "ssvc_exploitation": "poc",
+    "surfaces": [
+      "Wireless Layer",
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-22520",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Modified",
+    "vulnerability_class": [
+      "CWE-290: Authentication Bypass by Spoofing"
+    ],
+    "vulnerability_class_source": "cve"
+  },
+  {
+    "automatable": "no",
+    "cve_id": "CVE-2024-22519",
+    "cvss_version": "3.1",
+    "cwe": "CWE-290",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "epss": 0.00761,
+    "epss_percentile": 0.51651,
+    "file_name": "CVE-2024-22519.pavd.json",
+    "last_modified": "2025-06-05",
+    "patch_available": false,
+    "primary_domain": "Drone & Aerial Robotics",
+    "products": [],
+    "published": "2024-02-06",
+    "safety_impact": "MEDIUM",
+    "score": 8.2,
+    "severity": "HIGH",
+    "ssvc_exploitation": "none",
+    "surfaces": [
+      "Wireless Layer",
+      "Software & Cloud"
+    ],
+    "technical_impact": "partial",
+    "title": "CVE-2024-22519",
+    "vendors": [
+      "Unknown"
+    ],
+    "vuln_status": "Modified",
+    "vulnerability_class": [
+      "CWE-290: Authentication Bypass by Spoofing"
     ],
     "vulnerability_class_source": "cve"
   }
